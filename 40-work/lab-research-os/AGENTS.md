@@ -21,6 +21,7 @@ This is the canonical project instruction file for an additive foundation over e
 Follow DISCOVER → IDENTIFY ROOT → LOAD RULES → LOAD PROJECT → LOAD CHECKPOINT → LOAD RELEVANT CONTEXT → VERIFY ENVIRONMENT → COMPARE DOCUMENTED/ACTUAL → PLAN → EXECUTE → DELEGATED VERIFY → REVIEW → WRITE BACK → CHECKPOINT.
 Use protocols/HANDOFF.md and protocols/VERIFICATION.md. A report must link evidence; PASS alone is insufficient. Do not rerun accepted deterministic checks without changed inputs, failed checks or a specific contradiction.
 Routine scanning, enumeration, formatting and tests go to workers. DeepSeek Flash verifies deterministic output; Pro checks complex text; qualified multimodal models check visual content. Astra adjudicates architectural contradictions.
+When Sol is assigned, read `SOL-AGENT.md` after this file, `PROJECT.md` and the latest checkpoint. It is a role adapter and quick-resume map, not an independent source of project truth.
 L0 repair automatically. L1 return to original worker. L2 use a bounded heterogeneous board or checkpoint queued work. Exhausted retries alone do not justify Human PI escalation. Only consequential L3 decisions go to Human PI.
 
 ## Context and promotion
