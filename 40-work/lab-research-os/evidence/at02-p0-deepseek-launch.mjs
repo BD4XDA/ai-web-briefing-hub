@@ -1,0 +1,14 @@
+import {spawn} from 'node:child_process';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {performance} from 'node:perf_hooks';
+const node='C:/Program Files/nodejs/node.exe';
+const dsh='C:/Users/ASUS/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js';
+const patch='C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/evidence/at02-p0-deepseek-text.patch.yml';
+const input='C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/evidence/at02-p0-deepseek-prompt.txt';
+const output='C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/evidence/at02-p0-deepseek-response.json';
+const evidence='C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/evidence/at02-p0-deepseek-execution.json';
+const started=new Date().toISOString(); const t=performance.now();
+const child=spawn(node,[dsh,'--profile','headless','--patch',patch,'bounded-text-task'],{cwd:'C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os',env:{...process.env,LAB_TEXT_INPUT:input,LAB_TEXT_OUTPUT:output,LAB_TEXT_MODEL:'deepseek-flash'},windowsHide:true});
+let stdout='',stderr=''; child.stdout.on('data',b=>stdout+=b); child.stderr.on('data',b=>stderr+=b);
+const timeout=setTimeout(()=>child.kill(),105000);
+child.on('close',(code,signal)=>{clearTimeout(timeout);const finished=new Date().toISOString();const record={command:[node,dsh,'--profile','headless','--patch',patch,'bounded-text-task'],started_at:started,finished_at:finished,duration_seconds:Number(((performance.now()-t)/1000).toFixed(3)),exit_code:code,signal,stdout,stderr,env:{LAB_TEXT_INPUT:input,LAB_TEXT_OUTPUT:output,LAB_TEXT_MODEL:'deepseek-flash'}};writeFileSync(evidence,JSON.stringify(record,null,2));process.exit(code===null?1:code);});

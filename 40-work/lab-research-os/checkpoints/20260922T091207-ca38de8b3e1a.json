@@ -1,0 +1,42 @@
+{
+  "completed": [
+    "Exactly one new CLI worker invocation attempted; original launch/streams and actual observer evidence preserved.",
+    "Predeclared gate evaluated mechanically; one independent DeepSeek evidence review attempted within budget."
+  ],
+  "created_at": "2026-09-22T09:12:07+0800",
+  "current_verified_state": [
+    "AT05 C1=NOT PROVEN; C2=PROVEN; automatic result=FAIL; P5=UNCERTAIN; P6=YELLOW.",
+    "P3/P4 inherited; Vela/Janus/Seshat remain HELD. Foundation v0.1 unchanged."
+  ],
+  "decisions": [
+    "No human override of automatic gate. No retry or broader census.",
+    "Any PROVEN claim is limited to this new bounded receipt workflow and captured harness boundary, not old AT03 evidence or general research."
+  ],
+  "evidence_references": [
+    "packets/at05-recovery-01.json",
+    "packets/at05-recovery-01.md",
+    "artifacts/at05/prelaunch-binding.json",
+    "artifacts/at05/launch-input.json",
+    "artifacts/at05/worker-execution.json",
+    "artifacts/at05/worker.stdout",
+    "artifacts/at05/deterministic-validation.json",
+    "artifacts/at05/review-prompt.txt",
+    "artifacts/at05/automatic-acceptance.json"
+  ],
+  "in_progress": [],
+  "known_risks": [
+    "Machine observation, deterministic checks and model evidence review have distinct scopes."
+  ],
+  "next_actions": [
+    "Read AT05 automatic-acceptance.json and final handoff; do not repeat this experiment or prior pilots. Plan only the minimum next action supported by the actual terminal gates."
+  ],
+  "open_questions": [
+    "Opaque provider context/model authenticity and all-OS access are not independently observable.",
+    "Other gate branches and held pilot defects remain unqualified."
+  ],
+  "parent": "20260922T075755-55921d9fb875",
+  "priority": "EXIT",
+  "session": "AT05",
+  "stage": "AT05-terminal",
+  "status": "complete"
+}

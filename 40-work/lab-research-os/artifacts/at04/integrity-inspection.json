@@ -1,0 +1,233 @@
+{
+  "started_at_utc": "2026-09-21T23:56:19.077603+00:00",
+  "finished_at_utc": "2026-09-21T23:56:19.115282+00:00",
+  "latest_at_inspection": "20260922T002255-a666fc8e350c",
+  "checks": {
+    "latest_integrity_via_foundation_current": true,
+    "p3_p4_in_committed_ancestry": true,
+    "checkpoint_id_digests": true,
+    "taxonomy_evidence_paths_exist": true,
+    "candidate_exact_structure_and_values": true,
+    "source_snapshot_content_matches": true,
+    "source_snapshot_hash_matches": true,
+    "writeback_exact_bytes": true,
+    "review_exit_zero": true,
+    "review_reason_completed": true,
+    "review_tool_calls_zero": true,
+    "review_pass_confidence_gate": true,
+    "commit_exit_zero": true,
+    "worker_commit_is_current": true,
+    "worker_commit_parent_matches_packet": true
+  },
+  "result": "PASS",
+  "checkpoint_chain": [
+    {
+      "id": "20260922T002255-a666fc8e350c",
+      "sha256": "a666fc8e350cfc3bb124bf2c2ea6b9fbbe5f65ee9b1f2bf4d63ede642d80b56f",
+      "id_digest_matches": true,
+      "parent": "20260922T001240-6ee0580095c8"
+    },
+    {
+      "id": "20260922T001240-6ee0580095c8",
+      "sha256": "6ee0580095c8a1b1dd89087b8780638260443903280a9d7cd74f4c44decc964a",
+      "id_digest_matches": true,
+      "parent": "20260922T001120-06857fdd56f9"
+    },
+    {
+      "id": "20260922T001120-06857fdd56f9",
+      "sha256": "06857fdd56f90485d904650171527287b0e0f16dc506e275892ebda32d900b1b",
+      "id_digest_matches": true,
+      "parent": "20260922T000722-8a87d4b9f624"
+    },
+    {
+      "id": "20260922T000722-8a87d4b9f624",
+      "sha256": "8a87d4b9f6246b590ca5c08739e44998cca9aa60fe6e76946903947ea43a4147",
+      "id_digest_matches": true,
+      "parent": "20260921T234855-578d72ce2f6e"
+    },
+    {
+      "id": "20260921T234855-578d72ce2f6e",
+      "sha256": "578d72ce2f6e8fddbaf49d2b52a12a0f11dfeab197a840883e4e5e6a9fbf7efa",
+      "id_digest_matches": true,
+      "parent": "20260921T183240-2a5430059765"
+    },
+    {
+      "id": "20260921T183240-2a5430059765",
+      "sha256": "2a5430059765cab99818c2e27bc047f052c18440bfacca1d04b326d143e74e07",
+      "id_digest_matches": true,
+      "parent": "20260921T183037-034ade6bf069"
+    },
+    {
+      "id": "20260921T183037-034ade6bf069",
+      "sha256": "034ade6bf069834e580d196633919672da4b8cfe6f87954a376b785a34e397ee",
+      "id_digest_matches": true,
+      "parent": "20260921T183003-1e6436d48aba"
+    },
+    {
+      "id": "20260921T183003-1e6436d48aba",
+      "sha256": "1e6436d48aba59ea0c0e6277f7aa349d5905e7523434f6edd00aa4b3d92f4cf7",
+      "id_digest_matches": true,
+      "parent": "20260921T182326-7173d6f44d05"
+    },
+    {
+      "id": "20260921T182326-7173d6f44d05",
+      "sha256": "7173d6f44d0599cc0b6d16d8147e573afa86014a112213bf920b7793b085b3aa",
+      "id_digest_matches": true,
+      "parent": "20260921T181551-5e0214f704e7"
+    },
+    {
+      "id": "20260921T181551-5e0214f704e7",
+      "sha256": "5e0214f704e7202c7661a64e2475a2ac2f5f417868c602f567db0a700b82aa55",
+      "id_digest_matches": true,
+      "parent": "20260921T131123-e20d79ddeef7"
+    },
+    {
+      "id": "20260921T131123-e20d79ddeef7",
+      "sha256": "e20d79ddeef7893a4695d09a2b498964680c2a9ba1c0b01f0e53e7015177b000",
+      "id_digest_matches": true,
+      "parent": "20260921T130533-927be1d2f6ce"
+    },
+    {
+      "id": "20260921T130533-927be1d2f6ce",
+      "sha256": "927be1d2f6cec14dc714a5a3e6184326d7c1feef28f31f4dd1ad1aab0fd4ab33",
+      "id_digest_matches": true,
+      "parent": null
+    }
+  ],
+  "taxonomy_reference_presence": [
+    {
+      "case": "AT03-F-01",
+      "path": "artifacts/at02/verification/dispatch-failure.json",
+      "exists": true
+    },
+    {
+      "case": "AT03-F-01",
+      "path": "artifacts/at02/pilot-A/candidate-bundle.initial.json",
+      "exists": true
+    },
+    {
+      "case": "AT03-F-01",
+      "path": "artifacts/at02/pilot-A/candidate-bundle-correction.json",
+      "exists": true
+    },
+    {
+      "case": "AT03-F-01",
+      "path": "artifacts/at02/verification/discriminating-receipt.json",
+      "exists": true
+    },
+    {
+      "case": "AT03-F-02",
+      "path": "artifacts/at02/pilot-B/candidate-bundle.json",
+      "exists": true
+    },
+    {
+      "case": "AT03-F-02",
+      "path": "artifacts/at02/pilot-B/collection.json",
+      "exists": true
+    },
+    {
+      "case": "AT03-F-02",
+      "path": "artifacts/at02/verification/discriminating-receipt.json",
+      "exists": true
+    },
+    {
+      "case": "AT03-F-03",
+      "path": "artifacts/at02/pilot-A/cli-version-stream.json",
+      "exists": true
+    },
+    {
+      "case": "AT03-F-03",
+      "path": "artifacts/at02/pilot-A/exception.json",
+      "exists": true
+    },
+    {
+      "case": "AT03-F-04",
+      "path": "artifacts/at02/verification/review-parsed.json",
+      "exists": true
+    },
+    {
+      "case": "AT03-F-04",
+      "path": "artifacts/at02/verify-pilots-before-stage-clarification.py",
+      "exists": true
+    },
+    {
+      "case": "AT03-F-04",
+      "path": "artifacts/at02/verification-C-clarification/review-parsed.json",
+      "exists": true
+    },
+    {
+      "case": "AT03-F-05",
+      "path": "artifacts/at02/verify-pilots-before-stage-clarification.py",
+      "exists": true
+    },
+    {
+      "case": "AT03-F-05",
+      "path": "artifacts/at02/verification/acceptance.json",
+      "exists": true
+    },
+    {
+      "case": "AT03-F-05",
+      "path": "artifacts/at02/verify-pilots.py",
+      "exists": true
+    },
+    {
+      "case": "AT02-F-legacy",
+      "path": "evidence/p2-provenance-clarification.md",
+      "exists": true
+    },
+    {
+      "case": "AT02-F-legacy",
+      "path": "evidence/at02-p0-supplement-prompt.txt",
+      "exists": true
+    },
+    {
+      "case": "AT02-F-legacy",
+      "path": "evidence/at02-p0-supplement-response.json",
+      "exists": true
+    },
+    {
+      "case": "AT02-F-legacy",
+      "path": "evidence/at02-p0-exact-execution.json",
+      "exists": true
+    }
+  ],
+  "bound_files": [
+    {
+      "path": "evidence/foundation-v0.1-manifest.json",
+      "sha256": "1e96bf20c4ac476cc4ab92d626d800f0694900aadeb370ed834f3e76332c3535"
+    },
+    {
+      "path": "artifacts/at03/autonomous-loop-01/run_loop.py",
+      "sha256": "881139e3b2eddcd83fac932ea13083d800df4130d110dc9d3b3ffc9c821e32d3"
+    },
+    {
+      "path": "artifacts/at03/autonomous-loop-01/context-load.json",
+      "sha256": "d725d7a0f9da65d44327b67dae718f53028dde6eda863464223ecaed8f2196fb"
+    },
+    {
+      "path": "artifacts/at03/autonomous-loop-01/review-execution.json",
+      "sha256": "c0ae1ca8e76a4257a2b36685250c67916beb9437f7940c4d871dff03ccdfba32"
+    },
+    {
+      "path": "artifacts/at03/autonomous-loop-01/review-response.json",
+      "sha256": "02640a8a8ae4da75eef53ccd7b3be9253ae86c00049110e72a0cb3937b92a579"
+    },
+    {
+      "path": "artifacts/at03/autonomous-loop-01/review-prompt.txt",
+      "sha256": "c7ad4934fd6a7ff7107b66b9bae9a06603040df8b451b37c1d4264d578e061a1"
+    },
+    {
+      "path": "artifacts/at03/autonomous-loop-01/checkpoint-commit.json",
+      "sha256": "9a5a560bd5cbc7a4cb9ea10786d950c2ff63c028c728a3ed023a8cbe6f608a8b"
+    },
+    {
+      "path": "artifacts/at03/autonomous-loop-01/index.candidate.json",
+      "sha256": "8cbe19b66da86635ceadc051d4ca54308ec10b241f5f6433c966b9e202687750"
+    },
+    {
+      "path": "artifacts/at03/manifest-index-v0.1.json",
+      "sha256": "8cbe19b66da86635ceadc051d4ca54308ec10b241f5f6433c966b9e202687750"
+    }
+  ],
+  "scope": "Existing artifacts only; verifies neither scientific truth, live runtime, server model authenticity, original read timestamps nor fresh-context independence. No Foundation tests or model calls."
+}

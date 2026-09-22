@@ -1,0 +1,6 @@
+{"type":"thread.started","thread_id":"01a0c6aa-340f-7703-8fe8-4256283b700d"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Exceeded skills context budget. All skill descriptions were removed and 51 additional skills were not included in the model-visible skills list."}}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"I’ll run the authorized observation command once and return the task’s receipt JSON.\n"}}
+{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"{\"status\":\"blocked\",\"observation_executed\":false,\"receipt_available\":false,\"reason\":\"Automatic approval review rejected the authorized observation command: blocked by policy. No task packet or source was returned.\",\"attempts\":1,\"files_written\":false}"}}
+{"type":"turn.completed","usage":{"input_tokens":45739,"cached_input_tokens":45056,"cache_write_input_tokens":0,"output_tokens":190,"reasoning_output_tokens":30}}

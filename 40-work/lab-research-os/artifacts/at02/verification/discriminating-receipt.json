@@ -1,0 +1,40 @@
+{
+  "command": [
+    "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "-c",
+    "import base64,sys;exec(base64.b64decode(sys.argv[1]))",
+    "aW1wb3J0IGpzb24sIHN1YnByb2Nlc3MKZnJvbSBkYXRldGltZSBpbXBvcnQgZGF0ZXRpbWUsIHRpbWV6b25lCmZyb20gcGF0aGxpYiBpbXBvcnQgUGF0aApyb290PVBhdGguY3dkKCkKZGVmIHN0YW1wKCk6IHJldHVybiBkYXRldGltZS5ub3codGltZXpvbmUudXRjKS5pc29mb3JtYXQoKQphPWpzb24ubG9hZHMoKHJvb3QvJ2FydGlmYWN0cy9hdDAyL3BpbG90LUEvY2FuZGlkYXRlLWJ1bmRsZS5qc29uJykucmVhZF90ZXh0KGVuY29kaW5nPSd1dGYtOC1zaWcnKSkKYj1qc29uLmxvYWRzKChyb290LydhcnRpZmFjdHMvYXQwMi9waWxvdC1CL2NvbGxlY3Rpb24uanNvbicpLnJlYWRfdGV4dChlbmNvZGluZz0ndXRmLTgtc2lnJykpCmdzPXN0YW1wKCkKZ2l0PXN1YnByb2Nlc3MucnVuKFsnZ2l0JywncmV2LXBhcnNlJywnLS1zaG93LXRvcGxldmVsJ10sY3dkPXJvb3QsY2FwdHVyZV9vdXRwdXQ9VHJ1ZSx0ZXh0PVRydWUpCmdlPXN0YW1wKCkKcHJpbnQoanNvbi5kdW1wcyh7J2dpdF9zdWJwcm9jZXNzJzp7J2NvbW1hbmQnOlsnZ2l0JywncmV2LXBhcnNlJywnLS1zaG93LXRvcGxldmVsJ10sJ3N0YXJ0ZWRfYXRfdXRjJzpncywnZmluaXNoZWRfYXRfdXRjJzpnZSwnZXhpdF9jb2RlJzpnaXQucmV0dXJuY29kZSwnc3Rkb3V0JzpnaXQuc3Rkb3V0LCdzdGRlcnInOmdpdC5zdGRlcnJ9LCdwcm9ncmFtX3JlYWQnOnsncGlsb3RfQV9jYW5kaWRhdGVfa2V5cyc6c29ydGVkKGEua2V5cygpKSwncGlsb3RfQl9zZWxlY3Rpb25fcG9saWN5JzpiWydzZWxlY3Rpb25fcG9saWN5J10sJ3BpbG90X0Jfc2VsZWN0ZWRfZmlsZV9jb3VudCc6bGVuKGJbJ2ZpbGVzJ10pfX0sZW5zdXJlX2FzY2lpPUZhbHNlKSk="
+  ],
+  "working_directory": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os",
+  "started_at_utc": "2026-09-21T16:06:26.1647173Z",
+  "finished_at_utc": "2026-09-21T16:06:26.2738928Z",
+  "duration_seconds": 0.1082557,
+  "exit_code": 0,
+  "stdout": "{\"git_subprocess\": {\"command\": [\"git\", \"rev-parse\", \"--show-toplevel\"], \"started_at_utc\": \"2026-09-21T16:06:26.242007+00:00\", \"finished_at_utc\": \"2026-09-21T16:06:26.267673+00:00\", \"exit_code\": 0, \"stdout\": \"C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub\\n\", \"stderr\": \"\"}, \"program_read\": {\"pilot_A_candidate_keys\": [\"evidence\", \"records\", \"reports\", \"schema_version\", \"task_id\"], \"pilot_B_selection_policy\": \"Explicit 18-file bounded source/context set from packet/protocol; skip secrets, symlinks/junctions, and unrelated repository areas.\", \"pilot_B_selected_file_count\": 17}}\r\n",
+  "stderr": "",
+  "parsed": {
+    "git_subprocess": {
+      "command": [
+        "git",
+        "rev-parse",
+        "--show-toplevel"
+      ],
+      "started_at_utc": "2026-09-22T00:06:26.242007+08:00",
+      "finished_at_utc": "2026-09-22T00:06:26.267673+08:00",
+      "exit_code": 0,
+      "stdout": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub\n",
+      "stderr": ""
+    },
+    "program_read": {
+      "pilot_A_candidate_keys": [
+        "evidence",
+        "records",
+        "reports",
+        "schema_version",
+        "task_id"
+      ],
+      "pilot_B_selection_policy": "Explicit 18-file bounded source/context set from packet/protocol; skip secrets, symlinks/junctions, and unrelated repository areas.",
+      "pilot_B_selected_file_count": 17
+    }
+  }
+}

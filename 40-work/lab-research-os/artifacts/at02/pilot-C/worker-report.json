@@ -1,0 +1,18 @@
+{
+  "id": "verification-pilot-C-worker",
+  "claim": "Bounded metadata capture completed for the packet-preferred 00_总索引 area within the allowed literature root.",
+  "evidence_ids": [
+    "ev-pilot-C-capture",
+    "ev-pilot-C-index"
+  ],
+  "verification_method": "Worker self-report of program-created capture and schema-shaped records; independent DeepSeek review pending.",
+  "result": "UNCERTAIN",
+  "confidence": 0.7,
+  "anomaly_conflict": [
+    "Independent verification has not yet occurred; candidate bundle reports intentionally empty per protocol."
+  ],
+  "reviewer": "pilot-C-worker",
+  "model_reported": "none",
+  "harness": "local Python process",
+  "observed_at": "2026-09-21T15:53:27.828065Z"
+}

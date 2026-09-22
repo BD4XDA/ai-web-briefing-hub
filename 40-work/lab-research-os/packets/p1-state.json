@@ -1,0 +1,42 @@
+{
+  "priority": "P1",
+  "status": "in_progress",
+  "current_verified_state": [
+    "Inherited P0 is complete: current DSH web port 3080 offline; prior additive recovery, model/tool/spawn/two-turn/new-process-resume procedures have evidence. No re-diagnosis needed.",
+    "Existing scholarly run is CHECKPOINTED_FAILURE at Sol review; Flash evidence and Pro draft retained. No scientific artifact has been integrated."
+  ],
+  "completed": [
+    "Added canonical AGENTS/PROJECT and thin CLAUDE/legacy DEEPSEEK adapters in the existing hub.",
+    "Preserved hub CURRENT original; appended a pointer without replacing original content.",
+    "Implemented append-only checkpoint snapshots, integrity verification, writer exclusion and stale-writer rejection."
+  ],
+  "decisions": [
+    "Project owns memory; harnesses consume it. Legacy memory remains untouched.",
+    "Native instruction discovery is being checked by a bounded worker; do not assume DEEPSEEK.md is auto-loaded.",
+    "Astra handles architecture; worker performs deterministic checkpoint tests."
+  ],
+  "open_questions": [
+    "DSH native instruction loader behavior and Claude import semantics audit pending.",
+    "End-to-end live legacy Sol/Luna tool chain remains unqualified."
+  ],
+  "known_risks": [
+    "Current web is offline, not stably restored as a persistent service.",
+    "Legacy sol-auto visual fallback can include text-only Pro; visual work must use qualified direct routes.",
+    "Two existing router Windows assertion tests fail; no module upgrade performed."
+  ],
+  "in_progress": [
+    "Worker instruction_contract: native entry-point audit.",
+    "Worker continuity_health: checkpoint tests, inherited evidence index."
+  ],
+  "next_actions": [
+    "Close P1 with worker evidence.",
+    "Build P2 handoff and evidence-backed verification contracts.",
+    "Define P3 schemas and delegate bounded census pilot; stop Astra routine census afterward."
+  ],
+  "evidence_references": [
+    "evidence/p0-health-worker.json (worker copy pending; original in prior task outputs/evidence)",
+    "C:/Users/ASUS/Documents/Codex/2026-09-21/referenced-chatgpt-conversation-this-is-an/outputs/ASTRA-TIME-01-P0-CHECKPOINT.md",
+    "evidence/legacy/hub-CURRENT-before-20260921.md",
+    "decisions/0001-canonical-memory.md"
+  ]
+}

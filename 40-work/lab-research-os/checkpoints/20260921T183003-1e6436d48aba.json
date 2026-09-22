@@ -1,0 +1,43 @@
+{
+  "completed": [
+    "Recovered original execution provenance, rejected transcribed evidence and mistyped source excerpts, then used byte-preserving prompt assembly.",
+    "Independent review completed through existing DSH headless Flash route."
+  ],
+  "created_at": "2026-09-21T18:30:03+0800",
+  "current_verified_state": [
+    "AT02-P0 verification closure accepted: 10 contract tests pass in exact subprocess capture, SHA256 bound to current code/test files; independent DSH Flash review PASS0.90, completed with zero tool calls.",
+    "Prior 8 checkpoint tests remain inherited; not rerun.",
+    "Reviewer anomaly entries concern explicitly excluded inventory schemas and unclaimed extra coverage; owner accepts only named tested gates. Production census remains unqualified.",
+    "DSH recovery web inactive at last observation; not needed or restarted. Prior scientific Sol review remains failed."
+  ],
+  "decisions": [
+    "P2 foundation contracts accepted within tested scope; no assertion of complete branch coverage, production inventory validation or scientific validity.",
+    "Keep all failed/rejected evidence; do not silently normalize review limitations into broader PASS."
+  ],
+  "evidence_references": [
+    "evidence/foundation-test-run.json",
+    "evidence/at02-p0-contracts-recapture.json",
+    "evidence/at02-p0-binding.json",
+    "evidence/at02-p0-exact-manifest.json",
+    "evidence/at02-p0-exact-response.json",
+    "evidence/at02-p0-exact-execution.json",
+    "evidence/p2-provenance-clarification.md"
+  ],
+  "in_progress": [],
+  "known_risks": [
+    "Worker manual evidence transcription caused F2/F3/F5 failures; primary evidence must be assembled programmatically.",
+    "Inventory schema mocked in inherited tests; actual schemas and real bundles require pilot validation."
+  ],
+  "next_actions": [
+    "AT02-P1 freeze current foundation contracts.",
+    "AT02-P2 define three bounded pilots, then delegate."
+  ],
+  "open_questions": [
+    "Can workers correctly execute and evidence three real bounded pilots?"
+  ],
+  "parent": "20260921T182326-7173d6f44d05",
+  "priority": "P0",
+  "session": "AT02",
+  "stage": "AT02-P0",
+  "status": "complete"
+}

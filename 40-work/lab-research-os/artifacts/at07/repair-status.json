@@ -1,0 +1,5 @@
+{
+  "regression": "PASS",
+  "derived_repair": "AWAITING_REVIEW",
+  "rollback": "No existing implementation overwritten; do not use derived module if disabled."
+}

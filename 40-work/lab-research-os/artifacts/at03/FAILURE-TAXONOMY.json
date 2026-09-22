@@ -1,0 +1,120 @@
+{
+  "session": "AT03",
+  "state": "P4 closed",
+  "cases": [
+    {
+      "id": "AT03-F-01",
+      "observation": "Vela candidate omitted evidence under the expected key, then retained disallowed schema_version after one repair.",
+      "evidence": [
+        "artifacts/at02/verification/dispatch-failure.json",
+        "artifacts/at02/pilot-A/candidate-bundle.initial.json",
+        "artifacts/at02/pilot-A/candidate-bundle-correction.json",
+        "artifacts/at02/verification/discriminating-receipt.json"
+      ],
+      "classification": [
+        "F7"
+      ],
+      "kind": "confirmed delivery defect",
+      "consequence": "Candidate held; no inventory integration.",
+      "minimum_next_check": "Next authorized worker should correct exact top-level shape from preserved evidence and validate actual bundle shape before model review; no recollection.",
+      "resolution_state": "HELD; queued. Early unknown-field check added to task verifier; Foundation unchanged."
+    },
+    {
+      "id": "AT03-F-02",
+      "observation": "Janus repository_path differed from direct git root; selection text says18 while actual file list has17.",
+      "evidence": [
+        "artifacts/at02/pilot-B/candidate-bundle.json",
+        "artifacts/at02/pilot-B/collection.json",
+        "artifacts/at02/verification/discriminating-receipt.json"
+      ],
+      "classification": [
+        "F1",
+        "F5"
+      ],
+      "kind": "confirmed metadata contradictions",
+      "consequence": "Janus records withheld; incorrect repository path must not guide writes.",
+      "minimum_next_check": "Correct only derived repository metadata/count prose using captured git/count evidence, then review changed claims; preserve original records.",
+      "resolution_state": "HELD; no source or Foundation repair needed this session."
+    },
+    {
+      "id": "AT03-F-03",
+      "observation": "Vela version subprocess could not resolve dsh command; package metadata exists.",
+      "evidence": [
+        "artifacts/at02/pilot-A/cli-version-stream.json",
+        "artifacts/at02/pilot-A/exception.json"
+      ],
+      "classification": [
+        "F4"
+      ],
+      "kind": "bounded execution failure",
+      "consequence": "This invocation establishes no executable version/liveness; does not prove DSH absent or broken.",
+      "minimum_next_check": "Only if a later task needs CLI resolution, inspect process PATH/Windows shim resolution. Existing direct Node/DSH reviewer route already works.",
+      "resolution_state": "Preserved as unknown; no service repair needed."
+    },
+    {
+      "id": "AT03-F-04",
+      "observation": "Initial C reviewer interpreted expected pre-review reports=[] as a failed completed pipeline; initial package omitted full stage contract.",
+      "evidence": [
+        "artifacts/at02/verification/review-parsed.json",
+        "artifacts/at02/verify-pilots-before-stage-clarification.py",
+        "artifacts/at02/verification-C-clarification/review-parsed.json"
+      ],
+      "classification": [
+        "F2",
+        "F6"
+      ],
+      "kind": "review context/stage anomaly",
+      "consequence": "C initially held; one exact-contract clarification removed the anomaly but confidence0.78 still fails0.80 gate.",
+      "minimum_next_check": "No further call this session. A later explicitly scoped review may need actual primary capture/index/collector provenance rather than only delivered collection artifacts.",
+      "resolution_state": "Stage misunderstanding resolved; acceptance remains HELD. No threshold change."
+    },
+    {
+      "id": "AT03-F-05",
+      "observation": "Task verifier's early checks omitted exact candidate key set, allowing A to reach a paid review before final gate rejected extra keys.",
+      "evidence": [
+        "artifacts/at02/verify-pilots-before-stage-clarification.py",
+        "artifacts/at02/verification/acceptance.json",
+        "artifacts/at02/verify-pilots.py"
+      ],
+      "classification": [
+        "F6"
+      ],
+      "kind": "confirmed task-adapter precheck omission",
+      "consequence": "Wasted review effort; final frozen gate still prevented integration.",
+      "minimum_next_check": "Use added exact-key precheck in any future authorized dispatch; do not rerun held A merely to prove the change.",
+      "resolution_state": "Minimal task-script correction applied/preserved. Not a demonstrated frozen Foundation defect."
+    },
+    {
+      "id": "AT02-F-legacy",
+      "observation": "Earlier evidence was transcribed, had inconsistent timing and a mistyped hash; verbose review also reached max-tokens.",
+      "evidence": [
+        "evidence/p2-provenance-clarification.md",
+        "evidence/at02-p0-supplement-prompt.txt",
+        "evidence/at02-p0-supplement-response.json",
+        "evidence/at02-p0-exact-execution.json"
+      ],
+      "classification": [
+        "F3",
+        "F5",
+        "F6"
+      ],
+      "kind": "inherited resolved evidence failure",
+      "consequence": "Earlier reports rejected; not accepted as original execution evidence.",
+      "minimum_next_check": "None: accepted raw recapture and exact-byte review already closed in P0. Do not rerun.",
+      "resolution_state": "Resolved within original scoped claim; lesson reused in pilot verifier."
+    }
+  ],
+  "empty_or_not_demonstrated": [
+    "F8: no actual concurrent checkpoint corruption observed; serialized ownership only, prior negative tests are not runtime failures.",
+    "F9: no observed capability mismatch in these metadata tasks.",
+    "F10: no demonstrated defect in frozen Foundation v0.1 preventing safe bounded work."
+  ],
+  "limitations_and_hypotheses": [
+    "Janus reused a prior worker context: fresh-owner resume NOT PROVEN, a test-design limitation. P5 must use a fresh-context owner.",
+    "Plugin model_id=unknown illustrates possible applicability ambiguity; no fabricated model forced or execution blocked. Schema change remains a candidate.",
+    "Worker report, deterministic fixture and independent model review were distinguishable but easy to confuse; structured verification types/provenance remain candidates, not approved redesign.",
+    "Instruction-memory richness, report ownership and parallel checkpoint behavior remain future hypotheses; no invented failures.",
+    "Low model confidence is a gate result, not by itself an architecture defect. Unknown literature association is valid; no scientific truth claim."
+  ],
+  "decision": "P3/P4 assessment sufficiently closed to attempt exactly one small reversible loop using already accepted frozen manifest data. Held pilot inventories must not be promoted. No retry-until-green."
+}

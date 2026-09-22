@@ -1,0 +1,20 @@
+{
+  "stage": "pre-DeepSeek deterministic input validation",
+  "result": "FAILED",
+  "issue": "Candidate lacks records/evidence",
+  "affected_pilot": "A",
+  "evidence": {
+    "dispatch_execution": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\verifier-dispatch-execution.json",
+    "verifier_script_sha256": "6205405825ab4c83fc8da436fa48fec0afc4f83c2680d5440f3adc4327747ca8",
+    "pilot_A_candidate": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-A\\candidate-bundle.json"
+  },
+  "observed_candidate_counts": {
+    "A": {"records": 5, "evidence": null},
+    "B": {"records": 5, "evidence": 17},
+    "C": {"records": 2, "evidence": 2}
+  },
+  "deepseek_call": "not attempted",
+  "acceptance": "not produced",
+  "next_check": "Pilot A owner must provide an evidence-bearing candidate bundle before a future authorized verifier run.",
+  "rerun": "not performed; this dispatch is terminal for this verification attempt"
+}

@@ -1,0 +1,47 @@
+{
+  "router_package": {
+    "name": "dsh-sol-luna-router",
+    "version": "0.1.0",
+    "description": "DeepSeek Harness Web Sol/Luna routing circuit plugin",
+    "type": "module",
+    "dependencies_names": [
+      "cross-spawn",
+      "semver",
+      "yaml"
+    ],
+    "bin_names": [
+      "dsh-sol-luna-router"
+    ]
+  },
+  "router_sources": [
+    {
+      "path": "C:\\Users\\ASUS\\.dsh\\plugins\\dsh-sol-luna-router\\src\\router.js",
+      "sha256": "3e0e199f57dae161b7141f960ca32e4d140dea35b55b8ec8da318f5399653827",
+      "exported_names": [],
+      "string_literals": [
+        "aborted",
+        "completed",
+        "error",
+        "failed",
+        "function",
+        "max-tokens",
+        "object",
+        "refusal",
+        "sol",
+        "sol_started",
+        "status",
+        "text"
+      ],
+      "line_count": 109
+    },
+    {
+      "path": "C:\\Users\\ASUS\\.dsh\\plugins\\dsh-sol-luna-router\\src\\models.js",
+      "sha256": "b1fef2ff1cb544a8eb80446f10dccfe755fd2bcd167aa415a14dce54cc3798f6",
+      "exported_names": [],
+      "string_literals": [
+        "string"
+      ],
+      "line_count": 49
+    }
+  ]
+}

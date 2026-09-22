@@ -1,0 +1,59 @@
+{
+  "completed": [
+    "One bounded read-only F4 historical thread/time-window retrieval.",
+    "Implemented only local derived F5 raw stream binding and F6 event/acceptance semantics; no frozen Foundation, schema or policy changes.",
+    "One bounded offline regression with explicitly synthetic fixtures and retained original event/stream replay.",
+    "Byte-bound raw stdout/stderr included in complete review package and sent to exactly one independent DSH Flash evidence review.",
+    "Stopped after failed review acceptance; no patch/review retry or criteria relaxation."
+  ],
+  "created_at": "2026-09-22T09:54:01+0800",
+  "current_verified_state": [
+    "F4 INSUFFICIENT_EVIDENCE; no historical rule/decision path recovered.",
+    "F5 repair FAILED acceptance; F6 repair FAILED acceptance. Derived module DISABLED_NOT_ACCEPTED; original code preserved.",
+    "Regression 9 groups / 45 assertion records passed; offline negative controls passed; supplied evidence completeness passed.",
+    "Independent review reports PASS for both at0.72 (<0.80) with nonempty anomaly list; completed/zero tools; acceptance gate FAIL.",
+    "C1 NOT PROVEN, C2 UNCERTAIN, P5 UNCERTAIN, P6 YELLOW unchanged. No successor/AT08 executable packet."
+  ],
+  "decisions": [
+    "Regression success is not repair acceptance or real autonomy proof.",
+    "Keep derived repair unavailable for adoption after failed acceptance. Original implementation/history unchanged; no live integration to roll back.",
+    "Do not prepare executable successor authorization: F4 unobservable and F5/F6 unaccepted."
+  ],
+  "evidence_references": [
+    "artifacts/at07/F4-provenance.json",
+    "artifacts/at07/REPAIR-SCOPE.md",
+    "artifacts/at07/local_repair.py",
+    "artifacts/at07/repair.diff",
+    "artifacts/at07/test_local_repair.py",
+    "artifacts/at07/regression-execution.json",
+    "artifacts/at07/regression.stdout",
+    "artifacts/at07/regression.stderr",
+    "artifacts/at07/completeness.json",
+    "artifacts/at07/review-package.json",
+    "artifacts/at07/review-response.json",
+    "artifacts/at07/review-execution.json",
+    "artifacts/at07/review-acceptance.json",
+    "artifacts/at07/FINAL-REPAIR-STATUS.json"
+  ],
+  "in_progress": [],
+  "known_risks": [
+    "Finite secret screen and capture-declaration limitations remain explicit.",
+    "Scope inputs are deterministic observations supplied to a local gate, not a policy decision engine.",
+    "FAILED denotes failure of acceptance conditions; deterministic tests themselves passed."
+  ],
+  "next_actions": [
+    "Read artifacts/at07/FINAL-REPAIR-STATUS.json and final handoff. Keep derived code disabled for adoption.",
+    "Separate bounded authorization needed to address recorded review concerns or retrieve missing F4 policy decision provenance; no automatic rereview/retry.",
+    "Do not launch successor, alter policy, repeat AT05/pilots/accepted Foundation tests or broaden census."
+  ],
+  "open_questions": [
+    "F4 effective historical rule/input/explanation still UNKNOWN.",
+    "Independent reviewer returned low confidence and anomaly entries; no post-hoc rescue or second review this session.",
+    "Live integration, successful fresh recovery and untested gate branches remain unproven."
+  ],
+  "parent": "20260922T093640-7d71f54b9b3b",
+  "priority": "EXIT",
+  "session": "AT07",
+  "stage": "AT07-repair-verification-terminal",
+  "status": "complete"
+}

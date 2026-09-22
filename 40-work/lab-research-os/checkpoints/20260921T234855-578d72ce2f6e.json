@@ -1,0 +1,64 @@
+{
+  "completed": [
+    "Recovered original execution provenance, rejected transcribed evidence and mistyped source excerpts, then used byte-preserving prompt assembly.",
+    "Independent review completed through existing DSH headless Flash route.",
+    "Recorded stable contract hash manifest; no foundation implementation change.",
+    "Pilot A agent infrastructure; B current project; C one literature metadata area. Each has exact scope, inputs, permissions, procedure, evidence, schemas, gates, stop/escalation and writeback paths."
+  ],
+  "created_at": "2026-09-21T23:48:55+0800",
+  "current_verified_state": [
+    "AT03 entry: latest committed183240 newer than planning183037; valid difference is pilot dispatch definitions. Artifact collection still pending verification; existing workers continue, no new pilot launched.",
+    "AT02-P2: three bounded pilot packets defined; five missing inventory schemas added only because real bundle validation requires them. No pilot executed yet.",
+    "AT02-P1: LAB FOUNDATION v0.1 contract baseline frozen by decisions/0003; use, observe and repair only evidenced defects.",
+    "AT02-P0 verification closure accepted: 10 contract tests pass in exact subprocess capture, SHA256 bound to current code/test files; independent DSH Flash review PASS0.90, completed with zero tool calls.",
+    "Prior 8 checkpoint tests remain inherited; not rerun.",
+    "Reviewer anomaly entries concern explicitly excluded inventory schemas and unclaimed extra coverage; owner accepts only named tested gates. Production census remains unqualified.",
+    "DSH recovery web inactive at last observation; not needed or restarted. Prior scientific Sol review remains failed."
+  ],
+  "decisions": [
+    "P2 foundation contracts accepted within tested scope; no assertion of complete branch coverage, production inventory validation or scientific validity.",
+    "Keep all failed/rejected evidence; do not silently normalize review limitations into broader PASS."
+  ],
+  "evidence_references": [
+    "evidence/foundation-test-run.json",
+    "evidence/at02-p0-contracts-recapture.json",
+    "evidence/at02-p0-binding.json",
+    "evidence/at02-p0-exact-manifest.json",
+    "evidence/at02-p0-exact-response.json",
+    "evidence/at02-p0-exact-execution.json",
+    "evidence/p2-provenance-clarification.md",
+    "decisions/0003-foundation-v0.1.md",
+    "evidence/foundation-v0.1-manifest.json",
+    "protocols/AT02-PILOTS.md",
+    "packets/at02-pilot-A.json",
+    "packets/at02-pilot-A.md",
+    "packets/at02-pilot-B.json",
+    "packets/at02-pilot-B.md",
+    "packets/at02-pilot-C.json",
+    "packets/at02-pilot-C.md",
+    "evidence/at03-entry-artifacts.json",
+    "../../10-briefs/2026-09-21-astra-time-03.md",
+    "artifacts/at02/verify-pilots-before-at03.py",
+    "artifacts/at02/verify-pilots.py"
+  ],
+  "in_progress": [
+    "Vela A, Janus B, Seshat C existing bounded collectors.",
+    "Task-specific verifier adjusted before first use to remove synthetic PASS fixture; frozen foundation files unchanged."
+  ],
+  "known_risks": [
+    "Worker manual evidence transcription caused F2/F3/F5 failures; primary evidence must be assembled programmatically.",
+    "Inventory schema mocked in inherited tests; actual schemas and real bundles require pilot validation."
+  ],
+  "next_actions": [
+    "Read actual collector outputs; classify completeness from execution/evidence, not file presence.",
+    "Delegate deterministic + DeepSeek evidence-package verification; checkpoint P3 closure, then observed failure taxonomy."
+  ],
+  "open_questions": [
+    "Can workers correctly execute and evidence three real bounded pilots?"
+  ],
+  "parent": "20260921T183240-2a5430059765",
+  "priority": "P3",
+  "session": "AT03",
+  "stage": "AT03-P3",
+  "status": "in_progress"
+}

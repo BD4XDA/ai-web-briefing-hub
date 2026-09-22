@@ -17,15 +17,3 @@
 
 <!-- AT04-CLOSURE -->
 AT04 closure: P5 UNCERTAIN; P6 YELLOW. Canonical handoff: [AT04](../40-work/lab-research-os/artifacts/at04/ASTRA-TIME-04-HANDOFF.md). Read scoped checkpoints/LATEST.json through foundation.py; this index does not duplicate state.
-
-<!-- AT05-CLOSURE -->
-AT05 handoff: [AT05](../40-work/lab-research-os/artifacts/at05/ASTRA-TIME-05-HANDOFF.md). Read scoped LATEST through foundation.py for current authoritative state.
-
-<!-- AT06-CLOSURE -->
-AT06 diagnostic handoff: [AT06](../40-work/lab-research-os/artifacts/at06/ASTRA-TIME-06-HANDOFF.md). Scoped LATEST remains authoritative.
-
-<!-- AT07-CLOSURE -->
-AT07 repair-verification handoff: [AT07](../40-work/lab-research-os/artifacts/at07/ASTRA-TIME-07-HANDOFF.md). Scoped LATEST remains authoritative.
-
-<!-- AT08-CLOSURE -->
-AT08 adjudication/design handoff: [AT08](../40-work/lab-research-os/artifacts/at08/ASTRA-TIME-08-HANDOFF.md). Scoped LATEST remains authoritative.

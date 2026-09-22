@@ -1,0 +1,20 @@
+{
+  "command": [
+    "C:/Program Files/nodejs/node.exe",
+    "C:/Users/ASUS/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js",
+    "--profile",
+    "headless",
+    "--patch",
+    "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\evidence\\at02-p0-deepseek-text.patch.yml",
+    "bounded-text-task"
+  ],
+  "pid": 67312,
+  "started_at_utc": "2026-09-22T01:52:51.028365+00:00",
+  "finished_at_utc": "2026-09-22T01:52:58.743196+00:00",
+  "exit_code": 0,
+  "timeout": false,
+  "stdout_sha256": "40c098136b6eab01d45c87a0d0c4325bc11e43fa1367b502c16aae6c624ab6e5",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "package_sha256": "c35638c4dfbfc3327bdba55a5b36c6052cd0ca4d70ac15adeaa34ede79483279",
+  "calls": 1
+}

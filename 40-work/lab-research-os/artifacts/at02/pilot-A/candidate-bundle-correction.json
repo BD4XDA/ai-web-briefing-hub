@@ -1,0 +1,21 @@
+{
+  "task_id": "AT02-pilot-A",
+  "correction": "L1 assembly-only correction",
+  "cause": "The initial bundle used evidence_records instead of the verifier contract's required evidence key.",
+  "preserved_initial_path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-A\\candidate-bundle.initial.json",
+  "before_sha256": "66d816d319f264f097dea54856fba18ccccbe77dc85f7277b9b42a0780719eb3",
+  "after_sha256": "38ee7dd66af2922798247da1609c9d9918018ce91ecba118131077b9d936a38f",
+  "changed_fields": ["evidence_records -> evidence"],
+  "source_observations_recollected": false,
+  "cli_retried": false,
+  "model_calls": 0,
+  "validation": {
+    "top_level_contract": "PASS",
+    "records": 5,
+    "evidence": 5,
+    "record_schemas": "PASS",
+    "evidence_schemas": "PASS",
+    "evidence_references": "PASS",
+    "evidence_hashes": "PASS"
+  }
+}

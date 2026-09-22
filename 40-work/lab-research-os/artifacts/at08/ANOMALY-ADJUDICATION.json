@@ -1,0 +1,282 @@
+{
+  "created_at_utc": "2026-09-22T02:02:35.482528+00:00",
+  "source_path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at07\\review-response.json",
+  "source_sha256": "506dd918a04e53f98cf551714697fbb7f3849d539d5d4a1571a6aa0ac6999c02",
+  "review_package_sha256": "c35638c4dfbfc3327bdba55a5b36c6052cd0ca4d70ac15adeaa34ede79483279",
+  "review_result": "PASS",
+  "confidence": 0.72,
+  "acceptance_unchanged": "FAIL; confidence<0.80 and original anomalies nonempty; disabled repair stays disabled",
+  "scope": "Coordinator read-only adjudication, not a new independent review or model rescoring",
+  "items": [
+    {
+      "id": "A1",
+      "group": "anomaly_conflict",
+      "index": 0,
+      "classification": "C. EXPECTED_SCOPE_LIMITATION",
+      "theme": "unknown event classification",
+      "claim_affected": "F6 unknown events cannot authorize writeback",
+      "concerns": [
+        "F6"
+      ],
+      "available": [
+        "local_repair.py:64,74,75",
+        "regression.stdout E-unknown-or-malformed (4 retained assertions)"
+      ],
+      "missing": "No new evidence needed for the supplied pure gate; future caller adherence remains untested.",
+      "finding": "The clause 'would therefore not block' is contradicted: UNCERTAIN makes writeback_allowed false. Lack of coverage of every future event type is a declared scope limit, not a demonstrated false acceptance.",
+      "false_acceptance": "NO within current pure gate; UNKNOWN if a future caller ignores its decision.",
+      "generality_only": true,
+      "bounded_adoption_blocker": "NO",
+      "reason": "Unknown remains fail-closed; this adjudication does not clear the original review's anomaly field.",
+      "next_check": "Use exact existing control-flow and retained assertion references; do not rerun or change unknown to FAIL merely for score.",
+      "original_text_verbatim": "F6 unknown/passive event handling: bind-less item types not in ACTION/DIAGNOSTIC/PASSIVE (e.g. mcp_tool_call is in ACTION, but an unrecognized item.type) are classed 'unknown' and only add unknown_events (⇒ UNCERTAIN), not FAIL; a syntactically valid but semantically action-like item would therefore not block, so fail-closed holds only as uncertainty, not failure."
+    },
+    {
+      "id": "A2",
+      "group": "anomaly_conflict",
+      "index": 1,
+      "classification": "C. EXPECTED_SCOPE_LIMITATION",
+      "theme": "oversized streams",
+      "claim_affected": "F5 bounded complete stream binding",
+      "concerns": [
+        "F5"
+      ],
+      "available": [
+        "local_repair.py:79,84,85",
+        "regression.stdout G-size"
+      ],
+      "missing": "Unbounded stream support is not claimed or needed.",
+      "finding": "OVERSIZED returns complete=false and no body. Missing hash at that rejected branch prevents a stronger integrity claim but does not falsely claim completeness.",
+      "false_acceptance": "NO within declared size-bound path.",
+      "generality_only": true,
+      "bounded_adoption_blocker": "NO",
+      "reason": "Refusal above the cap is intended handling, not tamper acceptance.",
+      "next_check": "Preserve declared cap and incomplete status; no implementation expansion justified.",
+      "original_text_verbatim": "F5 oversized (max_bytes=65536) is checked before hashing/content, so a genuinely large raw stream yields OVERSIZED with no content and no hash-receipt binding, i.e. degraded to 'cannot bind' rather than tamper-detected; consistent with the declared limitation but means completeness is unavailable for large streams."
+    },
+    {
+      "id": "A3",
+      "group": "anomaly_conflict",
+      "index": 2,
+      "classification": "A. CONSEQUENTIAL_ACCEPTANCE_BLOCKER",
+      "theme": "finite secret screen and permitted input boundary",
+      "claim_affected": "F5 evidence safe to transmit within a declared bounded source domain",
+      "concerns": [
+        "F5"
+      ],
+      "available": [
+        "local_repair.py:85,89,91,93,94,95",
+        "REPAIR-SCOPE.md finite-screen limitation",
+        "regression.stdout G-encoding,G-synthetic-secret,G-explicit-withhold"
+      ],
+      "missing": "Future capture-source/data-class contract and direct provenance showing only permitted non-secret telemetry is sent; handling of explicitly withheld/unknown-safety sources.",
+      "finding": "The boundary-spanning claim is not grounded for oversized/invalid-encoding inputs, which are refused. Unlisted secret formats are a real limitation. No actual secret leak or defect in the supplied historical package is demonstrated. It remains a prospective adoption blocker until the bounded input/transmission contract is evidenced; not a demand for universal secret detection.",
+      "false_acceptance": "POSSIBLE outside an evidenced source contract: complete bytes could be wrongly treated as safe content.",
+      "generality_only": false,
+      "bounded_adoption_blocker": "UNCERTAIN",
+      "reason": "Do not adopt for arbitrary raw logs. A trusted bounded non-secret source can be sufficient, but that future linkage is not yet supplied.",
+      "next_check": "Document allowed telemetry and its actual producer; show safety withholding/unknown input propagation at the packaging boundary. Evidence first; no regex expansion or live run in AT08.",
+      "original_text_verbatim": "Safety screen is regex-based on decoded text; a secret spanning the size/encoding boundary or in an unlisted format is not withheld, so 'complete+content' is not a secret-free guarantee (declared, but affects any real use)."
+    },
+    {
+      "id": "A4",
+      "group": "anomaly_conflict",
+      "index": 3,
+      "classification": "D. DUPLICATE / DERIVED",
+      "theme": "claimed prose/code anomaly-rule mismatch",
+      "claim_affected": "Normal review acceptance threshold",
+      "concerns": [
+        "F6",
+        "verifier trust"
+      ],
+      "available": [
+        "REPAIR-SCOPE.md final paragraph explicitly says no-anomaly",
+        "local_repair.py:44,45",
+        "AT07 user gate and review-acceptance.json"
+      ],
+      "missing": "None to resolve this quoted mismatch.",
+      "finding": "The actual scope states no-anomaly. The reviewer quotation omitted that part. No mismatch is established; rule is unchanged and was correctly enforced.",
+      "false_acceptance": "NO; original gate remained blocked.",
+      "generality_only": false,
+      "bounded_adoption_blocker": "NO",
+      "reason": "Derived from incomplete quotation, not implementation defect.",
+      "next_check": "Include complete sentence in any later authorized package; preserve original review verbatim.",
+      "original_text_verbatim": "Bounded scope inconsistency check: REPAIR-SCOPE.md states gate thresholds '>=0.80/PASS/completed/zero-tools' while review_gate() also FAILs on an empty anomaly_conflict-violating report (anomaly_conflict non-empty ⇒ FAIL), which is stricter than the stated pass rule, not a defect but a divergence between prose and code."
+    },
+    {
+      "id": "A5",
+      "group": "anomaly_conflict",
+      "index": 4,
+      "classification": "B. MATERIAL_BUT_NONBLOCKING_LIMITATION",
+      "theme": "empty stream versus suppressed stream",
+      "claim_affected": "F5 complete capture versus byte integrity",
+      "concerns": [
+        "F5",
+        "verifier trust"
+      ],
+      "available": [
+        "local_repair.py:82,87,89,95,99-104",
+        "AT05 experiment.py process communicate/save/receipt",
+        "review-package raw_execution_bindings",
+        "regression.stdout F-empty,F-not-captured,F-missing,F-truncated,G-no-silent-empty-missing-receipt"
+      ],
+      "missing": "Independent or process-bound evidence of future capture lifecycle/EOF; content alone cannot establish the producer did not suppress bytes.",
+      "finding": "Legitimately captured empty is distinct from not-captured. Hash correctness is not acquisition completeness. Supplied known capture code/receipts support the historical claim under a trusted local producer, not an adversarial-producer claim.",
+      "false_acceptance": "POSSIBLE if a future caller fabricates capture flags/receipt; not demonstrated in historical bytes.",
+      "generality_only": false,
+      "bounded_adoption_blocker": "UNCERTAIN",
+      "reason": "Nonblocking for offline binder contract; future producer binding is a mandatory adoption prerequisite.",
+      "next_check": "Bind process/request identity and EOF/truncation state to actual capture, require unknown/missing state to remain incomplete; no signatures/adversarial guarantees invented.",
+      "original_text_verbatim": "F5 'empty' stream is complete=true while 'not-captured' is complete=false; an empty-but-captured stream is treated as validly bound — consistent with capture semantics, but note empty body cannot be distinguished from a silently suppressed stream absent the captured receipt."
+    },
+    {
+      "id": "L1",
+      "group": "limitations",
+      "index": 0,
+      "classification": "C. EXPECTED_SCOPE_LIMITATION",
+      "theme": "synthetic cases and no live recovery",
+      "claim_affected": "F5/F6 unit behavior versus C1/P5",
+      "concerns": [
+        "F5",
+        "F6"
+      ],
+      "available": [
+        "test_local_repair.py",
+        "regression.stdout fixture_kind",
+        "REPAIR-SCOPE.md"
+      ],
+      "missing": "Real fresh recovery, intentionally not performed.",
+      "finding": "Synthetic fixtures qualify only bounded offline behavior. No live-worker claim is accepted.",
+      "false_acceptance": "Only if mislabeled as real execution; labels and disabled state prevent that promotion here.",
+      "generality_only": true,
+      "bounded_adoption_blocker": "NO",
+      "reason": "No blocker to offline module claim; full loop remains blocked separately.",
+      "next_check": "Keep fixture labels and separate C1/P5; no repeat of tests.",
+      "original_text_verbatim": "Positive/negative fixtures are explicitly synthetic; only AT05 worker.stdout/stderr and event replay are historical input. No real worker recovery, no live successor integration, no policy engine/sandbox behavior is demonstrated or claimed."
+    },
+    {
+      "id": "L2",
+      "group": "limitations",
+      "index": 1,
+      "classification": "A. CONSEQUENTIAL_ACCEPTANCE_BLOCKER",
+      "theme": "unresolved F4 policy path",
+      "claim_affected": "Authorization/readiness of next successor, not local F5/F6 semantics",
+      "concerns": [
+        "F4"
+      ],
+      "available": [
+        "F4-provenance.json",
+        "AT06 diagnostic-evidence.json policy_log_queries",
+        "AT05 worker.stderr"
+      ],
+      "missing": "Historical normalized policy input/effective source/matched rule/explanation.",
+      "finding": "Real observability gap; no evidence that policy was wrong. Historical source is NOT CURRENTLY RECOVERABLE within inspected authorized surfaces.",
+      "false_acceptance": "POSSIBLE if unknown policy provenance is replaced by inferred approval.",
+      "generality_only": false,
+      "bounded_adoption_blocker": "YES",
+      "reason": "Blocks successor gate; does not alone prove a local binder/classifier defect.",
+      "next_check": "Design future producer-side decision capture; do not rerun the same database queries.",
+      "original_text_verbatim": "F4 remains unresolved (INSUFFICIENT_EVIDENCE, zero matched log rows) and is not repaired; the repair package does not touch it."
+    },
+    {
+      "id": "L3",
+      "group": "limitations",
+      "index": 2,
+      "classification": "D. DUPLICATE / DERIVED",
+      "theme": "offline tests, no live model-output gate test",
+      "claim_affected": "F6 gate test scope",
+      "concerns": [
+        "F6",
+        "verifier trust"
+      ],
+      "available": [
+        "regression-execution.json",
+        "review_once.py uses review_gate on actual AT07 response",
+        "review-acceptance.json"
+      ],
+      "missing": "Full live-successor integration is absent.",
+      "finding": "Offline regression scope duplicates L1. The absolute 'not on live model output' claim is incomplete: review_once applied the same gate to the actual AT07 response and rejected it. It still does not qualify all live branches or successor integration.",
+      "false_acceptance": "Not demonstrated; actual low-confidence/nonempty-anomaly response was rejected.",
+      "generality_only": true,
+      "bounded_adoption_blocker": "NO",
+      "reason": "Retain narrow testing scope; do not infer untested branches.",
+      "next_check": "Package existing actual gate invocation/receipt if later review authorized; no second review now.",
+      "original_text_verbatim": "Regression exercised only the derived module offline; review_gate()/acceptance() are unit-tested on fixtures, not on live model output."
+    },
+    {
+      "id": "L4",
+      "group": "limitations",
+      "index": 3,
+      "classification": "D. DUPLICATE / DERIVED",
+      "theme": "adversarial producer cannot be excluded",
+      "claim_affected": "Receipt/hash trust model",
+      "concerns": [
+        "F5",
+        "verifier trust"
+      ],
+      "available": [
+        "pretest-binding.json",
+        "regression-execution.json",
+        "review-package raw streams",
+        "local_repair.py:99-104"
+      ],
+      "missing": "Adversarial source authenticity is not established or claimed; ordinary future producer linkage still needed.",
+      "finding": "Duplicates A5 trust boundary. Cryptographic hashes bind bytes but cannot certify truthful acquisition. Do not require a new attestation architecture to prove a scoped trusted-local capture.",
+      "false_acceptance": "Possible outside trusted producer assumption; no historical fabrication evidence.",
+      "generality_only": true,
+      "bounded_adoption_blocker": "UNCERTAIN",
+      "reason": "Same future producer-evidence prerequisite as A5, not an independent invented defect.",
+      "next_check": "Declare trusted collector and bind its actual process/source outputs; no broad architecture/signature redesign.",
+      "original_text_verbatim": "Trust in the hash bindings depends on the package's own pretest-binding.json/capture receipts; an adversarial producer could not be ruled out from content alone."
+    },
+    {
+      "id": "L5",
+      "group": "limitations",
+      "index": 4,
+      "classification": "C. EXPECTED_SCOPE_LIMITATION",
+      "theme": "reviewer did not re-execute assertions",
+      "claim_affected": "Independent model evidence review scope",
+      "concerns": [
+        "verifier trust"
+      ],
+      "available": [
+        "review-response verification_method",
+        "review-execution.json",
+        "regression.stdout/stderr and capture receipt"
+      ],
+      "missing": "Independent machine execution, never requested as this review's claim.",
+      "finding": "Correct separation: model reviews supplied execution evidence. It need not rerun tests to satisfy that limited role. It does not certify validator correctness.",
+      "false_acceptance": "Only if evidence review is falsely promoted to independent execution; not claimed.",
+      "generality_only": true,
+      "bounded_adoption_blocker": "NO",
+      "reason": "Expected review mode, not a mandatory extra execution.",
+      "next_check": "Keep role distinction explicit; no reassurance rerun.",
+      "original_text_verbatim": "No independent per-assertion recomputation was performed by this reviewer; assertions are credited as reported evidence."
+    },
+    {
+      "id": "L6",
+      "group": "limitations",
+      "index": 5,
+      "classification": "B. MATERIAL_BUT_NONBLOCKING_LIMITATION",
+      "theme": "scope_by_action is supplied deterministic input",
+      "claim_affected": "Local acceptance function versus policy/action-scope acquisition",
+      "concerns": [
+        "F6",
+        "F4"
+      ],
+      "available": [
+        "local_repair.py:48-58",
+        "REPAIR-SCOPE.md caller contract",
+        "test_local_repair.py synthetic scope flags"
+      ],
+      "missing": "Actual future mapping from observed action/path/policy decision to supplied scope values.",
+      "finding": "The function is deliberately not a policy engine. Offline tests cannot prove real scope facts. Unbound caller booleans must not substitute for observed policy/path evidence in a future execution.",
+      "false_acceptance": "POSSIBLE if future caller supplies True without evidence.",
+      "generality_only": false,
+      "bounded_adoption_blocker": "UNCERTAIN",
+      "reason": "Nonblocking for bounded function tests; mandatory producer/decision binding before integration.",
+      "next_check": "Specify evidence-derived scope mapping and missing/contradictory-input stops; requires design/capture evidence, not immediate module refactor.",
+      "original_text_verbatim": "Scope checks (scope_by_action) are deterministic test inputs, not a command policy decision."
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "capture_id": "at02-pilot-C-capture-20260921",
+  "task_id": "AT02-pilot-C",
+  "captured_at": "2026-09-21T15:51:56.645571Z",
+  "source_root": "D:\\A每日论文阅读_沉积物磷形态与生物地球化学",
+  "top_level_listing": [
+    {
+      "relative_path": "00_总索引",
+      "absolute_path": "D:\\A每日论文阅读_沉积物磷形态与生物地球化学\\00_总索引",
+      "entry_type": "directory",
+      "extension": "",
+      "bytes": null,
+      "mtime_utc": "2026-07-31T05:55:40.788933Z",
+      "attributes": {
+        "is_symlink": false
+      }
+    },
+    {
+      "relative_path": "01_我的阅读资料",
+      "absolute_path": "D:\\A每日论文阅读_沉积物磷形态与生物地球化学\\01_我的阅读资料",
+      "entry_type": "directory",
+      "extension": "",
+      "bytes": null,
+      "mtime_utc": "2026-07-31T07:19:13.431942Z",
+      "attributes": {
+        "is_symlink": false
+      }
+    },
+    {
+      "relative_path": "02_导师版读书笔记",
+      "absolute_path": "D:\\A每日论文阅读_沉积物磷形态与生物地球化学\\02_导师版读书笔记",
+      "entry_type": "directory",
+      "extension": "",
+      "bytes": null,
+      "mtime_utc": "2026-07-31T07:41:47.005773Z",
+      "attributes": {
+        "is_symlink": false
+      }
+    },
+    {
+      "relative_path": "70_Codex技能包",
+      "absolute_path": "D:\\A每日论文阅读_沉积物磷形态与生物地球化学\\70_Codex技能包",
+      "entry_type": "directory",
+      "extension": "",
+      "bytes": null,
+      "mtime_utc": "2026-08-01T15:11:34.291831Z",
+      "attributes": {
+        "is_symlink": false
+      }
+    },
+    {
+      "relative_path": "70_Codex技能包.zip",
+      "absolute_path": "D:\\A每日论文阅读_沉积物磷形态与生物地球化学\\70_Codex技能包.zip",
+      "entry_type": "file",
+      "extension": ".zip",
+      "bytes": 119207,
+      "mtime_utc": "2026-08-01T15:59:00.083313Z",
+      "attributes": {
+        "is_symlink": false
+      }
+    },
+    {
+      "relative_path": "80_备份与云端同步",
+      "absolute_path": "D:\\A每日论文阅读_沉积物磷形态与生物地球化学\\80_备份与云端同步",
+      "entry_type": "directory",
+      "extension": "",
+      "bytes": null,
+      "mtime_utc": "2026-08-26T05:57:39.203172Z",
+      "attributes": {
+        "is_symlink": false
+      }
+    },
+    {
+      "relative_path": "90_智能体工作区",
+      "absolute_path": "D:\\A每日论文阅读_沉积物磷形态与生物地球化学\\90_智能体工作区",
+      "entry_type": "directory",
+      "extension": "",
+      "bytes": null,
+      "mtime_utc": "2026-08-12T11:57:54.729819Z",
+      "attributes": {
+        "is_symlink": false
+      }
+    },
+    {
+      "relative_path": "README_使用说明.md",
+      "absolute_path": "D:\\A每日论文阅读_沉积物磷形态与生物地球化学\\README_使用说明.md",
+      "entry_type": "file",
+      "extension": ".md",
+      "bytes": 3900,
+      "mtime_utc": "2026-08-01T07:59:12.818142Z",
+      "attributes": {
+        "is_symlink": false
+      }
+    }
+  ],
+  "selection": {
+    "selected_area": "D:\\A每日论文阅读_沉积物磷形态与生物地球化学\\00_总索引",
+    "selection_reason": "00_总索引 exists and is the packet-preferred index/manifest area; bounded to depth 2.",
+    "max_files": 30,
+    "max_depth": 2,
+    "omissions": [
+      "All areas other than 00_总索引",
+      "symlinked entries",
+      "files deeper than depth 2"
+    ]
+  },
+  "selected_area_directories": [],
+  "selected_area_files": [
+    {
+      "relative_path": "总索引.md",
+      "absolute_path": "D:\\A每日论文阅读_沉积物磷形态与生物地球化学\\00_总索引\\总索引.md",
+      "entry_type": "file",
+      "extension": ".md",
+      "bytes": 16239,
+      "mtime_utc": "2026-09-13T08:34:23.770154Z",
+      "attributes": {
+        "is_symlink": false
+      }
+    }
+  ],
+  "safe_index": {
+    "path": "D:\\A每日论文阅读_沉积物磷形态与生物地球化学\\00_总索引\\总索引.md",
+    "captured": true,
+    "snapshot_path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-C\\index-snapshot.md",
+    "bytes": 16239,
+    "sha256": "d4fdb5e7ad4e74311bf3a7f60ba25d4adb46f60e4ec7844ad47619bb8cc71ff9",
+    "purpose": "explicit project association and structure only; no paper bodies or PDFs read"
+  }
+}

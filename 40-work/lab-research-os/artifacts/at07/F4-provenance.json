@@ -1,0 +1,24 @@
+{
+  "captured_at_utc": "2026-09-22T01:50:47.643659+00:00",
+  "read_only": true,
+  "queries": [
+    {
+      "sql": "SELECT target,count(*) FROM logs WHERE thread_id=? GROUP BY target",
+      "params": [
+        "01a0c6aa-340f-7703-8fe8-4256283b700d"
+      ],
+      "rows": []
+    },
+    {
+      "sql": "SELECT id,ts,level,target,thread_id,process_uuid FROM logs WHERE ts BETWEEN ? AND ? AND (target LIKE '%policy%' OR target LIKE '%approval%' OR target LIKE '%sandbox%' OR target LIKE '%tools::router%') LIMIT 40",
+      "params": [
+        1790039438,
+        1790039467
+      ],
+      "rows": []
+    }
+  ],
+  "status": "INSUFFICIENT_EVIDENCE",
+  "original_command_evidence": "artifacts/at05/worker.stderr",
+  "limitation": "No matched historical decision provenance recovered; no current configuration substituted."
+}

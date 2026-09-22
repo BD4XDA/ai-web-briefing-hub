@@ -1,0 +1,343 @@
+{
+  "task_id": "AT02-pilot-B",
+  "records": [
+    {
+      "id": "pilot-b-project",
+      "label": "Canonical lab-research-os project root",
+      "observed_at": "2026-09-21T15:52:58.928069+00:00",
+      "status": "observed",
+      "evidence_ids": [
+        "pilot-b-ev-01",
+        "pilot-b-ev-17"
+      ],
+      "facts": [
+        "project_id=lab-research-os",
+        "root=C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os",
+        "root discovered from a child output directory via marker identity"
+      ],
+      "unknowns": [
+        "Repository root and project root are distinct; no broader repository inventory was performed"
+      ],
+      "kind": "project",
+      "project_id": "lab-research-os",
+      "root_path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os",
+      "repository_path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu",
+      "root_discovery": "tools/foundation.py project_root(child_directory)"
+    },
+    {
+      "id": "pilot-b-workspace",
+      "label": "Bounded canonical workspace sample",
+      "observed_at": "2026-09-21T15:52:58.928069+00:00",
+      "status": "observed",
+      "evidence_ids": [
+        "pilot-b-ev-02",
+        "pilot-b-ev-03"
+      ],
+      "facts": [
+        "Sample selection is explicit and limited to 18 files",
+        "No symlinks or junctions were followed",
+        "No secrets/auth/config values were read into records"
+      ],
+      "unknowns": [
+        "This is not a drive-wide or repository-wide census",
+        "Unselected files are omitted by policy"
+      ],
+      "kind": "workspace",
+      "root_path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os",
+      "coverage": "bounded-sample",
+      "sampled_files": 17,
+      "duplicate_candidates": []
+    },
+    {
+      "id": "pilot-b-instructions",
+      "label": "Canonical instruction memory sources",
+      "observed_at": "2026-09-21T15:52:58.928069+00:00",
+      "status": "observed",
+      "evidence_ids": [
+        "pilot-b-ev-02",
+        "pilot-b-ev-05",
+        "pilot-b-ev-06",
+        "pilot-b-ev-07"
+      ],
+      "facts": [
+        "AGENTS.md is the project procedure source",
+        "Pilot procedure requires original machine-captured evidence",
+        "Collection forbids model calls and checkpoint writes"
+      ],
+      "unknowns": [
+        "No claim is made that these instructions are globally loaded by every harness"
+      ],
+      "kind": "instruction-memory",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\AGENTS.md",
+      "owner": "project",
+      "authority": "canonical project instructions and packet",
+      "loader": "explicit bounded file read"
+    },
+    {
+      "id": "pilot-b-harness",
+      "label": "Pilot B collection harness",
+      "observed_at": "2026-09-21T15:52:58.928069+00:00",
+      "status": "configured",
+      "evidence_ids": [
+        "pilot-b-ev-08",
+        "pilot-b-ev-07"
+      ],
+      "facts": [
+        "Collection used local Python stdlib plus project contracts modules",
+        "No model call or external route was used"
+      ],
+      "unknowns": [
+        "No live agent/model identity was requested or tested in collection"
+      ],
+      "kind": "agent-harness",
+      "entity_type": "harness",
+      "model_id": "unknown",
+      "harness": "python collector.py",
+      "capabilities": [
+        "filesystem metadata",
+        "hashing",
+        "local schema validation"
+      ]
+    },
+    {
+      "id": "pilot-b-baseline-current",
+      "label": "Packet baseline versus current snapshot",
+      "observed_at": "2026-09-21T15:52:58.928069+00:00",
+      "status": "observed",
+      "evidence_ids": [
+        "pilot-b-ev-08",
+        "pilot-b-ev-17"
+      ],
+      "facts": [
+        "Packet expected_checkpoint=20260921T183037-034ade6bf069",
+        "Current committed checkpoint=20260921T234855-578d72ce2f6e",
+        "Current state includes Pilot B packet/schema additions"
+      ],
+      "unknowns": [
+        "This is planned P2-to-P3 context drift, not a source-data contradiction"
+      ],
+      "kind": "conflict",
+      "concern": "Expected planning baseline differs from current committed snapshot",
+      "classification": "candidate",
+      "next_check": "Coordinator confirms packet baseline/current checkpoint transition before integration"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "pilot-b-ev-01",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\.lab-project.json",
+      "sha256": "9276710c25fb38a97deaa0b6f4e151bd5ee6f59ed62688e002b261d7f53c743e",
+      "captured_at": "2026-09-21T15:52:58.931294+00:00",
+      "locator": ".lab-project.json",
+      "scope": "bounded Pilot B source/context observation",
+      "sensitivity": "local-metadata",
+      "collector": "artifacts/at02/pilot-B/collector.py"
+    },
+    {
+      "id": "pilot-b-ev-02",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\AGENTS.md",
+      "sha256": "8130570ab08a572e9e7c59e9fccbf2e884d7dfc304b02b9234719f5d29f97e50",
+      "captured_at": "2026-09-21T15:52:58.931471+00:00",
+      "locator": "AGENTS.md",
+      "scope": "bounded Pilot B source/context observation",
+      "sensitivity": "local-metadata",
+      "collector": "artifacts/at02/pilot-B/collector.py"
+    },
+    {
+      "id": "pilot-b-ev-03",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\PROJECT.md",
+      "sha256": "27ad95bc7cd5048126ecd128342cca67067b5edb19bc7c6c967918802543eeae",
+      "captured_at": "2026-09-21T15:52:58.931602+00:00",
+      "locator": "PROJECT.md",
+      "scope": "bounded Pilot B source/context observation",
+      "sensitivity": "local-metadata",
+      "collector": "artifacts/at02/pilot-B/collector.py"
+    },
+    {
+      "id": "pilot-b-ev-04",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\decisions\\0003-foundation-v0.1.md",
+      "sha256": "585dbe24595b93d85a1bddbceed8d3eaa65c49853a2e54bd02e4ef681f266513",
+      "captured_at": "2026-09-21T15:52:58.931741+00:00",
+      "locator": "decisions/0003-foundation-v0.1.md",
+      "scope": "bounded Pilot B source/context observation",
+      "sensitivity": "local-metadata",
+      "collector": "artifacts/at02/pilot-B/collector.py"
+    },
+    {
+      "id": "pilot-b-ev-05",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\protocols\\HANDOFF.md",
+      "sha256": "ba5e90aa979dc6bd13b2fbf9a224fad53d6122bf8dfa98eea82c946407523b47",
+      "captured_at": "2026-09-21T15:52:58.931865+00:00",
+      "locator": "protocols/HANDOFF.md",
+      "scope": "bounded Pilot B source/context observation",
+      "sensitivity": "local-metadata",
+      "collector": "artifacts/at02/pilot-B/collector.py"
+    },
+    {
+      "id": "pilot-b-ev-06",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\protocols\\VERIFICATION.md",
+      "sha256": "0c5e79c792256037e19e9dc4b96d970170fc32cf27f9feab9a035d8e1bd9df5f",
+      "captured_at": "2026-09-21T15:52:58.931985+00:00",
+      "locator": "protocols/VERIFICATION.md",
+      "scope": "bounded Pilot B source/context observation",
+      "sensitivity": "local-metadata",
+      "collector": "artifacts/at02/pilot-B/collector.py"
+    },
+    {
+      "id": "pilot-b-ev-07",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\protocols\\AT02-PILOTS.md",
+      "sha256": "0f4b0e17041441fe4eed8836e1d1c085f1c37cf5192110ef2a3bb23eb7466ce7",
+      "captured_at": "2026-09-21T15:52:58.932105+00:00",
+      "locator": "protocols/AT02-PILOTS.md",
+      "scope": "bounded Pilot B source/context observation",
+      "sensitivity": "local-metadata",
+      "collector": "artifacts/at02/pilot-B/collector.py"
+    },
+    {
+      "id": "pilot-b-ev-08",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\packets\\at02-pilot-B.json",
+      "sha256": "56a47cc0dfbf184a5c8c9965a5e59235608f4147e5e99f8834d7f4624f26f48d",
+      "captured_at": "2026-09-21T15:52:58.932222+00:00",
+      "locator": "packets/at02-pilot-B.json",
+      "scope": "bounded Pilot B source/context observation",
+      "sensitivity": "local-metadata",
+      "collector": "artifacts/at02/pilot-B/collector.py"
+    },
+    {
+      "id": "pilot-b-ev-09",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\packets\\at02-pilot-B.md",
+      "sha256": "169d3f9d5dca1fb2578767082d401e94d8c067d684a1da6bdc0d08315d702d9f",
+      "captured_at": "2026-09-21T15:52:58.932350+00:00",
+      "locator": "packets/at02-pilot-B.md",
+      "scope": "bounded Pilot B source/context observation",
+      "sensitivity": "local-metadata",
+      "collector": "artifacts/at02/pilot-B/collector.py"
+    },
+    {
+      "id": "pilot-b-ev-10",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\tools\\foundation.py",
+      "sha256": "4bd38c9aa8ec24f4ba58c4fb1fa2a94769e866d23dd03e19437ae61ae1c6bc53",
+      "captured_at": "2026-09-21T15:52:58.932474+00:00",
+      "locator": "tools/foundation.py",
+      "scope": "bounded Pilot B source/context observation",
+      "sensitivity": "local-metadata",
+      "collector": "artifacts/at02/pilot-B/collector.py"
+    },
+    {
+      "id": "pilot-b-ev-11",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\tools\\contracts.py",
+      "sha256": "b4517c1ac37062377b8899ed1f84ea535c88b90ed25cc73aeea82f769fcf93d1",
+      "captured_at": "2026-09-21T15:52:58.932594+00:00",
+      "locator": "tools/contracts.py",
+      "scope": "bounded Pilot B source/context observation",
+      "sensitivity": "local-metadata",
+      "collector": "artifacts/at02/pilot-B/collector.py"
+    },
+    {
+      "id": "pilot-b-ev-12",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\schemas\\project.schema.json",
+      "sha256": "338c140e31305b9b825c58dc623f464cfadbe06756bfd29bcfc17e23d7a961d5",
+      "captured_at": "2026-09-21T15:52:58.932718+00:00",
+      "locator": "schemas/project.schema.json",
+      "scope": "bounded Pilot B source/context observation",
+      "sensitivity": "local-metadata",
+      "collector": "artifacts/at02/pilot-B/collector.py"
+    },
+    {
+      "id": "pilot-b-ev-13",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\schemas\\workspace.schema.json",
+      "sha256": "15b8f1dfd9ab2ae8675e03e567319d661d0652d8ba5170badf6f1e808d7bb21c",
+      "captured_at": "2026-09-21T15:52:58.932838+00:00",
+      "locator": "schemas/workspace.schema.json",
+      "scope": "bounded Pilot B source/context observation",
+      "sensitivity": "local-metadata",
+      "collector": "artifacts/at02/pilot-B/collector.py"
+    },
+    {
+      "id": "pilot-b-ev-14",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\schemas\\instruction-memory.schema.json",
+      "sha256": "6c7630c6df60dc370011d1c92954a77187fd60ea0980725675aaef7bdeaa894a",
+      "captured_at": "2026-09-21T15:52:58.932959+00:00",
+      "locator": "schemas/instruction-memory.schema.json",
+      "scope": "bounded Pilot B source/context observation",
+      "sensitivity": "local-metadata",
+      "collector": "artifacts/at02/pilot-B/collector.py"
+    },
+    {
+      "id": "pilot-b-ev-15",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\schemas\\agent-harness.schema.json",
+      "sha256": "b0085b772fcd09f45d8b040a7e6f993cc188e7680ea14de12c21ed919d0dfe45",
+      "captured_at": "2026-09-21T15:52:58.933078+00:00",
+      "locator": "schemas/agent-harness.schema.json",
+      "scope": "bounded Pilot B source/context observation",
+      "sensitivity": "local-metadata",
+      "collector": "artifacts/at02/pilot-B/collector.py"
+    },
+    {
+      "id": "pilot-b-ev-16",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\schemas\\conflict.schema.json",
+      "sha256": "31fc6a58860119f8514e94175cc195abbd7cb0817b61effe51d3fd06bb91cb20",
+      "captured_at": "2026-09-21T15:52:58.933198+00:00",
+      "locator": "schemas/conflict.schema.json",
+      "scope": "bounded Pilot B source/context observation",
+      "sensitivity": "local-metadata",
+      "collector": "artifacts/at02/pilot-B/collector.py"
+    },
+    {
+      "id": "pilot-b-ev-17",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\checkpoints\\20260921T234855-578d72ce2f6e.json",
+      "sha256": "578d72ce2f6e8fddbaf49d2b52a12a0f11dfeab197a840883e4e5e6a9fbf7efa",
+      "captured_at": "2026-09-21T15:52:58.933320+00:00",
+      "locator": "checkpoints/20260921T234855-578d72ce2f6e.json",
+      "scope": "bounded Pilot B source/context observation",
+      "sensitivity": "local-metadata",
+      "collector": "artifacts/at02/pilot-B/collector.py"
+    }
+  ],
+  "reports": [
+    {
+      "id": "deepseek-B",
+      "claim": "Pilot B bounded canonical root/context inventory and deterministic schema/bundle validation completed.",
+      "evidence_ids": [
+        "pilot-b-ev-01",
+        "pilot-b-ev-02",
+        "pilot-b-ev-03",
+        "pilot-b-ev-05",
+        "pilot-b-ev-07",
+        "pilot-b-ev-08",
+        "pilot-b-ev-10",
+        "pilot-b-ev-11",
+        "pilot-b-ev-17"
+      ],
+      "verification_method": "Cross-checked each record's facts and evidence_ids against collection.json file inventory/hashes and candidate-bundle.json; compared execution.json validation block and observations.json drift note. Exact response: C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\verification\\review-response.json",
+      "result": "UNCERTAIN",
+      "confidence": 0.6,
+      "anomaly_conflict": [
+        "Workspace record states sampled_files=17 while the record text and selection_policy say the explicit bounded set is 18 files; collection.json 'files' array holds 17 entries. Off-by-one between stated selection and actual sample is unreconciled.",
+        "collection.json 'evidence_ids' lists pilot-b-ev-01..17 and worker-report cites all 17, but candidate-bundle evidence includes only ev-01..ev-17 with records referencing a subset (ev-04, ev-06, ev-09, ev-12..ev-16 unreferenced) — coverage of cited evidence is unevenly distributed across records.",
+        "execution.json reports validation PASS=5/17/1 and a 'fixture_report' explicitly labelled 'Temporary fixture only; not independent verification', so the PASS does not attest these artifact contents."
+      ],
+      "reviewer": "independent DeepSeek evidence review",
+      "model_reported": "deepseek-flash (DSH requested selection)",
+      "harness": "DSH headless, provider deepseek-official",
+      "observed_at": "2026-09-21T16:01:14.123303+00:00"
+    }
+  ]
+}

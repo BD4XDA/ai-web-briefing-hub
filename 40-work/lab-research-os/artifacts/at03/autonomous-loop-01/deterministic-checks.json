@@ -1,0 +1,20 @@
+{
+  "result": "PASS",
+  "errors": [],
+  "checks": {
+    "actual_source_bytes": 1606,
+    "actual_manifest_sha256": "1e96bf20c4ac476cc4ab92d626d800f0694900aadeb370ed834f3e76332c3535",
+    "candidate_entry_count": 10,
+    "manifest_file_count": 10,
+    "sorted": true,
+    "unique": true,
+    "candidate_equals_expected_entries": true
+  },
+  "command_stream": [
+    "programmatic JSON load",
+    "sha256(source bytes)",
+    "sorted entries derivation",
+    "deterministic field/count/syntax/containment comparison"
+  ],
+  "captured_at_utc": "2026-09-21T16:22:48.482048+00:00"
+}

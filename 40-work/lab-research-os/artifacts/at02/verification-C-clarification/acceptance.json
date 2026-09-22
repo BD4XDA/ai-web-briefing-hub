@@ -1,0 +1,16 @@
+[
+  {
+    "pilot": "C",
+    "result": "HELD",
+    "error": "Integration held: unresolved verification",
+    "limitations": [
+      "Bounded sample: 1 file, depth 2, max 30; non-selected areas, symlinks, depth>2, PDFs/paper bodies and secret/auth/config values excluded — no drive-wide or corpus-coverage claim.",
+      "Project association remains unknown; no supported project identifier established.",
+      "No duplicate candidate established; filename/size inference not used.",
+      "No live-service or signed-authenticity claim; observations are stored snapshot artifacts, not live drive state.",
+      "Independent DeepSeek verification report and final bundle acceptance gate have not yet run; this stage's result is interim.",
+      "Reviews supplied evidence only; collector not re-executed, deterministic checks not re-run or validated for correctness.",
+      "Collection metadata itself (raw-capture.json, index-snapshot.md, collector.py) not re-read; hash equality relayed from execution.json."
+    ]
+  }
+]

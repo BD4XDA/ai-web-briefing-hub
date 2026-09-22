@@ -26,6 +26,3 @@ AT06 diagnostic handoff: [AT06](../40-work/lab-research-os/artifacts/at06/ASTRA-
 
 <!-- AT07-CLOSURE -->
 AT07 repair-verification handoff: [AT07](../40-work/lab-research-os/artifacts/at07/ASTRA-TIME-07-HANDOFF.md). Scoped LATEST remains authoritative.
-
-<!-- AT08-CLOSURE -->
-AT08 adjudication/design handoff: [AT08](../40-work/lab-research-os/artifacts/at08/ASTRA-TIME-08-HANDOFF.md). Scoped LATEST remains authoritative.

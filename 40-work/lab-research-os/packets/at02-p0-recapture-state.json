@@ -1,0 +1,40 @@
+{
+  "priority": "P0",
+  "status": "in_progress",
+  "session": "AT02",
+  "stage": "AT02-P0",
+  "current_verified_state": [
+    "P1 eight checkpoint tests inherited unchanged.",
+    "P2 ten contract tests recaptured through subprocess with exact streams and source/test hashes; exit 0.",
+    "Original p2-test-run was a formatted/transcribed tool report; original DeepSeek record belonged to AT01. Preserved with provenance clarification.",
+    "Fresh DSH Flash review completed with zero tools; UNCERTAIN0.72 limited to source/test consistency because its prompt used earlier reported evidence."
+  ],
+  "completed": [
+    "Minimum missing raw execution capture recovered without rerunning P1.",
+    "Working DSH headless text route reused; web service remains unnecessary."
+  ],
+  "decisions": [
+    "Use new exact recapture as execution evidence; old reports remain historical only.",
+    "One supplementary DeepSeek review may consume current raw evidence plus computed hash binding. No broad diagnostics."
+  ],
+  "open_questions": [
+    "Supplementary review acceptance pending."
+  ],
+  "known_risks": [
+    "Inventory schema portion remains mocked; no production census qualification yet."
+  ],
+  "in_progress": [
+    "deepseek_closure: bounded source/run binding supplement."
+  ],
+  "next_actions": [
+    "Accept only scoped high-confidence review then commit AT02-P0 complete.",
+    "Freeze existing contract foundation at AT02-P1; use it for bounded pilots."
+  ],
+  "evidence_references": [
+    "evidence/foundation-test-run.json",
+    "evidence/at02-p0-contracts-recapture.json",
+    "evidence/p2-provenance-clarification.md",
+    "evidence/at02-p0-deepseek-verification.json",
+    "incidents/AT02-P0-evidence-clarification.md"
+  ]
+}

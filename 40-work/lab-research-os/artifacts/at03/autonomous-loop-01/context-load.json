@@ -1,0 +1,45 @@
+{
+  "task_id": "AT03-loop-01",
+  "owner": "fresh-loop-worker",
+  "started_at_utc": "2026-09-21T16:22:48.480459+00:00",
+  "canonical_root": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os",
+  "marker": {
+    "schema_version": 1,
+    "project_id": "lab-research-os",
+    "canonical_rules": "AGENTS.md",
+    "state": "CHECKPOINT.md",
+    "parent_hub": "../..",
+    "mode": "phase-0-foundation"
+  },
+  "expected_checkpoint": "20260922T001240-6ee0580095c8",
+  "input_source": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/evidence/foundation-v0.1-manifest.json",
+  "commands": [
+    "python tools/foundation.py show",
+    "python -c \"import jsonschema; print('validator available')\"",
+    "python tools/contracts.py packet packets/at03-loop-01.json"
+  ],
+  "observed_checkpoint": "20260922T001240-6ee0580095c8",
+  "loaded_context": [
+    "AGENTS.md",
+    "PROJECT.md",
+    "CHECKPOINT.md",
+    "protocols/RESUME.md",
+    "protocols/HANDOFF.md",
+    "packets/at03-loop-01.md",
+    "packets/at03-loop-01.json",
+    "evidence/foundation-v0.1-manifest.json"
+  ],
+  "excluded_context": [
+    "held pilot inventories",
+    "new pilot collection",
+    "foundation tests and frozen-file rehash audit"
+  ],
+  "write_set": [
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/artifacts/at03/autonomous-loop-01",
+    "artifacts/at03/manifest-index-v0.1.json",
+    "checkpoints",
+    "CHECKPOINT.md",
+    "packets/at03-p5-worker-state.json"
+  ],
+  "finished_at_utc": "2026-09-21T16:22:48.480591+00:00"
+}

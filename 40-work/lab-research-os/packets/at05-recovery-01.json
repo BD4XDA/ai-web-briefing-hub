@@ -1,0 +1,44 @@
+{
+  "task_id": "AT05-recovery-01",
+  "project_id": "lab-research-os",
+  "project_root": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os",
+  "expected_checkpoint": "20260922T075755-55921d9fb875",
+  "owner": "one-new-ephemeral-cli-successor",
+  "objective": "C1: fresh invocation recovers project-owned state using observed reads. C2: predeclared gate decides this run automatically. Output only a release/state receipt, not the AT03 index.",
+  "allowed_read_roots": [
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os",
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/../../AGENTS.md",
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/../../60-handoffs/CURRENT.md"
+  ],
+  "write_paths": [
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/artifacts/at05",
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/packets/at05-terminal.json",
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/checkpoints",
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/CHECKPOINT.md"
+  ],
+  "excluded_scope": [
+    "No prior session/resume/fork/conversation input",
+    "No held pilot data, census, frozen file edits or accepted test reruns",
+    "No network tools, extra workers or retry; one CLI invocation and one DeepSeek review",
+    "Worker is read-only; controller owns exclusive artifact writeback and CAS checkpoint"
+  ],
+  "input_evidence_ids": [
+    "foundation-v0.1-manifest",
+    "at04-current-checkpoint"
+  ],
+  "acceptance_criteria": [
+    "Rules in packets/at05-recovery-01.md are fixed before invocation and bound by prelaunch hashes.",
+    "Recovery tool must capture real root ascent, exact reads/hashes, current checkpoint integrity and time; CLI trace must show its successful invocation.",
+    "Receipt exactly equals project_id/release/frozen_file_count/observed_checkpoint from captured accepted inputs.",
+    "One independent DeepSeek review PASS confidence>=0.80<=1, correct fields/types, no anomalies, completed, zero tools, different session from worker.",
+    "Automatic gate produces PASS/FAIL/UNCERTAIN with named reasons; no coordinator-supplied verdict. Canonical receipt only on PASS and exact-byte equality.",
+    "C1/C2 separate; full-loop promotion only after all gates and CAS commit succeed. Missing trace or review is UNCERTAIN; contradictory output is FAIL."
+  ],
+  "verification_route": "Existing DSH headless DeepSeek Flash text runner; supplied evidence review only.",
+  "budget": {
+    "max_files": 16,
+    "max_depth": 2,
+    "max_model_calls": 3
+  },
+  "resume_action": "Read packets/at05-recovery-01.md. Only use python artifacts/at05/experiment.py observe, then return the receipt JSON without extra commands. Controller handles verification/writeback/checkpoint."
+}

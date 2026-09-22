@@ -1,0 +1,99 @@
+{
+  "audit_scope": "ASTRA TIME P1 instruction/memory adapter evidence; bounded read-only audit",
+  "as_of": "2026-09-21",
+  "project": {
+    "path": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub",
+    "root_marker": ".git",
+    "minimal_discovery": [
+      "60-handoffs/CURRENT.md",
+      "AGENTS.md",
+      "CLAUDE.md",
+      "DEEPSEEK.md"
+    ],
+    "priority_boundary": "Codex AGENTS.md is canonical; project instructions are read in explicit handoff/brief/decision order. Claude and DSH adapter files only point to or implement that contract; they do not create a second canonical policy."
+  },
+  "claims": [
+    {
+      "claim": "The hub establishes AGENTS.md as the shared canonical instruction contract and requires CURRENT.md, then relevant brief, then related decisions before work.",
+      "evidence": [
+        {"path": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/AGENTS.md", "lines": "1-11", "sha256": "C913EF212073BA4DD1AD0A216294A11FFC5C7FBC6C503639CDD38AB259AB21CF"},
+        {"path": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/60-handoffs/CURRENT.md", "lines": "1-9", "sha256": "EC592A55DB67BC20FA35DCB5E48F9B23AFD1BCA1DBC69D5E63CD16D590E22982", "status": "pre-change baseline; preserved at canonical/evidence/legacy/hub-CURRENT-before-20260921.md"},
+        {"path": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/60-handoffs/CURRENT.md", "lines": "11-16", "sha256": "A3927C7EAE4214F3916F36D4A13F6AC2D3C36F5E6E59A75782C6257139C4A2FC", "status": "current; contains LAB-OS-CANONICAL-20260921 pointer"}
+      ],
+      "verification_method": "Read with line numbering and SHA-256; no writes to source files.",
+      "result": "verified",
+      "confidence": "high",
+      "anomaly": "The no-active-task statement is a pre-change baseline (EC592...; legacy copy). Current CURRENT.md now appends LAB-OS-CANONICAL-20260921 and says the earlier initialization note is historical."
+    },
+    {
+      "claim": "The existing Claude and DeepSeek adapter files explicitly delegate to AGENTS.md.",
+      "evidence": [
+        {"path": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/CLAUDE.md", "lines": "1-3", "sha256": "3CC9FAD094B2887E32F2590C13FFBC8908EAED0F29B1F6B3A656B26178DA2874"},
+        {"path": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/DEEPSEEK.md", "lines": "1-3", "sha256": "BE12E2257DDA6402E65FCA393280C69354C776A9568EB0328DBBAB2F5AA6CB61"}
+      ],
+      "verification_method": "Read with line numbering and SHA-256.",
+      "result": "verified",
+      "confidence": "high",
+      "anomaly": "DEEPSEEK.md is not evidence that DSH auto-loads that filename; it is only a repository-local pointer."
+    },
+    {
+      "claim": "Codex config has no project_doc/project-document/limit setting in the inspected config; project entries exist, including the hub path.",
+      "evidence": [
+        {"path": "C:/Users/ASUS/.codex/config.toml", "lines": "152-281 (project tables); no matches for project_doc/project-document/doc-limit", "sha256": "5FBD306F3DF69818329751040FAE4A6B54C211649514F47C7B91998DDFB59A23"}
+      ],
+      "verification_method": "Case-insensitive bounded search for project_doc, project-document, doc-limit, AGENTS/CLAUDE/DEEPSEEK; output excluded env and secret values.",
+      "result": "verified absence in inspected file",
+      "confidence": "medium",
+      "anomaly": "Absence is limited to this config version; it does not prove a product-wide default."
+    },
+    {
+      "claim": "Installed DSH agent-instructions discovers AGENTS.md-compatible files using configured candidates, root-marker upward walk, and inclusive root-to-cwd traversal.",
+      "evidence": [
+        {"path": "C:/Users/ASUS/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-agent-instructions/README.md", "lines": "5-13,57-72,162-169", "sha256": "9DF54C02A190A9819187339D173E309B019DC4D2F01F4083F071A7DB9B48E0C6"},
+        {"path": "C:/Users/ASUS/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-agent-instructions/lib/index.js", "lines": "16-17,466-480,488-498,524-572", "sha256": "5AED6EC1E7BA7E0B416CADFAE7D4FE31206C40D36F97A9178DF1A06754AC14AC"},
+        {"path": "C:/Users/ASUS/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-agent-instructions/package.json", "lines": "1-20", "sha256": "05E80A05ABE51DD0F5DCB2D4D5D3D1DCAFD1AA6206FF3F95BC41229C5539CA1F"}
+      ],
+      "verification_method": "Read installed README and implementation source; package is a dependency of installed @deepseek-ai/dsh.",
+      "result": "verified",
+      "confidence": "high",
+      "anomaly": "Defaults include AGENTS.md and CLAUDE.md plus local overlays; DEEPSEEK.md is not a default candidate."
+    },
+    {
+      "claim": "DSH precedence is broad-to-specific: user-global ~/.dsh/AGENTS.md, then project-root-to-cwd candidates; same-directory trimmed-content duplicates collapse to the earliest candidate.",
+      "evidence": [
+        {"path": "C:/Users/ASUS/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-agent-instructions/README.md", "lines": "9,70-72,86-110"},
+        {"path": "C:/Users/ASUS/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-agent-instructions/lib/index.js", "lines": "545-572,616-633", "sha256": "5AED6EC1E7BA7E0B416CADFAE7D4FE31206C40D36F97A9178DF1A06754AC14AC"}
+      ],
+      "verification_method": "Source and README cross-check.",
+      "result": "verified",
+      "confidence": "high",
+      "anomaly": "The installed plugin follows symlinked final files and refreshes on structured filesystem touches; these are operational boundaries for an adapter."
+    },
+    {
+      "claim": "Claude CLI locally documents CLAUDE.md auto-discovery and an --add-dir option; @import behavior was not verified from the local official help inspected.",
+      "evidence": [
+        {"path": "C:/Users/ASUS/AppData/Local/Microsoft/WinGet/Packages/Anthropic.ClaudeCode_Microsoft.Winget.Source_8wekyb3d8bbwe/claude.exe", "lines": "local command output", "version": "2.1.258", "snippets": ["--bare ... CLAUDE.md auto-discovery", "--add-dir (CLAUDE.md dirs)", "--safe-mode ... (CLAUDE.md ...)"]}
+      ],
+      "verification_method": "Ran local `claude --help` and `claude --version`; searched bounded local ~/.claude docs candidates. No web browsing and no model invocation.",
+      "result": "CLAUDE.md discovery verified; @import unverified",
+      "confidence": "high for CLAUDE.md, low for @import",
+      "anomaly": "Do not claim @import support for this adapter until an official local help/doc source explicitly documents it."
+    },
+    {
+      "claim": "Claude auto-memory exists in multiple project-scoped memory directories; only paths and file counts were collected.",
+      "evidence": [
+        {"path": "C:/Users/ASUS/.claude/projects/*/memory", "directories": 20, "file_count_total": 79, "read_content": false}
+      ],
+      "verification_method": "Enumerated directory names and immediate file names/counts only; did not read memory file contents.",
+      "result": "verified existence and inventory",
+      "confidence": "high",
+      "anomaly": "C:/Users/ASUS/.claude/projects/C--Users-ASUS-Documents-Codex-2026-09-03-b/memory exists with count 0; no matching hub-specific memory directory was inferred."
+    }
+  ],
+  "adapter_recommendation": {
+    "codex": "Treat hub AGENTS.md as canonical and preserve its explicit CURRENT.md -> brief -> decisions read order.",
+    "claude": "Keep CLAUDE.md as a thin pointer to AGENTS.md; rely on verified CLAUDE.md auto-discovery. Leave @import out of the contract until locally documented.",
+    "dsh": "Use the installed dsh-agent-instructions discovery implementation and configured candidates; do not assume DEEPSEEK.md is auto-loaded. Configure AGENTS.md/CLAUDE.md candidates only if needed."
+  },
+  "not_done": ["No final architecture", "No model startup", "No config changes", "No source-file edits outside the two requested evidence artifacts"]
+}

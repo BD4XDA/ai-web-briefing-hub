@@ -1,0 +1,33 @@
+{
+  "task_id": "foundation-p2",
+  "project_id": "lab-research-os",
+  "project_root": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os",
+  "expected_checkpoint": "20260921T131123-e20d79ddeef7",
+  "owner": "continuity_health",
+  "objective": "Independently test local evidence contracts; DeepSeek reviews compact test evidence.",
+  "allowed_read_roots": [
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os"
+  ],
+  "write_paths": [
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/tests/test_contracts.py",
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/evidence"
+  ],
+  "excluded_scope": [
+    "No legacy configuration or credential changes",
+    "No model tools or scientific run",
+    "No writes to checkpoint by worker"
+  ],
+  "input_evidence_ids": [],
+  "acceptance_criteria": [
+    "Negative gates reject invalid or unsupported integration",
+    "Worker raw test evidence retained",
+    "DeepSeek review records its true method and reported identity"
+  ],
+  "verification_route": "worker deterministic tests then Claude safe-mode DeepSeek Flash evidence review",
+  "budget": {
+    "max_files": 30,
+    "max_depth": 2,
+    "max_model_calls": 1
+  },
+  "resume_action": "Read p2 evidence, resolve only specific failing cases, then commit P2."
+}

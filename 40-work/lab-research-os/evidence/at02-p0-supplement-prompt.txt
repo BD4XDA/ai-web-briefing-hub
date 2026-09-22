@@ -1,0 +1,48 @@
+Perform one narrow verification of the local test provenance below. Review evidence only; do not execute tests, commands, tools, or web lookups. Return exactly: Claim, Evidence, Verification Method, Result (PASS/FAIL/UNCERTAIN), Confidence (0..1), Anomaly/Conflict, Mocks Inventory. Explicitly say this is review of evidence, not test execution. Do not claim cryptographic authenticity beyond the local hash comparison. Do not assume model identity beyond any returned trace.
+
+RECORDED SUBPROCESS EVIDENCE (evidence/at02-p0-contracts-recapture.json):
+{"command":["C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python314\\python.exe","-m","unittest","tests.test_contracts","-v"],"cwd":"C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os","started_at_utc":"2026-09-21T10:21:37.736780+00:00","finished_at_utc":"2026-09-21T10:21:38.429214+00:00","exit_code":0,"stderr":"10 named tests ... ok\\n----------------------------------------------------------------------\\nRan 10 tests in 0.163s\\n\\nOK\\n","implementation":"tools/contracts.py","implementation_sha256":"b4517c1ac37062377b8899ed1f84ea535c88b90ed25cc73aeea82f769fcf93d1","test_file":"tests/test_contracts.py","test_file_sha256":"b4688d42939c83ac3e590d89f556e596bb1bf69896c653c1145be4d06641a67","capture":"Exact subprocess streams; no transcription or normalization."}
+
+LOCAL HASH BINDING (evidence/at02-p0-binding.json): current SHA256 for tools/contracts.py is b4517c1ac37062377b8899ed1f84ea535c88b90ed25cc73aeea82f769fcf93d1; current SHA256 for tests/test_contracts.py is b4688d42939c83ac3e590d89f556e596bb1bf69896c653c1145be4d06641a67; both match the recorded hashes; all_hashes_match=true; recorded exit_code=0; recorded stderr contains 10 named tests and Ran 10 tests ... OK. This binding itself did not execute tests.
+
+ACTUAL SOURCE EXCERPTS:
+tools/contracts.py:
+def packet_check(packet):
+    schema_check('task-packet', packet)
+    root = Path(packet['project_root']).resolve(strict=True)
+    if read(root / '.lab-project.json')['project_id'] != packet['project_id']:
+        raise ValueError('Project identity conflict')
+    for raw in packet['allowed_read_roots'] + packet['write_paths']:
+        if not Path(raw).is_absolute(): raise ValueError('Scope paths must be absolute')
+    for raw in packet['write_paths']:
+        if not Path(raw).resolve().is_relative_to(root): raise ValueError('Write path outside canonical project')
+
+def evidence_check(record, allowed_roots):
+    schema_check('evidence', record)
+    path = Path(record['path']).resolve(strict=True)
+    roots = [Path(p).resolve(strict=True) for p in allowed_roots]
+    if not any(path == p or path.is_relative_to(p) for p in roots): raise ValueError('Evidence path outside approved roots')
+    if not path.is_file(): raise ValueError('Evidence must be a file')
+    if path.stat().st_size > 10_000_000: raise ValueError('Evidence exceeds v1 10 MB per-file budget')
+    if hashlib.sha256(path.read_bytes()).hexdigest() != record['sha256']: raise ValueError('Evidence integrity conflict: ' + record['id'])
+
+def bundle_check(bundle, packet):
+    packet_check(packet)
+    if set(bundle) != {'task_id', 'records', 'evidence', 'reports'}: raise ValueError('Unknown or missing bundle fields')
+    if bundle['task_id'] != packet['task_id']: raise ValueError('Task identity conflict')
+    for field in ('records', 'evidence', 'reports'):
+        if not isinstance(bundle[field], list) or not bundle[field]: raise ValueError('Bundle requires nonempty ' + field)
+    if len(bundle['evidence']) > packet['budget']['max_files']: raise ValueError('Evidence exceeds task file budget')
+    # later loops enforce unique IDs, resolved record/report evidence, schema checks,
+    # report PASS + confidence >= .8 + no anomaly_conflict, and full record coverage.
+
+tests/test_contracts.py:
+def with_mock_inventory_schema(self, bundle):
+    def dispatch(kind, value):
+        if kind == 'project': return None  # P3 project schema is absent; inventory shape is mocked only.
+        return REAL_SCHEMA_CHECK(kind, value)
+    return mock.patch.object(contracts, 'schema_check', side_effect=dispatch)
+
+Tests named in the exact recorded stderr cover: evidence budget, hash mismatch, approved-root/traversal rejection, FAIL/UNCERTAIN/low-confidence/open-anomaly holds, malformed report, missing evidence reference, packet identity mismatch, record coverage, valid bundle, and write-path escape.
+
+Question: Are the recorded successful tests bound to the current source/test revisions by the matching hashes, and does the named test inventory cover the stated gates? Inventory the temporary fixtures and the mocked absent P3 project schema; disclose that production schemas/integration are not tested.

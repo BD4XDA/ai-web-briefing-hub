@@ -1,0 +1,11 @@
+{
+  "model": "deepseek-flash",
+  "provider": "deepseek-official",
+  "harness": "dsh",
+  "sessionId": "lab-text-3ad8b796-1488-4052-b985-098ab77026b3",
+  "text": "{\"results\":[{\"pilot_id\":\"C\",\"claim\":\"Bounded metadata capture completed for the packet-preferred 00_总索引 area within the allowed literature root; records: workspace-pilot-C-literature-index (observed) and project-pilot-C-literature-association (unknown).\",\"evidence_ids\":[\"ev-pilot-C-capture\",\"ev-pilot-C-index\"],\"verification_method\":\"Reviewed supplied machine-captured artifacts (collection.json, candidate-bundle.json, execution.json, worker-report.json, observations.json) against the stage contract; checked inventory facts, safe scope, unknown-vs-inferred, stored-vs-live, and context/handoff. Empty reports=[] and the pre-review bundle FAIL are contract-required pre-acceptance state, not collection defects.\",\"result\":\"PASS\",\"confidence\":0.78,\"anomaly_conflict\":[],\"limitations\":[\"Bounded sample: 1 file, depth 2, max 30; non-selected areas, symlinks, depth>2, PDFs/paper bodies and secret/auth/config values excluded — no drive-wide or corpus-coverage claim.\",\"Project association remains unknown; no supported project identifier established.\",\"No duplicate candidate established; filename/size inference not used.\",\"No live-service or signed-authenticity claim; observations are stored snapshot artifacts, not live drive state.\",\"Independent DeepSeek verification report and final bundle acceptance gate have not yet run; this stage's result is interim.\",\"Reviews supplied evidence only; collector not re-executed, deterministic checks not re-run or validated for correctness.\",\"Collection metadata itself (raw-capture.json, index-snapshot.md, collector.py) not re-read; hash equality relayed from execution.json.\"]}]}",
+  "reason": {
+    "kind": "completed"
+  },
+  "tool_calls": 0
+}

@@ -1,0 +1,21 @@
+{
+  "command": [
+    "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "-m",
+    "unittest",
+    "tests.test_contracts",
+    "-v"
+  ],
+  "cwd": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os",
+  "started_at_utc": "2026-09-21T10:21:37.736780+00:00",
+  "finished_at_utc": "2026-09-21T10:21:38.429214+00:00",
+  "monotonic_duration_seconds": 0.6924062999896705,
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_evidence_count_over_budget_is_rejected (tests.test_contracts.ContractTests.test_evidence_count_over_budget_is_rejected) ... ok\ntest_evidence_hash_mismatch_is_rejected (tests.test_contracts.ContractTests.test_evidence_hash_mismatch_is_rejected) ... ok\ntest_evidence_outside_approved_root_and_resolved_traversal_are_rejected (tests.test_contracts.ContractTests.test_evidence_outside_approved_root_and_resolved_traversal_are_rejected) ... ok\ntest_fail_uncertain_low_confidence_and_unresolved_anomaly_are_blocked (tests.test_contracts.ContractTests.test_fail_uncertain_low_confidence_and_unresolved_anomaly_are_blocked) ... ok\ntest_malformed_report_is_rejected_by_real_schema (tests.test_contracts.ContractTests.test_malformed_report_is_rejected_by_real_schema) ... ok\ntest_missing_evidence_reference_is_rejected (tests.test_contracts.ContractTests.test_missing_evidence_reference_is_rejected) ... ok\ntest_packet_root_identity_mismatch_is_rejected (tests.test_contracts.ContractTests.test_packet_root_identity_mismatch_is_rejected) ... ok\ntest_record_evidence_must_be_covered_by_report (tests.test_contracts.ContractTests.test_record_evidence_must_be_covered_by_report) ... ok\ntest_valid_packet_and_bundle (tests.test_contracts.ContractTests.test_valid_packet_and_bundle) ... ok\ntest_write_path_escape_is_rejected (tests.test_contracts.ContractTests.test_write_path_escape_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.163s\n\nOK\n",
+  "implementation": "tools/contracts.py",
+  "implementation_sha256": "b4517c1ac37062377b8899ed1f84ea535c88b90ed25cc73aeea82f769fcf93d1",
+  "test_file": "tests/test_contracts.py",
+  "test_file_sha256": "b4688d42939c83ac3e590d89f556e596bbd1bf69896c653c1145be4d06641a67",
+  "capture": "Exact subprocess streams; no transcription or normalization."
+}

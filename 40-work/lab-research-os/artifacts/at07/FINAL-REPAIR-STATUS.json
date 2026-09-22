@@ -1,0 +1,28 @@
+{
+  "F4": "INSUFFICIENT_EVIDENCE",
+  "F5_repair": "FAILED",
+  "F6_repair": "FAILED",
+  "failure_scope": "Failed acceptance gate, not failed deterministic regression or proof that every implementation claim is false.",
+  "regression": "PASS: 9 groups / 45 assertion records",
+  "negative_controls": "PASS within enumerated offline fixtures",
+  "evidence_completeness": "PASS for supplied bounded package",
+  "independent_review": {
+    "reported_result": "PASS",
+    "F5": "PASS",
+    "F6": "PASS",
+    "confidence": 0.72,
+    "required_confidence": 0.8,
+    "completed": true,
+    "tool_calls": 0,
+    "anomaly_list_empty": false,
+    "acceptance_gate": "FAIL"
+  },
+  "adoption": "DISABLED_NOT_ACCEPTED",
+  "rollback": "Original AT05 program and evidence unchanged. Derived module never wired into live dispatch; do not adopt. No code deletion/overwrite.",
+  "successor_launched": false,
+  "AT08_executable_packet_prepared": false,
+  "C1": "NOT PROVEN",
+  "C2": "UNCERTAIN",
+  "P5": "UNCERTAIN",
+  "P6": "YELLOW"
+}

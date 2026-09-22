@@ -1,0 +1,93 @@
+{
+  "task_id": "AT02-pilot-C",
+  "records": [
+    {
+      "id": "workspace-pilot-C-literature-index",
+      "label": "Pilot C 00_总索引 literature area",
+      "observed_at": "2026-09-21T15:51:56.645571Z",
+      "status": "observed",
+      "evidence_ids": [
+        "ev-pilot-C-capture",
+        "ev-pilot-C-index"
+      ],
+      "facts": [
+        "The packet-preferred 00_总索引 directory exists.",
+        "The bounded area contains one regular Markdown index file at depth 1.",
+        "The safe index explicitly presents itself as a daily literature index and records archive status fields."
+      ],
+      "unknowns": [
+        "Drive-wide corpus contents and coverage are unknown.",
+        "No scientific content was read or inferred from filenames.",
+        "No duplicate candidate was established from the bounded sample."
+      ],
+      "kind": "workspace",
+      "root_path": "D:\\A每日论文阅读_沉积物磷形态与生物地球化学\\00_总索引",
+      "coverage": "bounded-sample",
+      "sampled_files": 1,
+      "duplicate_candidates": []
+    },
+    {
+      "id": "project-pilot-C-literature-association",
+      "label": "Pilot C literature area association",
+      "observed_at": "2026-09-21T15:51:56.645571Z",
+      "status": "unknown",
+      "evidence_ids": [
+        "ev-pilot-C-capture",
+        "ev-pilot-C-index"
+      ],
+      "facts": [
+        "The safe index provides explicit index structure and archive-status fields within the selected literature area."
+      ],
+      "unknowns": [
+        "A supported project identifier or repository association is not established by this bounded metadata capture."
+      ],
+      "kind": "project",
+      "project_id": "unknown",
+      "root_path": "D:\\A每日论文阅读_沉积物磷形态与生物地球化学",
+      "repository_path": "unestablished",
+      "root_discovery": "Packet-approved source root; 00_总索引 selected because it exists and is the preferred index area."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-pilot-C-capture",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-C\\raw-capture.json",
+      "sha256": "a18759175cf45214223003b2f0531e9e87b618c8776ea0dd90c3360731e9e80e",
+      "captured_at": "2026-09-21T15:51:56.645571Z",
+      "locator": "raw-capture.json; complete bounded machine capture",
+      "scope": "top-level listing and 00_总索引 metadata through depth 2",
+      "sensitivity": "local-metadata",
+      "collector": "collector.py"
+    },
+    {
+      "id": "ev-pilot-C-index",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-C\\index-snapshot.md",
+      "sha256": "d4fdb5e7ad4e74311bf3a7f60ba25d4adb46f60e4ec7844ad47619bb8cc71ff9",
+      "captured_at": "2026-09-21T15:51:56.645571Z",
+      "locator": "index-snapshot.md; exact bytes of one safe text index",
+      "scope": "explicit index structure/association only; no paper bodies",
+      "sensitivity": "local-metadata",
+      "collector": "collector.py"
+    }
+  ],
+  "reports": [
+    {
+      "id": "deepseek-C",
+      "claim": "Bounded metadata capture completed for the packet-preferred 00_总索引 area within the allowed literature root; records: workspace-pilot-C-literature-index (observed) and project-pilot-C-literature-association (unknown).",
+      "evidence_ids": [
+        "ev-pilot-C-capture",
+        "ev-pilot-C-index"
+      ],
+      "verification_method": "Reviewed supplied machine-captured artifacts (collection.json, candidate-bundle.json, execution.json, worker-report.json, observations.json) against the stage contract; checked inventory facts, safe scope, unknown-vs-inferred, stored-vs-live, and context/handoff. Empty reports=[] and the pre-review bundle FAIL are contract-required pre-acceptance state, not collection defects. Exact response: C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\verification-C-clarification\\review-response.json",
+      "result": "PASS",
+      "confidence": 0.78,
+      "anomaly_conflict": [],
+      "reviewer": "independent DeepSeek evidence review",
+      "model_reported": "deepseek-flash (DSH requested selection)",
+      "harness": "DSH headless, provider deepseek-official",
+      "observed_at": "2026-09-21T16:07:00.340393+00:00"
+    }
+  ]
+}

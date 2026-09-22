@@ -1,0 +1,11 @@
+{
+  "gate": "FAIL",
+  "confidence": 0.72,
+  "repair_results": {
+    "F5": "FAILED",
+    "F6": "FAILED"
+  },
+  "parse_error": null,
+  "successor_authorized": false,
+  "scope": "Local derived module/offline cases only. C1/P5 not promoted. No reviewer retry or repair after verdict."
+}

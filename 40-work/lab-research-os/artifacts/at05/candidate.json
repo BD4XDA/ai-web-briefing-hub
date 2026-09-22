@@ -1,0 +1,1 @@
+{"status":"blocked","observation_executed":false,"receipt_available":false,"reason":"Automatic approval review rejected the authorized observation command: blocked by policy. No task packet or source was returned.","attempts":1,"files_written":false}

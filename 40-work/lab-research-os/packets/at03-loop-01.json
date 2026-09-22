@@ -1,0 +1,42 @@
+{
+  "task_id": "AT03-loop-01",
+  "project_id": "lab-research-os",
+  "project_root": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os",
+  "expected_checkpoint": "20260922T001240-6ee0580095c8",
+  "owner": "fresh-loop-worker",
+  "objective": "Exactly one fresh-owner bounded loop: derive a navigation index from the already accepted frozen Foundation manifest, verify it independently, then safe writeback and checkpoint. No held pilot data promotion.",
+  "allowed_read_roots": [
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os"
+  ],
+  "write_paths": [
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/artifacts/at03/autonomous-loop-01",
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/artifacts/at03/manifest-index-v0.1.json",
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/checkpoints",
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/CHECKPOINT.md",
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/packets/at03-p5-worker-state.json"
+  ],
+  "excluded_scope": [
+    "No source/config/schema/Foundation edits",
+    "No pilot recollection or repair; do not use held inventories",
+    "No rerun of accepted contract tests or all frozen source-file checks",
+    "No model tools, second model call or retry loop",
+    "No deletion, moves, publication or broader census"
+  ],
+  "input_evidence_ids": [
+    "foundation-v0.1-manifest"
+  ],
+  "acceptance_criteria": [
+    "Fresh owner discovers canonical root and current committed state from project memory",
+    "Index exactly derived from frozen manifest with machine-captured evidence",
+    "Independent DSH Flash review PASS confidence>=0.8 and no unresolved anomaly; completion and zero tool calls",
+    "Canonical artifact created only after gates, then append-only CAS checkpoint succeeds",
+    "Any failure is preserved as NOT_PROVEN; no repeated repair to produce green"
+  ],
+  "verification_route": "Existing DSH headless DeepSeek Flash; one exact-byte assembled evidence-package review, not independent machine acquisition",
+  "budget": {
+    "max_files": 30,
+    "max_depth": 2,
+    "max_model_calls": 1
+  },
+  "resume_action": "Read packets/at03-loop-01.md; execute this one attempt and checkpoint its true outcome. Coordinator has delegated checkpoint ownership for this task and will not write concurrently."
+}

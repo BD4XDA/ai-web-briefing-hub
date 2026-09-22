@@ -1,0 +1,67 @@
+{
+  "unit": {
+    "name": "agent_team",
+    "version": 1
+  },
+  "assistant_count": 2,
+  "assistants": [
+    {
+      "id": "b2d51a4b-1a22-4fa5-8db9-d920852d175f",
+      "name": "Sol 科研审阅员",
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "high",
+      "agentPresetId": "standard",
+      "permissionPresetId": "read-only",
+      "mcpServers": [],
+      "revision": 1,
+      "updatedAt": "2026-09-03T11:39:25.988Z"
+    },
+    {
+      "id": "1709ae4b-a8bc-4943-a2fc-4263dd630919",
+      "name": "Sol 联网科研员",
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "high",
+      "agentPresetId": "standard",
+      "permissionPresetId": "read-only",
+      "mcpServers": [
+        "exa"
+      ],
+      "revision": 1,
+      "updatedAt": "2026-09-04T11:32:15.554Z"
+    }
+  ],
+  "team_count": 2,
+  "teams": [
+    {
+      "id": "38653d49-dd86-4eaf-95ec-fd1094f3a357",
+      "name": "Sol 兼容性测试团队",
+      "workspaceId": "b413807a-4bc1-42ba-b86f-1f8abb6a7d3b",
+      "state": "active",
+      "directMemberChat": true,
+      "revision": 20,
+      "updatedAt": "2026-09-21T07:16:20.501Z",
+      "member_count": 1,
+      "task_count": 0,
+      "lease_count": 0,
+      "outbox_count": 0
+    },
+    {
+      "id": "a161511c-e7a6-4372-b5d5-0e1dfe41366c",
+      "name": "Sol 联网科研测试团队",
+      "workspaceId": "b413807a-4bc1-42ba-b86f-1f8abb6a7d3b",
+      "state": "error",
+      "directMemberChat": true,
+      "revision": 21,
+      "updatedAt": "2026-09-21T07:16:20.437Z",
+      "member_count": 1,
+      "task_count": 0,
+      "lease_count": 0,
+      "outbox_count": 0
+    }
+  ],
+  "message_count": 3,
+  "activity_count": 43,
+  "note": "message/activity content omitted by scope"
+}

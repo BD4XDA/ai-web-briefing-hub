@@ -1,0 +1,37 @@
+{
+  "observed_at": "2026-09-21T15:48:55.375874+00:00",
+  "committed_checkpoint": "20260921T183240-2a5430059765",
+  "planning_baseline": "20260921T183037-034ade6bf069",
+  "pilots": [
+    {
+      "pilot": "A",
+      "classification": "NOT_STARTED",
+      "basis": "Artifact capture only; no collection completion inferred from file presence. Existing worker may still be running.",
+      "files": []
+    },
+    {
+      "pilot": "B",
+      "classification": "PARTIAL / INTERRUPTED",
+      "basis": "Artifact capture only; no collection completion inferred from file presence. Existing worker may still be running.",
+      "files": [
+        {
+          "name": "collector.py",
+          "bytes": 12326,
+          "mtime": 1789986997.9608011
+        }
+      ]
+    },
+    {
+      "pilot": "C",
+      "classification": "PARTIAL / INTERRUPTED",
+      "basis": "Artifact capture only; no collection completion inferred from file presence. Existing worker may still be running.",
+      "files": [
+        {
+          "name": "collector.py",
+          "bytes": 2949,
+          "mtime": 1789986984.2734315
+        }
+      ]
+    }
+  ]
+}

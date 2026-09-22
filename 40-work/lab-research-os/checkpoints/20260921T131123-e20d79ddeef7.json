@@ -1,0 +1,41 @@
+{
+  "completed": [
+    "Added canonical AGENTS/PROJECT and thin CLAUDE/legacy DEEPSEEK adapters in the existing hub.",
+    "Preserved hub CURRENT original; appended a pointer without replacing original content.",
+    "Implemented append-only checkpoint snapshots, integrity verification, writer exclusion and stale-writer rejection.",
+    "Independent worker passed 8 checkpoint integrity/concurrency/rollback tests; source entry-point audit complete."
+  ],
+  "created_at": "2026-09-21T13:11:23+0800",
+  "current_verified_state": [
+    "Inherited P0 is complete: current DSH web port 3080 offline; prior additive recovery, model/tool/spawn/two-turn/new-process-resume procedures have evidence. No re-diagnosis needed.",
+    "Existing scholarly run is CHECKPOINTED_FAILURE at Sol review; Flash evidence and Pro draft retained. No scientific artifact has been integrated."
+  ],
+  "decisions": [
+    "Project owns memory; harnesses consume it. Legacy memory remains untouched.",
+    "Installed DSH loads AGENTS.md and CLAUDE.md; DEEPSEEK.md is not a default entry. CLAUDE.md explicitly points to canonical AGENTS without relying on unverified import semantics.",
+    "Astra handles architecture; worker performs deterministic checkpoint tests."
+  ],
+  "evidence_references": [
+    "evidence/p0-health-worker.json",
+    "evidence/foundation-test-run.json",
+    "evidence/instruction-adapter-audit.json",
+    "evidence/inherited-evidence-index.json",
+    "decisions/0001-canonical-memory.md"
+  ],
+  "in_progress": [],
+  "known_risks": [
+    "Current web is offline, not stably restored as a persistent service.",
+    "Legacy sol-auto visual fallback can include text-only Pro; visual work must use qualified direct routes.",
+    "Two existing router Windows assertion tests fail; no module upgrade performed."
+  ],
+  "next_actions": [
+    "P2: implement handoff, verification and exception contracts.",
+    "P3: define six inventories and delegate bounded pilot."
+  ],
+  "open_questions": [
+    "Live end-to-end legacy Sol/Luna chain remains unqualified; scheduled outside foundation scope."
+  ],
+  "parent": "20260921T130533-927be1d2f6ce",
+  "priority": "P1",
+  "status": "complete"
+}

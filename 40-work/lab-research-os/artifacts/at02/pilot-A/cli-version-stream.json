@@ -1,0 +1,12 @@
+{
+  "command": [
+    "dsh",
+    "--version"
+  ],
+  "started_at_utc": "2026-09-21T15:53:12.970148+00:00",
+  "finished_at_utc": "2026-09-21T15:53:12.972762+00:00",
+  "duration_seconds": 0.0026219000574201345,
+  "exit_code": null,
+  "stdout": "",
+  "stderr": "FileNotFoundError: [WinError 2] 系统找不到指定的文件。"
+}

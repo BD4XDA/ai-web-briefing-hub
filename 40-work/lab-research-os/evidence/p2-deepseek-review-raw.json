@@ -1,0 +1,11 @@
+{
+  "invocation": "claude -p --safe-mode --tools \"\" --effort low --output-format json",
+  "started_at": "2026-09-21T13:16:34+08:00",
+  "status": "FAILED_TIMEOUT_NO_RESPONSE",
+  "exit_code": null,
+  "stdout": "",
+  "stderr": "[claude-code:unrecognized_model] {\"model\":\"deepseek-flash\",\"query_source\":\"generate_session_title\"}",
+  "observed_process": "CLI remained active beyond the bounded tool wait and later exited; no model response was captured.",
+  "retry_policy": "No retry performed.",
+  "sanitization": "No prompt, secrets, settings, or model output were stored; only the non-sensitive CLI warning and outcome are recorded."
+}

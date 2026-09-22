@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "path": "tools/contracts.py",
+      "sha256": "b4517c1ac37062377b8899ed1f84ea535c88b90ed25cc73aeea82f769fcf93d1",
+      "bytes": 5830
+    },
+    {
+      "path": "tests/test_contracts.py",
+      "sha256": "b4688d42939c83ac3e590d89f556e596bbd1bf69896c653c1145be4d06641a67",
+      "bytes": 7759
+    },
+    {
+      "path": "evidence/at02-p0-contracts-recapture.json",
+      "sha256": "d244dab65f51952b3fb6d4420acf84ff36a1103c46c0254263cf21683641ef63",
+      "bytes": 2363
+    },
+    {
+      "path": "evidence/at02-p0-binding.json",
+      "sha256": "a446454bcafb31e44e6e8e34837e73852279189b3024239ab56829dc07151574",
+      "bytes": 1577
+    }
+  ],
+  "assembly": "read_bytes -> strict UTF-8 decode -> roundtrip byte assertion -> JSON serialization; no manual source transcription"
+}

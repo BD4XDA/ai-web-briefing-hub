@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-09-21T13:00:46+08:00",
+  "scope": "ASTRA TIME P0 minimal health confirmation; read-only; no service start/stop; no paid-model rerun",
+  "checks": [
+    {
+      "claim": "DSH smoke and same-session restart/resume evidence exists and reports passed",
+      "evidence": [
+        {"path": "outputs/evidence/dsh-smoke.json", "sha256": "E2D4F2FC1DDF040BAB52DF9100EC247D594464949B80F06964388A0DEA34CFEB", "result": "passed=true; tool marker, child result, and two turns present"},
+        {"path": "outputs/evidence/dsh-restart-resume.json", "sha256": "49C3FDE38D65D3284D6C50D5B3A1441CA5EF7CBE730D6EAB271D9C6B15B946E6", "result": "passed=true; restart-resume marker present"}
+      ],
+      "verification_method": "Read JSON and SHA256-hashed the existing files; no execution",
+      "result": "PASS",
+      "confidence": "high",
+      "anomaly_conflict": "None in these artifacts"
+    },
+    {
+      "claim": "API and team recovery evidence remains available",
+      "evidence": [
+        {"path": "outputs/evidence/api-probe.json", "sha256": "D27F9E6C9A6C4C5990D92D1E55BFA2E48D8293CF6C7698DFE92F6C2C92760086", "result": "recorded HTTP 200 catalog/probe responses"},
+        {"path": "outputs/evidence/team-recovery.json", "sha256": "EB3996A3EA8CC2E02C68D00C310A90D5095D303DD0194ACB06C3CC7A0D77278B", "result": "ok=true; team state=active; desiredState=online"}
+      ],
+      "verification_method": "Read JSON and SHA256-hashed the existing files; no network or team mutation",
+      "result": "PASS",
+      "confidence": "high",
+      "anomaly_conflict": "API evidence is historical artifact evidence, not a fresh probe"
+    },
+    {
+      "claim": "Current lab run is present and resumable from a checkpoint, but the last review stage failed",
+      "evidence": [
+        {"path": "outputs/lab-os/run-20260921/checkpoint.json", "sha256": "6D3D08C9289EBDFEC167D3D013A9E61D504A11422EA148B7F0BA8A3D264D3541", "result": "status=CHECKPOINTED_FAILURE; next_action says resume from packet and anchored uncertainty"},
+        {"path": "outputs/lab-os/run-20260921/sol-review-v1-execution.json", "sha256": "D8AE83124E35955888AF8AAC7D106E7E937A370983367CB69027FA1A58092708", "result": "exit_code=1; stderr records stream disconnects and usage-limit failure"}
+      ],
+      "verification_method": "Read checkpoint and execution records; no resume attempted",
+      "result": "PASS_WITH_BLOCKED_REVIEW",
+      "confidence": "high",
+      "anomaly_conflict": "Review failure is operational/usage related; draft and packet artifacts are already present"
+    },
+    {
+      "claim": "The local web service is not listening on 127.0.0.1:3080 at check time",
+      "evidence": [
+        {"command": "Get-NetTCPConnection -LocalPort 3080 -ErrorAction SilentlyContinue", "result": "NO_LISTENER", "observed_at": "2026-09-21T13:00:46+08:00"}
+      ],
+      "verification_method": "Read-only local socket inspection; no process start/stop",
+      "result": "NOT_RUNNING",
+      "confidence": "high",
+      "anomaly_conflict": "Consistent with prior known default-web lock issue; no current PID/process was observable because no listener exists"
+    }
+  ],
+  "minimal_recovery_action": "When service access is needed, use the already-recorded recovery patch that disables only web-ui-task-board, then start the web service once and recheck port 3080. Do not rerun the full survey or paid-model pipeline. For the lab run, resume from checkpoint/task packet after review capacity is available; do not reread the full raw corpus by default."
+}

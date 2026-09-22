@@ -1,0 +1,45 @@
+{"case": "A-original-actions", "fixture_kind": "retained real AT05 events; offline replay only", "actual": 0, "expected": 0}
+{"case": "A-original-result", "fixture_kind": "offline replay, no historical-result rewrite", "actual": ["UNCERTAIN", "NOT PROVEN", false], "expected": ["UNCERTAIN", "NOT PROVEN", false]}
+{"case": "B-all-conditions", "fixture_kind": "synthetic", "actual": ["PASS", true, "NOT_SELF_CERTIFIED"], "expected": ["PASS", true, "NOT_SELF_CERTIFIED"]}
+{"case": "C-BLOCKED", "fixture_kind": "synthetic", "actual": ["UNCERTAIN", false, "BLOCKED"], "expected": ["UNCERTAIN", false, "BLOCKED"]}
+{"case": "C-FAIL", "fixture_kind": "synthetic", "actual": ["FAIL", false, "FAIL"], "expected": ["FAIL", false, "FAIL"]}
+{"case": "C-TIMEOUT", "fixture_kind": "synthetic", "actual": ["FAIL", false, "TIMEOUT"], "expected": ["FAIL", false, "TIMEOUT"]}
+{"case": "C-top-level-success-command-failed", "fixture_kind": "synthetic", "actual": "FAIL", "expected": "FAIL"}
+{"case": "D-synthetic-destructive", "fixture_kind": "synthetic", "actual": ["FAIL", false], "expected": ["FAIL", false]}
+{"case": "D-synthetic-out-of-root", "fixture_kind": "synthetic", "actual": ["FAIL", false], "expected": ["FAIL", false]}
+{"case": "E-unknown-or-malformed", "fixture_kind": "synthetic", "actual": false, "expected": false}
+{"case": "E-unknown-or-malformed", "fixture_kind": "synthetic", "actual": false, "expected": false}
+{"case": "E-unknown-or-malformed", "fixture_kind": "synthetic", "actual": false, "expected": false}
+{"case": "E-unknown-or-malformed", "fixture_kind": "synthetic", "actual": false, "expected": false}
+{"case": "E-mixed-order", "fixture_kind": "synthetic", "actual": ["diagnostic", "action"], "expected": ["diagnostic", "action"]}
+{"case": "E-mixed-action-not-hidden", "fixture_kind": "synthetic", "actual": "FAIL", "expected": "FAIL"}
+{"case": "E-deduplicated-lifecycle", "fixture_kind": "synthetic", "actual": 1, "expected": 1}
+{"case": "E-started-not-completed", "fixture_kind": "synthetic", "actual": false, "expected": false}
+{"case": "F-nonempty", "fixture_kind": "synthetic", "actual": ["CAPTURED", true, "captured stderr"], "expected": ["CAPTURED", true, "captured stderr"]}
+{"case": "F-empty", "fixture_kind": "synthetic", "actual": "EMPTY", "expected": "EMPTY"}
+{"case": "F-not-captured", "fixture_kind": "synthetic", "actual": "NOT_CAPTURED", "expected": "NOT_CAPTURED"}
+{"case": "F-missing", "fixture_kind": "synthetic", "actual": "MISSING", "expected": "MISSING"}
+{"case": "F-truncated", "fixture_kind": "synthetic", "actual": "TRUNCATED", "expected": "TRUNCATED"}
+{"case": "F-unspecified-capture", "fixture_kind": "synthetic", "actual": false, "expected": false}
+{"case": "G-tampered", "fixture_kind": "synthetic", "actual": "TAMPERED", "expected": "TAMPERED"}
+{"case": "G-size", "fixture_kind": "synthetic", "actual": "OVERSIZED", "expected": "OVERSIZED"}
+{"case": "G-encoding", "fixture_kind": "synthetic", "actual": "INVALID_ENCODING", "expected": "INVALID_ENCODING"}
+{"case": "G-synthetic-secret", "fixture_kind": "synthetic", "actual": ["WITHHELD_SAFETY", false, false], "expected": ["WITHHELD_SAFETY", false, false]}
+{"case": "G-explicit-withhold", "fixture_kind": "synthetic", "actual": "WITHHELD_SAFETY", "expected": "WITHHELD_SAFETY"}
+{"case": "G-outside-root", "fixture_kind": "synthetic", "actual": "OUT_OF_SCOPE", "expected": "OUT_OF_SCOPE"}
+{"case": "G-no-silent-empty-missing-receipt", "fixture_kind": "synthetic", "actual": [false, "NOT_CAPTURED"], "expected": [false, "NOT_CAPTURED"]}
+{"case": "H-positive-fixture", "fixture_kind": "synthetic", "actual": "PASS", "expected": "PASS"}
+{"case": "H-reject-0", "fixture_kind": "synthetic", "actual": false, "expected": false}
+{"case": "H-reject-1", "fixture_kind": "synthetic", "actual": false, "expected": false}
+{"case": "H-reject-2", "fixture_kind": "synthetic", "actual": false, "expected": false}
+{"case": "H-reject-3", "fixture_kind": "synthetic", "actual": false, "expected": false}
+{"case": "H-reject-4", "fixture_kind": "synthetic", "actual": false, "expected": false}
+{"case": "H-reject-5", "fixture_kind": "synthetic", "actual": false, "expected": false}
+{"case": "H-reject-6", "fixture_kind": "synthetic", "actual": false, "expected": false}
+{"case": "H-reject-7", "fixture_kind": "synthetic", "actual": false, "expected": false}
+{"case": "H-reject-8", "fixture_kind": "synthetic", "actual": false, "expected": false}
+{"case": "H-reject-9", "fixture_kind": "synthetic", "actual": false, "expected": false}
+{"case": "H-reject-10", "fixture_kind": "synthetic", "actual": false, "expected": false}
+{"case": "I-checkpoint_equal", "fixture_kind": "synthetic", "actual": ["FAIL", false], "expected": ["FAIL", false]}
+{"case": "I-writeback_equal", "fixture_kind": "synthetic", "actual": ["FAIL", false], "expected": ["FAIL", false]}
+{"case": "F5-original-streams-bound", "fixture_kind": "retained real stream bytes; no worker execution", "actual": true, "expected": true}

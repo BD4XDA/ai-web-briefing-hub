@@ -1,0 +1,10 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const root='C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/';
+const rec=JSON.parse(readFileSync(root+'evidence/at02-p0-contracts-recapture.json','utf8'));
+const files={implementation:root+'tools/contracts.py',test_file:root+'tests/test_contracts.py'};
+const current=Object.fromEntries(Object.entries(files).map(([k,p])=>[k,{path:p,sha256:createHash('sha256').update(readFileSync(p)).digest('hex')} ]));
+const expected={implementation:rec.implementation_sha256,test_file:rec.test_file_sha256};
+const matches=Object.fromEntries(Object.keys(expected).map(k=>[k,current[k].sha256.toLowerCase()===expected[k].toLowerCase()]));
+const result={id:'at02-p0-binding',captured_at:new Date().toISOString(),recapture_path:root+'evidence/at02-p0-contracts-recapture.json',recapture_execution:{command:rec.command,cwd:rec.cwd,started_at_utc:rec.started_at_utc,finished_at_utc:rec.finished_at_utc,exit_code:rec.exit_code,stderr_line_count:rec.stderr.split(/\r?\n/).filter(Boolean).length},expected_hashes:expected,current_hashes:current,hash_matches:matches,all_hashes_match:Object.values(matches).every(Boolean),scope:'Local hash binding only; no test execution.'};
+writeFileSync(root+'evidence/at02-p0-binding.json',JSON.stringify(result,null,2));

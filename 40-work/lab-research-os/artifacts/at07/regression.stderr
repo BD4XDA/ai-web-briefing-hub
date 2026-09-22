@@ -1,0 +1,14 @@
+test_A_original_event (__main__.Regression.test_A_original_event) ... ok
+test_B_positive (__main__.Regression.test_B_positive) ... ok
+test_C_execution (__main__.Regression.test_C_execution) ... ok
+test_D_outside (__main__.Regression.test_D_outside) ... ok
+test_E_types_order (__main__.Regression.test_E_types_order) ... ok
+test_FG_streams (__main__.Regression.test_FG_streams) ... ok
+test_H_review (__main__.Regression.test_H_review) ... ok
+test_I_stale_mismatch (__main__.Regression.test_I_stale_mismatch) ... ok
+test_real_stream_binding (__main__.Regression.test_real_stream_binding) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.031s
+
+OK

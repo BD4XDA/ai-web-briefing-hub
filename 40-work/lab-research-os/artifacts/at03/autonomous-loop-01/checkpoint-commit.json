@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "tools/foundation.py",
+    "checkpoint",
+    "--input",
+    "packets/at03-p5-worker-state.json",
+    "--expected",
+    "20260922T001240-6ee0580095c8"
+  ],
+  "started_at_utc": "2026-09-21T16:22:55.354666+00:00",
+  "exit_code": 0,
+  "stdout": "20260922T002255-a666fc8e350c\n",
+  "stderr": "",
+  "new_checkpoint": "20260922T002255-a666fc8e350c"
+}

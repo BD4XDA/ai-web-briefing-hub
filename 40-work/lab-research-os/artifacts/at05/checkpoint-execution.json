@@ -1,0 +1,21 @@
+{
+  "command": [
+    "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "tools/foundation.py",
+    "checkpoint",
+    "--input",
+    "packets/at05-terminal.json",
+    "--expected",
+    "20260922T075755-55921d9fb875"
+  ],
+  "cwd": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os",
+  "pid": 36292,
+  "controller_pid": 65704,
+  "started_at_utc": "2026-09-22T01:12:06.996466+00:00",
+  "finished_at_utc": "2026-09-22T01:12:07.105921+00:00",
+  "duration_seconds": 0.10945790004916489,
+  "exit_code": 0,
+  "timeout": false,
+  "stdout_sha256": "707a3aa005e3e868238d52bb8456aa7cad78ea6cb19330f4b0109cb41912eb3b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

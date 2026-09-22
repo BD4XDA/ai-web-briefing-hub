@@ -1,0 +1,5 @@
+- id: headless-runner
+  disabled: true
+- insert:
+    - id: lab-text-runner
+      name: 'file:///C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/evidence/at02-p0-deepseek-runner.mjs'

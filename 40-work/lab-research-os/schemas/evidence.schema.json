@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "evidence v1",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "const": "evidence"
+    },
+    "path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "captured_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sensitivity": {
+      "type": "string",
+      "enum": [
+        "local-metadata",
+        "sanitized-log",
+        "public"
+      ]
+    },
+    "collector": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "id",
+    "kind",
+    "path",
+    "sha256",
+    "captured_at",
+    "locator",
+    "scope",
+    "sensitivity",
+    "collector"
+  ],
+  "additionalProperties": false
+}

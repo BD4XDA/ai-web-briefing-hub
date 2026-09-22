@@ -1,0 +1,197 @@
+{
+  "task_id": "AT02-pilot-A",
+  "collected_at": "2026-09-21T15:53:12.906847+00:00",
+  "baseline_checkpoint": "20260921T234855-578d72ce2f6e",
+  "expected_checkpoint": "20260921T183037-034ade6bf069",
+  "scope": {
+    "max_files": 30,
+    "max_depth": 2,
+    "files_sampled": 8,
+    "omitted": [
+      "message/activity content",
+      "secrets/auth/env/config values",
+      "full drive/corpus",
+      "live APIs"
+    ]
+  },
+  "selection_policy": "Approved packet paths only; two router source files; allow-listed projections; no symlink traversal.",
+  "evidence": [
+    {
+      "id": "A-E1",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-A\\router-projection.json",
+      "sha256": "0618ed8b3c77c4117d5b69bdf9c6512f0e2bceeabd2d5ea96890413f59b5e873",
+      "captured_at": "2026-09-21T15:53:12.906847+00:00",
+      "locator": "JSON keys router_package/router_sources",
+      "scope": "router package and two source projections",
+      "sensitivity": "local-metadata",
+      "collector": "collector_pilot_a.py"
+    },
+    {
+      "id": "A-E2",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-A\\package-projection.json",
+      "sha256": "3229d6da6d58144c977dbb18a2acacb3f11f4010697a1483bd2d73d281c026d8",
+      "captured_at": "2026-09-21T15:53:12.906847+00:00",
+      "locator": "JSON keys web_package/cli_package",
+      "scope": "web and CLI package projections",
+      "sensitivity": "local-metadata",
+      "collector": "collector_pilot_a.py"
+    },
+    {
+      "id": "A-E3",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-A\\team-projection.json",
+      "sha256": "5139eaa0881b2535ffe039f4eeeb464fd385cfdbf6e68079126093a4488433b6",
+      "captured_at": "2026-09-21T15:53:12.906847+00:00",
+      "locator": "JSON keys assistants/teams/counts",
+      "scope": "agent-team safe metadata projection",
+      "sensitivity": "local-metadata",
+      "collector": "collector_pilot_a.py"
+    },
+    {
+      "id": "A-E4",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-A\\cli-version-stream.json",
+      "sha256": "d1cd1b93e09b3d02177544353bd89252294f18fcb250e6dc2923859ea965ebce",
+      "captured_at": "2026-09-21T15:53:12.906847+00:00",
+      "locator": "JSON keys command/exit_code/stdout/stderr",
+      "scope": "installed CLI version command stream",
+      "sensitivity": "local-metadata",
+      "collector": "collector_pilot_a.py"
+    },
+    {
+      "id": "A-E5",
+      "kind": "evidence",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\CHECKPOINT.md",
+      "sha256": "ba2663e85b96ab0a905465b25b52c2dc23ad3e26a7b948b7348c8052aeea9b33",
+      "captured_at": "2026-09-21T15:53:12.906847+00:00",
+      "locator": "Checkpoint ID line",
+      "scope": "latest committed project state",
+      "sensitivity": "local-metadata",
+      "collector": "collector_pilot_a.py"
+    }
+  ],
+  "records": [
+    {
+      "id": "harness-dsh-router",
+      "label": "DSH Sol/Luna router plugin",
+      "observed_at": "2026-09-21T15:53:12.906847+00:00",
+      "status": "configured",
+      "evidence_ids": [
+        "A-E1",
+        "A-E2"
+      ],
+      "facts": [
+        "Router package and source projections were captured from the approved local plugin path.",
+        "Two inspected source files expose state gating and model catalog helpers."
+      ],
+      "unknowns": [
+        "No live provider/API invocation was performed; currently-live status is unknown."
+      ],
+      "kind": "agent-harness",
+      "entity_type": "plugin",
+      "model_id": "unknown",
+      "harness": "DSH",
+      "capabilities": [
+        "routing",
+        "agent state gating",
+        "model catalog projection"
+      ]
+    },
+    {
+      "id": "agent-team-templates",
+      "label": "Stored DSH agent/team templates",
+      "observed_at": "2026-09-21T15:53:12.906847+00:00",
+      "status": "configured",
+      "evidence_ids": [
+        "A-E3"
+      ],
+      "facts": [
+        "2 assistant template records and 2 team records were projected by allow-listed fields.",
+        "Stored team states include active and error values as metadata."
+      ],
+      "unknowns": [
+        "Stored configuration does not establish a running agent or live team."
+      ],
+      "kind": "agent-harness",
+      "entity_type": "agent",
+      "model_id": "gpt-5.6-sol / unknown per record",
+      "harness": "DSH agent-team storage",
+      "capabilities": [
+        "configured assistant templates",
+        "team metadata"
+      ]
+    },
+    {
+      "id": "workspace-dsh-web",
+      "label": "Installed DSH web profile",
+      "observed_at": "2026-09-21T15:53:12.906847+00:00",
+      "status": "configured",
+      "evidence_ids": [
+        "A-E2"
+      ],
+      "facts": [
+        "Approved web package manifest declares DSH bundles and a file-linked Sol/Luna router dependency."
+      ],
+      "unknowns": [
+        "Profile process liveness and loaded runtime state were not tested."
+      ],
+      "kind": "workspace",
+      "root_path": "C:/Users/ASUS/.dsh/profiles/web",
+      "coverage": "bounded-sample",
+      "sampled_files": 1,
+      "duplicate_candidates": []
+    },
+    {
+      "id": "project-lab-research-os",
+      "label": "Canonical lab research OS project",
+      "observed_at": "2026-09-21T15:53:12.906847+00:00",
+      "status": "observed",
+      "evidence_ids": [
+        "A-E5"
+      ],
+      "facts": [
+        "Latest committed checkpoint is 20260921T183240-2a5430059765 as loaded before collection."
+      ],
+      "unknowns": [
+        "Checkpoint is a historical snapshot and does not prove live infrastructure state."
+      ],
+      "kind": "project",
+      "project_id": "lab-research-os",
+      "root_path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os",
+      "repository_path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub",
+      "root_discovery": "PROJECT.md and .lab-project.json"
+    },
+    {
+      "id": "memory-canonical-rules",
+      "label": "Canonical project instruction and memory anchors",
+      "observed_at": "2026-09-21T15:53:12.906847+00:00",
+      "status": "configured",
+      "evidence_ids": [
+        "A-E5"
+      ],
+      "facts": [
+        "AGENTS.md, PROJECT.md and CHECKPOINT.md are present in the approved project root."
+      ],
+      "unknowns": [
+        "Worker did not inspect global auth/config or infer loader behavior."
+      ],
+      "kind": "instruction-memory",
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\AGENTS.md",
+      "owner": "Human PI / Astra architecture",
+      "authority": "AGENTS.md and PROJECT.md",
+      "loader": "project procedure; runtime loader not tested"
+    }
+  ],
+  "omissions": [
+    {
+      "item": "stored message/activity payloads",
+      "reason": "excluded sensitive/unnecessary content"
+    },
+    {
+      "item": "live process/provider state",
+      "reason": "no service/API calls authorized"
+    }
+  ]
+}

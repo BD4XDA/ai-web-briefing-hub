@@ -1,0 +1,24 @@
+{
+  "command": [
+    "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "-B",
+    "artifacts/at07/test_local_repair.py"
+  ],
+  "started_at_utc": "2026-09-22T01:50:47.644578+00:00",
+  "finished_at_utc": "2026-09-22T01:50:47.790286+00:00",
+  "exit_code": 0,
+  "timeout": false,
+  "stdout_sha256": "dc599fe8e81655a2c9b18236e1378d7c1b8ae9a2fab52f5c45e526f80cca540d",
+  "stderr_sha256": "278e744a4c40e29fe2769444d16b78acbb259428b3d2c3977f95d22595460140",
+  "fixtures": "synthetic except original retained event/stream replay; no worker launch",
+  "code_bindings": [
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at07\\local_repair.py",
+      "sha256": "272625e3c23bca381bdf727d323f85c41e3fbdc73f5231fa65fa3366fcebb789"
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at07\\test_local_repair.py",
+      "sha256": "95ee9865692822be8b7dc806d7ba58ac9575ea9e96b1eff18441c526ada2571e"
+    }
+  ]
+}

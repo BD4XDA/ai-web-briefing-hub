@@ -1,0 +1,42 @@
+{
+  "task_id": "AT02-pilot-C",
+  "command": "python collector.py",
+  "working_directory": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-C",
+  "started_at": "2026-09-21T15:51:56.1911937Z",
+  "finished_at": "2026-09-21T15:51:56.6735305Z",
+  "exit_code": 0,
+  "stdout": "{\"capture\": \"C:\\\\Users\\\\ASUS\\\\Documents\\\\Codex\\\\2026-09-05\\\\gu\\\\ai-web-briefing-hub\\\\40-work\\\\lab-research-os\\\\artifacts\\\\at02\\\\pilot-C\\\\raw-capture.json\", \"files\": 1, \"index_captured\": true}\r\n",
+  "stderr": null,
+  "collector_source": "collector.py",
+  "collector_source_sha256": "fcc36397db49c7afae615c910e40ad09324ac8fef6de5450f744c50cf4e879e0",
+  "capture_evidence_sha256": {
+    "raw-capture.json": "a18759175cf45214223003b2f0531e9e87b618c8776ea0dd90c3360731e9e80e",
+    "index-snapshot.md": "d4fdb5e7ad4e74311bf3a7f60ba25d4adb46f60e4ec7844ad47619bb8cc71ff9"
+  },
+  "deterministic_validation": [
+    {
+      "check": "record-workspace",
+      "exit_code": 0,
+      "stdout": "{\"result\": \"PASS\", \"scope\": \"record structure only\"}\r\n",
+      "stderr": null
+    },
+    {
+      "check": "record-project",
+      "exit_code": 0,
+      "stdout": "{\"result\": \"PASS\", \"scope\": \"record structure only\"}\r\n",
+      "stderr": null
+    },
+    {
+      "check": "bundle",
+      "exit_code": 1,
+      "stdout": "{\"result\": \"FAIL\", \"error\": \"Bundle requires nonempty reports\"}\r\n",
+      "stderr": null
+    },
+    {
+      "check": "record-verification",
+      "exit_code": 0,
+      "stdout": "{\"result\": \"PASS\", \"scope\": \"record structure only\"}\r\n",
+      "stderr": null
+    }
+  ]
+}

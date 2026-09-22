@@ -1,0 +1,10 @@
+{
+  "command": "python -m unittest discover -s tests -v",
+  "started_at": "2026-09-21T13:06:42+08:00",
+  "duration_seconds": 0.4525,
+  "exit_code": 0,
+  "stdout": "test_checkpoint_replace_failure_does_not_advance_latest ... ok\r\ntest_checkpoint_requires_all_fields_and_evidence ... ok\r\ntest_existing_writer_lock_is_rejected_and_preserved ... ok\r\ntest_legacy_hub_current_backup_is_an_exact_prefix ... ok\r\ntest_normal_checkpoint_writes_and_current_verifies_hash ... ok\r\ntest_project_root_is_marker_identity_not_directory_name ... ok\r\ntest_snapshot_tampering_is_rejected ... ok\r\ntest_stale_expected_rejected_and_old_state_remains ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 8 tests in 0.117s\r\n\r\nOK\r\n",
+  "test_file": "tests/test_foundation.py",
+  "test_file_sha256": "0D5E8C23D85830EAAFDAB7C04719A1E375B71181E55217B8CEA902F40959F108",
+  "scope": "Temporary directories only; no model calls; foundation.py unchanged"
+}

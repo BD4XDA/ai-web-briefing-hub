@@ -1,0 +1,34 @@
+{
+  "id": "pilot-b-worker-report",
+  "claim": "Pilot B bounded canonical root/context inventory and deterministic schema/bundle validation completed",
+  "evidence_ids": [
+    "pilot-b-ev-01",
+    "pilot-b-ev-02",
+    "pilot-b-ev-03",
+    "pilot-b-ev-04",
+    "pilot-b-ev-05",
+    "pilot-b-ev-06",
+    "pilot-b-ev-07",
+    "pilot-b-ev-08",
+    "pilot-b-ev-09",
+    "pilot-b-ev-10",
+    "pilot-b-ev-11",
+    "pilot-b-ev-12",
+    "pilot-b-ev-13",
+    "pilot-b-ev-14",
+    "pilot-b-ev-15",
+    "pilot-b-ev-16",
+    "pilot-b-ev-17"
+  ],
+  "verification_method": "Machine-captured root discovery, immutable checkpoint snapshot, bounded file hashes, real schema_check/evidence_check and bundle_check with a temporary fixture report; independent model review remains pending.",
+  "result": "UNCERTAIN",
+  "confidence": 0.85,
+  "anomaly_conflict": [
+    "Independent DeepSeek verification not performed by collection worker",
+    "Project/instruction inventory is bounded and not a drive-wide census"
+  ],
+  "reviewer": "pilot-B-worker",
+  "model_reported": "unknown",
+  "harness": "python collector",
+  "observed_at": "2026-09-21T15:52:59.082653+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "task_id": "AT02-pilot-A",
+  "project_id": "lab-research-os",
+  "project_root": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os",
+  "expected_checkpoint": "20260921T183037-034ade6bf069",
+  "owner": "pilot-A-worker",
+  "objective": "Describe a bounded sample of actual existing DSH/agent/routing infrastructure; separate configured and live status.",
+  "allowed_read_roots": [
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os",
+    "C:/Users/ASUS/.dsh/plugins/dsh-sol-luna-router",
+    "C:/Users/ASUS/.dsh/profiles/web/package.json",
+    "C:/Users/ASUS/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/package.json",
+    "C:/Users/ASUS/.dsh/storages/agent_team.json"
+  ],
+  "write_paths": [
+    "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/artifacts/at02/pilot-A"
+  ],
+  "excluded_scope": [
+    "No secrets/auth/env/config values",
+    "No source changes, deletion or migration",
+    "No full drive/corpus scanning",
+    "No checkpoint writes or model calls during collection"
+  ],
+  "input_evidence_ids": [],
+  "acceptance_criteria": [
+    "Load latest committed state and record input context",
+    "Schema-valid records with exact primary evidence/hashes",
+    "No claims beyond bounded observations",
+    "Independent DeepSeek verification required before integration"
+  ],
+  "verification_route": "Separate DSH DeepSeek Flash text evidence review after deterministic validation",
+  "budget": {
+    "max_files": 30,
+    "max_depth": 2,
+    "max_model_calls": 0
+  },
+  "resume_action": "Read packets/at02-pilot-A.md and protocols/AT02-PILOTS.md; write candidate artifacts, retain failure evidence."
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\verify-pilots.py"
+  ],
+  "working_directory": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os",
+  "verifier_script": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\verify-pilots.py",
+  "verifier_script_sha256": "6205405825ab4c83fc8da436fa48fec0afc4f83c2680d5440f3adc4327747ca8",
+  "started_at_utc": "2026-09-21T16:00:42.9971555Z",
+  "exit_code": 0,
+  "stdout": "[{\"pilot\": \"A\", \"result\": \"HELD\", \"error\": \"Unknown or missing bundle fields\", \"limitations\": [\"No live provider/API state; all records are stored/configured, not currently-live.\", \"Excluded: message/activity content, secrets/auth/config, full corpus, live APIs.\", \"Deterministic input checks supplied; this review does not execute collection or validate validator correctness.\"]}, {\"pilot\": \"B\", \"result\": \"HELD\", \"error\": \"Integration held: unresolved verification\", \"limitations\": [\"Bounded 17-file sample; not a repository- or drive-wide census.\", \"No live model/harness route exercised; model_id unknown.\", \"Repository root recorded as C:\\\\...\\\\gu, a different path from Pilot A's repository_path; not reconciled here.\", \"Baseline/current checkpoint difference classified as planned drift, not independently confirmed.\"]}, {\"pilot\": \"C\", \"result\": \"HELD\", \"error\": \"Integration held: unresolved verification\", \"limitations\": [\"Single selected area (00_������), one file at depth 1; drive-wide corpus coverage unknown.\", \"No scientific content read or inferred from filenames; no paper bodies/PDFs.\", \"No live-service or project-association claim; project_id unknown, repository association unestablished.\", \"Bounded depth 2; deeper entries and symlinks excluded.\"]}]\r\n",
+  "stderr": "",
+  "finished_at_utc": "2026-09-21T16:01:14.2208905Z",
+  "duration_seconds": 31.2228889
+}

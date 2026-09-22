@@ -1,0 +1,29 @@
+{
+  "command": [
+    "C:\\Users\\ASUS\\AppData\\Local\\OpenAI\\Codex\\bin\\cdef5aaf3e41ab53\\codex.EXE",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--json",
+    "--color",
+    "never",
+    "--sandbox",
+    "read-only",
+    "-m",
+    "gpt-6-astra",
+    "-C",
+    "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at05",
+    "--output-last-message",
+    "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at05\\candidate.json",
+    "-"
+  ],
+  "stdin_utf8": "Authorized project entry: C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os. Task packet: packets/at05-recovery-01.md and .json. You are the single fresh successor for this task. Do not resume or use previous session context. Your one authorized observation command is: python \"C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/artifacts/at05/experiment.py\" observe . Run it once using your command tool; it discovers the root from your child working directory and returns actual canonical rules/state/packet/source. Follow the task found there and return ONLY its receipt JSON. No other tools/commands, no files written by you. Controller owns verification and checkpoint.\n",
+  "stdin_sha256": "ed2788de0205ba2b979ce10cd6aa735bfbdbc561ddf832be728c7e1a68bda987",
+  "history_mode": "new invocation; no resume/fork/history supplied",
+  "model_selection": "same model as current user config; user config otherwise ignored",
+  "environment_overrides": {
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "started_at_utc": "2026-09-22T01:10:38.018363+00:00"
+}

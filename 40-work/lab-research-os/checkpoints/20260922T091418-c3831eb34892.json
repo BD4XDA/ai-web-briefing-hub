@@ -1,0 +1,52 @@
+{
+  "completed": [
+    "Exactly one new ephemeral CLI worker invocation and one DSH independent evidence-package review completed.",
+    "Worker command was rejected before successful observation; raw streams preserved; no recovery payload exists.",
+    "Automatic gate withheld writeback, then committed 20260922T091207-ca38de8b3e1a.",
+    "Coordinator inspected evidenced classification/provenance exceptions and qualified C2 without rerunning or changing automatic result."
+  ],
+  "created_at": "2026-09-22T09:14:18+0800",
+  "current_verified_state": [
+    "AT05 final: C1 NOT PROVEN; C2 UNCERTAIN; P5 UNCERTAIN; P6 YELLOW.",
+    "Automatic result remains FAIL and canonical receipt WITHHELD. No criteria changed after execution and no failed gate promoted to PASS.",
+    "P3/P4 valid inherited closure; Vela/Janus/Seshat HELD. Foundation v0.1 unchanged."
+  ],
+  "decisions": [
+    "Supersede the task script's C2 PROVEN meta-claim with UNCERTAIN; safe rejection alone does not prove correct FAIL/UNCERTAIN classification.",
+    "No Foundation repair, task-adapter repair, worker retry, review retry, broader census or migration."
+  ],
+  "evidence_references": [
+    "artifacts/at05/EXCEPTION-JUDGMENT.md",
+    "packets/at05-recovery-01.json",
+    "packets/at05-recovery-01.md",
+    "artifacts/at05/prelaunch-binding.json",
+    "artifacts/at05/worker-execution.json",
+    "artifacts/at05/worker.stdout",
+    "artifacts/at05/worker.stderr",
+    "artifacts/at05/deterministic-validation.json",
+    "artifacts/at05/review-response.json",
+    "artifacts/at05/review-execution.json",
+    "artifacts/at05/automatic-acceptance.json",
+    "artifacts/at05/terminal.json"
+  ],
+  "in_progress": [],
+  "known_risks": [
+    "DeepSeek FAIL0.86 included a denial-evidence limitation and unsupported approval contradiction; raw stderr supports the denial.",
+    "New invocation identity does not prove actual project recovery.",
+    "Held pilot data remain unusable as trusted task input."
+  ],
+  "next_actions": [
+    "Next authorized planning action only: draft one minimal diagnostic/repair proposal for CLI policy provenance, error-event classification and raw-stream evidence packaging. Do not apply fixes or launch another attempt without separate bounded authorization.",
+    "Do not repeat AT05, AT03-loop-01, Vela/Janus/Seshat, P0-P2, accepted tests or the completed evidence review."
+  ],
+  "open_questions": [
+    "Applicable policy cause beyond blocked-by-policy rejection remains unclassified; no successful recovery occurred.",
+    "Skill warning misclassified as extra tool action; review package omitted raw denial stderr.",
+    "Provider request count and context internals cannot be fully certified from retained CLI telemetry."
+  ],
+  "parent": "20260922T091207-ca38de8b3e1a",
+  "priority": "EXIT",
+  "session": "AT05",
+  "stage": "AT05-exception-terminal",
+  "status": "complete"
+}

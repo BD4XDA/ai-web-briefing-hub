@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "agent-harness pilot v1",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observed_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "configured",
+        "observed",
+        "tested",
+        "currently-live",
+        "unknown"
+      ]
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "kind": {
+      "const": "agent-harness"
+    },
+    "entity_type": {
+      "enum": [
+        "agent",
+        "harness",
+        "model",
+        "route",
+        "plugin",
+        "skill",
+        "mcp"
+      ]
+    },
+    "model_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "harness": {
+      "type": "string",
+      "minLength": 1
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "id",
+    "label",
+    "observed_at",
+    "status",
+    "evidence_ids",
+    "facts",
+    "unknowns",
+    "kind",
+    "entity_type",
+    "model_id",
+    "harness",
+    "capabilities"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,24 @@
+{
+  "id": "at02-p0-supplement-verification",
+  "claim": "The recorded successful test run is locally hash-bound to the current tools/contracts.py and tests/test_contracts.py bytes, and the supplied test inventory appears to cover the stated contract gates; the claim remains limited because the review response was truncated and identified a count/grouping ambiguity.",
+  "evidence_ids": ["at02-p0-contracts-recapture", "at02-p0-binding", "at02-p0-supplement-prompt", "at02-p0-supplement-response", "at02-p0-supplement-execution"],
+  "verification_method": "Review of the exact recorded subprocess capture, local current-file SHA256 binding, and actual source/test excerpts supplied in the prompt. No tests, commands, tools, or web lookups were executed by the reviewer.",
+  "result": "UNCERTAIN",
+  "confidence": 0.72,
+  "anomaly_conflict": [
+    "The DSH response ended with reason max-tokens, so its report is preserved but truncated.",
+    "The prompt inventory may enumerate more gate variants than the recorded Ran 10 tests count, depending on grouping; verbatim test output does not resolve this mapping ambiguity.",
+    "The local hash binding establishes current-byte equality at binding time, not independent cryptographic authenticity or production integration."
+  ],
+  "mocks_inventory": [
+    "Temporary fixture directories/files are used by the reported unit tests.",
+    "The valid-bundle path mocks the absent P3 project schema; production schemas and end-to-end integration are not tested."
+  ],
+  "reviewer": "deepseek-flash via dsh headless text runner",
+  "model_requested": "deepseek-flash",
+  "model_returned_trace": "deepseek-flash",
+  "provider_returned_trace": "deepseek-official",
+  "harness": "dsh",
+  "tool_calls": 0,
+  "observed_at": "2026-09-21T18:25:47+08:00"
+}

@@ -1,0 +1,31 @@
+{
+  "task_id": "AT02-pilot-A",
+  "context": {
+    "loaded": [
+      "AGENTS.md",
+      "PROJECT.md",
+      "CHECKPOINT.md",
+      "decisions/0003-foundation-v0.1.md",
+      "protocols/AT02-PILOTS.md",
+      "packets/at02-pilot-A.json",
+      "packets/at02-pilot-A.md"
+    ],
+    "necessary": [
+      "approved manifests and storage projection"
+    ],
+    "missing": [
+      "live runtime/API state"
+    ],
+    "excess": [],
+    "context_failure": null
+  },
+  "task_type": "bounded infrastructure metadata census",
+  "capability_required": [
+    "filesystem metadata projection",
+    "schema-bound record assembly"
+  ],
+  "requested_model": "unknown",
+  "requested_harness": "local Python collector",
+  "routing_outcome": "local collector executed",
+  "routing_mismatch": "none observed; live model/harness identity not applicable"
+}

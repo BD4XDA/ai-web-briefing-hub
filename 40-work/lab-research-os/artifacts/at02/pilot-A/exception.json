@@ -1,0 +1,13 @@
+{
+  "id": "AT02-pilot-A-F1-cli-version-unavailable",
+  "problem": "The permitted dsh --version probe could not resolve the dsh executable in the collector environment.",
+  "evidence_ids": ["A-E4"],
+  "conflicting_evidence_ids": [],
+  "attempts": ["Ran dsh --version once during bounded collection; retained stdout and stderr in cli-version-stream.json."],
+  "confidence": 1.0,
+  "possible_explanations": ["The installed package manifest exists but its executable is not on this process PATH."],
+  "consequence": "CLI liveness/version remains unknown; package metadata observations remain usable.",
+  "recommended_next_check": "A coordinator may perform one separately authorized environment-path check without expanding the pilot source scope.",
+  "level": "L0",
+  "owner": "pilot-A-worker"
+}

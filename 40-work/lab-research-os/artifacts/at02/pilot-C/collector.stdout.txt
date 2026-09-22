@@ -1,0 +1,1 @@
+{"capture": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-C\\raw-capture.json", "files": 1, "index_captured": true}

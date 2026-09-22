@@ -1,0 +1,16 @@
+[
+  {
+    "pilot": "C",
+    "checks_completed": [
+      "packet schema/root",
+      "actual inventory schemas",
+      "evidence paths/hashes",
+      "unique IDs",
+      "record references",
+      "evidence count budget"
+    ],
+    "records_checked": 2,
+    "evidence_checked": 2,
+    "scope": "Deterministic input checks only; no acceptance/model/scientific/validator-correctness claim"
+  }
+]

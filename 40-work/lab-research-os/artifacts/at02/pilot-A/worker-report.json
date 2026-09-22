@@ -1,0 +1,19 @@
+{
+  "id": "AT02-pilot-A-worker-report",
+  "claim": "Bounded machine-captured projections and schema-shaped records were assembled for approved DSH/agent/routing sources.",
+  "evidence_ids": [
+    "A-E1",
+    "A-E2",
+    "A-E3",
+    "A-E4",
+    "A-E5"
+  ],
+  "verification_method": "Deterministic local collection and schema validation pending coordinator review",
+  "result": "UNCERTAIN",
+  "confidence": 0.82,
+  "anomaly_conflict": [],
+  "reviewer": "pilot-A-worker",
+  "model_reported": "unknown",
+  "harness": "local Python collector",
+  "observed_at": "2026-09-21T15:53:12.906847+00:00"
+}

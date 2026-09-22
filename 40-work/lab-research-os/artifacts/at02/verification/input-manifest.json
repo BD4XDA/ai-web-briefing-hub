@@ -1,0 +1,65 @@
+{
+  "captured_at": "2026-09-21T16:00:43.290879+00:00",
+  "files": [
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-A\\collection.json",
+      "sha256": "dc50e1f79b46da88962441537a1e71c541afc5e62a43f9a9ab2ca49958541848"
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-A\\candidate-bundle.json",
+      "sha256": "38ee7dd66af2922798247da1609c9d9918018ce91ecba118131077b9d936a38f"
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-A\\execution.json",
+      "sha256": "a2bb71bbbac30d4dde0ada2f7870c2eee4bdf246b7bddce3e1ccdd0b5094b02b"
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-A\\worker-report.json",
+      "sha256": "5cf9edf4d3ba0762ca880b7e53069bef36fc4764b485e146a4e160e03044cc9a"
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-A\\observations.json",
+      "sha256": "c948c458dd4fea57329120ee3c3cf254c8e879d2be2975833dd949e5de89ec70"
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-B\\collection.json",
+      "sha256": "cc2957db14c6dbb269cf12872e18436a63c652e10a3cabfd7ed6d70779e53510"
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-B\\candidate-bundle.json",
+      "sha256": "e27ef905844d8effdac8163d2524b4dfd216e4c8d9892087a39899ad9305ce8c"
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-B\\execution.json",
+      "sha256": "1d3ed0e26f26558cb74cbf5361e4d78e9f1188a7fa34eafffefaab6f39b77c24"
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-B\\worker-report.json",
+      "sha256": "3ebf8a503ec5e5c00e14019b19d93b9d5935414e12382c04c4a494a0b528a124"
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-B\\observations.json",
+      "sha256": "49e974082770437b7b024f28764329b8d52bce21d33bd7be216893237f05ec13"
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-C\\collection.json",
+      "sha256": "12f008276bf8add91056d3918e3a55a61fa67d12a79644f3c1c5545e8c1b937b"
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-C\\candidate-bundle.json",
+      "sha256": "f0d4ddac3cf1b5882bf0a45a845767f5d8ea97ce67b1e1e7cd7f9012ecafc59f"
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-C\\execution.json",
+      "sha256": "1cf5c54c857798c19865df05a8851385542a078a19778f93885a0a47dd9d1983"
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-C\\worker-report.json",
+      "sha256": "3c9067b84d5a93f9b14ff6df3cbc98c3a31565b9e410c6731c4155f54f6636fa"
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-C\\observations.json",
+      "sha256": "d47ee140302892b8a0d034810e24b1f1e285ddc60f7c4c037e76ede572479625"
+    }
+  ]
+}

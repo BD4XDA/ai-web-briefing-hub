@@ -1,0 +1,30 @@
+{
+  "prior_context": {
+    "present": true,
+    "details": "This worker previously performed P0/P1/P2 work in the same conversation; Pilot B is bounded continuation, not a zero-conversation fresh-owner proof."
+  },
+  "loaded_context": [
+    "marker root",
+    "AGENTS",
+    "PROJECT",
+    "committed checkpoint",
+    "decision 0003",
+    "Pilot B packet/procedure",
+    "contracts and five pilot schemas"
+  ],
+  "missing_context": [
+    "Independent DeepSeek verification is separate and not performed by this collector"
+  ],
+  "excess_context_omitted": [
+    "Unrelated repository areas and full corpus"
+  ],
+  "context_failure": null,
+  "routing": {
+    "requested_model": "unknown during collection",
+    "harness": "python collector",
+    "capability_required": "local metadata and schema validation",
+    "outcome": "bounded local collection only",
+    "mismatch": "No live model route was exercised"
+  },
+  "planned_change": "Packet baseline precedes current P2 snapshot; additions are packets/schemas/context only as documented, no source-data change claim."
+}

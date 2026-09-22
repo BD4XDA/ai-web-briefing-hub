@@ -1,0 +1,54 @@
+{
+  "path": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/evidence/foundation-v0.1-manifest.json",
+  "sha256": "1e96bf20c4ac476cc4ab92d626d800f0694900aadeb370ed834f3e76332c3535",
+  "bytes": 1606,
+  "captured_at_utc": "2026-09-21T16:22:48.481020+00:00",
+  "content": {
+    "release": "LAB FOUNDATION v0.1",
+    "status": "frozen",
+    "created_at": "2026-09-21T10:30:37.811151+00:00",
+    "files": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "8130570ab08a572e9e7c59e9fccbf2e884d7dfc304b02b9234719f5d29f97e50"
+      },
+      {
+        "path": "tools/foundation.py",
+        "sha256": "4bd38c9aa8ec24f4ba58c4fb1fa2a94769e866d23dd03e19437ae61ae1c6bc53"
+      },
+      {
+        "path": "tools/contracts.py",
+        "sha256": "b4517c1ac37062377b8899ed1f84ea535c88b90ed25cc73aeea82f769fcf93d1"
+      },
+      {
+        "path": "protocols/MEMORY.md",
+        "sha256": "b1c95afab9ac06d3a6df405cb4ea7bc1c7465ee5681570ae53bfca050a93c593"
+      },
+      {
+        "path": "protocols/HANDOFF.md",
+        "sha256": "ba5e90aa979dc6bd13b2fbf9a224fad53d6122bf8dfa98eea82c946407523b47"
+      },
+      {
+        "path": "protocols/VERIFICATION.md",
+        "sha256": "0c5e79c792256037e19e9dc4b96d970170fc32cf27f9feab9a035d8e1bd9df5f"
+      },
+      {
+        "path": "schemas/task-packet.schema.json",
+        "sha256": "c39d14dbe5105bb98db31e41347fc84efa0423c2a42597bb41f1d3d5ee2abddb"
+      },
+      {
+        "path": "schemas/verification.schema.json",
+        "sha256": "22d2f9a5f7ca652dfd2d6be1db19cb81541f731760367b8b233a195ba3b54d29"
+      },
+      {
+        "path": "schemas/exception.schema.json",
+        "sha256": "610d22bdf8b12acd6c3bb83808c34932acafa61cf7c549fbd3b8b5d049b670f1"
+      },
+      {
+        "path": "schemas/evidence.schema.json",
+        "sha256": "37b51f4ba4eea9326a00e9c49c41b1aba937fd3494c26c67354e54f654d8ad71"
+      }
+    ],
+    "scope": "Contract freeze, not production qualification"
+  }
+}

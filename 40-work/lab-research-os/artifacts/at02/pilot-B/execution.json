@@ -1,0 +1,22 @@
+{
+  "command": [
+    "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\pilot-B\\collector.py"
+  ],
+  "started_at_utc": "2026-09-21T15:52:58.928069+00:00",
+  "finished_at_utc": "2026-09-21T15:52:59.082282+00:00",
+  "duration_seconds": 0.15421129995957017,
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "collector_sha256": "eb5b27358ed9d17ed18542e0e64d043e16c583874107357a0bae1c5810fe4017",
+  "validation": {
+    "result": "PASS",
+    "task_id": "AT02-pilot-B",
+    "records": 5,
+    "evidence": 17,
+    "reports": 1,
+    "limit": "Structure, references, file integrity and gates only; not semantic truth or runtime isolation."
+  },
+  "fixture_report": "Temporary fixture only; not independent verification."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "AT02-P0-AT01-interruption",
+  "problem": "AT01 P2 worker was interrupted by Codex usage limit after writing test code; no P2 run or DeepSeek review artifact was committed.",
+  "evidence_ids": [
+    "AT01-P1-checkpoint",
+    "AT02-P0-file-inventory"
+  ],
+  "conflicting_evidence_ids": [],
+  "attempts": [
+    "AT01 worker exited with explicit usage-limit error.",
+    "AT02 resumed same worker to run existing P2 tests and one DeepSeek verification only."
+  ],
+  "confidence": 0.99,
+  "possible_explanations": [
+    "Execution stopped before evidence capture; existence of test source is not a passing run."
+  ],
+  "consequence": "P2 remains unverified until original execution and independent review evidence exist; no scientific or foundation success inferred.",
+  "recommended_next_check": "Read the resumed worker's P2 run and DeepSeek verification artifacts; do not rerun P1.",
+  "level": "L1",
+  "owner": "continuity_health"
+}

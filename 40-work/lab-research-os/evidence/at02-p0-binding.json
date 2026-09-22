@@ -1,0 +1,39 @@
+{
+  "id": "at02-p0-binding",
+  "captured_at": "2026-09-21T10:25:07.579Z",
+  "recapture_path": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/evidence/at02-p0-contracts-recapture.json",
+  "recapture_execution": {
+    "command": [
+      "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "-m",
+      "unittest",
+      "tests.test_contracts",
+      "-v"
+    ],
+    "cwd": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os",
+    "started_at_utc": "2026-09-21T10:21:37.736780+00:00",
+    "finished_at_utc": "2026-09-21T10:21:38.429214+00:00",
+    "exit_code": 0,
+    "stderr_line_count": 13
+  },
+  "expected_hashes": {
+    "implementation": "b4517c1ac37062377b8899ed1f84ea535c88b90ed25cc73aeea82f769fcf93d1",
+    "test_file": "b4688d42939c83ac3e590d89f556e596bbd1bf69896c653c1145be4d06641a67"
+  },
+  "current_hashes": {
+    "implementation": {
+      "path": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/tools/contracts.py",
+      "sha256": "b4517c1ac37062377b8899ed1f84ea535c88b90ed25cc73aeea82f769fcf93d1"
+    },
+    "test_file": {
+      "path": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/tests/test_contracts.py",
+      "sha256": "b4688d42939c83ac3e590d89f556e596bbd1bf69896c653c1145be4d06641a67"
+    }
+  },
+  "hash_matches": {
+    "implementation": true,
+    "test_file": true
+  },
+  "all_hashes_match": true,
+  "scope": "Local hash binding only; no test execution."
+}

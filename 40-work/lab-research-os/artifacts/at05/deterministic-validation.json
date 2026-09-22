@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "prelaunch_binding_unchanged": true,
+    "expected_current": true,
+    "worker_exit0": true,
+    "thread_identity_present": true,
+    "turn_completed": true,
+    "one_observation_command": false,
+    "no_other_tool": false,
+    "event_parse_clean": true,
+    "observation_present": false,
+    "candidate_present": true
+  },
+  "result": "FAIL",
+  "scope": "Mechanical evidence only; not model authenticity, science, all OS reads or opaque provider context."
+}

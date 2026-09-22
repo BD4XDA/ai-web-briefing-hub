@@ -1,0 +1,27 @@
+{
+  "task_id": "AT02-pilot-C",
+  "loaded_context": [
+    "CHECKPOINT.md latest 20260921T183240-2a5430059765",
+    "packets/at02-pilot-C.json and .md",
+    "protocols/AT02-PILOTS.md",
+    "decisions/0003-foundation-v0.1.md"
+  ],
+  "necessary_context": [
+    "Packet-approved literature root and bounded selection rules",
+    "workspace/project/evidence/verification schemas"
+  ],
+  "missing_context": [
+    "Independent DeepSeek verification, not run during collection"
+  ],
+  "excess_context": [],
+  "context_failure": null,
+  "task_type": "bounded metadata collection",
+  "capability_required": "local filesystem metadata capture",
+  "requested_model": "none",
+  "requested_harness": "local Python process",
+  "routing_outcome": "executed locally without model call",
+  "routing_mismatch": null,
+  "baseline_checkpoint": "20260921T183037-034ade6bf069",
+  "observed_checkpoint": "20260921T183240-2a5430059765",
+  "difference": "P2 dispatch checkpoint is newer and adds the pilot packets; no source-data change observed."
+}

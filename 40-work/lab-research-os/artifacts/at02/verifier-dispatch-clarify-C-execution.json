@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\verify-pilots.py",
+    "--clarify-C"
+  ],
+  "working_directory": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os",
+  "verifier_script": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\verify-pilots.py",
+  "verifier_script_sha256": "55f1937537344028ec8a78af23a32f5fcf6289ed587b0b9449f2669196e76675",
+  "started_at_utc": "2026-09-21T16:06:55.6520888Z",
+  "exit_code": 0,
+  "stdout": "[{\"pilot\": \"C\", \"result\": \"HELD\", \"error\": \"Integration held: unresolved verification\", \"limitations\": [\"Bounded sample: 1 file, depth 2, max 30; non-selected areas, symlinks, depth>2, PDFs/paper bodies and secret/auth/config values excluded �� no drive-wide or corpus-coverage claim.\", \"Project association remains unknown; no supported project identifier established.\", \"No duplicate candidate established; filename/size inference not used.\", \"No live-service or signed-authenticity claim; observations are stored snapshot artifacts, not live drive state.\", \"Independent DeepSeek verification report and final bundle acceptance gate have not yet run; this stage's result is interim.\", \"Reviews supplied evidence only; collector not re-executed, deterministic checks not re-run or validated for correctness.\", \"Collection metadata itself (raw-capture.json, index-snapshot.md, collector.py) not re-read; hash equality relayed from execution.json.\"]}]\r\n",
+  "stderr": "",
+  "finished_at_utc": "2026-09-21T16:07:00.3748878Z",
+  "duration_seconds": 4.7218195
+}

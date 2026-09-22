@@ -1,0 +1,30 @@
+{
+  "command": [
+    "C:\\Users\\ASUS\\AppData\\Local\\OpenAI\\Codex\\bin\\cdef5aaf3e41ab53\\codex.EXE",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--json",
+    "--color",
+    "never",
+    "--sandbox",
+    "read-only",
+    "-m",
+    "gpt-6-astra",
+    "-C",
+    "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at05",
+    "--output-last-message",
+    "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at05\\candidate.json",
+    "-"
+  ],
+  "cwd": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at05",
+  "pid": 35676,
+  "controller_pid": 65704,
+  "started_at_utc": "2026-09-22T01:10:38.018702+00:00",
+  "finished_at_utc": "2026-09-22T01:11:06.361625+00:00",
+  "duration_seconds": 28.342926700017415,
+  "exit_code": 0,
+  "timeout": false,
+  "stdout_sha256": "05741d61f39b4baa3d1e8b785620397b935e20ca5682d7ca8372844ea0531570",
+  "stderr_sha256": "3885927f2843e391b735c0e5f0c04c5b827d156c1060aa315a191503c247c3f2"
+}

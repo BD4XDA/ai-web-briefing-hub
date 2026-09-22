@@ -1,0 +1,14 @@
+{
+  "command": "python -m unittest tests.test_contracts -v",
+  "started_at": "2026-09-21T18:15:51+08:00",
+  "finished_at": "2026-09-21T18:16:07+08:00",
+  "exit_code": 0,
+  "duration_seconds": 0.5284,
+  "stdout": "test_evidence_count_over_budget_is_rejected ... ok\r\ntest_evidence_hash_mismatch_is_rejected ... ok\r\ntest_evidence_outside_approved_root_and_resolved_traversal_are_rejected ... ok\r\ntest_fail_uncertain_low_confidence_and_unresolved_anomaly_are_blocked ... ok\r\ntest_malformed_report_is_rejected_by_real_schema ... ok\r\ntest_missing_evidence_reference_is_rejected ... ok\r\ntest_packet_root_identity_mismatch_is_rejected ... ok\r\ntest_record_evidence_must_be_covered_by_report ... ok\r\ntest_valid_packet_and_bundle ... ok\r\ntest_write_path_escape_is_rejected ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 10 tests in 0.132s\r\n\r\nOK\r\n",
+  "stderr": "",
+  "test_file": "tests/test_contracts.py",
+  "test_file_sha256": "B4688D42939C83AC3E590D89F556E596BBD1BF69896C653C1145BE4D06641A67",
+  "contracts_file": "tools/contracts.py",
+  "contracts_file_sha256": "B4517C1AC37062377B8899ED1F84EA535C88B90ED25CC73AEEA82F769FCF93D1",
+  "scope": "Temporary fixtures; no model calls; no source/protocol/checkpoint edits"
+}

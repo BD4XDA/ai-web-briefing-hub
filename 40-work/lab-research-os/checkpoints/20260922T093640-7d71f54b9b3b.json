@@ -1,0 +1,54 @@
+{
+  "completed": [
+    "Read-only static diagnosis of original AT05 code/events/streams/package with hashes and exact time ordering.",
+    "Bounded read-only log queries for original thread and execution interval returned no matching policy metadata; no unrelated message contents read.",
+    "Separated F4 execution-policy block from later F6 classification and F5 reviewer-input omission.",
+    "Produced one minimum repair/regression/negative-control/revalidation proposal; none executed."
+  ],
+  "created_at": "2026-09-22T09:36:40+0800",
+  "current_verified_state": [
+    "AT06 diagnostic-only closed under latest user brief; C1 NOT PROVEN, C2 UNCERTAIN, P5 UNCERTAIN, P6 YELLOW unchanged.",
+    "F4 classification INSUFFICIENT_EVIDENCE: CLI rejection observed, actual matched rule/classifier input and correctness UNKNOWN.",
+    "F5 evidence-package omission and F6 error-as-action semantics are demonstrated local AT05 adapter defects, not frozen Foundation defects.",
+    "P3/P4 inherited; Vela/Janus/Seshat remain HELD."
+  ],
+  "decisions": [
+    "Latest diagnostic-only AT06 instruction supersedes earlier repair/revalidation draft.",
+    "Do not label C1 as continuity FAILED: recovery observation never successfully ran.",
+    "No Foundation, policy/configuration, adapter or package implementation modifications; no new successor or model review.",
+    "No repair or rerun is implied by a proposal; preserve fail-closed behavior and original evidence."
+  ],
+  "evidence_references": [
+    "artifacts/at06/DIAGNOSIS.md",
+    "artifacts/at06/MINIMUM-REPAIR-PROPOSAL.md",
+    "artifacts/at06/diagnostic-evidence.json",
+    "artifacts/at06/inspect_evidence.py",
+    "artifacts/at05/worker.stderr",
+    "artifacts/at05/worker.stdout",
+    "artifacts/at05/worker-execution.json",
+    "artifacts/at05/experiment.py",
+    "artifacts/at05/review-prompt.txt",
+    "artifacts/at05/review-response.json"
+  ],
+  "in_progress": [],
+  "known_risks": [
+    "Current configuration cannot substitute for ignored/historical AT05 effective policy.",
+    "Repairing F6 does not cure upstream F4 refusal; repairing F5 does not make a policy claim proven.",
+    "A failed read-only diagnostic delegation due to usage limit produced no worker evidence; local bounded diagnosis handled that exception."
+  ],
+  "next_actions": [
+    "Separate authorization required for the bounded sequence in artifacts/at06/MINIMUM-REPAIR-PROPOSAL.md; first resolve F4 decision provenance before any new successor.",
+    "Future implementation scope, if approved: only demonstrated F5/F6 local defects, then bounded regression/negative controls and independent evidence review; no policy weakening.",
+    "Do not repeat AT05/AT03-loop-01/pilots/P0-P2/accepted tests/model review or begin broader census."
+  ],
+  "open_questions": [
+    "F4 matched rule, effective historical policy, normalized tool input and correctness remain UNKNOWN.",
+    "Full shell/profile/interpreter environment semantics not established by historical capture.",
+    "Author intent behind omitted stderr is unknown; implementation omission itself is demonstrated."
+  ],
+  "parent": "20260922T091418-c3831eb34892",
+  "priority": "EXIT",
+  "session": "AT06",
+  "stage": "AT06-diagnostic-only",
+  "status": "complete"
+}

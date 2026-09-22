@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\verify-pilots.py"
+  ],
+  "working_directory": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os",
+  "verifier_script": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\verify-pilots.py",
+  "verifier_script_sha256": "6205405825ab4c83fc8da436fa48fec0afc4f83c2680d5440f3adc4327747ca8",
+  "started_at_utc": "2026-09-21T15:56:17.921924+00:00",
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\r\n  File \"C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os\\artifacts\\at02\\verify-pilots.py\", line 31, in <module>\r\n    raise ValueError('Candidate lacks records/evidence')\r\nValueError: Candidate lacks records/evidence\r\n",
+  "finished_at_utc": "2026-09-21T15:56:18.134854+00:00",
+  "duration_seconds": 0.2129286000272259
+}

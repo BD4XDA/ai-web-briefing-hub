@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "tools/contracts.py",
+    "packet",
+    "packets/at05-recovery-01.json"
+  ],
+  "cwd": "C:\\Users\\ASUS\\Documents\\Codex\\2026-09-05\\gu\\ai-web-briefing-hub\\40-work\\lab-research-os",
+  "pid": 47900,
+  "controller_pid": 65704,
+  "started_at_utc": "2026-09-22T01:10:37.446576+00:00",
+  "finished_at_utc": "2026-09-22T01:10:38.009471+00:00",
+  "duration_seconds": 0.5628985000075772,
+  "exit_code": 0,
+  "timeout": false,
+  "stdout_sha256": "3be28f28d183736dbb5e9df931efd86cfefa3392929953fa75d66e53ecd74d0b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

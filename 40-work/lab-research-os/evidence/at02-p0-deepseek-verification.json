@@ -1,0 +1,49 @@
+{
+  "id": "at02-p0-deepseek-verification",
+  "claim": "The described P2 contract gates are consistent with the ten assertions reported in p2-test-run.json, limited to code/test-contract consistency; this does not establish independently executed tests, production integration, semantic truth, or runtime isolation.",
+  "evidence": [
+    {
+      "id": "at02-p0-prompt",
+      "path": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/evidence/at02-p0-deepseek-prompt.txt",
+      "sha256": "432310B473D87B449DC095170EED043F978BF9C776EC162C7B34D784053074ED",
+      "locator": "full prompt",
+      "scope": "contracts.py gate excerpt and reported p2-test-run.json summary supplied to the bounded review",
+      "captured_at": "2026-09-21T18:21:09+08:00"
+    },
+    {
+      "id": "at02-p0-response",
+      "path": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/evidence/at02-p0-deepseek-response.json",
+      "sha256": "773986C6DA3802C8429DC68B8A4D7FEAF7D0392B5B446259DDB6ADFDF220B323",
+      "locator": "text, reason, tool_calls",
+      "scope": "raw DSH response; returned model deepseek-flash, provider deepseek-official, harness dsh, completed, zero tool calls",
+      "captured_at": "2026-09-21T18:21:16+08:00"
+    },
+    {
+      "id": "at02-p0-execution",
+      "path": "C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/evidence/at02-p0-deepseek-execution.json",
+      "sha256": "8DE339C2DB1FC0F3EE85CDB41D42F656D8226E3D5B4F59194FB570CFD0506744",
+      "locator": "command, started_at, finished_at, duration_seconds, exit_code, stdout, stderr, env",
+      "scope": "subprocess capture for one bounded DSH headless text call",
+      "captured_at": "2026-09-21T18:21:16+08:00"
+    }
+  ],
+  "verification_method": "Independent bounded DeepSeek Flash text review of the supplied contracts.py gate excerpt and reported p2-test-run.json summary; no tests, commands, tools, browsing, or source re-execution performed by the model. The execution wrapper captured the original DSH command and process result separately.",
+  "result": "UNCERTAIN",
+  "confidence": 0.72,
+  "anomaly_conflict": [
+    "The ten-test result and recorded source hashes in p2-test-run.json are reported evidence whose provenance was not independently re-established by this review.",
+    "The bounded review supports code/test-contract consistency only; it does not support a claim that the tests were independently executed in this call."
+  ],
+  "mocks_inventory": [
+    "Temporary fixture directories/files are used by the reported test suite.",
+    "The valid-bundle path mocks the absent P3 project schema.",
+    "No production services, live project roots, network endpoints, or real P3 schema artifacts are exercised."
+  ],
+  "reviewer": "deepseek-flash via dsh headless text runner",
+  "model_requested": "deepseek-flash",
+  "model_returned_trace": "deepseek-flash",
+  "provider_returned_trace": "deepseek-official",
+  "harness": "dsh",
+  "tool_calls": 0,
+  "observed_at": "2026-09-21T18:21:16+08:00"
+}

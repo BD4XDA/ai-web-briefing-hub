@@ -1,0 +1,9 @@
+{
+  "deterministic_pass": true,
+  "review_execution_exit_0": true,
+  "review_completed": true,
+  "review_result": "PASS",
+  "review_confidence": 0.97,
+  "review_anomalies": [],
+  "parse_error": null
+}

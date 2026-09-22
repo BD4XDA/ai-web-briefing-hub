@@ -1,0 +1,78 @@
+{
+  "captured_at_utc": "2026-09-21T16:18:09.9254684Z",
+  "read_only_commands": {
+    "git status --short": [
+      " M ../../60-handoffs/CURRENT.md",
+      "?? ../../10-briefs/2026-09-21-astra-time-02.md",
+      "?? ../../10-briefs/2026-09-21-astra-time-03.md",
+      "?? ../../10-briefs/2026-09-21-lab-foundation.md",
+      "?? ./",
+      "?? ../../50-decisions/2026-09-21-lab-foundation.md"
+    ],
+    "git diff --name-only": "60-handoffs/CURRENT.md",
+    "git diff --cached --name-only": null
+  },
+  "named_task_file_hashes": [
+    {
+      "path": "artifacts/at03/AT03-HANDOFF-DRAFT.md",
+      "sha256": "2fe906c7b383d0dfb0d167e223a3444e63388af5f886c7787c66d2122d8338cd",
+      "bytes": 7374
+    },
+    {
+      "path": "artifacts/at03/P3-PILOT-CLOSURE.md",
+      "sha256": "c8d024b296ad1472620bf358bc28dad1b091ab747302df48350d5ee0880c98f5",
+      "bytes": 2880
+    },
+    {
+      "path": "artifacts/at03/P4-FAILURE-LEARNING.md",
+      "sha256": "6c0ffe2d0f282c8cfce192f3d77797017a5b56eaf28cfe334b1c6bdf40dd0af4",
+      "bytes": 1367
+    },
+    {
+      "path": "artifacts/at03/FAILURE-TAXONOMY.json",
+      "sha256": "586ea5569ba629a8ef64b935ff94a761b2db8585fa91781412f030098c06ec69",
+      "bytes": 6627
+    },
+    {
+      "path": "artifacts/INFRASTRUCTURE-MAP.md",
+      "sha256": "904ff9ceefd8f2311d1b3810343da7cd7ee55d05ec92baf518e8d3e7b0ffdf4c",
+      "bytes": 7270
+    },
+    {
+      "path": "artifacts/at02/verification/acceptance.json",
+      "sha256": "02f7567c4c5d68f982603183bdc40bac36233b8dbb8176106384b4f79949abcc",
+      "bytes": 1426
+    },
+    {
+      "path": "artifacts/at02/verification/review-parsed.json",
+      "sha256": "a2fb89dc6ef296b03bc93aa2652831d2c5bd2a91ee9b7a6839a49f7f19d121f7",
+      "bytes": 4812
+    },
+    {
+      "path": "artifacts/at02/verification-C-clarification/acceptance.json",
+      "sha256": "13f0b1f3c0bfcad5fa1c9c47cddf11af326ff6b4828cc1feedc0ca1646431c58",
+      "bytes": 1023
+    },
+    {
+      "path": "artifacts/at02/verification-C-clarification/review-parsed.json",
+      "sha256": "11f8b425c5f3ed9b3757c53b7ebaa855072c53f65b5b95a37530bc678b2d6482",
+      "bytes": 1812
+    },
+    {
+      "path": "artifacts/at02/verification/discriminating-receipt.json",
+      "sha256": "178adbe826e79fa7b6dcd64011120eda571daee872291d9bebd85cf1a5f5459e",
+      "bytes": 3077
+    },
+    {
+      "path": "packets/at03-p3-closed.json",
+      "sha256": "a10f35303e31a386282e4413631b8a3abda1a43cb51a2d3c2609ee2f72baaea2",
+      "bytes": 5443
+    },
+    {
+      "path": "packets/at03-p4-closed.json",
+      "sha256": "79481463d8902d0d0acb3a5137b6e61683b7162955723ba0949cc79da4011341",
+      "bytes": 5954
+    }
+  ],
+  "scope": "Reporting receipt only; excludes secrets, credentials, raw configs and model payloads."
+}
