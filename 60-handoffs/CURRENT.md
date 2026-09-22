@@ -15,6 +15,10 @@
 此前“仓库刚初始化”的记录保留为历史。Outdex、简历与战雷项目仍后置。
 <!-- /LAB-OS-CANONICAL-20260921 -->
 
+<!-- EVIDENCE-PROPORTIONALITY-20260922 -->
+Evidence proportionality is now canonical for Lab Research OS: agents must not calculate or repeat hashes by default. Use direct inspection, Git diff/status, schema checks or targeted tests unless an explicit byte-identity, boundary-integrity, immutable-checkpoint or tampering/staleness claim requires a digest. Read scoped `CHECKPOINT.md` through `foundation.py show`; Decision 0005 records the rule.
+<!-- /EVIDENCE-PROPORTIONALITY-20260922 -->
+
 <!-- AT04-CLOSURE -->
 AT04 closure: P5 UNCERTAIN; P6 YELLOW. Canonical handoff: [AT04](../40-work/lab-research-os/artifacts/at04/ASTRA-TIME-04-HANDOFF.md). Read scoped checkpoints/LATEST.json through foundation.py; this index does not duplicate state.
 
@@ -29,3 +33,6 @@ AT07 repair-verification handoff: [AT07](../40-work/lab-research-os/artifacts/at
 
 <!-- AT08-CLOSURE -->
 AT08 adjudication/design handoff: [AT08](../40-work/lab-research-os/artifacts/at08/ASTRA-TIME-08-HANDOFF.md). Scoped LATEST remains authoritative.
+
+<!-- SOL-CHECKPOINT-MIRROR-CONSTRAINT -->
+Human PI hard constraint: every Foundation checkpoint must update the generated latest-checkpoint section in [SOL-AGENT.md](../40-work/lab-research-os/SOL-AGENT.md) before `checkpoints/LATEST.json` advances. Decision: [0004](../40-work/lab-research-os/decisions/0004-sol-agent-checkpoint-mirror.md). Scoped LATEST remains authoritative.

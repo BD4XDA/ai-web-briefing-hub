@@ -38,6 +38,9 @@ class FoundationTests(unittest.TestCase):
         (self.root / ".lab-project.json").write_text(
             '{"project_id":"lab-research-os"}', encoding="utf-8"
         )
+        (self.root / "SOL-AGENT.md").write_text(
+            "# Sol adapter\n\nStable manual content.\n", encoding="utf-8"
+        )
         (self.root / "nested" / "child").mkdir(parents=True)
 
     def tearDown(self):
@@ -69,6 +72,11 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(pointer["id"], ident)
         self.assertEqual(pointer["sha256"], hashlib.sha256(snapshot.read_bytes()).hexdigest())
         self.assertEqual(current_record["parent"], None)
+        sol = (self.root / "SOL-AGENT.md").read_text(encoding="utf-8")
+        self.assertIn("Stable manual content.", sol)
+        self.assertIn(f"Checkpoint ID: {ident}", sol)
+        self.assertEqual(sol.count(foundation.SOL_START), 1)
+        self.assertEqual(sol.count(foundation.SOL_END), 1)
 
     def test_stale_expected_rejected_and_old_state_remains(self):
         ident = foundation.checkpoint(self.root, record(), "none")
@@ -111,6 +119,30 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(latest.read_bytes(), before)
         self.assertEqual(foundation.current(self.root)[0], old_id)
         self.assertFalse((self.root / "checkpoints" / "writer.lock").exists())
+
+    def test_sol_agent_replace_failure_does_not_advance_latest(self):
+        old_id = foundation.checkpoint(self.root, record(), "none")
+        latest = self.root / "checkpoints" / "LATEST.json"
+        before = latest.read_bytes()
+        real_replace = foundation.os.replace
+
+        def fail_sol_replace(source, destination):
+            if Path(destination) == self.root / "SOL-AGENT.md":
+                raise OSError("simulated SOL-AGENT replace failure")
+            return real_replace(source, destination)
+
+        with mock.patch.object(foundation.os, "replace", side_effect=fail_sol_replace):
+            with self.assertRaises(OSError):
+                foundation.checkpoint(self.root, record(completed=["new state"]), old_id)
+        self.assertEqual(latest.read_bytes(), before)
+        self.assertEqual(foundation.current(self.root)[0], old_id)
+        self.assertFalse((self.root / "checkpoints" / "writer.lock").exists())
+
+    def test_checkpoint_requires_sol_agent(self):
+        (self.root / "SOL-AGENT.md").unlink()
+        with self.assertRaisesRegex(ValueError, "SOL-AGENT.md is required"):
+            foundation.checkpoint(self.root, record(), "none")
+        self.assertFalse((self.root / "checkpoints" / "LATEST.json").exists())
 
     def test_legacy_hub_current_backup_is_an_exact_prefix(self):
         backup = ROOT / "evidence" / "legacy" / "hub-CURRENT-before-20260921.md"

@@ -1,0 +1,44 @@
+{
+  "priority": "EXIT",
+  "status": "complete",
+  "session": "SOL-CHECKPOINT-CONSTRAINT",
+  "stage": "sol-agent-checkpoint-mirror-handoff-terminal",
+  "current_verified_state": [
+    "Human PI hard constraint is active: every Foundation checkpoint is mirrored into the generated latest-checkpoint section of SOL-AGENT.md before checkpoints/LATEST.json advances.",
+    "LATEST.json, CHECKPOINT.md and the generated SOL-AGENT mirror agreed at checkpoint 20260922T155237-b2f01dc432c3 before final hub handoff indexing.",
+    "All 20 local Foundation and contract tests pass, including missing-SOL-AGENT and failed-Sol-write commit blocking.",
+    "AT08 gate state is unchanged: Successor NOT READY; F5/F6 DISABLED_NOT_ACCEPTED; AT09 capability assessment remains the next proposed bounded task."
+  ],
+  "completed": [
+    "Recorded direct Human PI instruction as decision 0004 and enforced it in foundation.py.",
+    "Updated stable project procedure, Sol adapter, handoff, memory and README guidance.",
+    "Added deterministic regression coverage and ran the complete 20-test suite successfully.",
+    "Indexed the mandatory Sol checkpoint mirror in the hub-level 60-handoffs/CURRENT.md entry."
+  ],
+  "decisions": [
+    "A missing SOL-AGENT.md, malformed mirror markers or failed mirror write prevents checkpoint commitment.",
+    "Manual SOL-AGENT edits do not commit checkpoint state; foundation.py owns the generated marker block.",
+    "The immutable checkpoint snapshot and LATEST.json remain authoritative while the Sol mirror is mandatory."
+  ],
+  "open_questions": [],
+  "known_risks": [
+    "A crash before LATEST advances may leave uncommitted newer readable projections; foundation.py show and LATEST settle authority.",
+    "Existing untracked artifacts/at09 remain preliminary schema-export evidence and were not promoted or accepted."
+  ],
+  "in_progress": [],
+  "next_actions": [
+    "Use the mandatory SOL-AGENT mirror for every future checkpoint.",
+    "If separately authorized, execute AT09 as the bounded read-only producer-side observability capability assessment; do not launch successor or rescore AT07."
+  ],
+  "evidence_references": [
+    "decisions/0004-sol-agent-checkpoint-mirror.md",
+    "evidence/sol-checkpoint-mirror-verification.md",
+    "tools/foundation.py",
+    "tests/test_foundation.py",
+    "AGENTS.md",
+    "SOL-AGENT.md",
+    "protocols/HANDOFF.md",
+    "protocols/MEMORY.md",
+    "../../60-handoffs/CURRENT.md"
+  ]
+}

@@ -9,7 +9,7 @@ Do not trust a status copied into an old prompt, handoff, review, or artifact. F
 1. Confirm `.lab-project.json` has `project_id: lab-research-os`.
 2. Read `AGENTS.md` for canonical procedure and boundaries.
 3. Read `PROJECT.md` for identity, scope, owners, inherited systems, and success criteria.
-4. Run `python tools/foundation.py show`. If command execution is unavailable, read `checkpoints/LATEST.json`, then `CHECKPOINT.md`.
+4. Run `python tools/foundation.py show`. If command execution is unavailable, read `checkpoints/LATEST.json`, then `CHECKPOINT.md`, then the generated latest-checkpoint section at the end of this file. The checkpoint ID in all three projections must agree before Sol relies on the mirror.
 5. Read only the current checkpoint's referenced packet, decision, and evidence files needed for the assigned task.
 6. If an older report conflicts with fresh code, logs, or the committed checkpoint chain, record the conflict and request or perform the smallest authorized discriminating check.
 
@@ -54,7 +54,7 @@ For every construction stage:
 4. Separate deterministic verification from model review. A model `PASS` is not sufficient without the declared confidence, completion, tool-use, anomaly, and evidence-completeness gates.
 5. Treat `FAILED`, `UNCERTAIN`, `HELD`, `DISABLED_NOT_ACCEPTED`, and `NOT READY` as real terminal or blocking states. Do not promote them through optimistic prose.
 6. Write back only accepted facts. Keep proposals, tests, live integration, scientific validity, and scale readiness explicitly separate.
-7. Append a Foundation checkpoint with compare-and-swap parent protection. Never rewrite an old checkpoint or decision to make history look cleaner.
+7. Append a Foundation checkpoint with compare-and-swap parent protection. The checkpoint command must refresh this file's generated Sol checkpoint section before advancing `checkpoints/LATEST.json`. Never rewrite an old checkpoint or decision to make history look cleaner.
 
 Do not rerun an accepted deterministic check merely for reassurance. Rerun only when inputs changed, a check failed, or a specific contradiction requires discrimination.
 
@@ -85,7 +85,7 @@ Sol must not:
 Every Sol conclusion should identify:
 
 - **Claim:** the precise bounded statement being reviewed.
-- **Evidence:** file paths, checkpoint IDs, hashes or receipts, and relevant observations.
+- **Evidence:** file paths, checkpoint IDs, relevant observations, and only the receipts or digests required by the claim.
 - **Finding:** what the evidence directly establishes.
 - **Uncertainty:** what remains unknown or outside scope.
 - **Gate result:** `PASS`, `FAIL`, `UNCERTAIN`, `HELD`, or another predeclared state, with threshold evaluation.
@@ -101,6 +101,8 @@ When reviewing execution evidence, keep these properties separate:
 - review confidence versus implementation correctness;
 - project-internal checkpoint commitment versus Git commit or publication.
 
+Do not request, calculate or repeat hashes by reflex. For ordinary local review, inspect the content, diff, schema or behavior directly. A digest is appropriate only for an explicit byte-identity claim, a real boundary crossing, an immutable manifest/checkpoint, or a specific tampering/staleness question. Whenever a digest is used, say exactly what failure it detects. Treat hash equality as byte binding only—not as provenance, completeness, truth, safety or permission.
+
 ## 6. Handoff format
 
 Return a concise handoff with these headings:
@@ -114,4 +116,59 @@ Return a concise handoff with these headings:
 7. `Adoption/writeback status`
 8. `Exact next action and stop line`
 
-Include the checkpoint ID and relative evidence paths. Do not duplicate large raw evidence in the handoff. If work changes accepted project state, the owner must append a new Foundation checkpoint; editing this adapter is not a checkpoint.
+Include the checkpoint ID and relative evidence paths. Do not duplicate large raw evidence in the handoff. If work changes accepted project state, the owner must append a new Foundation checkpoint. Manual edits to this adapter are not a checkpoint; only the generated mirror written by `tools/foundation.py checkpoint` satisfies the Sol writeback constraint.
+
+<!-- FOUNDATION-SOL-CHECKPOINT:START -->
+## Latest Foundation checkpoint for Sol
+
+Checkpoint ID: 20260922T155833-7fcdcab38f00
+Priority: EXIT · Status: complete
+Canonical committed pointer: `checkpoints/LATEST.json`. This generated mirror is required for Sol resume, but `tools/foundation.py show` remains authoritative if IDs differ.
+
+### Current Verified State
+
+- Human PI instruction is active: agents do not calculate or recheck hashes by default.
+- Direct inspection, Git status/diff, schema validation, targeted tests and source provenance are the preferred verification methods for ordinary local work.
+- Digests remain justified only for explicit byte-identity claims, meaningful boundary crossings, immutable manifest/checkpoint contracts, or concrete tampering/staleness questions.
+- Historical evidence contracts and the Foundation checkpoint integrity mechanism are unchanged; AT08 gate state and preliminary AT09 scope are unchanged.
+
+### Completed
+
+- Added evidence-proportionality rules to the shared and scoped AGENTS.md files.
+- Updated the verification and handoff protocols to remove universal hash requirements for new work.
+- Updated the Sol adapter so it cannot request hashes reflexively or overclaim what digest equality proves.
+- Recorded Decision 0005 and a hub-level decision pointer without rewriting historical packets.
+
+### Decisions
+
+- Default to no new digest unless one of the four declared justifications applies.
+- Do not repeat an accepted digest when inputs and the protected boundary are unchanged and no named contradiction exists.
+- Hash equality is byte binding only; it does not prove provenance, completeness, semantic truth, safety or authorization.
+
+### Open Questions
+
+
+### Known Risks
+
+- Historical artifacts still contain their original digest requirements and must not be mistaken for the new default.
+- Preliminary untracked AT09 artifacts remain outside this policy-only change and are not promoted or accepted.
+
+### In Progress
+
+
+### Next Actions
+
+- Apply evidence proportionality to all newly scoped tasks and reviews.
+- Do not rerun accepted checks or recalculate digests solely for reassurance.
+
+### Evidence References
+
+- decisions/0005-evidence-proportionality.md
+- AGENTS.md
+- SOL-AGENT.md
+- protocols/VERIFICATION.md
+- protocols/HANDOFF.md
+- ../../AGENTS.md
+- ../../50-decisions/2026-09-22-evidence-proportionality.md
+
+<!-- FOUNDATION-SOL-CHECKPOINT:END -->

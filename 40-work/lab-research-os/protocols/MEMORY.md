@@ -6,7 +6,7 @@ The canonical root is found by `.lab-project.json`; the Git root remains the anc
 |---|---|---|---|
 | AGENTS.md | Architecture owner under PI authorization | On project entry | Stable procedure only; evidence-backed decision required |
 | PROJECT.md | PI scope, architecture maintainer | On entry / scope change | Identity, authorized scope and constraints; no transient logs |
-| checkpoints/LATEST.json + immutable snapshots | Current task owner, exclusive writer | `foundation.py show` verifies integrity | Compare-and-swap expected parent; CHECKPOINT.md is a readable projection |
+| checkpoints/LATEST.json + immutable snapshots | Current task owner, exclusive writer | `foundation.py show` verifies integrity | Compare-and-swap expected parent; CHECKPOINT.md and the generated section in SOL-AGENT.md are required readable projections |
 | decisions/ | Decision owner | Only relevant decisions | Append new decision or supersede; preserve rationale |
 | knowledge/ | Subject owner + verifier | Only relevant validated claims | Promote scoped fact from evidence + verification; retain uncertainty/recheck trigger |
 | evidence/ | Collector | Read exact referenced record | Immutable observation with source locator, hash and time; reports alone are insufficient |
@@ -24,7 +24,7 @@ Global instructions, harness sessions and auto-memory are preserved. They do not
 ## Conflict and crash behavior
 Classify intent conflicts separately from fact conflicts. An actual configuration/log contradicting a checkpoint invalidates that checkpoint claim at that timestamp; it does not authorize configuration replacement. Collect a minimal discriminating observation, update incident/evidence, then advance the checkpoint.
 
-Checkpoint snapshots are never replaced. LATEST is the commit point. A crash before updating LATEST leaves the prior snapshot authoritative, even if CHECKPOINT.md was already rendered. `foundation.py show` reconstructs from the committed snapshot and validates its hash. An orphan snapshot can be inspected; do not delete it automatically. A stale writer reloads and reconciles, never force-writes.
+Checkpoint snapshots are never replaced. LATEST is the commit point. A crash before updating LATEST leaves the prior snapshot authoritative, even if CHECKPOINT.md or the generated SOL-AGENT.md section was already rendered. `foundation.py show` reconstructs from the committed snapshot and validates its hash. Both readable projections must carry the committed ID after a successful checkpoint. An orphan snapshot can be inspected; do not delete it automatically. A stale writer reloads and reconciles, never force-writes.
 
 ## Promotion gates
 Episode → knowledge requires a claim, scope, primary evidence, independent verification, owner acceptance and recheck trigger. Knowledge → stable rule additionally requires a demonstrated recurrent procedural need and conflict check with existing rules. Low confidence remains an open question; repetition or model consensus alone is not evidence.

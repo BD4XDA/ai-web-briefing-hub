@@ -10,7 +10,7 @@ Read these files in order:
 2. [`PROJECT.md`](PROJECT.md) — project identity, scope, owners, and success criteria.
 3. [`CHECKPOINT.md`](CHECKPOINT.md) — current authoritative state, risks, and next actions.
 
-When the assigned model is Sol, continue with [`SOL-AGENT.md`](SOL-AGENT.md) for the Sol-specific project map, construction workflow, evidence gates, and reporting contract.
+When the assigned model is Sol, continue with [`SOL-AGENT.md`](SOL-AGENT.md) for the Sol-specific project map, construction workflow, evidence gates, reporting contract, and the required generated mirror of the latest Foundation checkpoint.
 
 Do not infer current status from an older artifact or handoff. `CHECKPOINT.md` is rendered from the committed Foundation checkpoint, and `checkpoints/LATEST.json` identifies that checkpoint. When local tools are available, `python tools/foundation.py show` is the authoritative resume command.
 

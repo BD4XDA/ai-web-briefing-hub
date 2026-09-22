@@ -2,6 +2,8 @@
 import argparse,hashlib,json,os,re,sys,time
 from pathlib import Path
 FIELDS=('current_verified_state','completed','decisions','open_questions','known_risks','in_progress','next_actions','evidence_references')
+SOL_START='<!-- FOUNDATION-SOL-CHECKPOINT:START -->'
+SOL_END='<!-- FOUNDATION-SOL-CHECKPOINT:END -->'
 def project_root(start):
     p=Path(start).resolve()
     for candidate in (p,*p.parents):
@@ -27,6 +29,24 @@ def render(ident,record):
         parts.extend(['','## '+field.replace('_',' ').title(),''])
         parts.extend('- '+str(x) for x in record[field])
     return '\n'.join(parts)+'\n'
+def render_sol_checkpoint(ident,record):
+    parts=[SOL_START,'## Latest Foundation checkpoint for Sol','',f'Checkpoint ID: {ident}',f"Priority: {record['priority']} · Status: {record['status']}",'Canonical committed pointer: `checkpoints/LATEST.json`. This generated mirror is required for Sol resume, but `tools/foundation.py show` remains authoritative if IDs differ.']
+    for field in FIELDS:
+        parts.extend(['','### '+field.replace('_',' ').title(),''])
+        parts.extend('- '+str(x) for x in record[field])
+    parts.extend(['',SOL_END,''])
+    return '\n'.join(parts)
+def render_sol_agent(root,ident,record):
+    path=root/'SOL-AGENT.md'
+    if not path.is_file():raise ValueError('SOL-AGENT.md is required for checkpoint mirroring')
+    text=path.read_text(encoding='utf-8')
+    starts=text.count(SOL_START);ends=text.count(SOL_END)
+    if starts!=ends or starts>1:raise ValueError('Invalid SOL checkpoint mirror markers')
+    block=render_sol_checkpoint(ident,record)
+    if starts==0:return text.rstrip()+'\n\n'+block
+    before,tail=text.split(SOL_START,1)
+    _,after=tail.split(SOL_END,1)
+    return before.rstrip()+'\n\n'+block+after.lstrip('\n')
 def atomic_write(path,data):
     temp=path.with_name(path.name+'.tmp-'+str(os.getpid()))
     with temp.open('xb') as f:f.write(data);f.flush();os.fsync(f.fileno())
@@ -55,6 +75,7 @@ def checkpoint(root,record,expected):
         with target.open('xb') as f:f.write(raw);f.flush();os.fsync(f.fileno())
         # Snapshot exists before projections; LATEST is the commit point.
         atomic_write(root/'CHECKPOINT.md',render(new,record).encode('utf-8'))
+        atomic_write(root/'SOL-AGENT.md',render_sol_agent(root,new,record).encode('utf-8'))
         atomic_write(directory/'LATEST.json',canonical_bytes({'id':new,'sha256':digest}))
         return new
     finally:
