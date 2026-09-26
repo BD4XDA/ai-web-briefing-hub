@@ -1,50 +1,73 @@
 # Lab Research OS · CHECKPOINT
-Checkpoint ID: 20260922T155833-7fcdcab38f00
+Checkpoint ID: 20260922T162130-bf5b4a1f6891
 Priority: EXIT · Status: complete
 Canonical committed pointer: checkpoints/LATEST.json. If IDs differ, use tools/foundation.py show; do not guess.
 
 ## Current Verified State
 
-- Human PI instruction is active: agents do not calculate or recheck hashes by default.
-- Direct inspection, Git status/diff, schema validation, targeted tests and source provenance are the preferred verification methods for ordinary local work.
-- Digests remain justified only for explicit byte-identity claims, meaningful boundary crossings, immutable manifest/checkpoint contracts, or concrete tampering/staleness questions.
-- Historical evidence contracts and the Foundation checkpoint integrity mechanism are unchanged; AT08 gate state and preliminary AT09 scope are unchanged.
+- Canonical registered project is D:/项目仓库/赛博课题组/40-work/lab-research-os; identity and entry checkpoint 20260922T155833-7fcdcab38f00 verified. C-drive stale copy is not current project truth.
+- AT10 inspected 16 responsibility functions and produced exactly four main audit artifacts plus concise handoff; coordinator completion checklist PASS, not an independent model certification.
+- Candidate A end-to-end independent verification-state ownership gap is PLAUSIBLE; independent evidence review and per-artifact state ownership are already covered.
+- Candidate B is PROVEN only as a documented continuing code-QC/health ownership gap; episodic code repair, regression and independent evidence review already exist.
+- No current project-owned Themis or Argus definition was located within the inspected sources; neither name was assigned, renamed or deployed.
+- Phase-0 recommendation is EXIT READY WITH DECLARED LIMITATIONS for separately authorized bounded supervised research only. Human PI exit decision and proposal adoption remain pending.
+- AT08 gates unchanged: successor NOT READY, F5/F6 DISABLED_NOT_ACCEPTED, C1 NOT PROVEN, C2/P5 UNCERTAIN, P6 YELLOW. AT09 remains preliminary and unaccepted.
+- Evidence proportionality and mandatory generated SOL checkpoint mirroring remain active.
 
 ## Completed
 
-- Added evidence-proportionality rules to the shared and scoped AGENTS.md files.
-- Updated the verification and handoff protocols to remove universal hash requirements for new work.
-- Updated the Sol adapter so it cannot request hashes reflexively or overclaim what digest equality proves.
-- Recorded Decision 0005 and a hub-level decision pointer without rewriting historical packets.
+- Resolved registered root using project identity and immutable checkpoint contract; compared both required mirror IDs without redundant evidence hashing.
+- Inspected current roles, protocols and relevant retained execution/review evidence; separated stated ownership from exercised work and current liveness.
+- Classified candidate gaps, proposed minimal existing-role assignments and a six-outcome recursive-review breaker without implementation.
+- Prepared supervised Phase-0 exit conditions, blocking versus nonblocking limitations, false-acceptance boundaries and concise handoff.
+- Checked deliverable count, 16 matrix rows and local document links. No historical tests or model reviews rerun.
 
 ## Decisions
 
-- Default to no new digest unless one of the four declared justifications applies.
-- Do not repeat an accepted digest when inputs and the protected boundary are unchanged and no named contradiction exists.
-- Hash equality is byte binding only; it does not prove provenance, completeness, semantic truth, safety or authorization.
+- AT10 closes at governance audit and PI decision preparation; C proposal is NOT ADOPTED and D recommendation does not authorize research execution.
+- Independent report ownership, acceptance ownership and canonical state custody are distinct; a model PASS or checkpoint commit is not itself work acceptance.
+- No Foundation/code/policy/schema/role change, permanent agent, successor, scientific pilot, AT09 promotion, migration or publication was performed.
+- Nonblocking uncertainty remains a declared limitation and creates no automatic next task. No AT11 is authorized.
 
 ## Open Questions
 
+- Human PI decision on the proposed supervised Phase-0 exit boundary and minimal responsibility/stop clarifications is pending.
+- Themis/Argus meanings outside inspected canonical sources and ongoing independent state/QC staffing remain unknown; no automatic investigation scheduled.
+- Actual scientific-task suitability, source quality and reviewer availability require the separately authorized task's own acceptance, not general infrastructure assurance.
 
 ## Known Risks
 
-- Historical artifacts still contain their original digest requirements and must not be mistaken for the new default.
-- Preliminary untracked AT09 artifacts remain outside this policy-only change and are not promoted or accepted.
+- Historical C-drive copies and absolute evidence paths may misdirect discovery; use registered D-root identity and current committed checkpoint.
+- Engineering evidence does not certify scientific truth, current harness liveness, model authenticity or general autonomous capability.
+- Old unaccepted automation/capture paths must not be substituted for the proposed supervised workflow; historical F4 and AT07/08 adoption boundaries remain.
+- AT10 is coordinator governance judgment, not independent review of itself; checkpointing it must not promote the proposals into operating rules.
 
 ## In Progress
 
 
 ## Next Actions
 
-- Apply evidence proportionality to all newly scoped tasks and reviews.
-- Do not rerun accepted checks or recalculate digests solely for reassurance.
+- Human PI decides whether to adopt the supervised exit boundary and governance proposals; no implementation is authorized by this checkpoint.
+- If separately authorized later, scope one reversible supervised research packet with approved sources, executor, independent reviewer, acceptance/state owner and stop condition.
+- STOP. Do not automatically create AT11, finish AT09, rerun old reviews/tests, launch successor/scientific pilot or expand infrastructure.
 
 ## Evidence References
 
-- decisions/0005-evidence-proportionality.md
+- artifacts/at10/A-RESPONSIBILITY-MATRIX.md
+- artifacts/at10/B-GAP-CLASSIFICATION.md
+- artifacts/at10/C-MINIMAL-GOVERNANCE-PROPOSAL.md
+- artifacts/at10/D-PHASE0-EXIT-DECISION.md
+- artifacts/at10/AT10-HANDOFF.md
 - AGENTS.md
-- SOL-AGENT.md
+- PROJECT.md
 - protocols/VERIFICATION.md
 - protocols/HANDOFF.md
-- ../../AGENTS.md
-- ../../50-decisions/2026-09-22-evidence-proportionality.md
+- protocols/MEMORY.md
+- decisions/0004-sol-agent-checkpoint-mirror.md
+- decisions/0005-evidence-proportionality.md
+- artifacts/at04/P5-ACCEPTANCE.md
+- artifacts/at05/EXCEPTION-JUDGMENT.md
+- artifacts/at07/FINAL-REPAIR-STATUS.json
+- artifacts/at07/regression-execution.json
+- artifacts/at07/review-execution.json
+- artifacts/at08/NEXT-ACCEPTANCE-DESIGN.md

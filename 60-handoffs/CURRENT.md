@@ -36,3 +36,7 @@ AT08 adjudication/design handoff: [AT08](../40-work/lab-research-os/artifacts/at
 
 <!-- SOL-CHECKPOINT-MIRROR-CONSTRAINT -->
 Human PI hard constraint: every Foundation checkpoint must update the generated latest-checkpoint section in [SOL-AGENT.md](../40-work/lab-research-os/SOL-AGENT.md) before `checkpoints/LATEST.json` advances. Decision: [0004](../40-work/lab-research-os/decisions/0004-sol-agent-checkpoint-mirror.md). Scoped LATEST remains authoritative.
+
+<!-- AT10-CLOSURE -->
+AT10 responsibility audit and supervised Phase-0 exit decision preparation: [handoff](../40-work/lab-research-os/artifacts/at10/AT10-HANDOFF.md). Canonical registered root is `D:/项目仓库/赛博课题组/40-work/lab-research-os`; read its current LATEST through Foundation. Four audit artifacts and governance proposals are preserved; proposals are not adopted and the PI phase decision is pending. AT08 gates remain unchanged, AT09 remains preliminary. Stop: no automatic AT11, successor or research pilot.
+<!-- /AT10-CLOSURE -->

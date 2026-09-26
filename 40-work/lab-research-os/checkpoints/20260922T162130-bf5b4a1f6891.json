@@ -1,0 +1,68 @@
+{
+  "completed": [
+    "Resolved registered root using project identity and immutable checkpoint contract; compared both required mirror IDs without redundant evidence hashing.",
+    "Inspected current roles, protocols and relevant retained execution/review evidence; separated stated ownership from exercised work and current liveness.",
+    "Classified candidate gaps, proposed minimal existing-role assignments and a six-outcome recursive-review breaker without implementation.",
+    "Prepared supervised Phase-0 exit conditions, blocking versus nonblocking limitations, false-acceptance boundaries and concise handoff.",
+    "Checked deliverable count, 16 matrix rows and local document links. No historical tests or model reviews rerun."
+  ],
+  "created_at": "2026-09-22T16:21:30+0800",
+  "current_verified_state": [
+    "Canonical registered project is D:/项目仓库/赛博课题组/40-work/lab-research-os; identity and entry checkpoint 20260922T155833-7fcdcab38f00 verified. C-drive stale copy is not current project truth.",
+    "AT10 inspected 16 responsibility functions and produced exactly four main audit artifacts plus concise handoff; coordinator completion checklist PASS, not an independent model certification.",
+    "Candidate A end-to-end independent verification-state ownership gap is PLAUSIBLE; independent evidence review and per-artifact state ownership are already covered.",
+    "Candidate B is PROVEN only as a documented continuing code-QC/health ownership gap; episodic code repair, regression and independent evidence review already exist.",
+    "No current project-owned Themis or Argus definition was located within the inspected sources; neither name was assigned, renamed or deployed.",
+    "Phase-0 recommendation is EXIT READY WITH DECLARED LIMITATIONS for separately authorized bounded supervised research only. Human PI exit decision and proposal adoption remain pending.",
+    "AT08 gates unchanged: successor NOT READY, F5/F6 DISABLED_NOT_ACCEPTED, C1 NOT PROVEN, C2/P5 UNCERTAIN, P6 YELLOW. AT09 remains preliminary and unaccepted.",
+    "Evidence proportionality and mandatory generated SOL checkpoint mirroring remain active."
+  ],
+  "decisions": [
+    "AT10 closes at governance audit and PI decision preparation; C proposal is NOT ADOPTED and D recommendation does not authorize research execution.",
+    "Independent report ownership, acceptance ownership and canonical state custody are distinct; a model PASS or checkpoint commit is not itself work acceptance.",
+    "No Foundation/code/policy/schema/role change, permanent agent, successor, scientific pilot, AT09 promotion, migration or publication was performed.",
+    "Nonblocking uncertainty remains a declared limitation and creates no automatic next task. No AT11 is authorized."
+  ],
+  "evidence_references": [
+    "artifacts/at10/A-RESPONSIBILITY-MATRIX.md",
+    "artifacts/at10/B-GAP-CLASSIFICATION.md",
+    "artifacts/at10/C-MINIMAL-GOVERNANCE-PROPOSAL.md",
+    "artifacts/at10/D-PHASE0-EXIT-DECISION.md",
+    "artifacts/at10/AT10-HANDOFF.md",
+    "AGENTS.md",
+    "PROJECT.md",
+    "protocols/VERIFICATION.md",
+    "protocols/HANDOFF.md",
+    "protocols/MEMORY.md",
+    "decisions/0004-sol-agent-checkpoint-mirror.md",
+    "decisions/0005-evidence-proportionality.md",
+    "artifacts/at04/P5-ACCEPTANCE.md",
+    "artifacts/at05/EXCEPTION-JUDGMENT.md",
+    "artifacts/at07/FINAL-REPAIR-STATUS.json",
+    "artifacts/at07/regression-execution.json",
+    "artifacts/at07/review-execution.json",
+    "artifacts/at08/NEXT-ACCEPTANCE-DESIGN.md"
+  ],
+  "in_progress": [],
+  "known_risks": [
+    "Historical C-drive copies and absolute evidence paths may misdirect discovery; use registered D-root identity and current committed checkpoint.",
+    "Engineering evidence does not certify scientific truth, current harness liveness, model authenticity or general autonomous capability.",
+    "Old unaccepted automation/capture paths must not be substituted for the proposed supervised workflow; historical F4 and AT07/08 adoption boundaries remain.",
+    "AT10 is coordinator governance judgment, not independent review of itself; checkpointing it must not promote the proposals into operating rules."
+  ],
+  "next_actions": [
+    "Human PI decides whether to adopt the supervised exit boundary and governance proposals; no implementation is authorized by this checkpoint.",
+    "If separately authorized later, scope one reversible supervised research packet with approved sources, executor, independent reviewer, acceptance/state owner and stop condition.",
+    "STOP. Do not automatically create AT11, finish AT09, rerun old reviews/tests, launch successor/scientific pilot or expand infrastructure."
+  ],
+  "open_questions": [
+    "Human PI decision on the proposed supervised Phase-0 exit boundary and minimal responsibility/stop clarifications is pending.",
+    "Themis/Argus meanings outside inspected canonical sources and ongoing independent state/QC staffing remain unknown; no automatic investigation scheduled.",
+    "Actual scientific-task suitability, source quality and reviewer availability require the separately authorized task's own acceptance, not general infrastructure assurance."
+  ],
+  "parent": "20260922T155833-7fcdcab38f00",
+  "priority": "EXIT",
+  "session": "AT10",
+  "stage": "responsibility-audit-phase0-exit-decision-preparation",
+  "status": "complete"
+}
