@@ -1,58 +1,53 @@
 # Lab Research OS · CHECKPOINT
-Checkpoint ID: 20260927T123135-01e93bde799a
-Priority: P3 · Status: in_progress
+Checkpoint ID: 20260927T123655-1a72d88c713d
+Priority: P3 · Status: complete
 Canonical committed pointer: checkpoints/LATEST.json. If IDs differ, use tools/foundation.py show; do not guess.
 
 ## Current Verified State
 
-- Human PI approved ASTRA TIME 11 on 2026-09-26 and instructed publication plus assignment to Astra.
-- Decision 0006 adopts AT10's EXIT READY WITH DECLARED LIMITATIONS boundary and minimal responsibility/recursive-review stop clarification.
-- AT11 is authorized only to design one small reversible supervised source-linked literature/evidence packet in the inherited sediment-phosphorus direction; scientific execution remains separately authorized.
-- AT08 gates remain unchanged and AT09 remains preliminary/unaccepted. Raw AT09 protocol exports are outside this publication and construction scope.
-- Evidence proportionality and mandatory generated SOL checkpoint mirroring remain active.
+- AT11 construction closed DEFERRED; exactly one future source-linked sediment-phosphorus evidence-card task is specified, not executed.
+- S1 candidate DOI 10.5194/bg-18-1451-2021 is located in preserved index metadata; exact original file identity/access remains unconfirmed within max_depth=4.
+- Decision 0006 supervised Phase-0 boundary remains adopted; packet readiness and scientific acceptance/run authorization remain separate.
+- AT08 unchanged: successor NOT READY; F5/F6 DISABLED_NOT_ACCEPTED; C1 NOT PROVEN; C2/P5 UNCERTAIN; P6 YELLOW. AT09 remains preliminary/unaccepted.
 
 ## Completed
 
-- Published AT10 governance audit in a dedicated Git commit without including the unaccepted AT09 protocol export.
-- Recorded the Human PI approval in inbox, hub brief, hub decision and project Decision 0006.
-- Prepared schema-bound AT11 construction packet for Astra with explicit write set, source/privacy bounds, acceptance outcomes and stop line.
+- Wrote A scope, B supervised packet, C review/acceptance plan, schema-valid future machine packet, terminal record, validation and handoff.
+- Only coordinator scope/structure/link checks were performed; no model/executor/reviewer calls or scientific output.
+- Preserved original corpus and existing untracked artifacts/at09; no public Git publication or hub handoff update.
 
 ## Decisions
 
-- Supervised Phase-0 exit and AT10 governance proposal are adopted within Decision 0006's limitations.
-- Astra owns AT11 packet construction. Existing roles must be named per task; no Themis/Argus or permanent new agent is created.
-- AT11 may inspect at most three source items for safe identifiers/locators but may not execute science or publish raw source content.
-- AT11 ends at PACKET_READY, DEFERRED or a fresh consequential exception; no AT12 starts automatically.
+- DEFERRED rather than infer original source availability from archive-status index text.
+- Future executor Research/Evidence; independent reviewer Sol scientific QA; Human PI acceptance; Astra state/disposition owner. These are bounded future assignments, not current runtime qualification.
+- Future run requires exact approved original binding, ready packet revision with current checkpoint and separate explicit execution authorization.
 
 ## Open Questions
 
-- Which maximum-three preserved source items best support the smallest first supervised literature/evidence task while remaining safe to identify publicly?
-- Which existing qualified reviewer and acceptance/state owner should the future execution packet name?
+- Human PI: provide and approve the exact read-only original file for DOI 10.5194/bg-18-1451-2021 within explicit bounded source scope, or decline this candidate.
 
 ## Known Risks
 
-- Public repository publication can expose private source material if raw PDFs, annotations or sensitive paths are copied; AT11 permits safe metadata/locators only.
-- Packet readiness can be mistaken for scientific validity or run authorization; the handoff and future packet must keep these states separate.
-- Historical C-drive paths and preliminary AT09 materials can misdirect recovery; use the registered D-root and Decision 0006.
+- Index label and DOI are candidate metadata, not independently verified publisher identity or scientific evidence.
+- Future reviewer availability and actual scientific capability must be confirmed at start; absent capability holds acceptance.
+- Existing old gates and unaccepted AT09 remain excluded; no general autonomous or scientific qualification is claimed.
 
 ## In Progress
 
-- AT11 construction is queued for Astra from packets/at11-construction.json after public push.
 
 ## Next Actions
 
-- Astra reads the AT11 packet and bounded references, writes the specified AT11 deliverables and future execution packet, validates them, checkpoints and stops.
-- Do not execute the future research task, invoke its reviewer, complete AT09, launch successor/F5/F6 or create automatic follow-on work.
+- Stop. Await the one precise source-binding input; no automatic research, review, correction, AT12 or infrastructure work.
+- Dispatch owner may update hub CURRENT.md; Astra made no project-external write.
 
 ## Evidence References
 
-- ../../00-inbox/2026-09-26-astra-time-11-approval.md
-- ../../10-briefs/2026-09-26-astra-time-11.md
-- ../../50-decisions/2026-09-26-at11-supervised-exit.md
 - decisions/0006-supervised-phase0-exit-and-at11.md
 - packets/at11-construction.json
-- artifacts/at10/C-MINIMAL-GOVERNANCE-PROPOSAL.md
-- artifacts/at10/D-PHASE0-EXIT-DECISION.md
-- artifacts/at10/AT10-HANDOFF.md
-- decisions/0004-sol-agent-checkpoint-mirror.md
-- decisions/0005-evidence-proportionality.md
+- packets/at11-first-supervised-research.json
+- packets/at11-terminal.json
+- artifacts/at11/A-FIRST-RESEARCH-SCOPE.md
+- artifacts/at11/B-SUPERVISED-RESEARCH-PACKET.md
+- artifacts/at11/C-REVIEW-ACCEPTANCE-PLAN.md
+- artifacts/at11/VALIDATION.md
+- artifacts/at11/AT11-HANDOFF.md

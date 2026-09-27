@@ -1,0 +1,10 @@
+# AT11 handoff — DEFERRED
+
+1. Resolved checkpoint: entry `20260927T123135-01e93bde799a`; canonical D-root confirmed by PROJECT, marker and Foundation show. Closure committed checkpoint: `20260927T123655-1a72d88c713d`, written with that entry as CAS parent. This is a project checkpoint, not a Git commit or publication.
+2. Authorized scope: construction of one supervised source-linked evidence task only, under [Decision 0006](../../decisions/0006-supervised-phase0-exit-and-at11.md).
+3. Verified state: one candidate S1 DOI 10.5194/bg-18-1451-2021 in preserved index; original not inspected or exactly located within construction depth bound. Outcome **DEFERRED**, not PACKET_READY.
+4. Work performed: [A scope](A-FIRST-RESEARCH-SCOPE.md), [B packet](B-SUPERVISED-RESEARCH-PACKET.md), [C acceptance](C-REVIEW-ACCEPTANCE-PLAN.md), [machine packet](../../packets/at11-first-supervised-research.json), [terminal record](../../packets/at11-terminal.json).
+5. Evidence and gate results: [validation](VALIDATION.md); coordinator checks only, no independent science/model review. Schema validity does not make this packet runnable. Closure checkpoint uses only Foundation's existing digest contract to detect stale/substituted snapshot bytes, not correctness.
+6. Uncertainties and risks: index metadata is not original-source verification; future Sol capability/availability remains a start gate. AT08 gates remain unchanged; AT09 preliminary/unaccepted. No scientific result or general autonomy is certified.
+7. Adoption/writeback status: local AT11 artifacts and Foundation projections only; no source modifications, AT09 reads/writes, executor/reviewer calls, Git commit/push, permanent roles, policy/schema edits or hub CURRENT update.
+8. Exact next action and stop line: Human PI provides/approves the exact read-only S1 original locator within explicitly bounded source scope or declines candidate. Any later packet revision and scientific run require separate authority; no automatic retry, AT12, successor/F5/F6 or expansion. Dispatch owner owns hub pointer update.

@@ -1,0 +1,15 @@
+{
+  "task_id": "AT11-supervised-research-packet-construction",
+  "outcome": "DEFERRED",
+  "owner": "Astra",
+  "entry_checkpoint": "20260927T123135-01e93bde799a",
+  "blocking_input": "Human PI provides and approves the exact read-only original file locator for DOI 10.5194/bg-18-1451-2021 within explicit bounded source scope, or declines this candidate.",
+  "science_executed": false,
+  "model_calls": 0,
+  "source_items_selected": 1,
+  "original_sources_opened": 0,
+  "source_identity_evidence": "E-AT11-INDEX: corpus-relative 00_总索引/总索引.md, 2026-08-03 issue 003 row",
+  "verification": "Coordinator only: packet schema/root and local Markdown links; no independent scientific review. Exact results in artifacts/at11/VALIDATION.md.",
+  "stop_line": "No executor/reviewer invocation, research, AT09 promotion, successor/F5/F6, AT12, permanent role, hub writeback or Git commit/push.",
+  "checkpoint_reference": "Resolve committed LATEST and AT11-HANDOFF.md; terminal record is included as checkpoint evidence."
+}
