@@ -1,0 +1,48 @@
+{
+  "priority": "P3",
+  "status": "complete",
+  "current_verified_state": [
+    "Human PI directed current project-owned GPT 5.6 targets to migrate to generation 6, including Sol.",
+    "Current project mapping is gpt-6-astra for Astra/former Terra responsibility, gpt-6-sol for Sol and gpt-6-luna for Luna.",
+    "AT11 future independent scientific review now explicitly requires gpt-6-sol with no GPT 5.6 fallback; scientific execution remains unauthorized.",
+    "Remaining GPT-5.6 repository hits are seven unchanged AT02 historical capture/review files, not current routes.",
+    "External DSH/user/provider configuration was not modified or qualified."
+  ],
+  "completed": [
+    "Recorded Human PI authorization, brief and Decision 0008 mapping the GPT family to generation 6.",
+    "Updated AGENTS, PROJECT, SOL adapter, infrastructure map and active AT11 review documents/packet.",
+    "Separated current routing from historical evidence and documented the preserved AT02 references."
+  ],
+  "decisions": [
+    "Do not invent gpt-6-terra; route former Terra architecture responsibility to gpt-6-astra.",
+    "Do not silently fall back to GPT 5.6. Missing required GPT-6 capability holds the affected task.",
+    "Do not rewrite historical artifacts merely to eliminate an old model identifier."
+  ],
+  "open_questions": [
+    "External DSH stored templates may still target GPT 5.6 because this authorization is project-internal; change them only under separate explicit scope.",
+    "Actual GPT-6 model/harness identity and suitability remain per-task start checks."
+  ],
+  "known_risks": [
+    "A requested GPT-6 label is not proof of the model actually served by a harness.",
+    "Search results can be misread unless historical AT02 files are distinguished from current routing documents."
+  ],
+  "in_progress": [],
+  "next_actions": [
+    "Use only the GPT-6 mapping for future project-owned packets and assignments; verify requested versus actual runtime identity at task start.",
+    "Stop. No external configuration migration, model call, AT11 science, AT09 work or AT12 is authorized by this maintenance change."
+  ],
+  "evidence_references": [
+    "../../00-inbox/2026-09-27-gpt6-model-migration.md",
+    "../../10-briefs/2026-09-27-gpt6-model-migration.md",
+    "../../50-decisions/2026-09-27-gpt6-model-generation.md",
+    "decisions/0008-gpt6-model-generation.md",
+    "AGENTS.md",
+    "PROJECT.md",
+    "SOL-AGENT.md",
+    "artifacts/INFRASTRUCTURE-MAP.md",
+    "artifacts/MODEL-GENERATION-MIGRATION.md",
+    "artifacts/at11/B-SUPERVISED-RESEARCH-PACKET.md",
+    "artifacts/at11/C-REVIEW-ACCEPTANCE-PLAN.md",
+    "packets/at11-first-supervised-research.json"
+  ]
+}

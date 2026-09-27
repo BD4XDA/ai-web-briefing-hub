@@ -16,6 +16,8 @@ Inherited assets:
 Current authorized construction: P0 continuity → P1 canonical memory → P2 handoff/verification → P3 bounded census machinery and representative pilot. Checkpoint after each level.
 
 Research roles remain Scout/Luna, Research/Evidence, Pro text writing, Flash routine work, Astra complex planning, Sol scientific/visual QA and Human PI final decisions. Roles are not permanent processes and are not synonymous with harnesses.
+
+Current project-owned GPT targets are generation 6: Astra=`gpt-6-astra`, Sol=`gpt-6-sol`, Luna=`gpt-6-luna`. Former GPT-5.6 Terra responsibility maps to Astra; do not invent a GPT-6 Terra alias or silently fall back to a 5.6 model. Historical evidence retains the model identity observed at its collection time. See Decision 0008.
 Model decides who reasons; harness provides execution; router pairs capability with task. Registry entries distinguish configured/catalogued/tested/qualified/live.
 
 Success: another worker resumes from CHECKPOINT.md and evidence without rediscovering the environment; the pilot produces validated records and a bounded queue.

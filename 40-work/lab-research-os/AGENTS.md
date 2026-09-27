@@ -11,6 +11,7 @@ This is the canonical project instruction file for an additive foundation over e
 
 ## Ownership and writes
 - Human PI owns research direction, major spending, irreversible consequences and L3 decisions. Astra owns architecture and exceptions. Workers own bounded assigned artifacts; verifiers own independent verification reports.
+- For new project-owned GPT work, use generation-6 targets: `gpt-6-astra` for Astra responsibilities, `gpt-6-sol` for Sol responsibilities and `gpt-6-luna` for Luna responsibilities. Former GPT-5.6 Terra responsibility maps to Astra. Never silently fall back to GPT 5.6; unavailable required capability holds the affected task. Preserve historical evidence with its observed model identifier.
 - One owner per write set. Preserve before editing existing files. No bulk deletion, moving, memory clearing, credential modification, dependency upgrades or publishing without explicit authorization.
 - Write facts with evidence IDs. Keep proposed, observed, tested, currently live, failed and superseded states distinct.
 - Use tools/foundation.py to append checkpoint snapshots. Its compare-and-swap parent prevents stale writers. A lock conflict is work to queue, not permission to delete the lock.

@@ -1,54 +1,57 @@
 # Lab Research OS · CHECKPOINT
-Checkpoint ID: 20260927T221637-5ab599164add
+Checkpoint ID: 20260927T222534-4ceb3f3a3a79
 Priority: P3 · Status: complete
 Canonical committed pointer: checkpoints/LATEST.json. If IDs differ, use tools/foundation.py show; do not guess.
 
 ## Current Verified State
 
-- Human PI approved bounded read-only location of the S1 original for DOI 10.5194/bg-18-1451-2021.
-- The exact canonical archived PDF is bound by Decision 0007; direct pages 1-2 identity checks matched DOI, author, journal/volume/page and title phrases.
-- AT11 future supervised evidence-card packet is PACKET_READY but not authorized to execute.
-- No scientific content extraction, executor/reviewer call, source modification/transmission/publication or AT12 occurred.
-- AT08 gates and AT09 preliminary/unaccepted status remain unchanged.
+- Human PI directed current project-owned GPT 5.6 targets to migrate to generation 6, including Sol.
+- Current project mapping is gpt-6-astra for Astra/former Terra responsibility, gpt-6-sol for Sol and gpt-6-luna for Luna.
+- AT11 future independent scientific review now explicitly requires gpt-6-sol with no GPT 5.6 fallback; scientific execution remains unauthorized.
+- Remaining GPT-5.6 repository hits are seven unchanged AT02 historical capture/review files, not current routes.
+- External DSH/user/provider configuration was not modified or qualified.
 
 ## Completed
 
-- Performed a DOI/author/issue-targeted read-only search inside the Human PI-approved corpus root and selected only the canonical archived original.
-- Inspected file properties and pages 1-2 identity fields without adding a digest or copying source content into the repository.
-- Recorded Decision 0007, source-binding artifact, ready packet revision and terminal source-binding receipt.
+- Recorded Human PI authorization, brief and Decision 0008 mapping the GPT family to generation 6.
+- Updated AGENTS, PROJECT, SOL adapter, infrastructure map and active AT11 review documents/packet.
+- Separated current routing from historical evidence and documented the preserved AT02 references.
 
 ## Decisions
 
-- Use only the exact canonical archived PDF path in Decision 0007; no duplicate or temporary copy is an automatic substitute.
-- Source binding resolves the DEFERRED blocker and changes packet state to PACKET_READY only; execution remains separately authorized.
-- No hash was added because direct current-file identity was the claim and no byte-equality boundary was asserted.
+- Do not invent gpt-6-terra; route former Terra architecture responsibility to gpt-6-astra.
+- Do not silently fall back to GPT 5.6. Missing required GPT-6 capability holds the affected task.
+- Do not rewrite historical artifacts merely to eliminate an old model identifier.
 
 ## Open Questions
 
-- Human PI has not yet authorized running the ready scientific packet. Future executor and Sol reviewer suitability/availability must be confirmed at start.
+- External DSH stored templates may still target GPT 5.6 because this authorization is project-internal; change them only under separate explicit scope.
+- Actual GPT-6 model/harness identity and suitability remain per-task start checks.
 
 ## Known Risks
 
-- Local identity fields do not independently prove publisher authenticity, license status or scientific correctness.
-- The absolute source path is machine-local; if it changes, hold the packet rather than substitute another copy.
-- Packet readiness can be mistaken for scientific acceptance; no result exists yet.
+- A requested GPT-6 label is not proof of the model actually served by a harness.
+- Search results can be misread unless historical AT02 files are distinguished from current routing documents.
 
 ## In Progress
 
 
 ## Next Actions
 
-- Stop at PACKET_READY. Await separate Human PI authorization before any executor/reviewer invocation or evidence-card production.
-- No automatic AT12, retry, source substitution, AT09 promotion, successor/F5/F6 or infrastructure work.
+- Use only the GPT-6 mapping for future project-owned packets and assignments; verify requested versus actual runtime identity at task start.
+- Stop. No external configuration migration, model call, AT11 science, AT09 work or AT12 is authorized by this maintenance change.
 
 ## Evidence References
 
-- ../../00-inbox/2026-09-27-at11-source-binding-approval.md
-- ../../50-decisions/2026-09-27-at11-source-binding.md
-- decisions/0007-at11-s1-source-binding.md
-- artifacts/at11/D-SOURCE-BINDING.md
-- artifacts/at11/A-FIRST-RESEARCH-SCOPE.md
+- ../../00-inbox/2026-09-27-gpt6-model-migration.md
+- ../../10-briefs/2026-09-27-gpt6-model-migration.md
+- ../../50-decisions/2026-09-27-gpt6-model-generation.md
+- decisions/0008-gpt6-model-generation.md
+- AGENTS.md
+- PROJECT.md
+- SOL-AGENT.md
+- artifacts/INFRASTRUCTURE-MAP.md
+- artifacts/MODEL-GENERATION-MIGRATION.md
 - artifacts/at11/B-SUPERVISED-RESEARCH-PACKET.md
 - artifacts/at11/C-REVIEW-ACCEPTANCE-PLAN.md
 - packets/at11-first-supervised-research.json
-- packets/at11-source-binding-terminal.json

@@ -44,3 +44,7 @@ AT10 responsibility audit and supervised Phase-0 exit decision preparation: [han
 <!-- AT11-CLOSURE -->
 AT11 source binding is **PACKET_READY** at Foundation checkpoint `20260927T221637-5ab599164add`: [Decision 0007](../40-work/lab-research-os/decisions/0007-at11-s1-source-binding.md), [binding](../40-work/lab-research-os/artifacts/at11/D-SOURCE-BINDING.md), [future packet](../40-work/lab-research-os/packets/at11-first-supervised-research.json). Human PI approved bounded read-only location of the DOI `10.5194/bg-18-1451-2021` original; the canonical archived PDF was directly identified and bound. No scientific task or future executor/reviewer ran. Separate Human PI run authorization remains required; no automatic AT12, AT09 promotion, successor/F5/F6 or infrastructure work.
 <!-- /AT11-CLOSURE -->
+
+<!-- GPT6-MIGRATION -->
+Current project-owned GPT targets are generation 6 at Foundation checkpoint `20260927T222534-4ceb3f3a3a79` under [Decision 0008](../40-work/lab-research-os/decisions/0008-gpt6-model-generation.md): Astra/former Terra responsibility=`gpt-6-astra`, Sol=`gpt-6-sol`, Luna=`gpt-6-luna`. No GPT 5.6 fallback is permitted for new tasks. Remaining 5.6 strings are preserved AT02 historical evidence, not current routing. External DSH/user/provider configuration was not changed or qualified.
+<!-- /GPT6-MIGRATION -->
