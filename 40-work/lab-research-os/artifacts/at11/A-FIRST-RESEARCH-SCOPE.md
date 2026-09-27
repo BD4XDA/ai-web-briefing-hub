@@ -18,4 +18,3 @@ Outcome DEFERRED: S1 lacks a directly confirmed, exactly located original source
 Only the bibliographic candidate, DOI and minimal nonpersonal corpus-relative locator are retained. No raw index, archive-status narrative, PDF, private notes, personal associations or source excerpts are copied. DOI/title metadata is low-sensitivity bibliographic information; publisher authenticity and full-text license remain unverified. Future output stays local and unpublished; source originals remain read-only. No network or model transmission of private corpus content is authorized. S1 original must be confirmed before the execution packet can become ready. Current proposed writes can be superseded without altering source material.
 
 No scientific finding was produced. See [B](B-SUPERVISED-RESEARCH-PACKET.md) for proposed ownership and [C](C-REVIEW-ACCEPTANCE-PLAN.md) for acceptance.
-
