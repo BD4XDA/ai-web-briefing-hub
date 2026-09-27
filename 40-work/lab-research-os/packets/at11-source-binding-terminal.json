@@ -1,0 +1,23 @@
+{
+  "task_id": "AT11-source-binding",
+  "outcome": "PACKET_READY",
+  "owner": "dispatch owner under Human PI approval",
+  "entry_checkpoint": "20260927T123655-1a72d88c713d",
+  "closure_checkpoint": "20260927T221637-5ab599164add",
+  "source_doi": "10.5194/bg-18-1451-2021",
+  "bound_read_only_source": "D:/A每日论文阅读_沉积物磷形态与生物地球化学/01_我的阅读资料/2026/2026-08/2026-08-03_第003期/03_SCI_中科院二区/01_论文原文/论文_van de Velde等_2021_盐沼沉积物生物扰动与磷埋藏.pdf",
+  "identity_observations": {
+    "exists": true,
+    "size_bytes": 2779192,
+    "pages": 11,
+    "encrypted": false,
+    "doi_on_pages_1_2": true,
+    "author_on_pages_1_2": true,
+    "journal_volume_page_on_pages_1_2": true,
+    "title_phrases_on_pages_1_2": true
+  },
+  "science_executed": false,
+  "model_calls": 0,
+  "digest_added": false,
+  "stop_line": "Packet ready only. No executor/reviewer invocation, scientific output, PDF modification/transmission/publication, AT12 or automatic run."
+}

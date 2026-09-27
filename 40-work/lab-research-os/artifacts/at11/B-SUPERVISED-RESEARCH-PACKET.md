@@ -1,6 +1,6 @@
 # AT11 B — Future supervised evidence card packet
 
-State: DEFERRED / NOT AUTHORIZED TO EXECUTE. This document and the [machine packet](../../packets/at11-first-supervised-research.json) describe one future task only. [A](A-FIRST-RESEARCH-SCOPE.md) is the exact source-selection and blocker record.
+State: PACKET_READY / NOT AUTHORIZED TO EXECUTE. This document and the [machine packet](../../packets/at11-first-supervised-research.json) describe one future task only. [A](A-FIRST-RESEARCH-SCOPE.md) records scope; [D](D-SOURCE-BINDING.md) records the exact approved original.
 
 ## Task-level ownership
 Executor: existing Research/Evidence role, one separately assigned local worker. Independent reviewer: existing Sol scientific QA role, a distinct assignment/session with access to the same approved original and demonstrated text-evidence review capability. Role naming is not current availability, authenticated model identity or qualification evidence; these must be checked at future authorization/start. Neither is invoked by AT11. A renamed executor alias cannot supply independent review.
@@ -19,7 +19,7 @@ These are proposed future writes; AT11 creates none of them. No future checkpoin
 ## Budget and start conditions
 One original paper; maximum seven unique input/output files (three scope documents, one approved original, three outputs), depth 4 relative to each explicitly approved read root, two task model calls total (one executor and one independent reviewer), no retries, no correction/re-review round, no browsing, no download, no visual/numeric extraction. A figure-only support claim is omitted and flagged; if indispensable, stop for a suitably authorized visual review route.
 
-Current allowed source read is only the local index for identity, not scientific evidence. Read original and replace the draft source binding only after the single input decision in A; record this as a future explicit packet revision within separately granted authority. Separate PI execution authorization must approve that ready revision, its roles and exact source root, and bind expected_checkpoint to the then-current Foundation state. Neither the entry checkpoint nor this construction authorization starts a run.
+The source read root is the one exact PDF bound in D; the index is no longer a scientific-evidence input. Separate PI execution authorization must approve starting the ready packet, confirm its roles and bind expected_checkpoint to the then-current Foundation state. Neither source-binding approval nor packet readiness starts a run.
 
 ## Stop and rollback
 Stop immediately on source mismatch/unreadability, unavailable independent capability, private-content transmission requirement, exhausted budget or material unsupported claim. No substitute source/model, expanded search, automatic repair or successor. Preserve incomplete outputs with HELD or REJECTED and exact affected claims; never silently overwrite accepted output. Rollback means retain failed drafts as non-adopted and do not integrate into knowledge/manuscript or use for conclusions. PI may decline the whole candidate. Only local draft preparation can later be accepted; no general scientific validity is implied.

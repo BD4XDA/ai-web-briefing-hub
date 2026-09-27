@@ -1,15 +1,16 @@
 {
-  "task_id": "AT11-first-supervised-research-DEFERRED",
+  "task_id": "AT11-first-supervised-research-READY",
   "project_id": "lab-research-os",
   "project_root": "D:/项目仓库/赛博课题组/40-work/lab-research-os",
-  "expected_checkpoint": "20260927T123135-01e93bde799a",
+  "expected_checkpoint": "20260927T221637-5ab599164add",
   "owner": "Human PI (acceptance); Astra (state)",
-  "objective": "DEFERRED, not authorized: one source-linked four-row evidence card (maximum 600 Chinese words) for candidate S1 DOI 10.5194/bg-18-1451-2021; no synthesis or conclusion adoption.",
+  "objective": "PACKET_READY but not authorized to execute: one source-linked four-row evidence card (maximum 600 Chinese words) for S1 DOI 10.5194/bg-18-1451-2021; no synthesis or conclusion adoption.",
   "allowed_read_roots": [
     "D:/项目仓库/赛博课题组/40-work/lab-research-os/artifacts/at11/A-FIRST-RESEARCH-SCOPE.md",
     "D:/项目仓库/赛博课题组/40-work/lab-research-os/artifacts/at11/B-SUPERVISED-RESEARCH-PACKET.md",
     "D:/项目仓库/赛博课题组/40-work/lab-research-os/artifacts/at11/C-REVIEW-ACCEPTANCE-PLAN.md",
-    "D:/A每日论文阅读_沉积物磷形态与生物地球化学/00_总索引/总索引.md"
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/artifacts/at11/D-SOURCE-BINDING.md",
+    "D:/A每日论文阅读_沉积物磷形态与生物地球化学/01_我的阅读资料/2026/2026-08/2026-08-03_第003期/03_SCI_中科院二区/01_论文原文/论文_van de Velde等_2021_盐沼沉积物生物扰动与磷埋藏.pdf"
   ],
   "write_paths": [
     "D:/项目仓库/赛博课题组/40-work/lab-research-os/artifacts/at11-research-run/EVIDENCE-CARD.md",
@@ -17,18 +18,20 @@
     "D:/项目仓库/赛博课题组/40-work/lab-research-os/artifacts/at11-research-run/DISPOSITION.md"
   ],
   "excluded_scope": [
-    "No execution until exact S1 original is confirmed and approved, packet revised and separate Human PI run authorization recorded",
+    "No execution until separate Human PI run authorization is recorded against the current packet and checkpoint",
     "No private corpus transmission, copying raw PDF/notes, publication, source mutation, new sources, browsing or downloads",
     "No code, scientific synthesis, visual/numeric extraction, automatic knowledge promotion or checkpoint writes",
     "No AT09 promotion, successor, F5/F6, permanent roles, AT12, retries or recursive review"
   ],
   "input_evidence_ids": [
     "decision-0006",
+    "decision-0007",
     "E-AT11-INDEX",
-    "S1-candidate-doi-10.5194/bg-18-1451-2021"
+    "E-AT11-S1-ORIGINAL",
+    "S1-doi-10.5194/bg-18-1451-2021"
   ],
   "acceptance_criteria": [
-    "Original S1 identity and exact allowed file binding are confirmed before start; local index is identity evidence only",
+    "Use only the exact read-only S1 original bound by Decision 0007; missing/unreadable/conflicting identity holds the run",
     "Distinct Research/Evidence executor and Sol scientific QA reviewer have suitable actual capability and traceable session/model/harness identity before start",
     "Four-row card within 600 Chinese words, every claim has precise original page/section support or explicit not-reported label",
     "Review covers identity, fidelity and limitations; no unresolved consequential anomaly; Human PI explicitly accepts only internal draft use",
@@ -36,9 +39,9 @@
   ],
   "verification_route": "Future only: Research/Evidence executor -> independent Sol scientific QA review -> Human PI acceptance -> Astra disposition. One executor call and one reviewer call, no retries; missing suitability or evidence means HELD. See artifacts/at11/C-REVIEW-ACCEPTANCE-PLAN.md.",
   "budget": {
-    "max_files": 7,
+    "max_files": 8,
     "max_depth": 4,
     "max_model_calls": 2
   },
-  "resume_action": "STOP DEFERRED. Human PI supplies/approves exact read-only S1 original locator within explicit bounded source scope or declines candidate. Current expected_checkpoint is the construction entry anchor, not a run token. Under separate revision authority, replace the index-only source binding with approved original, rebind expected_checkpoint to current LATEST and revalidate. Only subsequent explicit run authorization can start executor/reviewer; no automatic execution."
+  "resume_action": "STOP PACKET_READY. Source S1 is bound by Decision 0007, but no execution is authorized. Before any future run, obtain separate Human PI authorization, confirm executor/reviewer suitability and availability, rebind expected_checkpoint to current LATEST if it changed, validate the packet, then execute only the declared write set. No automatic execution or retry."
 }

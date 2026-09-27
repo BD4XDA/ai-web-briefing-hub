@@ -121,57 +121,58 @@ Include the checkpoint ID and relative evidence paths. Do not duplicate large ra
 <!-- FOUNDATION-SOL-CHECKPOINT:START -->
 ## Latest Foundation checkpoint for Sol
 
-Checkpoint ID: 20260927T123655-1a72d88c713d
+Checkpoint ID: 20260927T221637-5ab599164add
 Priority: P3 · Status: complete
 Canonical committed pointer: `checkpoints/LATEST.json`. This generated mirror is required for Sol resume, but `tools/foundation.py show` remains authoritative if IDs differ.
 
 ### Current Verified State
 
-- AT11 construction closed DEFERRED; exactly one future source-linked sediment-phosphorus evidence-card task is specified, not executed.
-- S1 candidate DOI 10.5194/bg-18-1451-2021 is located in preserved index metadata; exact original file identity/access remains unconfirmed within max_depth=4.
-- Decision 0006 supervised Phase-0 boundary remains adopted; packet readiness and scientific acceptance/run authorization remain separate.
-- AT08 unchanged: successor NOT READY; F5/F6 DISABLED_NOT_ACCEPTED; C1 NOT PROVEN; C2/P5 UNCERTAIN; P6 YELLOW. AT09 remains preliminary/unaccepted.
+- Human PI approved bounded read-only location of the S1 original for DOI 10.5194/bg-18-1451-2021.
+- The exact canonical archived PDF is bound by Decision 0007; direct pages 1-2 identity checks matched DOI, author, journal/volume/page and title phrases.
+- AT11 future supervised evidence-card packet is PACKET_READY but not authorized to execute.
+- No scientific content extraction, executor/reviewer call, source modification/transmission/publication or AT12 occurred.
+- AT08 gates and AT09 preliminary/unaccepted status remain unchanged.
 
 ### Completed
 
-- Wrote A scope, B supervised packet, C review/acceptance plan, schema-valid future machine packet, terminal record, validation and handoff.
-- Only coordinator scope/structure/link checks were performed; no model/executor/reviewer calls or scientific output.
-- Preserved original corpus and existing untracked artifacts/at09; no public Git publication or hub handoff update.
+- Performed a DOI/author/issue-targeted read-only search inside the Human PI-approved corpus root and selected only the canonical archived original.
+- Inspected file properties and pages 1-2 identity fields without adding a digest or copying source content into the repository.
+- Recorded Decision 0007, source-binding artifact, ready packet revision and terminal source-binding receipt.
 
 ### Decisions
 
-- DEFERRED rather than infer original source availability from archive-status index text.
-- Future executor Research/Evidence; independent reviewer Sol scientific QA; Human PI acceptance; Astra state/disposition owner. These are bounded future assignments, not current runtime qualification.
-- Future run requires exact approved original binding, ready packet revision with current checkpoint and separate explicit execution authorization.
+- Use only the exact canonical archived PDF path in Decision 0007; no duplicate or temporary copy is an automatic substitute.
+- Source binding resolves the DEFERRED blocker and changes packet state to PACKET_READY only; execution remains separately authorized.
+- No hash was added because direct current-file identity was the claim and no byte-equality boundary was asserted.
 
 ### Open Questions
 
-- Human PI: provide and approve the exact read-only original file for DOI 10.5194/bg-18-1451-2021 within explicit bounded source scope, or decline this candidate.
+- Human PI has not yet authorized running the ready scientific packet. Future executor and Sol reviewer suitability/availability must be confirmed at start.
 
 ### Known Risks
 
-- Index label and DOI are candidate metadata, not independently verified publisher identity or scientific evidence.
-- Future reviewer availability and actual scientific capability must be confirmed at start; absent capability holds acceptance.
-- Existing old gates and unaccepted AT09 remain excluded; no general autonomous or scientific qualification is claimed.
+- Local identity fields do not independently prove publisher authenticity, license status or scientific correctness.
+- The absolute source path is machine-local; if it changes, hold the packet rather than substitute another copy.
+- Packet readiness can be mistaken for scientific acceptance; no result exists yet.
 
 ### In Progress
 
 
 ### Next Actions
 
-- Stop. Await the one precise source-binding input; no automatic research, review, correction, AT12 or infrastructure work.
-- Dispatch owner may update hub CURRENT.md; Astra made no project-external write.
+- Stop at PACKET_READY. Await separate Human PI authorization before any executor/reviewer invocation or evidence-card production.
+- No automatic AT12, retry, source substitution, AT09 promotion, successor/F5/F6 or infrastructure work.
 
 ### Evidence References
 
-- decisions/0006-supervised-phase0-exit-and-at11.md
-- packets/at11-construction.json
-- packets/at11-first-supervised-research.json
-- packets/at11-terminal.json
+- ../../00-inbox/2026-09-27-at11-source-binding-approval.md
+- ../../50-decisions/2026-09-27-at11-source-binding.md
+- decisions/0007-at11-s1-source-binding.md
+- artifacts/at11/D-SOURCE-BINDING.md
 - artifacts/at11/A-FIRST-RESEARCH-SCOPE.md
 - artifacts/at11/B-SUPERVISED-RESEARCH-PACKET.md
 - artifacts/at11/C-REVIEW-ACCEPTANCE-PLAN.md
-- artifacts/at11/VALIDATION.md
-- artifacts/at11/AT11-HANDOFF.md
+- packets/at11-first-supervised-research.json
+- packets/at11-source-binding-terminal.json
 
 <!-- FOUNDATION-SOL-CHECKPOINT:END -->
