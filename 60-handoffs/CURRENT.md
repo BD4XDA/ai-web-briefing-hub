@@ -40,3 +40,7 @@ Human PI hard constraint: every Foundation checkpoint must update the generated 
 <!-- AT10-CLOSURE -->
 AT10 responsibility audit and supervised Phase-0 exit decision preparation: [handoff](../40-work/lab-research-os/artifacts/at10/AT10-HANDOFF.md). Canonical registered root is `D:/项目仓库/赛博课题组/40-work/lab-research-os`; read its current LATEST through Foundation. Four audit artifacts and governance proposals are preserved; proposals are not adopted and the PI phase decision is pending. AT08 gates remain unchanged, AT09 remains preliminary. Stop: no automatic AT11, successor or research pilot.
 <!-- /AT10-CLOSURE -->
+
+<!-- AT11-ACTIVE -->
+AT11 is authorized and assigned to Astra: [brief](../10-briefs/2026-09-26-astra-time-11.md), [decision](../40-work/lab-research-os/decisions/0006-supervised-phase0-exit-and-at11.md), [construction packet](../40-work/lab-research-os/packets/at11-construction.json). Human PI accepted the supervised Phase-0 exit boundary and minimal responsibility/stop rules. Scope is packet construction only for one small reversible supervised source-linked literature/evidence task; no scientific execution, AT09 promotion, successor/F5/F6, permanent role or automatic AT12. Read the registered D-root LATEST through Foundation and verify the generated Sol mirror after checkpoint.
+<!-- /AT11-ACTIVE -->

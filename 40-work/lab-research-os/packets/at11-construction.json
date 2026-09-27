@@ -1,0 +1,52 @@
+{
+  "task_id": "AT11-supervised-research-packet-construction",
+  "project_id": "lab-research-os",
+  "project_root": "D:/项目仓库/赛博课题组/40-work/lab-research-os",
+  "expected_checkpoint": "20260927T123135-01e93bde799a",
+  "owner": "Astra",
+  "objective": "Design exactly one small reversible supervised source-linked literature/evidence task packet in the inherited sediment-phosphorus direction; prepare its acceptance route and stop before scientific execution.",
+  "allowed_read_roots": [
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os",
+    "D:/项目仓库/赛博课题组/10-briefs/2026-09-26-astra-time-11.md",
+    "D:/项目仓库/赛博课题组/50-decisions/2026-09-26-at11-supervised-exit.md",
+    "D:/A每日论文阅读_沉积物磷形态与生物地球化学"
+  ],
+  "write_paths": [
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/artifacts/at11",
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/packets/at11-first-supervised-research.json",
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/packets/at11-terminal.json",
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/checkpoints",
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/CHECKPOINT.md",
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/SOL-AGENT.md"
+  ],
+  "excluded_scope": [
+    "No scientific task execution, synthesis result, conclusion adoption or future reviewer invocation",
+    "No upload of raw PDFs, private annotations, credentials, unrelated personal data or unaccepted AT09 protocol exports",
+    "No AT09 completion or promotion, F5/F6 enablement, successor launch, permanent role creation or infrastructure expansion",
+    "No Foundation, policy, schema or stable role-contract change beyond recording the already approved Decision 0006",
+    "No broad corpus census and no automatic AT12"
+  ],
+  "input_evidence_ids": [
+    "checkpoint-20260922T162130-bf5b4a1f6891",
+    "at10-minimal-governance-proposal",
+    "at10-phase0-exit-decision",
+    "decision-0006",
+    "human-pi-at11-approval-2026-09-26"
+  ],
+  "acceptance_criteria": [
+    "Exactly one candidate task is defined and remains source-preserving, reversible, supervised and within the inherited sediment-phosphorus direction.",
+    "No more than three source items are identified by directly inspected safe metadata/locators; raw PDFs and private annotations are not copied to the public repository.",
+    "The future packet names executor, suitably independent reviewer, acceptance/state owner, exact outputs/write set, budget, risks, stop condition and rollback/disposition path.",
+    "The future machine packet validates against schemas/task-packet.schema.json and makes separate execution authorization explicit.",
+    "AT11 reports PACKET_READY, DEFERRED with one precise blocker, or a fresh consequential exception; packet readiness is not scientific acceptance.",
+    "AT11 handoff and Foundation checkpoint are written, and the generated latest-checkpoint section in SOL-AGENT.md matches the committed checkpoint ID.",
+    "Verification uses direct inspection, link/schema checks and Git diff; no additional hash is produced except by the existing Foundation immutable checkpoint contract."
+  ],
+  "verification_route": "Astra self-checks scope, links and schema and records coordinator limitations; no independent scientific/model review is claimed or invoked during packet construction.",
+  "budget": {
+    "max_files": 40,
+    "max_depth": 4,
+    "max_model_calls": 0
+  },
+  "resume_action": "Read Decision 0006, the AT11 brief, AT10 C/D and this packet. Select at most three safe source items, write the four AT11 deliverables plus future machine packet, validate structure/links, checkpoint with the current LATEST parent, verify the Sol mirror, and stop without running the research task. The dispatch owner, not Astra's project write set, updates the repository-level 60-handoffs/CURRENT.md completion pointer."
+}

@@ -1,73 +1,58 @@
 # Lab Research OS · CHECKPOINT
-Checkpoint ID: 20260922T162130-bf5b4a1f6891
-Priority: EXIT · Status: complete
+Checkpoint ID: 20260927T123135-01e93bde799a
+Priority: P3 · Status: in_progress
 Canonical committed pointer: checkpoints/LATEST.json. If IDs differ, use tools/foundation.py show; do not guess.
 
 ## Current Verified State
 
-- Canonical registered project is D:/项目仓库/赛博课题组/40-work/lab-research-os; identity and entry checkpoint 20260922T155833-7fcdcab38f00 verified. C-drive stale copy is not current project truth.
-- AT10 inspected 16 responsibility functions and produced exactly four main audit artifacts plus concise handoff; coordinator completion checklist PASS, not an independent model certification.
-- Candidate A end-to-end independent verification-state ownership gap is PLAUSIBLE; independent evidence review and per-artifact state ownership are already covered.
-- Candidate B is PROVEN only as a documented continuing code-QC/health ownership gap; episodic code repair, regression and independent evidence review already exist.
-- No current project-owned Themis or Argus definition was located within the inspected sources; neither name was assigned, renamed or deployed.
-- Phase-0 recommendation is EXIT READY WITH DECLARED LIMITATIONS for separately authorized bounded supervised research only. Human PI exit decision and proposal adoption remain pending.
-- AT08 gates unchanged: successor NOT READY, F5/F6 DISABLED_NOT_ACCEPTED, C1 NOT PROVEN, C2/P5 UNCERTAIN, P6 YELLOW. AT09 remains preliminary and unaccepted.
+- Human PI approved ASTRA TIME 11 on 2026-09-26 and instructed publication plus assignment to Astra.
+- Decision 0006 adopts AT10's EXIT READY WITH DECLARED LIMITATIONS boundary and minimal responsibility/recursive-review stop clarification.
+- AT11 is authorized only to design one small reversible supervised source-linked literature/evidence packet in the inherited sediment-phosphorus direction; scientific execution remains separately authorized.
+- AT08 gates remain unchanged and AT09 remains preliminary/unaccepted. Raw AT09 protocol exports are outside this publication and construction scope.
 - Evidence proportionality and mandatory generated SOL checkpoint mirroring remain active.
 
 ## Completed
 
-- Resolved registered root using project identity and immutable checkpoint contract; compared both required mirror IDs without redundant evidence hashing.
-- Inspected current roles, protocols and relevant retained execution/review evidence; separated stated ownership from exercised work and current liveness.
-- Classified candidate gaps, proposed minimal existing-role assignments and a six-outcome recursive-review breaker without implementation.
-- Prepared supervised Phase-0 exit conditions, blocking versus nonblocking limitations, false-acceptance boundaries and concise handoff.
-- Checked deliverable count, 16 matrix rows and local document links. No historical tests or model reviews rerun.
+- Published AT10 governance audit in a dedicated Git commit without including the unaccepted AT09 protocol export.
+- Recorded the Human PI approval in inbox, hub brief, hub decision and project Decision 0006.
+- Prepared schema-bound AT11 construction packet for Astra with explicit write set, source/privacy bounds, acceptance outcomes and stop line.
 
 ## Decisions
 
-- AT10 closes at governance audit and PI decision preparation; C proposal is NOT ADOPTED and D recommendation does not authorize research execution.
-- Independent report ownership, acceptance ownership and canonical state custody are distinct; a model PASS or checkpoint commit is not itself work acceptance.
-- No Foundation/code/policy/schema/role change, permanent agent, successor, scientific pilot, AT09 promotion, migration or publication was performed.
-- Nonblocking uncertainty remains a declared limitation and creates no automatic next task. No AT11 is authorized.
+- Supervised Phase-0 exit and AT10 governance proposal are adopted within Decision 0006's limitations.
+- Astra owns AT11 packet construction. Existing roles must be named per task; no Themis/Argus or permanent new agent is created.
+- AT11 may inspect at most three source items for safe identifiers/locators but may not execute science or publish raw source content.
+- AT11 ends at PACKET_READY, DEFERRED or a fresh consequential exception; no AT12 starts automatically.
 
 ## Open Questions
 
-- Human PI decision on the proposed supervised Phase-0 exit boundary and minimal responsibility/stop clarifications is pending.
-- Themis/Argus meanings outside inspected canonical sources and ongoing independent state/QC staffing remain unknown; no automatic investigation scheduled.
-- Actual scientific-task suitability, source quality and reviewer availability require the separately authorized task's own acceptance, not general infrastructure assurance.
+- Which maximum-three preserved source items best support the smallest first supervised literature/evidence task while remaining safe to identify publicly?
+- Which existing qualified reviewer and acceptance/state owner should the future execution packet name?
 
 ## Known Risks
 
-- Historical C-drive copies and absolute evidence paths may misdirect discovery; use registered D-root identity and current committed checkpoint.
-- Engineering evidence does not certify scientific truth, current harness liveness, model authenticity or general autonomous capability.
-- Old unaccepted automation/capture paths must not be substituted for the proposed supervised workflow; historical F4 and AT07/08 adoption boundaries remain.
-- AT10 is coordinator governance judgment, not independent review of itself; checkpointing it must not promote the proposals into operating rules.
+- Public repository publication can expose private source material if raw PDFs, annotations or sensitive paths are copied; AT11 permits safe metadata/locators only.
+- Packet readiness can be mistaken for scientific validity or run authorization; the handoff and future packet must keep these states separate.
+- Historical C-drive paths and preliminary AT09 materials can misdirect recovery; use the registered D-root and Decision 0006.
 
 ## In Progress
 
+- AT11 construction is queued for Astra from packets/at11-construction.json after public push.
 
 ## Next Actions
 
-- Human PI decides whether to adopt the supervised exit boundary and governance proposals; no implementation is authorized by this checkpoint.
-- If separately authorized later, scope one reversible supervised research packet with approved sources, executor, independent reviewer, acceptance/state owner and stop condition.
-- STOP. Do not automatically create AT11, finish AT09, rerun old reviews/tests, launch successor/scientific pilot or expand infrastructure.
+- Astra reads the AT11 packet and bounded references, writes the specified AT11 deliverables and future execution packet, validates them, checkpoints and stops.
+- Do not execute the future research task, invoke its reviewer, complete AT09, launch successor/F5/F6 or create automatic follow-on work.
 
 ## Evidence References
 
-- artifacts/at10/A-RESPONSIBILITY-MATRIX.md
-- artifacts/at10/B-GAP-CLASSIFICATION.md
+- ../../00-inbox/2026-09-26-astra-time-11-approval.md
+- ../../10-briefs/2026-09-26-astra-time-11.md
+- ../../50-decisions/2026-09-26-at11-supervised-exit.md
+- decisions/0006-supervised-phase0-exit-and-at11.md
+- packets/at11-construction.json
 - artifacts/at10/C-MINIMAL-GOVERNANCE-PROPOSAL.md
 - artifacts/at10/D-PHASE0-EXIT-DECISION.md
 - artifacts/at10/AT10-HANDOFF.md
-- AGENTS.md
-- PROJECT.md
-- protocols/VERIFICATION.md
-- protocols/HANDOFF.md
-- protocols/MEMORY.md
 - decisions/0004-sol-agent-checkpoint-mirror.md
 - decisions/0005-evidence-proportionality.md
-- artifacts/at04/P5-ACCEPTANCE.md
-- artifacts/at05/EXCEPTION-JUDGMENT.md
-- artifacts/at07/FINAL-REPAIR-STATUS.json
-- artifacts/at07/regression-execution.json
-- artifacts/at07/review-execution.json
-- artifacts/at08/NEXT-ACCEPTANCE-DESIGN.md
