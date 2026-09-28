@@ -1,0 +1,101 @@
+{
+  "$schema": "../schemas/model-routing.schema.json",
+  "schema_version": 1,
+  "policy_version": "2026-09-27",
+  "reviewed_at": "2026-09-27",
+  "sources": [
+    "https://developers.openai.com/api/docs/guides/latest-model",
+    "https://developers.openai.com/api/docs/guides/model-selection",
+    "https://developers.openai.com/api/docs/guides/reasoning",
+    "https://developers.openai.com/api/docs/pricing",
+    "https://developers.openai.com/api/docs/changelog"
+  ],
+  "runtime_policy": {
+    "openai_api": "responses",
+    "reasoning_mode": "standard",
+    "dynamic_effort_updates": true,
+    "silent_model_fallback": false,
+    "unavailable_action": "hold",
+    "deepseek_policy": "external_unchanged"
+  },
+  "routes": [
+    {
+      "role": "luna",
+      "model": "gpt-6-luna",
+      "default_effort": "low",
+      "allowed_efforts": ["none", "low", "medium"],
+      "tasks": [
+        "bounded extraction, enumeration and triage",
+        "fine-grained edits, formatting and schema preparation",
+        "repeatable file, link and metadata checks",
+        "coordinated updates from a clear brief"
+      ],
+      "effort_rules": {
+        "none": "Only an exact deterministic transform with an independent validator and no judgment-bearing output.",
+        "low": "Default for well-scoped routine work.",
+        "medium": "Clear multi-file coordination without consequential judgment."
+      },
+      "escalate_to": "sol",
+      "escalate_when": [
+        "the task requires scientific judgment or source synthesis",
+        "the task becomes ambiguous, consequential or cross-system",
+        "a deterministic check exposes a material conflict"
+      ]
+    },
+    {
+      "role": "sol",
+      "model": "gpt-6-sol",
+      "default_effort": "medium",
+      "allowed_efforts": ["low", "medium", "high", "xhigh"],
+      "tasks": [
+        "everyday coding, research and evidence synthesis",
+        "scientific and visual quality assurance",
+        "fact checking, document review and bounded implementation",
+        "independent verification of consequential claims"
+      ],
+      "effort_rules": {
+        "low": "Focused writing, editing, fact checking or straightforward application work.",
+        "medium": "Default for research, coding and workflows requiring judgment and completeness.",
+        "high": "Independent scientific or visual review, deep verification, complex debugging or consequential acceptance.",
+        "xhigh": "Only when representative evaluations show a clear benefit, or the Human PI explicitly authorizes the added cost and latency."
+      },
+      "escalate_to": "astra",
+      "escalate_when": [
+        "architecture or policy ownership is required",
+        "multiple systems present unresolved authority or evidence conflicts",
+        "the decision is L3, irreversible or materially expands scope"
+      ]
+    },
+    {
+      "role": "astra",
+      "model": "gpt-6-astra",
+      "default_effort": "medium",
+      "allowed_efforts": ["low", "medium", "high", "xhigh"],
+      "tasks": [
+        "ambiguous cross-system architecture",
+        "complex planning and exception adjudication",
+        "broad-context integration and consequential L3 preparation",
+        "exacting deliverables when lower routes are insufficient"
+      ],
+      "effort_rules": {
+        "low": "Concise adaptation that must preserve facts and nuance; prefer Luna or Sol when they are sufficient.",
+        "medium": "Default for broad-context architecture and ambitious multi-step work.",
+        "high": "Consequential architecture, failure analysis or exacting integration review.",
+        "xhigh": "Only when representative evaluations show a clear benefit, or the Human PI explicitly authorizes the added cost and latency."
+      },
+      "escalate_to": null,
+      "escalate_when": []
+    }
+  ],
+  "update_contract": {
+    "single_source": "config/model-routing.json",
+    "validate_command": "python tools/model_routing.py validate",
+    "required_before_adoption": [
+      "official model capability and pricing review",
+      "representative task evaluation for changed model or effort",
+      "decision record and Foundation checkpoint",
+      "requested versus actual runtime identity recorded at task start"
+    ],
+    "history_policy": "Preserve historical model identifiers; change only current and future routing."
+  }
+}

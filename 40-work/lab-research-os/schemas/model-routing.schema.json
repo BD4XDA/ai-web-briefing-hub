@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/lab-research-os/model-routing.schema.json",
+  "title": "Lab Research OS model routing",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "schema_version", "policy_version", "reviewed_at", "sources", "runtime_policy", "routes", "update_contract"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "schema_version": {"const": 1},
+    "policy_version": {"type": "string", "minLength": 1},
+    "reviewed_at": {"type": "string", "format": "date"},
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "format": "uri"}
+    },
+    "runtime_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["openai_api", "reasoning_mode", "dynamic_effort_updates", "silent_model_fallback", "unavailable_action", "deepseek_policy"],
+      "properties": {
+        "openai_api": {"const": "responses"},
+        "reasoning_mode": {"enum": ["standard", "pro"]},
+        "dynamic_effort_updates": {"type": "boolean"},
+        "silent_model_fallback": {"const": false},
+        "unavailable_action": {"const": "hold"},
+        "deepseek_policy": {"const": "external_unchanged"}
+      }
+    },
+    "routes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/route"}
+    },
+    "update_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["single_source", "validate_command", "required_before_adoption", "history_policy"],
+      "properties": {
+        "single_source": {"const": "config/model-routing.json"},
+        "validate_command": {"const": "python tools/model_routing.py validate"},
+        "required_before_adoption": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "history_policy": {"type": "string", "minLength": 1}
+      }
+    }
+  },
+  "$defs": {
+    "effort": {"enum": ["none", "low", "medium", "high", "xhigh", "max"]},
+    "route": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["role", "model", "default_effort", "allowed_efforts", "tasks", "effort_rules", "escalate_to", "escalate_when"],
+      "properties": {
+        "role": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
+        "model": {"type": "string", "minLength": 1},
+        "default_effort": {"$ref": "#/$defs/effort"},
+        "allowed_efforts": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/effort"}},
+        "tasks": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "effort_rules": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {"type": "string", "minLength": 1}
+        },
+        "escalate_to": {"type": ["string", "null"]},
+        "escalate_when": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    }
+  }
+}

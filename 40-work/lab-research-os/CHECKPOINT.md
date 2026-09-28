@@ -1,57 +1,67 @@
 # Lab Research OS · CHECKPOINT
-Checkpoint ID: 20260927T222534-4ceb3f3a3a79
+Checkpoint ID: 20260928T132433-391786e56d73
 Priority: P3 · Status: complete
 Canonical committed pointer: checkpoints/LATEST.json. If IDs differ, use tools/foundation.py show; do not guess.
 
 ## Current Verified State
 
-- Human PI directed current project-owned GPT 5.6 targets to migrate to generation 6, including Sol.
-- Current project mapping is gpt-6-astra for Astra/former Terra responsibility, gpt-6-sol for Sol and gpt-6-luna for Luna.
-- AT11 future independent scientific review now explicitly requires gpt-6-sol with no GPT 5.6 fallback; scientific execution remains unauthorized.
-- Remaining GPT-5.6 repository hits are seven unchanged AT02 historical capture/review files, not current routes.
-- External DSH/user/provider configuration was not modified or qualified.
+- Canonical repository root migrated to D:/20_代码项目/赛博课题组 and project root to D:/20_代码项目/赛博课题组/40-work/lab-research-os; active paths were updated while historical records were preserved.
+- Current GPT routing is centralized in config/model-routing.json: Luna low, Sol medium and Astra medium by default, with bounded high/xhigh escalation rules.
+- DeepSeek routing and external DSH/provider configuration remain unchanged.
+- Installed DSH 0.1.1-rc.2 is structurally compatible with the project through AGENTS/CLAUDE instruction discovery plus workspace filesystem and command tools; no upgraded or paid-model end-to-end qualification was performed.
+- The public GitHub repository is visible, but a standalone public release is held pending licensing, security/contribution documents, path sanitization, historical-artifact curation and clean-room installation tests.
+- AT11 remains PACKET_READY and unexecuted; its future gpt-6-sol scientific review now requests reasoning effort high.
 
 ## Completed
 
-- Recorded Human PI authorization, brief and Decision 0008 mapping the GPT family to generation 6.
-- Updated AGENTS, PROJECT, SOL adapter, infrastructure map and active AT11 review documents/packet.
-- Separated current routing from historical evidence and documented the preserved AT02 references.
+- Adopted the D-drive path migration through Decision 0010 and rebound current AT11 project/source locators without running the science task.
+- Reviewed official OpenAI GPT-6 model, reasoning, pricing and changelog guidance and recorded primary-source references.
+- Added the model-routing manifest, JSON Schema, validator, four new tests and routing protocol; all 24 project unit tests pass.
+- Inspected installed and upstream DSH versions without mutation and documented structural compatibility plus upgrade risks.
+- Completed a static public-release audit and comparable-project analysis; corrected the root README public/private mismatch.
 
 ## Decisions
 
-- Do not invent gpt-6-terra; route former Terra architecture responsibility to gpt-6-astra.
-- Do not silently fall back to GPT 5.6. Missing required GPT-6 capability holds the affected task.
-- Do not rewrite historical artifacts merely to eliminate an old model identifier.
+- Use the migrated repository and corpus roots for current work; preserve old paths only as historical observations.
+- Use the lightest route and reasoning effort that meets a predeclared quality gate; do not default to xhigh or max.
+- Keep DeepSeek unchanged and outside the GPT routing manifest.
+- Do not upgrade the working DSH profile in place; qualify a pinned isolated profile before adoption.
+- A public release must be a sanitized clean export or standalone repository, not a raw publication of internal history.
 
 ## Open Questions
 
-- External DSH stored templates may still target GPT 5.6 because this authorization is project-internal; change them only under separate explicit scope.
-- Actual GPT-6 model/harness identity and suitability remain per-task start checks.
+- Human PI must choose a license and authorize a standalone public-release construction/publish task.
+- A future separately authorized DSH qualification should decide whether to target npm latest 0.1.5-rc.3 or the 0.1.7 prerelease line after plugin compatibility review.
+- Representative quality/cost evaluations are still required before changing default efforts or adopting a future GPT model generation.
 
 ## Known Risks
 
-- A requested GPT-6 label is not proof of the model actually served by a harness.
-- Search results can be misread unless historical AT02 files are distinguished from current routing documents.
+- Static DSH compatibility does not prove provider authentication, model identity, web UI health or live end-to-end execution.
+- The already-public repository contains machine-specific paths and historical execution context even though the high-confidence static scan found no token/private-key signature.
+- Official product capabilities, pricing and release status can change; the routing policy records its review date and must be re-evaluated before a future migration.
 
 ## In Progress
 
 
 ## Next Actions
 
-- Use only the GPT-6 mapping for future project-owned packets and assignments; verify requested versus actual runtime identity at task start.
-- Stop. No external configuration migration, model call, AT11 science, AT09 work or AT12 is authorized by this maintenance change.
+- Use config/model-routing.json for new GPT assignments and validate any change with python tools/model_routing.py validate.
+- If the Human PI authorizes public packaging, build a clean sanitized distribution with license/security/contribution files, synthetic examples and CI; do not copy raw artifact history.
+- If the Human PI authorizes DSH upgrade qualification, use an isolated pinned profile and preserve the current working profile. No automatic AT11 science, AT09 work or successor is authorized.
 
 ## Evidence References
 
-- ../../00-inbox/2026-09-27-gpt6-model-migration.md
-- ../../10-briefs/2026-09-27-gpt6-model-migration.md
-- ../../50-decisions/2026-09-27-gpt6-model-generation.md
-- decisions/0008-gpt6-model-generation.md
-- AGENTS.md
-- PROJECT.md
-- SOL-AGENT.md
-- artifacts/INFRASTRUCTURE-MAP.md
-- artifacts/MODEL-GENERATION-MIGRATION.md
-- artifacts/at11/B-SUPERVISED-RESEARCH-PACKET.md
-- artifacts/at11/C-REVIEW-ACCEPTANCE-PLAN.md
+- ../../00-inbox/2026-09-27-gpt6-routing-dsh-public-release.md
+- ../../10-briefs/2026-09-27-gpt6-routing-dsh-public-release.md
+- ../../20-research/2026-09-27-gpt6-dsh-comparables.md
+- ../../50-decisions/2026-09-27-gpt6-cost-routing.md
+- decisions/0009-gpt6-cost-routing-and-portability.md
+- config/model-routing.json
+- schemas/model-routing.schema.json
+- tools/model_routing.py
+- tests/test_model_routing.py
+- protocols/MODEL-ROUTING.md
+- artifacts/GPT6-DSH-PUBLIC-RELEASE-ASSESSMENT.md
+- decisions/0010-canonical-root-migration.md
 - packets/at11-first-supervised-research.json
+- SOL-AGENT.md

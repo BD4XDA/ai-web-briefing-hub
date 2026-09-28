@@ -1,6 +1,6 @@
 # AI Web Briefing Hub
 
-一个给 ChatGPT 网页端、Codex、Claude Code 和 DeepSeek Harness 共用的私有项目资料库。
+一个给 ChatGPT 网页端、Codex、Claude Code 和 DeepSeek Harness 共用的公开协作资料库。仓库可公开访问不等于其中每个实验工件都已整理成可复用发行版；敏感数据仍禁止提交。
 
 ## 最短工作流
 

@@ -12,6 +12,8 @@ Read these files in order:
 
 When the assigned model is Sol, continue with [`SOL-AGENT.md`](SOL-AGENT.md) for the Sol-specific project map, construction workflow, evidence gates, reporting contract, and the required generated mirror of the latest Foundation checkpoint.
 
+Current GPT task division and reasoning-effort defaults are centralized in [`config/model-routing.json`](config/model-routing.json); validate changes with `python tools/model_routing.py validate`. DeepSeek routing remains external and unchanged.
+
 Do not infer current status from an older artifact or handoff. `CHECKPOINT.md` is rendered from the committed Foundation checkpoint, and `checkpoints/LATEST.json` identifies that checkpoint. When local tools are available, `python tools/foundation.py show` is the authoritative resume command.
 
 Historical evidence and handoffs are retained under `artifacts/`; task packets are under `packets/`. A completed packet means that bounded stage stopped and was recorded—it does not automatically mean its proposed repair, pilot, or successor was accepted.
