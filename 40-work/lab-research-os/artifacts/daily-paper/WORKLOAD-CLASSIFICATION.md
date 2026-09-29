@@ -1,0 +1,20 @@
+# Research workload classification
+
+| Workload | Scientific Value | Trigger Type | Frequency / Condition | Preferred Agent / Model | Required Infrastructure | Current Readiness |
+|---|---|---|---|---|---|---|
+| Daily Literature Radar + existing three-paper workflow | High | TIME | Daily; deduplicate first; honor an explicit active repair/pause | Luna low for discovery; local/cheap worker for metadata; Sol medium for selected full-text interpretation and scientific QA; Astra none by default | Private Skill, lawful full text, index, archive, browser/search, document/PDF pipeline | PARTIAL — 21 issues exist; automation is configured; next upgraded run unverified |
+| Human PI Daily Research Brief | High | TIME reporting only | Daily, including zero-change days; no recomputation | Luna low/medium; Sol only for an already-triggered scientific signal | Latest verified state, actual run/event summary, brief template | IMPLEMENTED BUT UNVERIFIED live |
+| Weekly Evidence & Novelty Synthesis | High | TIME + significant-paper EVENT | Proposed weekly or on material paper; not daily | Sol medium; Astra only for structural novelty conflict | Evidence-ready daily records, claim/evidence ledger | NOT DEPLOYED; daily source records not yet live-verified |
+| Significant-paper scientific review | High | EVENT | New high-value or contradictory paper | Sol medium/high | Full text, source traceability, declared claim boundary | READY by existing tools; no schedule required |
+| Research Question / Hypothesis tracking | High | EVENT / MILESTONE | Design/evidence/decision changes only | Sol medium; Astra for architecture; Human PI decides | Verified evidence and research-state record | UNKNOWN — no canonical research-state record yet |
+| Methods / Statistical Analysis / QAQC readiness | High | EVENT / MILESTONE / STATE | Design frozen, new dataset/batch, or data gate | Sol medium; deterministic checks/cheap worker; Human PI for irreversible choices | Experiment contract, variables, metadata, QAQC and analysis contracts | PARTIAL — fixed experiment exists; OS readiness contracts not yet verified |
+| Data readiness and provenance | High | EVENT | New dataset or experimental batch | Cheap worker/local validation; Sol for material anomaly | Sample IDs, definitions, units, batches, missingness and provenance | NOT READY — no new dataset event observed |
+| Claim–Evidence Ledger | High | EVENT | Verified evidence or candidate-claim change | Sol medium | Evidence records and verification state | NOT READY — do not backfill as a daily task |
+| Figure Blueprint | Medium/High | MILESTONE / STATE | After research structure; instantiate only at DATA_READY + QAQC_PASS | Sol medium; Astra only for cross-figure architecture | Variables, comparison, statistics, intended claim and inference boundary | NOT READY |
+| Manuscript Skeleton | High | MILESTONE / EVENT | Research/design/evidence change; no result invention | Sol medium; Astra for architecture | Evidence slots, methods, result slots, limitations and alternatives | NOT READY |
+| Reproducibility capture | High | EVENT | New data, analysis, figure or release | Local/cheap worker; Sol verifies consequential provenance | Versioned code, parameters, environment and output pointers | PARTIAL — Lab OS has provenance contracts; research pipeline not bound |
+| Historical 73-note layout/image/flowchart repair | Medium | EVENT / explicit user task | Resume from saved artifacts; not a daily workload | Local document/PDF tooling; Luna low for bounded batches; Sol spot QA | Existing `2026-09-28_图文增补核验` workspace and source PDFs | PARTIAL / PAUSED — three child ranges failed on quota; 6 notes lack full text |
+
+## Do not automate now
+
+Human PI research direction, novelty acceptance, hypothesis commitment, irreversible experiment changes, manuscript claims, major resource allocation, and any inference from unknown results remain human decisions. Do not create daily Novelty, Hypothesis, Statistics, Figure or Manuscript jobs.

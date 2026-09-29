@@ -82,6 +82,8 @@ Sol must not:
 - use a text-only model as a visual verifier or treat a model alias as authenticated provenance;
 - launch a successor, repeat a held pilot, change policy, or scale execution unless the current packet and user authorization permit it.
 
+For the approved Daily Paper production/shadow pilot, Sol is Scientific Director/QA, not the default discovery or file-handling worker. Review selected full-text scientific meaning, evidence–claim and inference boundaries, material contradictions, novelty sanity and final scientific quality. Do not re-run unchanged readiness work for the daily report. Use Astra only when a research-gap, novelty, hypothesis or manuscript architecture decision remains structurally unresolved. See `protocols/RESEARCH-AUTOMATION.md` and `artifacts/daily-paper/WORKLOAD-CLASSIFICATION.md`.
+
 ## 5. Evidence and review contract
 
 Every Sol conclusion should identify:
@@ -123,71 +125,78 @@ Include the checkpoint ID and relative evidence paths. Do not duplicate large ra
 <!-- FOUNDATION-SOL-CHECKPOINT:START -->
 ## Latest Foundation checkpoint for Sol
 
-Checkpoint ID: 20260928T132433-391786e56d73
+Checkpoint ID: 20260929T000830-e6268772584d
 Priority: P3 · Status: complete
 Canonical committed pointer: `checkpoints/LATEST.json`. This generated mirror is required for Sol resume, but `tools/foundation.py show` remains authoritative if IDs differ.
 
 ### Current Verified State
 
-- Canonical repository root migrated to D:/20_代码项目/赛博课题组 and project root to D:/20_代码项目/赛博课题组/40-work/lab-research-os; active paths were updated while historical records were preserved.
-- Current GPT routing is centralized in config/model-routing.json: Luna low, Sol medium and Astra medium by default, with bounded high/xhigh escalation rules.
-- DeepSeek routing and external DSH/provider configuration remain unchanged.
-- Installed DSH 0.1.1-rc.2 is structurally compatible with the project through AGENTS/CLAUDE instruction discovery plus workspace filesystem and command tools; no upgraded or paid-model end-to-end qualification was performed.
-- The public GitHub repository is visible, but a standalone public release is held pending licensing, security/contribution documents, path sanitization, historical-artifact curation and clean-room installation tests.
-- AT11 remains PACKET_READY and unexecuted; its future gpt-6-sol scientific review now requests reasoning effort high.
+- The canonical repository root remains D:/20_代码项目/赛博课题组 and the Lab Research OS root remains its 40-work/lab-research-os directory.
+- Current GPT routing remains centralized in config/model-routing.json: Luna low, Sol medium and Astra medium by default, with bounded high/xhigh escalation; DeepSeek remains unchanged and externally managed.
+- Installed DSH 0.1.1-rc.2 remains structurally compatible but not live end-to-end qualified, and AT11 remains PACKET_READY and unexecuted.
+- The existing Daily Paper Work conversation and its single 08:00 Asia/Shanghai heartbeat are preserved; no duplicate automation was created.
+- The archive master index reaches issue 021 dated 2026-09-26; this verifies archive presence, not the scientific validity of every historical note.
+- The private Daily Paper Skill survived the D-drive migration, but its Codex junction and authoritative path profile were stale; both are now repaired and the Skill entry is readable.
+- The heartbeat prompt now binds resume-first behavior, explicit cost routing, evidence labels, natural infrastructure observations and the ten-section Human PI Daily Research Brief to the existing workflow. This configuration has not yet been qualified by a post-update live run.
+- The 73-note historical layout/image/flowchart repair remains PARTIAL and PAUSED at preserved quota-failed continuation artifacts; six notes were reported without complete full text.
+- Weekly, event, milestone and state-triggered Research Readiness workloads are classified but not deployed.
+- The unrelated public-release scaffold remains an uncommitted PARTIAL task; its four discovered tests currently have two passes and two missing-seed errors and were not repaired in this work.
 
 ### Completed
 
-- Adopted the D-drive path migration through Decision 0010 and rebound current AT11 project/source locators without running the science task.
-- Reviewed official OpenAI GPT-6 model, reasoning, pricing and changelog guidance and recorded primary-source references.
-- Added the model-routing manifest, JSON Schema, validator, four new tests and routing protocol; all 24 project unit tests pass.
-- Inspected installed and upstream DSH versions without mutation and documented structural compatibility plus upgrade risks.
-- Completed a static public-release audit and comparable-project analysis; corrected the root README public/private mismatch.
+- Recovered the latest Daily Paper conversation turns, the existing automation, the private Skill contract, the current archive/index and the Lab Research OS canonical checkpoint.
+- Separated the interrupted historical document repair from the daily schedule and recorded its minimum continuation point without restarting it.
+- Repaired current local Skill and archive locators after the D-drive migration while preserving the old junction as a recoverable stale entry.
+- Updated the existing automation only; retained the 08:00 heartbeat and target conversation.
+- Added the research automation trigger/evidence/resource contract, workload classification, Daily Brief template, recovered state and upgrade report.
+- Kept the unrelated public-release scaffold and AT11 work untouched.
 
 ### Decisions
 
-- Use the migrated repository and corpus roots for current work; preserve old paths only as historical observations.
-- Use the lightest route and reasoning effort that meets a predeclared quality gate; do not default to xhigh or max.
-- Keep DeepSeek unchanged and outside the GPT routing manifest.
-- Do not upgrade the working DSH profile in place; qualify a pinned isolated profile before adoption.
-- A public release must be a sanitized clean export or standalone repository, not a raw publication of internal history.
+- Use the existing Daily Paper conversation as the first production/shadow workload; do not build a second daily system.
+- Keep Literature Radar and reporting daily; require weekly, event, milestone or state triggers for other readiness work.
+- Use local/cheap workers for mechanical work, Luna for discovery, Sol for scientific interpretation/QA and Astra only for architecture or unresolved structural conflicts.
+- Require explicit model class and reasoning effort for every delegate; never inherit the parent highest effort.
+- Treat discovery records and reports as evidence candidates, not automatically validated knowledge.
 
 ### Open Questions
 
-- Human PI must choose a license and authorize a standalone public-release construction/publish task.
-- A future separately authorized DSH qualification should decide whether to target npm latest 0.1.5-rc.3 or the 0.1.7 prerelease line after plugin compatibility review.
-- Representative quality/cost evaluations are still required before changing default efforts or adopting a future GPT model generation.
+- A real post-update heartbeat must establish whether routing, evidence-ready output, Daily Brief compression and quota behavior work as configured.
+- Human PI approval is required before deploying the proposed weekly evidence/novelty synthesis or any additional automation.
+- The six historical notes without complete full text need either lawful source recovery or an explicit decision to leave source-image insertion unavailable.
+- Human PI must still choose a license before a standalone public release; any DSH upgrade qualification remains a separate authorization.
 
 ### Known Risks
 
-- Static DSH compatibility does not prove provider authentication, model identity, web UI health or live end-to-end execution.
-- The already-public repository contains machine-specific paths and historical execution context even though the high-confidence static scan found no token/private-key signature.
-- Official product capabilities, pricing and release status can change; the routing policy records its review date and must be re-evaluated before a future migration.
+- The heartbeat automation record exposes prompt, schedule and target thread but no persistent model/effort pin; actual parent-route control remains unknown.
+- The existing three-full-paper workflow is intrinsically substantial; prompt routing should reduce waste but cannot be claimed effective until observed in a real run.
+- The Daily Paper conversation retains a historical working-directory label from the pre-migration root; all active prompt and Skill locators therefore use explicit current roots.
+- Private research paths, papers and personal profile must remain outside the public repository.
+- Static DSH compatibility does not prove provider authentication, model identity, UI health or live execution, and the current public repository still contains machine-specific historical context.
 
 ### In Progress
 
 
 ### Next Actions
 
-- Use config/model-routing.json for new GPT assignments and validate any change with python tools/model_routing.py validate.
-- If the Human PI authorizes public packaging, build a clean sanitized distribution with license/security/contribution files, synthetic examples and CI; do not copy raw artifact history.
-- If the Human PI authorizes DSH upgrade qualification, use an isolated pinned profile and preserve the current working profile. No automatic AT11 science, AT09 work or successor is authorized.
+- Observe the next naturally scheduled heartbeat; record actual routes, output pointers, quota behavior and the first upgraded Daily Brief without creating a synthetic run.
+- Resume the historical 73-note repair only after a new direct Human PI continuation request; continue from existing range artifacts and close one bounded unit at a time.
+- Do not deploy weekly/event/milestone/state schedules until Human PI approves a specific proposal.
+- Keep the public-release scaffold as a separate paused task and exclude it from this integration commit.
+- Continue using config/model-routing.json for new GPT assignments; do not automatically execute AT11, upgrade DSH or publish a release.
 
 ### Evidence References
 
-- ../../00-inbox/2026-09-27-gpt6-routing-dsh-public-release.md
-- ../../10-briefs/2026-09-27-gpt6-routing-dsh-public-release.md
-- ../../20-research/2026-09-27-gpt6-dsh-comparables.md
-- ../../50-decisions/2026-09-27-gpt6-cost-routing.md
-- decisions/0009-gpt6-cost-routing-and-portability.md
-- config/model-routing.json
-- schemas/model-routing.schema.json
-- tools/model_routing.py
-- tests/test_model_routing.py
-- protocols/MODEL-ROUTING.md
-- artifacts/GPT6-DSH-PUBLIC-RELEASE-ASSESSMENT.md
-- decisions/0010-canonical-root-migration.md
-- packets/at11-first-supervised-research.json
+- ../../00-inbox/2026-09-29-daily-paper-research-readiness.md
+- ../../10-briefs/2026-09-29-daily-paper-research-readiness.md
+- ../../50-decisions/2026-09-29-daily-paper-integration.md
+- decisions/0011-daily-paper-production-shadow-pilot.md
+- protocols/RESEARCH-AUTOMATION.md
+- templates/HUMAN-PI-DAILY-RESEARCH-BRIEF.md
+- artifacts/daily-paper/CURRENT-STATE.md
+- artifacts/daily-paper/WORKLOAD-CLASSIFICATION.md
+- artifacts/daily-paper/RESEARCH-AUTOMATION-UPGRADE-REPORT.md
+- artifacts/daily-paper/VALIDATION.md
 - SOL-AGENT.md
 
 <!-- FOUNDATION-SOL-CHECKPOINT:END -->
