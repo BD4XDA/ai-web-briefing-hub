@@ -7,7 +7,7 @@ Purpose: make the existing digital research infrastructure recoverable and able 
 
 Inherited assets:
 - DSH Sol/Luna plugin: C:/Users/ASUS/.dsh/plugins/dsh-sol-luna-router
-- Installed DSH web profile: C:/Users/ASUS/.dsh/profiles/web
+- DSH core `0.1.7-rc.2`; qualified clean profiles: C:/Users/ASUS/.dsh/profiles/lab-research and C:/Users/ASUS/.dsh/profiles/lab-headless. The legacy web profile is retained but not the qualified route.
 - Existing two assistant templates and teams: C:/Users/ASUS/.dsh/storages/agent_team.json
 - Claude skills including nature-* and Fable orchestrator; Codex sol-luna-workflow and private sediment-phosphorus daily skill.
 - Research corpus: D:/10_学业科研/论文_沉积物磷
@@ -21,6 +21,7 @@ Research roles remain Scout/Luna, Research/Evidence, Pro text writing, Flash rou
 
 Current project-owned GPT targets are generation 6: Astra=`gpt-6-astra`, Sol=`gpt-6-sol`, Luna=`gpt-6-luna`. Former GPT-5.6 Terra responsibility maps to Astra; do not invent a GPT-6 Terra alias or silently fall back to a 5.6 model. `config/model-routing.json` is the current source for task division, default reasoning effort and bounded escalation: Luna/low, Sol/medium, Astra/medium, with Sol/high or Astra/high only when task risk/complexity justifies it. `xhigh` is evaluation- or PI-gated. DeepSeek remains unchanged and outside this GPT manifest. Historical evidence retains the model identity observed at its collection time. See Decisions 0008 and 0009.
 Model decides who reasons; harness provides execution; router pairs capability with task. Registry entries distinguish configured/catalogued/tested/qualified/live.
+Need-driven Skill/MCP/harness management is machine-owned by `config/capability-registry.json`; use `protocols/CAPABILITY-GOVERNANCE.md`. The registry covers active or credible near-term workloads, not every installed package.
 
 Success: another worker resumes from CHECKPOINT.md and evidence without rediscovering the environment; the pilot produces validated records and a bounded queue.
 Not in scope: full D-drive census, broad scientific production rollout beyond the approved Daily Paper pilot, automated global model routing replacement, full Context Compiler, UI changes, bulk migration, credential changes.

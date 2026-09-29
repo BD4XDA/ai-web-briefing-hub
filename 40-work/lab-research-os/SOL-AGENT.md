@@ -127,77 +127,81 @@ Include the checkpoint ID and relative evidence paths. Do not duplicate large ra
 <!-- FOUNDATION-SOL-CHECKPOINT:START -->
 ## Latest Foundation checkpoint for Sol
 
-Checkpoint ID: 20260929T120741-8786a6aaca0b
+Checkpoint ID: 20260929T174406-62590a5094c2
 Priority: P3 · Status: in_progress
 Canonical committed pointer: `checkpoints/LATEST.json`. This generated mirror is required for Sol resume, but `tools/foundation.py show` remains authoritative if IDs differ.
 
 ### Current Verified State
 
-- The canonical repository root remains D:/20_代码项目/赛博课题组 and the Lab Research OS root remains its 40-work/lab-research-os directory; D:/项目仓库/赛博课题组 is not a valid working root.
-- Current GPT routing remains centralized in config/model-routing.json: Luna low, Sol medium and Astra medium by default, with bounded high/xhigh escalation; DeepSeek remains unchanged and externally managed.
-- The existing Daily Paper conversation and its single 08:00 Asia/Shanghai heartbeat remain active; no duplicate automation exists.
-- The live heartbeat and private Skill now require same-paper source visuals, source-traceable method/research workflows and portable published paths for every new note.
-- The private validator compiles with opt-in --require-visuals and --require-portable-paths gates; historical issues are not failed by default.
-- The real Event-triggered note-073 pilot completed and verified bounded resume, source matching, rendered visual QA, local recovery, a ten-section Daily Research Brief and zero-default-Astra behavior.
-- Two over-budget supervisor paths in issue 021 were shortened without changing document content; both final paths open directly in Word and render cleanly, and the complete issue passes the portable-path gate.
-- A read-only scan found 34 other historical supervisor DOCX paths above the new budget; they remain a separate Event migration backlog.
-- The future visual and portable-path contracts remain IMPLEMENTED BUT UNVERIFIED by a complete post-contract new issue.
-- The unrelated public-release scaffold remains an uncommitted PARTIAL task and AT09 remains untouched.
+- The canonical repository root is D:/20_代码项目/赛博课题组 and Lab Research OS is its 40-work/lab-research-os directory.
+- Need-driven capability governance is active through config/capability-registry.json and protocols/CAPABILITY-GOVERNANCE.md; installation or runtime visibility is not integration.
+- The registry currently manages 13 capabilities: seven core, four on-demand and two watch-only; legacy dsh-sol-luna-router and Exa MCP are blocked rather than treated as production routes.
+- Global @deepseek-ai/dsh is 0.1.7-rc.2. Clean lab-research Web and lab-headless profiles are live and qualified for bounded Web/text use.
+- The legacy DSH web profile is preserved but is not the qualified route because its Codex adapter and patch target older DSH APIs; the custom router also retains obsolete GPT-5.6 and retired DeepSeek identifiers.
+- During qualification the DSH Web UI listened on 127.0.0.1:3080, recognized the D:/20_代码项目/赛博课题组 workspace and used workspace-write for new work; a clean headless DeepSeek call from the canonical project returned DSH_OK. Current daemon liveness is not assumed after the managed test session ends.
+- The Daily Paper conversation and its single daily heartbeat remain active. Its future source-visual and portable-path contract is still pending qualification by a complete new issue.
+- Weekly automation automation-3 performs a read-only capability update check; it cannot automatically install, remove, enable or reconfigure capabilities.
+- The unrelated public-release scaffold remains uncommitted/partial and AT09 remains untouched.
 
 ### Completed
 
-- Closed the note-073 Event pilot from its preserved continuation point instead of restarting it.
-- Independently compared the inserted source figure and eight-node workflow with the paper's source pages and inspected every rendered page.
-- Repaired the published-path defect for two issue-021 supervisor DOCX files and verified direct Word open plus clean rendering from their final locations.
-- Added a short-filename contract, a 140-character filename budget, a 240-character full-path budget and the --require-portable-paths validator gate for new issues.
-- Updated the existing heartbeat rather than creating another automation, and added Research Readiness Integration Report v3 plus Decision 0013.
+- Created and validated capability-registry schema, manifest, validator, tests and governance protocol.
+- Admitted only capabilities tied to active or credible near-term research workloads instead of treating every installed Skill/MCP as a service.
+- Backed up DSH configuration and upgraded the global Harness from 0.1.1-rc.2 to npm latest 0.1.7-rc.2 without copying or modifying sessions and attachments.
+- Created clean lab-research and lab-headless profiles, removed expired model overrides from the clean Web profile, set workspace-write and disabled only the rebuildable Windows-incompatible projection cache.
+- Verified DSH version, Web activation, Lab workspace visibility and one bounded live DeepSeek text call.
+- Changed the local dsh-web launcher to the qualified lab-research profile while retaining the legacy profile and rollback data.
+- Created active weekly capability update heartbeat automation-3.
 
 ### Decisions
 
-- Complete English article titles remain inside notes and the master index rather than supervisor filenames.
-- New generated human-deliverable filenames must be at most 140 characters and complete absolute paths at most 240 characters.
-- A final DOCX must be opened or rendered from its published path; a staged-copy render alone is insufficient.
-- The note-073 Event pilot qualifies only its bounded resume, evidence, visual-QA, recovery, budget and Daily Brief observations; it does not qualify the next scheduled new issue.
-- Historical over-budget paths form an Event backlog and are not silently bulk-renamed or retroactively invalidated.
+- Capabilities are managed by need, trigger, evidence and fallback; installed does not imply integrated or qualified.
+- Weekly checks are read-only and signal-driven. They never auto-upgrade developer-preview harnesses, plugins, MCPs or scientific workflows.
+- DSH 0.1.7-rc.2 npm latest is adopted; the 0.2.0 next channel is not adopted.
+- Clean DSH profiles are the qualified route. Legacy optional plugins and the Sol/Luna router remain isolated until migrated against current APIs and GPT-6/valid DeepSeek identifiers.
+- DeepSeek model policy remains externally managed; this maintenance changed the harness and qualified profiles, not config/model-routing.json's GPT routing boundary.
 
 ### Open Questions
 
-- A complete future Daily Paper issue must pass --require-visuals and --require-portable-paths plus source/flowchart scientific review before the standing contract is live-qualified.
-- Thirty-four historical supervisor paths remain above the new budget and require Human PI approval for a bounded bulk migration.
-- Six historical notes still lack complete lawful full text and remain blocked for evidence-bearing source-image insertion.
-- Human PI approval is still required before deploying weekly synthesis or additional automation, executing AT11, qualifying a DSH upgrade or selecting a public-release license.
+- Whether and when to migrate the legacy Sol/Luna router to DSH 0.1.7 APIs and GPT-6 routes depends on a real workload requiring mixed-provider failover.
+- Exa MCP remains unnecessary for current production because the existing web research path is available; requalification should wait for a workload need.
+- R, SPSS, Google Drive and explanatory-visual capabilities remain on-demand/unverified until their first representative research task.
+- The next complete Daily Paper issue remains the live qualification event for the visual and portable-path contract.
 
 ### Known Risks
 
-- Section labels, drawing counts and path-length checks do not prove scientific correctness; source inspection and visual QA remain required.
-- Scheduled heartbeat model pinning and a complete post-contract new issue remain unverified.
-- Historical path migration can stale working manifests unless it uses a reversible rename map and updates active references.
-- Private research paths, full texts, images and personal profile remain local and must not enter the public repository.
-- The local repository remains ahead of origin because earlier GitHub pushes encountered a TLS handshake failure; remote publication is not assumed.
+- DeepSeek Harness is a developer preview and future releases may break profiles or plugins.
+- The legacy Web plugin set includes incompatible and deprecated packages; it must not replace the clean qualified route without evidence.
+- Disabling the projection cache can slow historical session listing but does not remove authoritative session logs.
+- Runtime-managed Skills/MCPs may change independently; weekly checks detect meaningful drift but do not prove every connector's authentication or scientific suitability.
+- Private credentials, research papers and annotations remain outside the repository and must not be included in update reports.
 
 ### In Progress
 
-- Daily Paper production/shadow pilot remains active at the system level; the next live qualification event is a complete scheduled new issue under both validator gates.
-- Historical image/flowchart repair remains PARTIAL with note 072 as the next content unit and 34 path-only historical migrations held for separate authorization.
+- Daily Paper production/shadow pilot remains active; its next complete new issue supplies the outstanding live qualification evidence.
+- Capability registry entries will be promoted from installed/unverified only when a real triggered workload supplies representative evidence.
+- DSH Web is available through the updated dsh-web launcher and clean lab-research profile; it is started on demand rather than claimed as a permanent service.
 
 ### Next Actions
 
-- Observe the next genuinely new Daily Paper issue and run both validator gates plus source/flowchart scientific review before claiming live qualification.
-- Resume note 072 only from preserved evidence when the historical Event workload is explicitly continued.
-- Keep the six source-incomplete notes blocked rather than manufacturing visuals.
-- Do not bulk-rename the 34 historical paths, create new schedules, execute AT11, upgrade DSH or continue the public-release scaffold without the relevant Human PI decision.
-- Retry GitHub push without changing credentials or remote configuration when connectivity permits.
+- Use the clean DSH profiles for bounded work and keep the legacy profile/router isolated.
+- Review the weekly capability update result only when it reports a meaningful version, deprecation, compatibility or core health change.
+- Qualify R/SPSS/cloud/visual capabilities only at their declared data, event or on-demand trigger; do not run synthetic integration campaigns.
+- Observe the next genuinely new Daily Paper issue under both validator gates before promoting its standing visual contract.
+- Do not bulk-update third-party DSH plugins, enable Exa, migrate the legacy router or alter credentials without a scoped maintenance decision.
 
 ### Evidence References
 
-- ../../50-decisions/2026-09-29-daily-paper-portable-paths.md
-- decisions/0013-daily-paper-portable-paths-and-pilot-observation.md
-- protocols/RESEARCH-AUTOMATION.md
-- artifacts/daily-paper/PILOT-073-VERIFICATION.md
-- artifacts/daily-paper/RESEARCH-READINESS-INTEGRATION-REPORT-v3.md
+- decisions/0014-capability-governance-and-dsh-017.md
+- config/capability-registry.json
+- schemas/capability-registry.schema.json
+- protocols/CAPABILITY-GOVERNANCE.md
+- artifacts/DSH-017-UPGRADE-REPORT.md
+- tools/capability_registry.py
+- tests/test_capability_registry.py
 - artifacts/daily-paper/CURRENT-STATE.md
-- artifacts/daily-paper/WORKLOAD-CLASSIFICATION.md
 - artifacts/daily-paper/VALIDATION.md
+- CHECKPOINT.md
 - SOL-AGENT.md
 
 <!-- FOUNDATION-SOL-CHECKPOINT:END -->

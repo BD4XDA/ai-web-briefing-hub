@@ -1,0 +1,71 @@
+{
+  "completed": [
+    "Created and validated capability-registry schema, manifest, validator, tests and governance protocol.",
+    "Admitted only capabilities tied to active or credible near-term research workloads instead of treating every installed Skill/MCP as a service.",
+    "Backed up DSH configuration and upgraded the global Harness from 0.1.1-rc.2 to npm latest 0.1.7-rc.2 without copying or modifying sessions and attachments.",
+    "Created clean lab-research and lab-headless profiles, removed expired model overrides from the clean Web profile, set workspace-write and disabled only the rebuildable Windows-incompatible projection cache.",
+    "Verified DSH version, Web activation, Lab workspace visibility and one bounded live DeepSeek text call.",
+    "Changed the local dsh-web launcher to the qualified lab-research profile while retaining the legacy profile and rollback data.",
+    "Created active weekly capability update heartbeat automation-3."
+  ],
+  "created_at": "2026-09-29T17:44:06+0800",
+  "current_verified_state": [
+    "The canonical repository root is D:/20_代码项目/赛博课题组 and Lab Research OS is its 40-work/lab-research-os directory.",
+    "Need-driven capability governance is active through config/capability-registry.json and protocols/CAPABILITY-GOVERNANCE.md; installation or runtime visibility is not integration.",
+    "The registry currently manages 13 capabilities: seven core, four on-demand and two watch-only; legacy dsh-sol-luna-router and Exa MCP are blocked rather than treated as production routes.",
+    "Global @deepseek-ai/dsh is 0.1.7-rc.2. Clean lab-research Web and lab-headless profiles are live and qualified for bounded Web/text use.",
+    "The legacy DSH web profile is preserved but is not the qualified route because its Codex adapter and patch target older DSH APIs; the custom router also retains obsolete GPT-5.6 and retired DeepSeek identifiers.",
+    "During qualification the DSH Web UI listened on 127.0.0.1:3080, recognized the D:/20_代码项目/赛博课题组 workspace and used workspace-write for new work; a clean headless DeepSeek call from the canonical project returned DSH_OK. Current daemon liveness is not assumed after the managed test session ends.",
+    "The Daily Paper conversation and its single daily heartbeat remain active. Its future source-visual and portable-path contract is still pending qualification by a complete new issue.",
+    "Weekly automation automation-3 performs a read-only capability update check; it cannot automatically install, remove, enable or reconfigure capabilities.",
+    "The unrelated public-release scaffold remains uncommitted/partial and AT09 remains untouched."
+  ],
+  "decisions": [
+    "Capabilities are managed by need, trigger, evidence and fallback; installed does not imply integrated or qualified.",
+    "Weekly checks are read-only and signal-driven. They never auto-upgrade developer-preview harnesses, plugins, MCPs or scientific workflows.",
+    "DSH 0.1.7-rc.2 npm latest is adopted; the 0.2.0 next channel is not adopted.",
+    "Clean DSH profiles are the qualified route. Legacy optional plugins and the Sol/Luna router remain isolated until migrated against current APIs and GPT-6/valid DeepSeek identifiers.",
+    "DeepSeek model policy remains externally managed; this maintenance changed the harness and qualified profiles, not config/model-routing.json's GPT routing boundary."
+  ],
+  "evidence_references": [
+    "decisions/0014-capability-governance-and-dsh-017.md",
+    "config/capability-registry.json",
+    "schemas/capability-registry.schema.json",
+    "protocols/CAPABILITY-GOVERNANCE.md",
+    "artifacts/DSH-017-UPGRADE-REPORT.md",
+    "tools/capability_registry.py",
+    "tests/test_capability_registry.py",
+    "artifacts/daily-paper/CURRENT-STATE.md",
+    "artifacts/daily-paper/VALIDATION.md",
+    "CHECKPOINT.md",
+    "SOL-AGENT.md"
+  ],
+  "in_progress": [
+    "Daily Paper production/shadow pilot remains active; its next complete new issue supplies the outstanding live qualification evidence.",
+    "Capability registry entries will be promoted from installed/unverified only when a real triggered workload supplies representative evidence.",
+    "DSH Web is available through the updated dsh-web launcher and clean lab-research profile; it is started on demand rather than claimed as a permanent service."
+  ],
+  "known_risks": [
+    "DeepSeek Harness is a developer preview and future releases may break profiles or plugins.",
+    "The legacy Web plugin set includes incompatible and deprecated packages; it must not replace the clean qualified route without evidence.",
+    "Disabling the projection cache can slow historical session listing but does not remove authoritative session logs.",
+    "Runtime-managed Skills/MCPs may change independently; weekly checks detect meaningful drift but do not prove every connector's authentication or scientific suitability.",
+    "Private credentials, research papers and annotations remain outside the repository and must not be included in update reports."
+  ],
+  "next_actions": [
+    "Use the clean DSH profiles for bounded work and keep the legacy profile/router isolated.",
+    "Review the weekly capability update result only when it reports a meaningful version, deprecation, compatibility or core health change.",
+    "Qualify R/SPSS/cloud/visual capabilities only at their declared data, event or on-demand trigger; do not run synthetic integration campaigns.",
+    "Observe the next genuinely new Daily Paper issue under both validator gates before promoting its standing visual contract.",
+    "Do not bulk-update third-party DSH plugins, enable Exa, migrate the legacy router or alter credentials without a scoped maintenance decision."
+  ],
+  "open_questions": [
+    "Whether and when to migrate the legacy Sol/Luna router to DSH 0.1.7 APIs and GPT-6 routes depends on a real workload requiring mixed-provider failover.",
+    "Exa MCP remains unnecessary for current production because the existing web research path is available; requalification should wait for a workload need.",
+    "R, SPSS, Google Drive and explanatory-visual capabilities remain on-demand/unverified until their first representative research task.",
+    "The next complete Daily Paper issue remains the live qualification event for the visual and portable-path contract."
+  ],
+  "parent": "20260929T174324-f0ac9d512ce5",
+  "priority": "P3",
+  "status": "in_progress"
+}
