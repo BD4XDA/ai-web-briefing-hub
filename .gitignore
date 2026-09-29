@@ -8,3 +8,5 @@ node_modules/
 Thumbs.db
 __pycache__/
 *.py[cod]
+40-work/lab-research-os/artifacts/telemetry/run-cost.jsonl
+40-work/lab-research-os/artifacts/telemetry/.run-cost.lock

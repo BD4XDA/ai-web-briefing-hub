@@ -1,0 +1,82 @@
+{
+  "priority": "P3",
+  "status": "in_progress",
+  "current_verified_state": [
+    "The canonical repository root remains D:/20_代码项目/赛博课题组 and Lab Research OS is its 40-work/lab-research-os directory; D:/项目仓库/赛博课题组 is not the canonical Git checkout.",
+    "Global bounded-retry governance and passive run-level cost telemetry are active through protocols/RESOURCE-GOVERNANCE.md, protocols/COST-TELEMETRY.md and tools/cost_telemetry.py.",
+    "The capability registry now manages 15 capabilities: eight core, five on-demand and two watch-only; the registry validator and all 36 unit tests pass.",
+    "The existing Daily Paper heartbeat and private Skill include a three-total-attempt retrieval budget, passive token and benefit/cost accounting, a Luna/low parent gate, evidence-ready outputs and the source-visual requirement.",
+    "The 2026-09-29 Daily Paper issue-022 trial is PARTIAL: two lawful SCI PDFs were acquired, one relevant Chinese paper remained download-blocked after three equivalent attempts, and no complete issue was fabricated.",
+    "The issue-022 run reported 20,867,481 total tokens, 134 model steps, 130 tool calls and three compactions under GPT-6 Luna medium; this is a verified cost anomaly and the next long run must use a fresh compact context and Luna low or fail closed.",
+    "The shared ignored local ledger currently contains six workload records; two have provider or harness token counts totalling 20,875,478 and four correctly record token usage as unavailable rather than inventing precision.",
+    "DeepSeek Harness 0.1.7-rc.2 remains live and qualified: a bounded headless smoke returned DSH_COST_SMOKE_OK using 7,997 reported tokens.",
+    "The public-release builder is DRAFT_READY with 33 allowlisted files and is correctly held from final build by license_not_selected.",
+    "Google Drive is not authenticated, and R/SPSS Skills are present without a verified local runtime; these capabilities remain on-demand and are not claimed live."
+    ,"SOL-AGENT continuity is maintained silently through the existing Foundation checkpoint transaction whenever material verified state, decisions, blockers, risks or resume points change; unchanged activity does not cause a rewrite."
+  ],
+  "completed": [
+    "Added the global three-attempt rule with one narrowly gated exceptional scientific extension and explicit fallback, replacement and checkpoint behavior.",
+    "Added append-only privacy-safe cost telemetry with provider-reported, harness-reported, estimated and unavailable provenance; hidden reasoning tokens are never guessed.",
+    "Added Human PI Daily Research Brief cost fields for route, effort, approximate token use, retry/stop events, useful output and B/C/EVR without daily recomputation.",
+    "Updated both existing recurring automations in place; no duplicate Daily Paper system or additional schedule was created.",
+    "Ran representative verification across Daily Paper, deterministic project contracts, DeepSeek Harness, Google Drive readiness, R/SPSS runtime availability and the public-release scaffold.",
+    "Repaired and verified the previously partial public-release scaffold; final release remains intentionally held until Human PI selects a license.",
+    "Recorded the Daily Paper and representative infrastructure runs in the local ignored telemetry ledger and preserved compressed summaries in evidence artifacts."
+    ,"Formalized silent SOL-AGENT continuity writeback in AGENTS.md, PROJECT.md and the stable Sol role guide without adding a recurring automation or model call."
+  ],
+  "decisions": [
+    "A logical target, outcome or failure class receives at most three total retrieval attempts by default; alternate wrappers and equivalent URLs share the same budget.",
+    "Retry is justified only when the next attempt has a plausible changed outcome, benefit is at least 3/10 and expected value ratio is at least 1.0; model prestige alone is not a retry reason.",
+    "Cost telemetry is passive and run-scoped. Daily reporting reads the existing ledger and verified state instead of launching new model reasoning to estimate cost.",
+    "Token figures must carry provenance. Unavailable is preferred to false precision, and hidden chain-of-thought tokens are not inferred.",
+    "High-reasoning models remain reserved for consequential scientific synthesis and review; mechanical discovery, metadata and deterministic validation use Luna/Scout, Flash or local tools.",
+    "Representative verification follows real triggers. DATA_READY, authentication and runtime-gated work remains held rather than simulated."
+    ,"SOL-AGENT is refreshed as a generated checkpoint projection at material boundaries, not as a live activity log; nearby changes are batched and routine synchronization does not interrupt Human PI."
+  ],
+  "open_questions": [
+    "Human PI may select a public-release license when final GitHub packaging is desired; until then the draft builder remains held.",
+    "Issue 022 can automatically replace the blocked Chinese candidate on the next bounded run; manual PDF placement is optional only if Human PI wants that exact paper retained.",
+    "Google Drive can be connected when cloud synchronization is actually desired; current local and Git paths remain the safe fallback.",
+    "R and SPSS runtimes should be installed or connected only when a real DATA_READY analysis requires them."
+  ],
+  "known_risks": [
+    "The existing Daily Paper conversation has a very large history, so even a low-effort settings turn can incur high cached-context cost; future production runs should use the shortest viable context path.",
+    "Heartbeat model selection is not an independent pinned field in the current scheduler; the prompt therefore fails closed before long retrieval if the effective parent route is not Luna low.",
+    "DeepSeek Harness remains a developer-preview release and may require future compatibility maintenance.",
+    "Benefit/cost scores are operational routing aids, not scientific quality scores; they must not reward low-cost but scientifically weak outputs.",
+    "Private papers, prompts, credentials and research content must remain outside the public repository and the shared telemetry ledger."
+  ],
+  "in_progress": [
+    "Daily Paper issue 022 awaits one minimal bounded continuation: either provide the exact Chinese PDF or replace the blocked candidate, then complete the existing visual, notes, brief and index pipeline.",
+    "The real-work production/shadow pilot continues to accumulate routing, evidence, handoff, checkpoint and resource-governance observations without synthetic workload expansion.",
+    "Public release remains a verified draft until license selection; no final package is claimed or published."
+  ],
+  "next_actions": [
+    "On the next Daily Paper trigger, resume issue 022 from the saved continuation point under Luna low and the three-attempt cap; do not repeat the two completed SCI acquisitions.",
+    "For every material workload, append one passive telemetry record and let the Daily Brief summarize the current date deterministically.",
+    "Keep event, milestone and state-triggered research work held until its real trigger occurs; never run expensive science merely to populate the brief.",
+    "Choose a license before final public-release build, and connect Google Drive or install statistical runtimes only when those routes become necessary.",
+    "Continue weekly read-only capability checks and repair only evidenced defects or meaningful compatibility changes."
+    ,"During future Lab work, silently advance the Sol mirror at material checkpoint boundaries and leave it untouched when verified state has not changed."
+  ],
+  "evidence_references": [
+    "decisions/0015-bounded-retries-and-representative-verification.md",
+    "protocols/RESOURCE-GOVERNANCE.md",
+    "protocols/COST-TELEMETRY.md",
+    "protocols/RESEARCH-AUTOMATION.md",
+    "AGENTS.md",
+    "PROJECT.md",
+    "config/capability-registry.json",
+    "tools/cost_telemetry.py",
+    "tests/test_cost_telemetry.py",
+    "artifacts/telemetry/README.md",
+    "artifacts/REPRESENTATIVE-VERIFICATION-2026-09-29.md",
+    "artifacts/daily-paper/CURRENT-STATE.md",
+    "artifacts/daily-paper/VALIDATION.md",
+    "release/public-release.json",
+    "tools/public_release.py",
+    "tests/test_public_release.py",
+    "CHECKPOINT.md",
+    "SOL-AGENT.md"
+  ]
+}

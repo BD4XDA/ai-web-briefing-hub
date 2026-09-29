@@ -1,0 +1,28 @@
+{
+  "task_id": "bootstrap-local-project",
+  "project_id": "lab-research-os",
+  "project_root": ".",
+  "expected_checkpoint": "INITIAL",
+  "owner": "Local human project owner",
+  "objective": "Bind the public starter to one local project and create its first evidence-backed checkpoint without importing private material.",
+  "allowed_read_roots": ["."],
+  "write_paths": ["CHECKPOINT.md", "checkpoints", "packets/bootstrap-local.json"],
+  "excluded_scope": [
+    "No credential or private-corpus import",
+    "No external publication",
+    "No automatic model or connector activation"
+  ],
+  "input_evidence_ids": ["public-starter:local-copy"],
+  "acceptance_criteria": [
+    "Local project identity and scope are explicit",
+    "Initial checkpoint records evidence, uncertainty and next action",
+    "Deterministic tests pass in the local environment"
+  ],
+  "verification_route": "Schema validation, scoped unit tests and human review of local scope.",
+  "budget": {
+    "max_files": 25,
+    "max_depth": 3,
+    "max_model_calls": 0
+  },
+  "resume_action": "If interrupted, retain the local packet and continue from the first unmet acceptance criterion."
+}

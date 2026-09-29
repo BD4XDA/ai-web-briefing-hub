@@ -21,6 +21,8 @@ Update only when the change is relevant. Preserve configuration first; use an is
 
 No recursive verification: one deterministic check and one representative run are sufficient unless a concrete failure requires a smaller discriminating test.
 
+All update, qualification and connector work follows `RESOURCE-GOVERNANCE.md`. A logical capability target and failure class receives no more than three total attempts across equivalent launchers or access paths. Reaching the cap does not justify enabling a blocked plugin, changing credentials or using a more expensive model. Record a qualified fallback or hold the capability instead.
+
 ## Scientific boundaries
 
 Generated diagrams may explain a method or architecture but never replace an evidence-bearing source figure. Cloud connectors may not receive private papers, annotations or research data without explicit scope. Statistical Skills activate only when the relevant dataset/state trigger exists and must preserve code, parameters, environment and output provenance.

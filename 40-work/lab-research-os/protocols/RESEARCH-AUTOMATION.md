@@ -21,6 +21,10 @@ Every workload records its trigger and observed input change. Absence of a trigg
 4. Astra is not a literature worker. It is reserved for cross-paper architecture, research gap, novelty/hypothesis/manuscript architecture and unresolved structural conflicts.
 5. A delegated task must set model class and effort explicitly. Never inherit a parent's highest effort. Escalate a decision, not unfinished mechanical work.
 
+All acquisition and production actions follow `RESOURCE-GOVERNANCE.md`. For one paper, dataset, endpoint, document or logical failure class, ordinary work stops after at most three total attempts across equivalent routes. Failed discovery/access candidates are normally replaced. Only a major, directly relevant and irreplaceable scientific item may receive the protocol's recorded finite exception budget.
+
+Use `COST-TELEMETRY.md` for passive run-level accounting. Capture provider-reported tokens when available; otherwise label a defensible approximation or `unavailable`. The Daily Brief reports only the compressed period summary and must not launch extra reasoning to estimate cost.
+
 ## Evidence boundary
 
 Daily discovery writes evidence-ready records but does not promote knowledge. Keep these labels distinct:
@@ -40,6 +44,8 @@ Promotion remains:
 ## Resume and failure
 
 Before starting a scheduled run, inspect the conversation's latest user instruction and last failed/incomplete turn. Reuse completed artifacts and continue from the smallest unfinished unit. Never start a duplicate issue or overwrite a partial repair. On quota, access or tool failure, preserve the partial state and report the exact continuation point.
+
+When a retry is considered, record the compact `B/C/EVR`, attempt count and disposition only if the decision is material. Do not create retry paperwork for successful routine actions.
 
 ## Production/shadow observations
 

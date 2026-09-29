@@ -20,10 +20,14 @@ Observed 2026-09-29.
 - The private validator compiles with both `--require-visuals` and `--require-portable-paths`; the live heartbeat prompt contains both requirements.
 - The real Event pilot used local tools with no Astra call, subagent or network access.
 - The v3 task packet passes the project packet schema and root check; model-routing validation passes; all 24 tracked Foundation, contract and model-routing tests pass after installing the previously missing `jsonschema` package into an isolated local dependency directory.
+- The real issue-022 TIME trial found and retained two lawful SCI PDFs, recorded one Chinese-core full-text candidate, preserved a precise continuation point and refused to publish an issue without the original Chinese PDF.
+- Provider-reported issue-022 turn usage was 20,790,654 input tokens (19,896,832 cached), 76,827 output tokens and 20,867,481 total across 134 model steps, 130 tool calls and three compactions. This is accepted as defect evidence, not as an efficient baseline.
+- The current heartbeat, private Skill and Lab OS rules now enforce three total attempts per logical failure class, passive cost/value telemetry, a compact token/cost section, and a Luna/low parent gate. A follow-up turn directly observed `gpt-6-luna` with `low` effort.
 
 ## Deliberately not claimed
 
 - No synthetic issue was manufactured. The Event pilot is accepted only for its bounded historical-repair claims; it does not qualify a scheduled new issue.
 - No completed future issue has yet passed `--require-visuals`; syntax/configuration success does not prove source-image correctness or workflow fidelity.
 - No completed future issue has yet passed both visual and portable-path gates. The 34 remaining historical over-budget supervisor paths are recorded as an Event backlog rather than silently bulk-renamed.
-- The repository-wide discovery found 28 tests. Twenty-four scoped current tests passed; two of four unrelated uncommitted public-release tests passed and two errored because the paused scaffold references a missing `release/public-seed/.gitignore`. This is preserved as a separate PARTIAL task and is not repaired by the Daily Paper integration.
+- Issue 022 is not a completed visual/portable-path qualification because document production never started. The scheduled contract therefore remains PARTIAL rather than promoted.
+- The formerly paused public-release scaffold was separately resumed under Decision 0015; its current 33-file draft allowlist passes all five release tests and remains held only by `license_not_selected`.

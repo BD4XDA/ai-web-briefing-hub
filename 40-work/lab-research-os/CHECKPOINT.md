@@ -1,77 +1,90 @@
 # Lab Research OS · CHECKPOINT
-Checkpoint ID: 20260929T174406-62590a5094c2
+Checkpoint ID: 20260929T185230-81f4524e41f0
 Priority: P3 · Status: in_progress
 Canonical committed pointer: checkpoints/LATEST.json. If IDs differ, use tools/foundation.py show; do not guess.
 
 ## Current Verified State
 
-- The canonical repository root is D:/20_代码项目/赛博课题组 and Lab Research OS is its 40-work/lab-research-os directory.
-- Need-driven capability governance is active through config/capability-registry.json and protocols/CAPABILITY-GOVERNANCE.md; installation or runtime visibility is not integration.
-- The registry currently manages 13 capabilities: seven core, four on-demand and two watch-only; legacy dsh-sol-luna-router and Exa MCP are blocked rather than treated as production routes.
-- Global @deepseek-ai/dsh is 0.1.7-rc.2. Clean lab-research Web and lab-headless profiles are live and qualified for bounded Web/text use.
-- The legacy DSH web profile is preserved but is not the qualified route because its Codex adapter and patch target older DSH APIs; the custom router also retains obsolete GPT-5.6 and retired DeepSeek identifiers.
-- During qualification the DSH Web UI listened on 127.0.0.1:3080, recognized the D:/20_代码项目/赛博课题组 workspace and used workspace-write for new work; a clean headless DeepSeek call from the canonical project returned DSH_OK. Current daemon liveness is not assumed after the managed test session ends.
-- The Daily Paper conversation and its single daily heartbeat remain active. Its future source-visual and portable-path contract is still pending qualification by a complete new issue.
-- Weekly automation automation-3 performs a read-only capability update check; it cannot automatically install, remove, enable or reconfigure capabilities.
-- The unrelated public-release scaffold remains uncommitted/partial and AT09 remains untouched.
+- The canonical repository root remains D:/20_代码项目/赛博课题组 and Lab Research OS is its 40-work/lab-research-os directory; D:/项目仓库/赛博课题组 is not the canonical Git checkout.
+- Global bounded-retry governance and passive run-level cost telemetry are active through protocols/RESOURCE-GOVERNANCE.md, protocols/COST-TELEMETRY.md and tools/cost_telemetry.py.
+- The capability registry now manages 15 capabilities: eight core, five on-demand and two watch-only; the registry validator and all 36 unit tests pass.
+- The existing Daily Paper heartbeat and private Skill include a three-total-attempt retrieval budget, passive token and benefit/cost accounting, a Luna/low parent gate, evidence-ready outputs and the source-visual requirement.
+- The 2026-09-29 Daily Paper issue-022 trial is PARTIAL: two lawful SCI PDFs were acquired, one relevant Chinese paper remained download-blocked after three equivalent attempts, and no complete issue was fabricated.
+- The issue-022 run reported 20,867,481 total tokens, 134 model steps, 130 tool calls and three compactions under GPT-6 Luna medium; this is a verified cost anomaly and the next long run must use a fresh compact context and Luna low or fail closed.
+- The shared ignored local ledger currently contains six workload records; two have provider or harness token counts totalling 20,875,478 and four correctly record token usage as unavailable rather than inventing precision.
+- DeepSeek Harness 0.1.7-rc.2 remains live and qualified: a bounded headless smoke returned DSH_COST_SMOKE_OK using 7,997 reported tokens.
+- The public-release builder is DRAFT_READY with 33 allowlisted files and is correctly held from final build by license_not_selected.
+- Google Drive is not authenticated, and R/SPSS Skills are present without a verified local runtime; these capabilities remain on-demand and are not claimed live.
+- SOL-AGENT continuity is maintained silently through the existing Foundation checkpoint transaction whenever material verified state, decisions, blockers, risks or resume points change; unchanged activity does not cause a rewrite.
 
 ## Completed
 
-- Created and validated capability-registry schema, manifest, validator, tests and governance protocol.
-- Admitted only capabilities tied to active or credible near-term research workloads instead of treating every installed Skill/MCP as a service.
-- Backed up DSH configuration and upgraded the global Harness from 0.1.1-rc.2 to npm latest 0.1.7-rc.2 without copying or modifying sessions and attachments.
-- Created clean lab-research and lab-headless profiles, removed expired model overrides from the clean Web profile, set workspace-write and disabled only the rebuildable Windows-incompatible projection cache.
-- Verified DSH version, Web activation, Lab workspace visibility and one bounded live DeepSeek text call.
-- Changed the local dsh-web launcher to the qualified lab-research profile while retaining the legacy profile and rollback data.
-- Created active weekly capability update heartbeat automation-3.
+- Added the global three-attempt rule with one narrowly gated exceptional scientific extension and explicit fallback, replacement and checkpoint behavior.
+- Added append-only privacy-safe cost telemetry with provider-reported, harness-reported, estimated and unavailable provenance; hidden reasoning tokens are never guessed.
+- Added Human PI Daily Research Brief cost fields for route, effort, approximate token use, retry/stop events, useful output and B/C/EVR without daily recomputation.
+- Updated both existing recurring automations in place; no duplicate Daily Paper system or additional schedule was created.
+- Ran representative verification across Daily Paper, deterministic project contracts, DeepSeek Harness, Google Drive readiness, R/SPSS runtime availability and the public-release scaffold.
+- Repaired and verified the previously partial public-release scaffold; final release remains intentionally held until Human PI selects a license.
+- Recorded the Daily Paper and representative infrastructure runs in the local ignored telemetry ledger and preserved compressed summaries in evidence artifacts.
+- Formalized silent SOL-AGENT continuity writeback in AGENTS.md, PROJECT.md and the stable Sol role guide without adding a recurring automation or model call.
 
 ## Decisions
 
-- Capabilities are managed by need, trigger, evidence and fallback; installed does not imply integrated or qualified.
-- Weekly checks are read-only and signal-driven. They never auto-upgrade developer-preview harnesses, plugins, MCPs or scientific workflows.
-- DSH 0.1.7-rc.2 npm latest is adopted; the 0.2.0 next channel is not adopted.
-- Clean DSH profiles are the qualified route. Legacy optional plugins and the Sol/Luna router remain isolated until migrated against current APIs and GPT-6/valid DeepSeek identifiers.
-- DeepSeek model policy remains externally managed; this maintenance changed the harness and qualified profiles, not config/model-routing.json's GPT routing boundary.
+- A logical target, outcome or failure class receives at most three total retrieval attempts by default; alternate wrappers and equivalent URLs share the same budget.
+- Retry is justified only when the next attempt has a plausible changed outcome, benefit is at least 3/10 and expected value ratio is at least 1.0; model prestige alone is not a retry reason.
+- Cost telemetry is passive and run-scoped. Daily reporting reads the existing ledger and verified state instead of launching new model reasoning to estimate cost.
+- Token figures must carry provenance. Unavailable is preferred to false precision, and hidden chain-of-thought tokens are not inferred.
+- High-reasoning models remain reserved for consequential scientific synthesis and review; mechanical discovery, metadata and deterministic validation use Luna/Scout, Flash or local tools.
+- Representative verification follows real triggers. DATA_READY, authentication and runtime-gated work remains held rather than simulated.
+- SOL-AGENT is refreshed as a generated checkpoint projection at material boundaries, not as a live activity log; nearby changes are batched and routine synchronization does not interrupt Human PI.
 
 ## Open Questions
 
-- Whether and when to migrate the legacy Sol/Luna router to DSH 0.1.7 APIs and GPT-6 routes depends on a real workload requiring mixed-provider failover.
-- Exa MCP remains unnecessary for current production because the existing web research path is available; requalification should wait for a workload need.
-- R, SPSS, Google Drive and explanatory-visual capabilities remain on-demand/unverified until their first representative research task.
-- The next complete Daily Paper issue remains the live qualification event for the visual and portable-path contract.
+- Human PI may select a public-release license when final GitHub packaging is desired; until then the draft builder remains held.
+- Issue 022 can automatically replace the blocked Chinese candidate on the next bounded run; manual PDF placement is optional only if Human PI wants that exact paper retained.
+- Google Drive can be connected when cloud synchronization is actually desired; current local and Git paths remain the safe fallback.
+- R and SPSS runtimes should be installed or connected only when a real DATA_READY analysis requires them.
 
 ## Known Risks
 
-- DeepSeek Harness is a developer preview and future releases may break profiles or plugins.
-- The legacy Web plugin set includes incompatible and deprecated packages; it must not replace the clean qualified route without evidence.
-- Disabling the projection cache can slow historical session listing but does not remove authoritative session logs.
-- Runtime-managed Skills/MCPs may change independently; weekly checks detect meaningful drift but do not prove every connector's authentication or scientific suitability.
-- Private credentials, research papers and annotations remain outside the repository and must not be included in update reports.
+- The existing Daily Paper conversation has a very large history, so even a low-effort settings turn can incur high cached-context cost; future production runs should use the shortest viable context path.
+- Heartbeat model selection is not an independent pinned field in the current scheduler; the prompt therefore fails closed before long retrieval if the effective parent route is not Luna low.
+- DeepSeek Harness remains a developer-preview release and may require future compatibility maintenance.
+- Benefit/cost scores are operational routing aids, not scientific quality scores; they must not reward low-cost but scientifically weak outputs.
+- Private papers, prompts, credentials and research content must remain outside the public repository and the shared telemetry ledger.
 
 ## In Progress
 
-- Daily Paper production/shadow pilot remains active; its next complete new issue supplies the outstanding live qualification evidence.
-- Capability registry entries will be promoted from installed/unverified only when a real triggered workload supplies representative evidence.
-- DSH Web is available through the updated dsh-web launcher and clean lab-research profile; it is started on demand rather than claimed as a permanent service.
+- Daily Paper issue 022 awaits one minimal bounded continuation: either provide the exact Chinese PDF or replace the blocked candidate, then complete the existing visual, notes, brief and index pipeline.
+- The real-work production/shadow pilot continues to accumulate routing, evidence, handoff, checkpoint and resource-governance observations without synthetic workload expansion.
+- Public release remains a verified draft until license selection; no final package is claimed or published.
 
 ## Next Actions
 
-- Use the clean DSH profiles for bounded work and keep the legacy profile/router isolated.
-- Review the weekly capability update result only when it reports a meaningful version, deprecation, compatibility or core health change.
-- Qualify R/SPSS/cloud/visual capabilities only at their declared data, event or on-demand trigger; do not run synthetic integration campaigns.
-- Observe the next genuinely new Daily Paper issue under both validator gates before promoting its standing visual contract.
-- Do not bulk-update third-party DSH plugins, enable Exa, migrate the legacy router or alter credentials without a scoped maintenance decision.
+- On the next Daily Paper trigger, resume issue 022 from the saved continuation point under Luna low and the three-attempt cap; do not repeat the two completed SCI acquisitions.
+- For every material workload, append one passive telemetry record and let the Daily Brief summarize the current date deterministically.
+- Keep event, milestone and state-triggered research work held until its real trigger occurs; never run expensive science merely to populate the brief.
+- Choose a license before final public-release build, and connect Google Drive or install statistical runtimes only when those routes become necessary.
+- Continue weekly read-only capability checks and repair only evidenced defects or meaningful compatibility changes.
+- During future Lab work, silently advance the Sol mirror at material checkpoint boundaries and leave it untouched when verified state has not changed.
 
 ## Evidence References
 
-- decisions/0014-capability-governance-and-dsh-017.md
+- decisions/0015-bounded-retries-and-representative-verification.md
+- protocols/RESOURCE-GOVERNANCE.md
+- protocols/COST-TELEMETRY.md
+- protocols/RESEARCH-AUTOMATION.md
+- AGENTS.md
+- PROJECT.md
 - config/capability-registry.json
-- schemas/capability-registry.schema.json
-- protocols/CAPABILITY-GOVERNANCE.md
-- artifacts/DSH-017-UPGRADE-REPORT.md
-- tools/capability_registry.py
-- tests/test_capability_registry.py
+- tools/cost_telemetry.py
+- tests/test_cost_telemetry.py
+- artifacts/telemetry/README.md
+- artifacts/REPRESENTATIVE-VERIFICATION-2026-09-29.md
 - artifacts/daily-paper/CURRENT-STATE.md
 - artifacts/daily-paper/VALIDATION.md
+- release/public-release.json
+- tools/public_release.py
+- tests/test_public_release.py
 - CHECKPOINT.md
 - SOL-AGENT.md

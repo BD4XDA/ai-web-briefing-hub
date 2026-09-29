@@ -23,3 +23,5 @@ Do not infer current status from an older artifact or handoff. `CHECKPOINT.md` i
 Historical evidence and handoffs are retained under `artifacts/`; task packets are under `packets/`. A completed packet means that bounded stage stopped and was recorded—it does not automatically mean its proposed repair, pilot, or successor was accepted.
 
 The repository must not contain credentials, raw authentication files, private research papers/profiles, or unrelated personal conversations. If GitHub access is unavailable in chat mode, ask the user to connect the repository or provide `AGENTS.md`, `PROJECT.md`, and `CHECKPOINT.md` directly.
+
+Resource use is governed by `protocols/RESOURCE-GOVERNANCE.md` and `protocols/COST-TELEMETRY.md`. A logical target receives at most three total retrieval attempts by default, while run-level model route, effort, reported/estimated token use, retries, useful output and benefit/cost ratio are appended silently to the ignored local ledger. The Human PI Daily Research Brief reads a deterministic daily aggregate with `python tools/cost_telemetry.py show --date YYYY-MM-DD`; it does not launch extra model work merely to calculate cost.

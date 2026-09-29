@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "project_id": "lab-research-os",
+  "canonical_rules": "AGENTS.md",
+  "state": "CHECKPOINT.md",
+  "mode": "public-starter"
+}
