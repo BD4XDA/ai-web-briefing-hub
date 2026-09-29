@@ -1,0 +1,91 @@
+{
+  "completed": [
+    "Moved the complete repository into the empty Human PI-designated project store without merging content or losing the untracked AT09 directory.",
+    "Created a compatibility junction at the former repository path so stale local tools fail safe into the same canonical files rather than a second copy.",
+    "Updated current project locators, infrastructure map and active Daily Paper and AT11 task packet paths while preserving historical checkpoints and decisions unchanged.",
+    "Added the context lifecycle protocol and stable instructions for checkpoint-first, value-based conversation rollover.",
+    "Verified post-migration DSH state from live evidence and proved DeepSeek-native independence by direct falsification, recorded in artifacts/DSH-DEEPSEEK-NATIVE-INDEPENDENCE-2026-09-29.md.",
+    "Diagnosed and repaired the first DSH Web session-creation failure: the drive-root Workspace registration was removed using the workspace controller's own delete semantics, with a dated backup and the server stopped.",
+    "Diagnosed and repaired the second failure in the same episode: the laboratory Workspace path was repointed from the compatibility junction to the canonical repository path, derived from fs.realpathSync rather than hardcoded.",
+    "Verified that newly created Sessions and all three pre-existing Sessions now resolve to the registered workspace path, and that no remaining Workspace has a realpath mismatch.",
+    "Recorded both causes, their source evidence and the repairs in incidents/2026-09-29-dsh-drive-root-workspace-session-failure.md and corrected the capability registry accordingly.",
+    "Confirmed the legacy web profile, the Codex adapter, the Sol/Luna router and the Exa route remain isolated and are not loaded by either clean profile.",
+    "Re-ran the deterministic project regressions: 36 unit tests, model routing validation and capability registry validation all pass."
+  ],
+  "created_at": "2026-09-29T20:16:34+0800",
+  "current_verified_state": [
+    "The single canonical repository is D:/项目仓库/赛博课题组 and Lab Research OS is D:/项目仓库/赛博课题组/40-work/lab-research-os.",
+    "D:/20_代码项目/赛博课题组 is a <JUNCTION> to the canonical repository for compatibility; it is not a duplicate Source of Truth.",
+    "The repository remains on main at commit 7ecf070b0ae7e5a0f9d624a6c3a1dd86099a30ac; the migration, DSH and incident writebacks remain uncommitted and the untracked artifacts/at09 work is preserved.",
+    "DSH core is 0.1.7-rc.2. The DeepSeek-native path is authenticated as provider deepseek-official and model deepseek-flash by the session logs' own model records, not by alias inference, and it does not depend on GPT/OpenAI quota.",
+    "DSH Web session creation failed twice in one episode and both causes are repaired: a drive-root Workspace registration raised EPERM on mkdir, and the laboratory Workspace failed to attach because its registration named the compatibility junction.",
+    "Workspace attach compares the fs.realpath of a Session's cwd against the unresolved registered path string for exact equality, so any Workspace registered through a junction or symlink can never attach and its Sessions are also filtered out of the listing.",
+    "The laboratory Workspace e4c2f3c7 is now registered as the canonical D:/项目仓库/赛博课题组; the three pre-existing Sessions, whose headers still carry the junction path, all resolve to that value and are attachable and visible again.",
+    "Every remaining registered Workspace passes the same realpath equality check and none has a resolution mismatch; five stale registrations simply point at directories that no longer exist.",
+    "No DSH vendor code, credential, session, attachment or research file was modified; the only DSH state changes are two Workspace registry edits, each made after a dated backup with the web server stopped.",
+    "Daily Paper issue 022 remains PARTIAL with two completed SCI acquisitions and one download-blocked Chinese candidate; its minimal next action is to replace that candidate under Luna low and the three-attempt cap.",
+    "The existing Daily Paper conversation still meets the early-rollover trigger and the recurring workflow remains singular; a successor must resolve this checkpoint before the schedule is repointed and the predecessor archived.",
+    "Global bounded retries, passive cost telemetry and silent SOL-AGENT checkpoint mirroring remain active."
+  ],
+  "decisions": [
+    "The Human PI-designated D:/项目仓库/赛博课题组 path is the canonical repository; the former path is compatibility-only, and DSH registrations must now name the canonical path rather than the junction.",
+    "Conversation history is an execution cache, not project memory. Project-owned checkpoint, decisions and evidence references are the durable resume surface.",
+    "DeepSeek-native independence is an acceptance property of the harness, while GPT/OpenAI integration stays optional and separately governed; no GPT model-routing policy change was authorized or made.",
+    "A Workspace registration that can never be created in is a defect to remove, not a cosmetic tidy-up: the drive-root registration was deleted while retaining files and Sessions.",
+    "A Workspace registered through a junction or symlink is a defect to repoint, because DSH compares a canonicalised cwd against the unresolved registered string.",
+    "Stale Workspace registrations that still hold historical Sessions are left registered; removing them would discard usable history and is not required to fix the reported failures.",
+    "DSH vendor code is not patched locally even when it is the robustness gap, because local patches are lost on update; such gaps are reported for upstream instead.",
+    "The Claude Code settings.json literal %PATH% defect remains reported rather than repaired, being outside DSH scope with machine-wide blast radius."
+  ],
+  "evidence_references": [
+    "incidents/2026-09-29-dsh-drive-root-workspace-session-failure.md",
+    "artifacts/DSH-DEEPSEEK-NATIVE-INDEPENDENCE-2026-09-29.md",
+    "artifacts/DSH-017-UPGRADE-REPORT.md",
+    "artifacts/REPRESENTATIVE-VERIFICATION-2026-09-29.md",
+    "config/capability-registry.json",
+    "artifacts/telemetry/run-cost.jsonl",
+    "decisions/0016-canonical-root-return-and-context-rollover.md",
+    "protocols/CONTEXT-LIFECYCLE.md",
+    "protocols/COST-TELEMETRY.md",
+    "protocols/RESOURCE-GOVERNANCE.md",
+    "PROJECT.md",
+    "AGENTS.md",
+    "SOL-AGENT.md",
+    "CHECKPOINT.md"
+  ],
+  "in_progress": [
+    "Create one fresh Daily Paper successor conversation with Luna low and a compact checkpoint-based bootstrap.",
+    "Verify the successor resolves this checkpoint and reports the exact issue-022 continuation without rerunning research.",
+    "Repoint the existing Daily Paper recurring task to the successor, then archive the predecessor as historical reference.",
+    "Wait for Human PI decisions on the reported PATH defect, the retired vision configuration and the stale Workspace registrations."
+  ],
+  "known_risks": [
+    "External tools may retain the former path; the compatibility junction prevents immediate breakage, but new configuration must use the canonical path.",
+    "Any tool that registers a DSH Workspace through a junction or symlink will reproduce the attach failure, because the registered string is compared unresolved against a canonicalised cwd.",
+    "Archiving the old Daily Paper conversation before successor recovery or schedule repointing would risk losing the active execution route, so archival is last.",
+    "Conversation rollover can lose scientific meaning if judgments or evidence remain only in chat; the pre-rollover writeback gate is mandatory.",
+    "Selecting a stale Workspace registration silently recreates an empty directory at a path the Human PI has since reorganized away, which can leave stray folders behind.",
+    "A verification that exercises only boot and serve can declare a path qualified while a later, unexercised operation still fails; qualification claims must name the operations actually exercised.",
+    "The Claude Code settings.json PATH override ends in an unexpanded literal %PATH%, so Claude Code shells lose System32 and the npm bin directory; a bare dsh call fails there even though the DSH launcher and DSH execution are unaffected.",
+    "lab-headless inherits the session projection cache enabled while lab-research disables it; no headless failure was observed, so this is reserved rather than fixed."
+  ],
+  "next_actions": [
+    "Confirm in the running DSH Web UI that a new session can be created in the laboratory Workspace, which is the only step of the repair not yet exercised end to end.",
+    "Create the Daily Paper successor from this checkpoint with no browsing, acquisition or scientific recomputation during bootstrap.",
+    "Update the existing automation target only after readiness succeeds; do not create a second recurring task.",
+    "Archive the predecessor after successful repointing, then run tests, advance the final checkpoint if rollover state changed, commit and push.",
+    "Do not re-verify the DeepSeek-native path or the repaired Workspace registry without a changed input, a failed check or a specific contradiction.",
+    "Decide separately whether to correct the Claude Code PATH override, align the lab-headless projection cache with lab-research, and retire the stale Workspace registrations."
+  ],
+  "open_questions": [
+    "The exact blocked Chinese issue-022 candidate may be retained only if Human PI later supplies its PDF; otherwise the successor replaces it automatically under the bounded acquisition rule.",
+    "Public release remains DRAFT_READY and still requires Human PI license selection before a final licensed build.",
+    "Google Drive remains unauthenticated and R/SPSS runtimes remain unverified until a real trigger requires them.",
+    "Whether the retired settings.yaml keys describe-image and llm-deepseek vision models should be restored under the clean profiles; no current visual workload requires them.",
+    "Whether Human PI wants the Claude Code PATH override corrected, since it silently removes System32 and the npm bin directory from every Claude Code shell session on this machine.",
+    "Whether the five stale Workspace registrations should be retired or relocated to their new Desktop ministry paths."
+  ],
+  "parent": "20260929T193952-8408c880b0f4",
+  "priority": "P3",
+  "status": "in_progress"
+}

@@ -1,21 +1,21 @@
 {
   "task_id": "AT11-first-supervised-research-READY",
   "project_id": "lab-research-os",
-  "project_root": "D:/20_代码项目/赛博课题组/40-work/lab-research-os",
+  "project_root": "D:/项目仓库/赛博课题组/40-work/lab-research-os",
   "expected_checkpoint": "20260927T222534-4ceb3f3a3a79",
   "owner": "Human PI (acceptance); Astra (state)",
   "objective": "PACKET_READY but not authorized to execute: one source-linked four-row evidence card (maximum 600 Chinese words) for S1 DOI 10.5194/bg-18-1451-2021; no synthesis or conclusion adoption.",
   "allowed_read_roots": [
-    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/artifacts/at11/A-FIRST-RESEARCH-SCOPE.md",
-    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/artifacts/at11/B-SUPERVISED-RESEARCH-PACKET.md",
-    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/artifacts/at11/C-REVIEW-ACCEPTANCE-PLAN.md",
-    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/artifacts/at11/D-SOURCE-BINDING.md",
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/artifacts/at11/A-FIRST-RESEARCH-SCOPE.md",
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/artifacts/at11/B-SUPERVISED-RESEARCH-PACKET.md",
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/artifacts/at11/C-REVIEW-ACCEPTANCE-PLAN.md",
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/artifacts/at11/D-SOURCE-BINDING.md",
     "D:/10_学业科研/论文_沉积物磷/01_我的阅读资料/2026/2026-08/2026-08-03_第003期/03_SCI_中科院二区/01_论文原文/论文_van de Velde等_2021_盐沼沉积物生物扰动与磷埋藏.pdf"
   ],
   "write_paths": [
-    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/artifacts/at11-research-run/EVIDENCE-CARD.md",
-    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/artifacts/at11-research-run/REVIEW.md",
-    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/artifacts/at11-research-run/DISPOSITION.md"
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/artifacts/at11-research-run/EVIDENCE-CARD.md",
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/artifacts/at11-research-run/REVIEW.md",
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/artifacts/at11-research-run/DISPOSITION.md"
   ],
   "excluded_scope": [
     "No execution until separate Human PI run authorization is recorded against the current packet and checkpoint",

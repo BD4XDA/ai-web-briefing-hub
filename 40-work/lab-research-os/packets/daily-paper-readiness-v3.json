@@ -1,20 +1,20 @@
 {
   "task_id": "daily-paper-readiness-v3",
   "project_id": "lab-research-os",
-  "project_root": "D:/20_代码项目/赛博课题组/40-work/lab-research-os",
+  "project_root": "D:/项目仓库/赛博课题组/40-work/lab-research-os",
   "expected_checkpoint": "20260929T112730-2f53d2723c4d",
   "owner": "Codex root agent under direct Human PI authorization",
   "objective": "Record and verify the authorized Daily Paper published-path repair, prevent recurrence in project contracts, close the bounded note-073 Event pilot and update Research Readiness Integration v3 without deploying new schedules.",
   "allowed_read_roots": [
-    "D:/20_代码项目/赛博课题组/40-work/lab-research-os"
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os"
   ],
   "write_paths": [
-    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/artifacts/daily-paper",
-    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/decisions",
-    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/packets",
-    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/protocols/RESEARCH-AUTOMATION.md",
-    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/CHECKPOINT.md",
-    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/SOL-AGENT.md"
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/artifacts/daily-paper",
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/decisions",
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/packets",
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/protocols/RESEARCH-AUTOMATION.md",
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/CHECKPOINT.md",
+    "D:/项目仓库/赛博课题组/40-work/lab-research-os/SOL-AGENT.md"
   ],
   "excluded_scope": [
     "No new weekly, Event, milestone or state automation",

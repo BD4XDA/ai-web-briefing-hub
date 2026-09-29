@@ -22,6 +22,7 @@ This is the canonical project instruction file for an additive foundation over e
 - Keep secrets, tokens, raw auth files and unrelated personal conversations out of packets, logs and the repository.
 - Apply `protocols/RESOURCE-GOVERNANCE.md` to every workload. One logical target/outcome/failure class gets at most three total attempts by default, counted across equivalent access routes. Retry only after the lightweight cost-benefit check; do not escalate a model to buy another attempt. A major, directly relevant and irreplaceable scientific item may receive one recorded, finite exception tranche; otherwise use a fallback, replace the candidate or checkpoint the smallest continuation point.
 - Apply `protocols/COST-TELEMETRY.md` without spawning measurement work. Each executed workload records a compact run-level cost/value summary in its existing log: observed or explicitly estimated token usage, route/effort, material call and failure counts, high-reasoning use, useful output, and `B/C/EVR`. Use `unavailable` instead of fabricated precision.
+- Apply `protocols/CONTEXT-LIFECYCLE.md`. Conversation history is a disposable execution cache after verified state is written back. Initiate rollover when marginal context value falls below marginal context cost or reliability risk; do not wait for the window to fill. Before rollover, checkpoint every material decision, evidence pointer, blocker and exact continuation action; verify the successor can resume from project files, then repoint the existing schedule and archive rather than delete the old conversation.
 
 ## Handoff and verification
 Follow DISCOVER → IDENTIFY ROOT → LOAD RULES → LOAD PROJECT → LOAD CHECKPOINT → LOAD RELEVANT CONTEXT → VERIFY ENVIRONMENT → COMPARE DOCUMENTED/ACTUAL → PLAN → EXECUTE → DELEGATED VERIFY → REVIEW → WRITE BACK → CHECKPOINT → VERIFY SOL MIRROR.
@@ -34,6 +35,7 @@ L0 repair automatically within the declared failure budget. L1 return to the ori
 
 ## Context and promotion
 Read raw sources once into located evidence/cards; add a digest only when the evidence contract requires byte identity. Distribute minimal task packets. Preserve Decision, Evidence, Artifact, Change, Uncertainty, Next Action.
+Do not use full conversation history as durable memory. High cached-context cost, repeated compaction and low-value historical carryover are early rollover signals. The controlling comparison is marginal information value versus marginal context cost, not a fixed token threshold.
 Incidents store episodes, knowledge stores verified reusable facts, AGENTS.md stores stable procedure. Promotion requires evidence, stated scope, verification and an owner decision. Proposals never become rules merely through repetition.
 Do not call a wrapper model name proof of its actual model. DeepSeek V4 Pro is text-only; never send it visual review. A fallback must satisfy the task's capabilities and preserve traceable model/harness identity.
 

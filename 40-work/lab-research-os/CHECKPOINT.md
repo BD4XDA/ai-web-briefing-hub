@@ -1,90 +1,122 @@
 # Lab Research OS · CHECKPOINT
-Checkpoint ID: 20260929T185230-81f4524e41f0
+Checkpoint ID: 20260929T203829-b113799fa300
 Priority: P3 · Status: in_progress
 Canonical committed pointer: checkpoints/LATEST.json. If IDs differ, use tools/foundation.py show; do not guess.
 
 ## Current Verified State
 
-- The canonical repository root remains D:/20_代码项目/赛博课题组 and Lab Research OS is its 40-work/lab-research-os directory; D:/项目仓库/赛博课题组 is not the canonical Git checkout.
-- Global bounded-retry governance and passive run-level cost telemetry are active through protocols/RESOURCE-GOVERNANCE.md, protocols/COST-TELEMETRY.md and tools/cost_telemetry.py.
-- The capability registry now manages 15 capabilities: eight core, five on-demand and two watch-only; the registry validator and all 36 unit tests pass.
-- The existing Daily Paper heartbeat and private Skill include a three-total-attempt retrieval budget, passive token and benefit/cost accounting, a Luna/low parent gate, evidence-ready outputs and the source-visual requirement.
-- The 2026-09-29 Daily Paper issue-022 trial is PARTIAL: two lawful SCI PDFs were acquired, one relevant Chinese paper remained download-blocked after three equivalent attempts, and no complete issue was fabricated.
-- The issue-022 run reported 20,867,481 total tokens, 134 model steps, 130 tool calls and three compactions under GPT-6 Luna medium; this is a verified cost anomaly and the next long run must use a fresh compact context and Luna low or fail closed.
-- The shared ignored local ledger currently contains six workload records; two have provider or harness token counts totalling 20,875,478 and four correctly record token usage as unavailable rather than inventing precision.
-- DeepSeek Harness 0.1.7-rc.2 remains live and qualified: a bounded headless smoke returned DSH_COST_SMOKE_OK using 7,997 reported tokens.
-- The public-release builder is DRAFT_READY with 33 allowlisted files and is correctly held from final build by license_not_selected.
-- Google Drive is not authenticated, and R/SPSS Skills are present without a verified local runtime; these capabilities remain on-demand and are not claimed live.
-- SOL-AGENT continuity is maintained silently through the existing Foundation checkpoint transaction whenever material verified state, decisions, blockers, risks or resume points change; unchanged activity does not cause a rewrite.
+- The single canonical repository is D:/项目仓库/赛博课题组 and Lab Research OS is D:/项目仓库/赛博课题组/40-work/lab-research-os.
+- D:/20_代码项目/赛博课题组 is a <JUNCTION> to the canonical repository for compatibility; it is not a duplicate Source of Truth, and the junction still resolves correctly.
+- The repository remains on main at commit 7ecf070b0ae7e5a0f9d624a6c3a1dd86099a30ac; the migration, DSH and incident writebacks remain uncommitted and the untracked artifacts/at09 work is preserved.
+- DSH core is 0.1.7-rc.2. The running Web host is PID 11724, started 2026-09-29T20:15:40+08:00 with `--profile lab-research --host 127.0.0.1 --port 3080 --no-open`; the legacy `web` profile is not running.
+- DSH Web session creation failed twice in one episode and both causes are repaired: a drive-root Workspace registration raised EPERM on mkdir, and the laboratory Workspace failed to attach because its registration named the compatibility junction. The Human PI confirmed on 2026-09-29 that new-session creation in the Web UI now works, so the repair is verified end to end.
+- Workspace attach compares the fs.realpath of a Session's cwd against the unresolved registered path string for exact equality, so any Workspace registered through a junction or symlink can never attach and its Sessions are also filtered out of the listing.
+- The laboratory Workspace e4c2f3c7 is now registered as the canonical D:/项目仓库/赛博课题组; the three pre-existing Sessions, whose headers still carry the junction path, all resolve to that value and are attachable and visible again.
+- Every remaining registered Workspace passes the same realpath equality check and none has a resolution mismatch; five stale registrations simply point at directories that no longer exist.
+- No DSH vendor code, credential, session, attachment or research file was modified; the only DSH state changes are two Workspace registry edits, each made after a dated backup with the web server stopped.
+- Daily Paper issue 022 remains PARTIAL with two completed SCI acquisitions and one download-blocked Chinese candidate; its minimal next action is to replace that candidate under Luna low and the three-attempt cap.
+- The existing Daily Paper conversation still meets the early-rollover trigger and the recurring workflow remains singular; a successor must resolve this checkpoint before the schedule is repointed and the predecessor archived.
+- Global bounded retries, passive cost telemetry and silent SOL-AGENT checkpoint mirroring remain active.
+- The Claude Code PATH override was removed from C:/Users/ASUS/.claude/settings.json after a dated backup; a diff against the backup shows only the PATH entry and its preceding comma changed, every other env key and every other top-level key is byte-identical, and the file still parses as strict JSON.
+- The override was redundant as well as harmful: the real user PATH already carries nodejs, Git cmd, Python, dotnet and the npm global directory, and the machine PATH carries %SystemRoot%\system32, so removing the override strictly widens the shell PATH instead of narrowing it.
+- Direct evidence found no stored 08:00 heartbeat: the running lab-research profile has no `storages/schedule.json` (the Schedule domain is rejected as absent/empty when the file is missing), the legacy `task-board/ledger-v2.json` holds an empty `tasks` array with scheduler.ledgerId d973865a and lastTickAt 1789043938913, Windows Task Scheduler has no matching non-Microsoft task, and no DSH session log ever contains a `schedule_create` call or the literal title 每日沉积物磷论文整理.
+- No DSH session file was modified between 2026-09-28T20:00 and 2026-09-29T12:26 local time, so the 08:00 heartbeat did not deliver on either 2026-09-29 or 2026-09-30; the earliest 2026-09-29 session write is 12:26:04.
+- The Daily Paper data root shows no file modified on 2026-09-30; its newest write is the 2026-09-29 18:44 run record, consistent with an afternoon manual run rather than a scheduled morning delivery.
+- The junction path still appears in one live configuration: the Daily Paper recurring prompt at D:/10_学业科研/论文_沉积物磷/90_智能体工作区/04_Lab_Research_OS/contracts/2026-09-29_每日论文_recurring_prompt.md told the agent to read Lab Research OS through D:/20_代码项目/...; it was corrected to the canonical D:/项目仓库/... path after a dated backup.
 
 ## Completed
 
-- Added the global three-attempt rule with one narrowly gated exceptional scientific extension and explicit fallback, replacement and checkpoint behavior.
-- Added append-only privacy-safe cost telemetry with provider-reported, harness-reported, estimated and unavailable provenance; hidden reasoning tokens are never guessed.
-- Added Human PI Daily Research Brief cost fields for route, effort, approximate token use, retry/stop events, useful output and B/C/EVR without daily recomputation.
-- Updated both existing recurring automations in place; no duplicate Daily Paper system or additional schedule was created.
-- Ran representative verification across Daily Paper, deterministic project contracts, DeepSeek Harness, Google Drive readiness, R/SPSS runtime availability and the public-release scaffold.
-- Repaired and verified the previously partial public-release scaffold; final release remains intentionally held until Human PI selects a license.
-- Recorded the Daily Paper and representative infrastructure runs in the local ignored telemetry ledger and preserved compressed summaries in evidence artifacts.
-- Formalized silent SOL-AGENT continuity writeback in AGENTS.md, PROJECT.md and the stable Sol role guide without adding a recurring automation or model call.
+- Moved the complete repository into the empty Human PI-designated project store without merging content or losing the untracked AT09 directory.
+- Created a compatibility junction at the former repository path so stale local tools fail safe into the same canonical files rather than a second copy.
+- Updated current project locators, infrastructure map and active Daily Paper and AT11 task packet paths while preserving historical checkpoints and decisions unchanged.
+- Added the context lifecycle protocol and stable instructions for checkpoint-first, value-based conversation rollover.
+- Verified post-migration DSH state from live evidence and proved DeepSeek-native independence by direct falsification, recorded in artifacts/DSH-DEEPSEEK-NATIVE-INDEPENDENCE-2026-09-29.md.
+- Diagnosed and repaired the first DSH Web session-creation failure: the drive-root Workspace registration was removed using the workspace controller's own delete semantics, with a dated backup and the server stopped.
+- Diagnosed and repaired the second failure in the same episode: the laboratory Workspace path was repointed from the compatibility junction to the canonical repository path, derived from fs.realpathSync rather than hardcoded.
+- Verified that newly created Sessions and all three pre-existing Sessions now resolve to the registered workspace path, and that no remaining Workspace has a realpath mismatch.
+- Recorded both causes, their source evidence and the repairs in incidents/2026-09-29-dsh-drive-root-workspace-session-failure.md and corrected the capability registry accordingly.
+- Confirmed the legacy web profile, the Codex adapter, the Sol/Luna router and the Exa route remain isolated and are not loaded by either clean profile.
+- Re-ran the deterministic project regressions: 36 unit tests, model routing validation and capability registry validation all pass.
+- Received Human PI confirmation that new-session creation in the DSH Web UI works, closing the only repair step that could not be exercised locally.
+- Diagnosed and removed the Claude Code PATH override that replaced the process PATH with a literal unexpanded %PATH% token, which had been hiding System32 and the npm global directory from every Claude Code shell.
+- Wrote the Daily Paper successor bootstrap at artifacts/daily-paper/SUCCESSOR-BOOTSTRAP-2026-09-30.md: a compact, copy-paste prompt that names the canonical root, the exact read set, the Luna/low ceiling, the no-browsing bootstrap rule and the four required resume lines.
+- Corrected the Daily Paper recurring prompt to read Lab Research OS through the canonical root, preserving the prior revision as a dated .bak file.
+- Re-ran all 36 project unit tests after these writes; they still pass.
+- Empirically decoded the DSH session store for this investigation: session logs are concatenated zstd frames, and read-only probes now exist at C:/Users/ASUS/.dsh/probe-zstd3.cjs, probe-find2.cjs, probe-find3.cjs and probe-survey.cjs for future session-history questions.
 
 ## Decisions
 
-- A logical target, outcome or failure class receives at most three total retrieval attempts by default; alternate wrappers and equivalent URLs share the same budget.
-- Retry is justified only when the next attempt has a plausible changed outcome, benefit is at least 3/10 and expected value ratio is at least 1.0; model prestige alone is not a retry reason.
-- Cost telemetry is passive and run-scoped. Daily reporting reads the existing ledger and verified state instead of launching new model reasoning to estimate cost.
-- Token figures must carry provenance. Unavailable is preferred to false precision, and hidden chain-of-thought tokens are not inferred.
-- High-reasoning models remain reserved for consequential scientific synthesis and review; mechanical discovery, metadata and deterministic validation use Luna/Scout, Flash or local tools.
-- Representative verification follows real triggers. DATA_READY, authentication and runtime-gated work remains held rather than simulated.
-- SOL-AGENT is refreshed as a generated checkpoint projection at material boundaries, not as a live activity log; nearby changes are batched and routine synchronization does not interrupt Human PI.
+- The Human PI-designated D:/项目仓库/赛博课题组 path is the canonical repository; the former path is compatibility-only, and DSH registrations must now name the canonical path rather than the junction.
+- Conversation history is an execution cache, not project memory. Project-owned checkpoint, decisions and evidence references are the durable resume surface.
+- DeepSeek-native independence is an acceptance property of the harness, while GPT/OpenAI integration stays optional and separately governed; no GPT model-routing policy change was authorized or made.
+- A Workspace registration that can never be created in is a defect to remove, not a cosmetic tidy-up: the drive-root registration was deleted while retaining files and Sessions.
+- A Workspace registered through a junction or symlink is a defect to repoint, because DSH compares a canonicalised cwd against the unresolved registered string.
+- Stale Workspace registrations that still hold historical Sessions are left registered; removing them would discard usable history and is not required to fix the reported failures.
+- DSH vendor code is not patched locally even when it is the robustness gap, because local patches are lost on update; such gaps are reported for upstream instead.
+- The Claude Code settings.json literal %PATH% defect was repaired on 2026-09-29, superseding the earlier decision to leave it reported rather than fixed; closure still requires one restarted-session confirmation.
+- The 08:00 heartbeat must not be treated as live merely because a prior checkpoint asserted it: the claim is contradicted by fresh direct evidence, so the schedule is treated as absent until the Human PI locates it or it is recreated once for the successor.
+- Recreating the heartbeat is a single repoint-or-recreate action inside the existing Daily Paper workflow, never a second parallel automation; the recurring prompt stays versioned in the research data root rather than duplicated into the repository.
 
 ## Open Questions
 
-- Human PI may select a public-release license when final GitHub packaging is desired; until then the draft builder remains held.
-- Issue 022 can automatically replace the blocked Chinese candidate on the next bounded run; manual PDF placement is optional only if Human PI wants that exact paper retained.
-- Google Drive can be connected when cloud synchronization is actually desired; current local and Git paths remain the safe fallback.
-- R and SPSS runtimes should be installed or connected only when a real DATA_READY analysis requires them.
+- The exact blocked Chinese issue-022 candidate may be retained only if Human PI later supplies its PDF; otherwise the successor replaces it automatically under the bounded acquisition rule.
+- Public release remains DRAFT_READY and still requires Human PI license selection before a final licensed build.
+- Google Drive remains unauthenticated and R/SPSS runtimes remain unverified until a real trigger requires them.
+- Whether the retired settings.yaml keys describe-image and llm-deepseek vision models should be restored under the clean profiles; no current visual workload requires them.
+- Whether the five stale Workspace registrations should be retired or relocated to their new Desktop ministry paths.
+- Where the 08:00 Daily Paper heartbeat was actually authored and stored, and which Session it targets: no DSH Schedule task, legacy ledger entry, Windows task or session-log record of one was found, so only the Human PI can identify it in the running GUI.
+- Whether the Daily Paper predecessor conversation still exists in the running GUI at all; no DSH session in the store carries its project root or its content, so its identity cannot be confirmed from files alone.
 
 ## Known Risks
 
-- The existing Daily Paper conversation has a very large history, so even a low-effort settings turn can incur high cached-context cost; future production runs should use the shortest viable context path.
-- Heartbeat model selection is not an independent pinned field in the current scheduler; the prompt therefore fails closed before long retrieval if the effective parent route is not Luna low.
-- DeepSeek Harness remains a developer-preview release and may require future compatibility maintenance.
-- Benefit/cost scores are operational routing aids, not scientific quality scores; they must not reward low-cost but scientifically weak outputs.
-- Private papers, prompts, credentials and research content must remain outside the public repository and the shared telemetry ledger.
+- External tools may retain the former path; the compatibility junction prevents immediate breakage, but new configuration must use the canonical path.
+- Any tool that registers a DSH Workspace through a junction or symlink will reproduce the attach failure, because the registered string is compared unresolved against a canonicalised cwd.
+- Archiving the old Daily Paper conversation before successor recovery or schedule repointing would risk losing the active execution route, so archival is last.
+- Conversation rollover can lose scientific meaning if judgments or evidence remain only in chat; the pre-rollover writeback gate is mandatory.
+- Selecting a stale Workspace registration silently recreates an empty directory at a path the Human PI has since reorganized away, which can leave stray folders behind.
+- A verification that exercises only boot and serve can declare a path qualified while a later, unexercised operation still fails; qualification claims must name the operations actually exercised.
+- The Claude Code PATH override has been removed in configuration, but it takes effect only after a Claude Code restart; a success claim is not valid until one shell in a restarted session resolves System32 and the npm bin directory.
+- lab-headless inherits the session projection cache enabled while lab-research disables it; no headless failure was observed, so this is reserved rather than fixed.
+- If the 08:00 heartbeat was attached to the legacy web profile, it can no longer deliver while only lab-research runs on port 3080, and a silent schedule loss would look exactly like a healthy quiet day.
+- A checkpoint that asserts a live automation without naming its storage location cannot be audited later; the corrected state must therefore name the negative evidence, not just the missing task.
+- The corrected Daily Paper recurring prompt lives outside the repository, so it is not covered by repository review or rollback; it needs its own dated backup discipline.
 
 ## In Progress
 
-- Daily Paper issue 022 awaits one minimal bounded continuation: either provide the exact Chinese PDF or replace the blocked candidate, then complete the existing visual, notes, brief and index pipeline.
-- The real-work production/shadow pilot continues to accumulate routing, evidence, handoff, checkpoint and resource-governance observations without synthetic workload expansion.
-- Public release remains a verified draft until license selection; no final package is claimed or published.
+- Create one fresh Daily Paper successor conversation in the laboratory Workspace with Luna low, using artifacts/daily-paper/SUCCESSOR-BOOTSTRAP-2026-09-30.md as its first message.
+- Verify the successor resolves the checkpoint and reports the exact issue-022 continuation without rerunning research.
+- Repoint the existing Daily Paper recurring task to the successor, or recreate that single task once if the Human PI confirms it no longer exists, then archive the predecessor as historical reference.
+- Confirm in a restarted Claude Code session that the shell PATH now resolves System32 and the npm global directory.
 
 ## Next Actions
 
-- On the next Daily Paper trigger, resume issue 022 from the saved continuation point under Luna low and the three-attempt cap; do not repeat the two completed SCI acquisitions.
-- For every material workload, append one passive telemetry record and let the Daily Brief summarize the current date deterministically.
-- Keep event, milestone and state-triggered research work held until its real trigger occurs; never run expensive science merely to populate the brief.
-- Choose a license before final public-release build, and connect Google Drive or install statistical runtimes only when those routes become necessary.
-- Continue weekly read-only capability checks and repair only evidenced defects or meaningful compatibility changes.
-- During future Lab work, silently advance the Sol mirror at material checkpoint boundaries and leave it untouched when verified state has not changed.
+- Ask the Human PI to locate the 08:00 Daily Paper task in the running GUI and report whether it still exists and which conversation it targets; that answer decides repoint versus recreate.
+- Create the Daily Paper successor from artifacts/daily-paper/SUCCESSOR-BOOTSTRAP-2026-09-30.md with no browsing, acquisition or scientific recomputation during bootstrap.
+- Accept the successor only when it reports RESOLVED_CHECKPOINT, ISSUE_022_STATE=PARTIAL and a NEXT_ACTION that names the replacement of the blocked Chinese candidate or the validation of a Human PI-supplied PDF.
+- Update or recreate the single 08:00 target only after readiness succeeds; never create a second recurring task.
+- Archive the predecessor after successful repointing, then run tests, advance the final checkpoint if rollover state changed, commit and push.
+- Do not re-verify the DeepSeek-native path or the repaired Workspace registry without a changed input, a failed check or a specific contradiction.
+- After the next Claude Code restart, verify the shell PATH contains System32 and %APPDATA%\npm, and that a bare dsh invocation resolves; only then consider the PATH defect closed.
+- Decide separately whether to align the lab-headless projection cache with lab-research and whether to retire the stale Workspace registrations.
 
 ## Evidence References
 
-- decisions/0015-bounded-retries-and-representative-verification.md
-- protocols/RESOURCE-GOVERNANCE.md
-- protocols/COST-TELEMETRY.md
-- protocols/RESEARCH-AUTOMATION.md
-- AGENTS.md
-- PROJECT.md
-- config/capability-registry.json
-- tools/cost_telemetry.py
-- tests/test_cost_telemetry.py
-- artifacts/telemetry/README.md
-- artifacts/REPRESENTATIVE-VERIFICATION-2026-09-29.md
+- artifacts/daily-paper/SUCCESSOR-BOOTSTRAP-2026-09-30.md
+- D:/10_学业科研/论文_沉积物磷/90_智能体工作区/04_Lab_Research_OS/contracts/2026-09-29_每日论文_recurring_prompt.md
+- D:/10_学业科研/论文_沉积物磷/90_智能体工作区/04_Lab_Research_OS/运行记录/2026/2026-09/2026-09-29.md
 - artifacts/daily-paper/CURRENT-STATE.md
-- artifacts/daily-paper/VALIDATION.md
-- release/public-release.json
-- tools/public_release.py
-- tests/test_public_release.py
-- CHECKPOINT.md
+- incidents/2026-09-29-dsh-drive-root-workspace-session-failure.md
+- artifacts/DSH-DEEPSEEK-NATIVE-INDEPENDENCE-2026-09-29.md
+- artifacts/DSH-017-UPGRADE-REPORT.md
+- artifacts/REPRESENTATIVE-VERIFICATION-2026-09-29.md
+- config/capability-registry.json
+- artifacts/telemetry/run-cost.jsonl
+- decisions/0016-canonical-root-return-and-context-rollover.md
+- protocols/CONTEXT-LIFECYCLE.md
+- protocols/COST-TELEMETRY.md
+- protocols/RESOURCE-GOVERNANCE.md
+- packets/canonical-root-context-rollover-state.json
+- PROJECT.md
+- AGENTS.md
 - SOL-AGENT.md
+- CHECKPOINT.md

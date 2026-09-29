@@ -1,0 +1,68 @@
+{
+  "completed": [
+    "Moved the complete repository into the empty Human PI-designated project store without merging content or losing the untracked AT09 directory.",
+    "Created a compatibility junction at the former repository path so stale local tools fail safe into the same canonical files rather than a second copy.",
+    "Updated current project locators, infrastructure map and active Daily Paper and AT11 task packet paths while preserving historical checkpoints and decisions unchanged.",
+    "Added the context lifecycle protocol and stable instructions for checkpoint-first, value-based conversation rollover.",
+    "Kept the prior Daily Paper conversation active until successor recovery and schedule handoff can be verified."
+  ],
+  "created_at": "2026-09-29T19:01:36+0800",
+  "current_verified_state": [
+    "The single canonical repository is now D:/项目仓库/赛博课题组 and Lab Research OS is D:/项目仓库/赛博课题组/40-work/lab-research-os.",
+    "D:/20_代码项目/赛博课题组 is a directory junction to the canonical repository for compatibility; it is not a duplicate Source of Truth.",
+    "The repository remains on main at commit 7ecf070b0ae7e5a0f9d624a6c3a1dd86099a30ac before this migration writeback, and the untracked artifacts/at09 work is preserved.",
+    "Context lifecycle is governed by marginal context value versus marginal cached-context cost and reliability risk, not by a fixed token threshold or waiting for near-exhaustion.",
+    "The existing Daily Paper conversation meets the early-rollover trigger because its last production trial reported 20,867,481 total tokens, 19,896,832 cached input tokens and three compactions for a partial issue.",
+    "Daily Paper issue 022 remains PARTIAL with two completed SCI acquisitions and one download-blocked Chinese candidate; its minimal next action is to replace that candidate under Luna low and the three-attempt cap, then continue visual, note, brief and index production without repeating completed work.",
+    "The Daily Paper recurring workflow remains singular; a successor conversation must resolve this checkpoint before the existing schedule is repointed and the predecessor archived.",
+    "Global bounded retries, passive cost telemetry and silent SOL-AGENT checkpoint mirroring remain active."
+  ],
+  "decisions": [
+    "The Human PI-designated D:/项目仓库/赛博课题组 path is the canonical repository; the former path is compatibility-only.",
+    "Conversation history is an execution cache, not project memory. Project-owned checkpoint, decisions and evidence references are the durable resume surface.",
+    "Rollover occurs when expected marginal information value is lower than marginal context cost or reliability risk; token count is a signal but not the sole rule.",
+    "Rollover must write back all material state first, verify a file-only successor resume, repoint rather than duplicate an existing schedule, and archive rather than delete the predecessor.",
+    "The existing Daily Paper conversation should roll over immediately after this checkpoint because measured cached-context cost and compaction exceed its continuing information value."
+  ],
+  "evidence_references": [
+    "decisions/0016-canonical-root-return-and-context-rollover.md",
+    "protocols/CONTEXT-LIFECYCLE.md",
+    "protocols/COST-TELEMETRY.md",
+    "protocols/RESOURCE-GOVERNANCE.md",
+    "PROJECT.md",
+    "AGENTS.md",
+    "SOL-AGENT.md",
+    "artifacts/REPRESENTATIVE-VERIFICATION-2026-09-29.md",
+    "artifacts/daily-paper/CURRENT-STATE.md",
+    "artifacts/daily-paper/VALIDATION.md",
+    "packets/daily-paper-readiness-v3.json",
+    "packets/at11-first-supervised-research.json",
+    "CHECKPOINT.md"
+  ],
+  "in_progress": [
+    "Create one fresh Daily Paper successor conversation with Luna low and a compact checkpoint-based bootstrap.",
+    "Verify the successor resolves this checkpoint and reports the exact issue-022 continuation without rerunning research.",
+    "Repoint the existing Daily Paper recurring task to the successor, then archive the predecessor as historical reference.",
+    "Record the rollover and migration in passive telemetry, run proportional validation and commit the migration state."
+  ],
+  "known_risks": [
+    "External tools may retain the former path; the compatibility junction prevents immediate breakage, but new configuration must use the canonical path.",
+    "Archiving the old Daily Paper conversation before successor recovery or schedule repointing would risk losing the active execution route, so archival is last.",
+    "Conversation rollover can lose scientific meaning if judgments or evidence remain only in chat; the pre-rollover writeback gate is mandatory.",
+    "A fresh conversation can still become expensive if it reimports full history; its bootstrap must point to bounded project files and an exact next action."
+  ],
+  "next_actions": [
+    "Create the Daily Paper successor from this checkpoint with no browsing, acquisition or scientific recomputation during bootstrap.",
+    "Wait for a bounded readiness acknowledgement containing the resolved checkpoint ID and exact issue-022 next action.",
+    "Update the existing automation target only after readiness succeeds; do not create a second recurring task.",
+    "Archive the predecessor after successful repointing, then run tests, advance the final checkpoint if rollover state changed, commit and push."
+  ],
+  "open_questions": [
+    "The exact blocked Chinese issue-022 candidate may be retained only if Human PI later supplies its PDF; otherwise the successor replaces it automatically under the bounded acquisition rule.",
+    "Public release remains DRAFT_READY and still requires Human PI license selection before a final licensed build.",
+    "Google Drive remains unauthenticated and R/SPSS runtimes remain unverified until a real trigger requires them."
+  ],
+  "parent": "20260929T185230-81f4524e41f0",
+  "priority": "P3",
+  "status": "in_progress"
+}

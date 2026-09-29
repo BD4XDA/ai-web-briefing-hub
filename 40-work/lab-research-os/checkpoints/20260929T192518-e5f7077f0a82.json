@@ -1,0 +1,86 @@
+{
+  "completed": [
+    "Moved the complete repository into the empty Human PI-designated project store without merging content or losing the untracked AT09 directory.",
+    "Created a compatibility junction at the former repository path so stale local tools fail safe into the same canonical files rather than a second copy.",
+    "Updated current project locators, infrastructure map and active Daily Paper and AT11 task packet paths while preserving historical checkpoints and decisions unchanged.",
+    "Added the context lifecycle protocol and stable instructions for checkpoint-first, value-based conversation rollover.",
+    "Verified post-migration DSH state from live evidence: version, both clean profiles, composed provider tree, workspace resolution and the named rollback backup.",
+    "Proved DeepSeek-native independence by direct falsification rather than inspection alone, and recorded it in artifacts/DSH-DEEPSEEK-NATIVE-INDEPENDENCE-2026-09-29.md.",
+    "Refreshed the dsh-core and dsh-lab-profiles capability entries with the new evidence and recorded the bounded workload in the passive cost ledger.",
+    "Confirmed the legacy web profile, the Codex adapter, the Sol/Luna router and the Exa route remain isolated and are not loaded by either clean profile.",
+    "Re-ran the deterministic project regressions: 36 unit tests, model routing validation and capability registry validation all pass."
+  ],
+  "created_at": "2026-09-29T19:25:18+0800",
+  "current_verified_state": [
+    "The single canonical repository is D:/项目仓库/赛博课题组 and Lab Research OS is D:/项目仓库/赛博课题组/40-work/lab-research-os.",
+    "D:/20_代码项目/赛博课题组 is a directory junction to the canonical repository for compatibility; it is not a duplicate Source of Truth.",
+    "The repository remains on main at commit 7ecf070b0ae7e5a0f9d624a6c3a1dd86099a30ac; the current migration and DSH writeback remain uncommitted and the untracked artifacts/at09 work is preserved.",
+    "DSH core is 0.1.7-rc.2 and both clean profiles are live and re-verified after the root migration: lab-headless served two DeepSeek-only calls and lab-research booted on 127.0.0.1:3081 and served the app shell.",
+    "The DeepSeek-native path is authenticated as provider deepseek-official and model deepseek-flash by the session logs' own model records, not by alias inference.",
+    "DeepSeek-native execution does not depend on GPT/OpenAI quota: an equivalent headless call completed with exit 0 and correct output while the OpenAI environment was deliberately poisoned, and the credentials store holds only DEEPSEEK_API_KEY and OLLAMA_API_KEY.",
+    "No live GPT/OpenAI route exists in either clean profile; the codex and claude-code delegation rows are composed but disabled, and the only non-DeepSeek route is a local Ollama endpoint whose openai-completions value is a wire-protocol name, not the OpenAI service.",
+    "The bounded DSH recovery review found no DSH defect and performed no DSH repair; the DSH configuration, profiles, credentials and session stores were not modified.",
+    "The existing Daily Paper conversation meets the early-rollover trigger because its last production trial reported 20,867,481 total tokens, 19,896,832 cached input tokens and three compactions for a partial issue.",
+    "Daily Paper issue 022 remains PARTIAL with two completed SCI acquisitions and one download-blocked Chinese candidate; its minimal next action is to replace that candidate under Luna low and the three-attempt cap, then continue visual, note, brief and index production without repeating completed work.",
+    "The Daily Paper recurring workflow remains singular; a successor conversation must resolve this checkpoint before the existing schedule is repointed and the predecessor archived.",
+    "Global bounded retries, passive cost telemetry and silent SOL-AGENT checkpoint mirroring remain active."
+  ],
+  "decisions": [
+    "The Human PI-designated D:/项目仓库/赛博课题组 path is the canonical repository; the former path is compatibility-only.",
+    "Conversation history is an execution cache, not project memory. Project-owned checkpoint, decisions and evidence references are the durable resume surface.",
+    "Rollover occurs when expected marginal information value is lower than marginal context cost or reliability risk; token count is a signal but not the sole rule.",
+    "Rollover must write back all material state first, verify a file-only successor resume, repoint rather than duplicate an existing schedule, and archive rather than delete the predecessor.",
+    "DeepSeek-native independence is an acceptance property of the harness, while GPT/OpenAI integration stays optional and separately governed; no GPT model-routing policy change was authorized or made.",
+    "Two defects adjacent to the DSH review were reported rather than repaired: the Claude Code settings.json literal %PATH% defect lies outside DSH scope and has machine-wide blast radius, and disabling the lab-headless projection cache without failure evidence would be speculative."
+  ],
+  "evidence_references": [
+    "artifacts/DSH-DEEPSEEK-NATIVE-INDEPENDENCE-2026-09-29.md",
+    "artifacts/DSH-017-UPGRADE-REPORT.md",
+    "artifacts/REPRESENTATIVE-VERIFICATION-2026-09-29.md",
+    "config/capability-registry.json",
+    "artifacts/telemetry/run-cost.jsonl",
+    "decisions/0016-canonical-root-return-and-context-rollover.md",
+    "protocols/CONTEXT-LIFECYCLE.md",
+    "protocols/COST-TELEMETRY.md",
+    "protocols/RESOURCE-GOVERNANCE.md",
+    "PROJECT.md",
+    "AGENTS.md",
+    "SOL-AGENT.md",
+    "CHECKPOINT.md"
+  ],
+  "in_progress": [
+    "Create one fresh Daily Paper successor conversation with Luna low and a compact checkpoint-based bootstrap.",
+    "Verify the successor resolves this checkpoint and reports the exact issue-022 continuation without rerunning research.",
+    "Repoint the existing Daily Paper recurring task to the successor, then archive the predecessor as historical reference.",
+    "Record the rollover and migration in passive telemetry, run proportional validation and commit the migration state.",
+    "Wait for Human PI decisions on the reported PATH defect, the retired vision configuration and the workspace registry path."
+  ],
+  "known_risks": [
+    "External tools may retain the former path; the compatibility junction prevents immediate breakage, but new configuration must use the canonical path.",
+    "Archiving the old Daily Paper conversation before successor recovery or schedule repointing would risk losing the active execution route, so archival is last.",
+    "Conversation rollover can lose scientific meaning if judgments or evidence remain only in chat; the pre-rollover writeback gate is mandatory.",
+    "A fresh conversation can still become expensive if it reimports full history; its bootstrap must point to bounded project files and an exact next action.",
+    "The DSH workspace registry still names the compatibility junction rather than the canonical path; a single git root and the resolving junction prevent state divergence, but the binding does not yet match current configuration policy.",
+    "The Claude Code settings.json PATH override ends in an unexpanded literal %PATH%, so Claude Code shells lose System32 and the npm bin directory; a bare dsh call fails there even though the DSH launcher and DSH execution are unaffected.",
+    "lab-headless inherits the session projection cache enabled while lab-research disables it; no headless failure was observed, so this is reserved rather than fixed."
+  ],
+  "next_actions": [
+    "Create the Daily Paper successor from this checkpoint with no browsing, acquisition or scientific recomputation during bootstrap.",
+    "Wait for a bounded readiness acknowledgement containing the resolved checkpoint ID and exact issue-022 next action.",
+    "Update the existing automation target only after readiness succeeds; do not create a second recurring task.",
+    "Archive the predecessor after successful repointing, then run tests, advance the final checkpoint if rollover state changed, commit and push.",
+    "Treat the bounded DSH recovery task as complete; do not re-verify the DeepSeek-native path without a changed input, a failed check or a specific contradiction.",
+    "Decide separately whether to correct the Claude Code PATH override and whether to align the lab-headless projection cache with lab-research."
+  ],
+  "open_questions": [
+    "The exact blocked Chinese issue-022 candidate may be retained only if Human PI later supplies its PDF; otherwise the successor replaces it automatically under the bounded acquisition rule.",
+    "Public release remains DRAFT_READY and still requires Human PI license selection before a final licensed build.",
+    "Google Drive remains unauthenticated and R/SPSS runtimes remain unverified until a real trigger requires them.",
+    "Whether the retired settings.yaml keys describe-image and llm-deepseek vision models should be restored under the clean profiles; no current visual workload requires them and the retired default model identifier had already expired.",
+    "Whether Human PI wants the Claude Code PATH override corrected, since it silently removes System32 and the npm bin directory from every Claude Code shell session on this machine.",
+    "Whether the DSH workspace registry entry should be repointed from the compatibility junction to the canonical repository path."
+  ],
+  "parent": "20260929T190136-77fa33d54c35",
+  "priority": "P3",
+  "status": "in_progress"
+}

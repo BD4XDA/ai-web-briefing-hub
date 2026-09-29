@@ -25,6 +25,8 @@ All acquisition and production actions follow `RESOURCE-GOVERNANCE.md`. For one 
 
 Use `COST-TELEMETRY.md` for passive run-level accounting. Capture provider-reported tokens when available; otherwise label a defensible approximation or `unavailable`. The Daily Brief reports only the compressed period summary and must not launch extra reasoning to estimate cost.
 
+Scheduled conversations also follow `CONTEXT-LIFECYCLE.md`. Persistent cached-context cost, repeated compaction or low marginal value from old turns should trigger a checkpoint-first rollover before context exhaustion. A rollover creates a fresh execution context, not a second workflow: the existing recurring task is repointed only after the successor verifies file-based recovery, and the predecessor is archived as historical reference.
+
 ## Evidence boundary
 
 Daily discovery writes evidence-ready records but does not promote knowledge. Keep these labels distinct:

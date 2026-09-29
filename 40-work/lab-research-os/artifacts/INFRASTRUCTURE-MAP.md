@@ -4,6 +4,8 @@
 
 2026-09-28 路径迁移：规范项目根已变为 `D:/20_代码项目/赛博课题组/40-work/lab-research-os`，科研语料根已变为 `D:/10_学业科研/论文_沉积物磷`。旧路径只作为历史证据出现，不再用于当前任务。
 
+2026-09-29 路径收口：Human PI 指定的 `D:/项目仓库/赛博课题组/40-work/lab-research-os` 重新成为唯一规范项目根；`D:/20_代码项目/赛博课题组` 仅保留为指向新位置的兼容 junction。历史证据保留其产生时路径，不批量改写。
+
 ## 证据边界
 
 主 checkpoint：[ASTRA-TIME-01-P0-CHECKPOINT.md](C:/Users/ASUS/Documents/Codex/2026-09-21/referenced-chatgpt-conversation-this-is-an/outputs/ASTRA-TIME-01-P0-CHECKPOINT.md)，SHA-256 `58C4E6878F3D9A91075380D1E8EFE96B07AF6BA8F61B1B85E28A6B1E4E8BA763`。P0 worker：[p0-health-worker.md](C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/evidence/p0-health-worker.md)，SHA-256 `8841C8B01339D0F6177FED23E8920731C82313FFE2DD871FC0C000F1D027FBD2`；对应 JSON SHA-256 `852754D6BA34F6C05F9B13BDCCD741713E8B40AA07B21333AD9E7F06B506A6BD`。继承索引：[inherited-evidence-index.json](C:/Users/ASUS/Documents/Codex/2026-09-05/gu/ai-web-briefing-hub/40-work/lab-research-os/evidence/inherited-evidence-index.json)，SHA-256 `882B9BA2D2478330C00E0244875E9A6A01B3FA8995D289F816BAD86281A8FCE8`。原始盘点：[inventory.json](C:/Users/ASUS/Documents/Codex/2026-09-21/referenced-chatgpt-conversation-this-is-an/outputs/evidence/inventory.json)，SHA-256 `B5936A593F50A2A7B2715F01F41956E761097D37985E746AC05E8CE5AAAFFADC`。指令入口审计：[instruction-adapter-audit.md](C:/Users/ASUS/Documents/Codex/2026-09-21/referenced-chatgpt-conversation-this-is-an/outputs/evidence/instruction-adapter-audit.md)，SHA-256 `6D80279ABA58A6168282A6FDDEF296DCCF48C75FF0DBB77064C3245E199B076F`。

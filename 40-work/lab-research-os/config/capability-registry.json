@@ -1,6 +1,6 @@
 {
   "registry_version": "1.0.0",
-  "updated_at": "2026-09-29T18:46:33+08:00",
+  "updated_at": "2026-09-29T20:05:00+08:00",
   "policy": {
     "selection": "need-driven",
     "update_check": "weekly-and-before-use",
@@ -101,9 +101,10 @@
       "source": "global npm package @deepseek-ai/dsh",
       "current_version": "0.1.7-rc.2",
       "update_policy": "manual-review",
-      "last_verified": "2026-09-29T18:38:10+08:00",
-      "evidence": ["artifacts/DSH-017-UPGRADE-REPORT.md", "artifacts/REPRESENTATIVE-VERIFICATION-2026-09-29.md"],
-      "fallback": "Use the pre-upgrade backup and reinstall 0.1.1-rc.2 if the qualified clean profiles fail."
+      "last_verified": "2026-09-29T19:26:00+08:00",
+      "evidence": ["artifacts/DSH-017-UPGRADE-REPORT.md", "artifacts/REPRESENTATIVE-VERIFICATION-2026-09-29.md", "artifacts/DSH-DEEPSEEK-NATIVE-INDEPENDENCE-2026-09-29.md"],
+      "fallback": "Use the pre-upgrade backup and reinstall 0.1.1-rc.2 if the qualified clean profiles fail.",
+      "notes": "DeepSeek-native recovery and independence review found no DSH defect and required no DSH repair. No live GPT/OpenAI dependency exists: the credentials store holds only DEEPSEEK_API_KEY and OLLAMA_API_KEY, and the codex/claude-code delegation rows are composed but disabled."
     },
     {
       "id": "dsh-lab-profiles",
@@ -117,9 +118,10 @@
       "source": "C:/Users/ASUS/.dsh/profiles/lab-research and C:/Users/ASUS/.dsh/profiles/lab-headless",
       "current_version": "0.1.7-rc.2-compatible",
       "update_policy": "manual-review",
-      "last_verified": "2026-09-29T18:38:10+08:00",
-      "evidence": ["artifacts/DSH-017-UPGRADE-REPORT.md", "artifacts/REPRESENTATIVE-VERIFICATION-2026-09-29.md"],
-      "fallback": "Use lab-headless for bounded text work if the Web UI or optional plugins fail."
+      "last_verified": "2026-09-29T20:05:00+08:00",
+      "evidence": ["artifacts/DSH-017-UPGRADE-REPORT.md", "artifacts/REPRESENTATIVE-VERIFICATION-2026-09-29.md", "artifacts/DSH-DEEPSEEK-NATIVE-INDEPENDENCE-2026-09-29.md", "incidents/2026-09-29-dsh-drive-root-workspace-session-failure.md"],
+      "fallback": "Use lab-headless for bounded text work if the Web UI or optional plugins fail.",
+      "notes": "Post-migration re-verification: both clean profiles are live. lab-headless served two DeepSeek-only calls with authenticated provenance deepseek-official/deepseek-flash, the second under a deliberately poisoned OpenAI environment, so the path does not depend on GPT quota. lab-research booted and served the app shell, but Web session creation then failed twice in one episode: first a drive-root Workspace registration raised EPERM on mkdir, then the laboratory Workspace failed to attach because its registration named the compatibility junction and session attach compares fs.realpath output against the unresolved registered string. Both were repaired the same day with dated backups. The laboratory Workspace path is now the canonical D:/项目仓库/赛博课题组, which also restored three previously filtered-out Sessions. Reserved items: lab-headless inherits session-projection-cache enabled while lab-research disables it (no failure observed); five stale Workspace registrations point at directories that no longer exist and were left registered because they hold historical Sessions."
     },
     {
       "id": "dsh-sol-luna-router",

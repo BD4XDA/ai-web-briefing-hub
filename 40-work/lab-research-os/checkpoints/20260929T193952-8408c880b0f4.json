@@ -1,0 +1,90 @@
+{
+  "completed": [
+    "Moved the complete repository into the empty Human PI-designated project store without merging content or losing the untracked AT09 directory.",
+    "Created a compatibility junction at the former repository path so stale local tools fail safe into the same canonical files rather than a second copy.",
+    "Updated current project locators, infrastructure map and active Daily Paper and AT11 task packet paths while preserving historical checkpoints and decisions unchanged.",
+    "Added the context lifecycle protocol and stable instructions for checkpoint-first, value-based conversation rollover.",
+    "Verified post-migration DSH state from live evidence and proved DeepSeek-native independence by direct falsification, recorded in artifacts/DSH-DEEPSEEK-NATIVE-INDEPENDENCE-2026-09-29.md.",
+    "Diagnosed from vendor source and repaired the DSH Web session-creation failure: emitter located at dsh-api-session-controller line 445, trigger identified as a drive-root Workspace registration, backup taken, server stopped, registry edited, server restarted and listening.",
+    "Reproduced the exact reported EPERM error and confirmed no remaining Workspace can raise it; recorded the episode in incidents/2026-09-29-dsh-drive-root-workspace-session-failure.md.",
+    "Corrected the capability registry note so the Web profile's qualification no longer overstates what was verified before the incident.",
+    "Confirmed the legacy web profile, the Codex adapter, the Sol/Luna router and the Exa route remain isolated and are not loaded by either clean profile.",
+    "Re-ran the deterministic project regressions: 36 unit tests, model routing validation and capability registry validation all pass."
+  ],
+  "created_at": "2026-09-29T19:39:52+0800",
+  "current_verified_state": [
+    "The single canonical repository is D:/项目仓库/赛博课题组 and Lab Research OS is D:/项目仓库/赛博课题组/40-work/lab-research-os.",
+    "D:/20_代码项目/赛博课题组 is a directory junction to the canonical repository for compatibility; it is not a duplicate Source of Truth.",
+    "The repository remains on main at commit 7ecf070b0ae7e5a0f9d624a6c3a1dd86099a30ac; the migration, DSH and incident writebacks remain uncommitted and the untracked artifacts/at09 work is preserved.",
+    "DSH core is 0.1.7-rc.2. The DeepSeek-native path is authenticated as provider deepseek-official and model deepseek-flash by the session logs' own model records, not by alias inference, and it does not depend on GPT/OpenAI quota.",
+    "The DSH Web profile is now qualified for session creation, not merely for boot: a drive-root Workspace registration was blocking that operation and has been repaired.",
+    "DSH Web session creation previously failed with EPERM mkdir on the drive root because Workspace registry entry b279c108 named C:\\ as its path; the entry held no session and was removed from ~/.dsh/storages/workspace.json, matching the workspace controller's own delete semantics of removing a registration while retaining files and Sessions.",
+    "The repaired registry holds 6 Workspaces and none is a drive root; the exact EPERM error reproduces on C:\\ and returns OK for every remaining registered Workspace whose path exists.",
+    "Five stale Workspace registrations point at directories that no longer exist after the 2026-09-28 Desktop reorganization; they do not error but selecting one would silently recreate an empty directory, and they were left registered because they hold 3-14 historical Sessions each.",
+    "No DSH vendor code, credential, session, attachment or research file was modified; the only DSH state change is the removal of one empty Workspace registration, with a pre-change backup.",
+    "Daily Paper issue 022 remains PARTIAL with two completed SCI acquisitions and one download-blocked Chinese candidate; its minimal next action is to replace that candidate under Luna low and the three-attempt cap.",
+    "The existing Daily Paper conversation still meets the early-rollover trigger and the recurring workflow remains singular; a successor must resolve this checkpoint before the schedule is repointed and the predecessor archived.",
+    "Global bounded retries, passive cost telemetry and silent SOL-AGENT checkpoint mirroring remain active."
+  ],
+  "decisions": [
+    "The Human PI-designated D:/项目仓库/赛博课题组 path is the canonical repository; the former path is compatibility-only.",
+    "Conversation history is an execution cache, not project memory. Project-owned checkpoint, decisions and evidence references are the durable resume surface.",
+    "DeepSeek-native independence is an acceptance property of the harness, while GPT/OpenAI integration stays optional and separately governed; no GPT model-routing policy change was authorized or made.",
+    "A Workspace registration that can never be created in is a defect to remove, not a cosmetic tidy-up: the drive-root registration was deleted while retaining files and Sessions, matching the supported delete semantics.",
+    "Stale Workspace registrations that still hold historical Sessions are left registered; removing them would discard usable history and is not required to fix the reported failure.",
+    "DSH vendor code is not patched locally even when it is the robustness gap, because local patches are lost on update; such gaps are reported for upstream instead.",
+    "The Claude Code settings.json literal %PATH% defect remains reported rather than repaired, being outside DSH scope with machine-wide blast radius."
+  ],
+  "evidence_references": [
+    "incidents/2026-09-29-dsh-drive-root-workspace-session-failure.md",
+    "artifacts/DSH-DEEPSEEK-NATIVE-INDEPENDENCE-2026-09-29.md",
+    "artifacts/DSH-017-UPGRADE-REPORT.md",
+    "artifacts/REPRESENTATIVE-VERIFICATION-2026-09-29.md",
+    "config/capability-registry.json",
+    "artifacts/telemetry/run-cost.jsonl",
+    "decisions/0016-canonical-root-return-and-context-rollover.md",
+    "protocols/CONTEXT-LIFECYCLE.md",
+    "protocols/COST-TELEMETRY.md",
+    "protocols/RESOURCE-GOVERNANCE.md",
+    "PROJECT.md",
+    "AGENTS.md",
+    "SOL-AGENT.md",
+    "CHECKPOINT.md"
+  ],
+  "in_progress": [
+    "Create one fresh Daily Paper successor conversation with Luna low and a compact checkpoint-based bootstrap.",
+    "Verify the successor resolves this checkpoint and reports the exact issue-022 continuation without rerunning research.",
+    "Repoint the existing Daily Paper recurring task to the successor, then archive the predecessor as historical reference.",
+    "Wait for Human PI decisions on the reported PATH defect, the retired vision configuration, the workspace registry path and the stale Workspace registrations."
+  ],
+  "known_risks": [
+    "External tools may retain the former path; the compatibility junction prevents immediate breakage, but new configuration must use the canonical path.",
+    "Archiving the old Daily Paper conversation before successor recovery or schedule repointing would risk losing the active execution route, so archival is last.",
+    "Conversation rollover can lose scientific meaning if judgments or evidence remain only in chat; the pre-rollover writeback gate is mandatory.",
+    "Selecting a stale Workspace registration silently recreates an empty directory at a path the Human PI has since reorganized away, which can leave stray folders behind.",
+    "A verification that exercises only boot and serve can declare a path qualified while a later, unexercised operation still fails; qualification claims must name the operations actually exercised.",
+    "The DSH workspace registry still names the compatibility junction rather than the canonical path; a single git root and the resolving junction prevent state divergence.",
+    "The Claude Code settings.json PATH override ends in an unexpanded literal %PATH%, so Claude Code shells lose System32 and the npm bin directory; a bare dsh call fails there even though the DSH launcher and DSH execution are unaffected.",
+    "lab-headless inherits the session projection cache enabled while lab-research disables it; no headless failure was observed, so this is reserved rather than fixed."
+  ],
+  "next_actions": [
+    "Confirm in the running DSH Web UI that a new session can be created in a real Workspace, which is the only step of the repair not yet exercised end to end.",
+    "Create the Daily Paper successor from this checkpoint with no browsing, acquisition or scientific recomputation during bootstrap.",
+    "Update the existing automation target only after readiness succeeds; do not create a second recurring task.",
+    "Archive the predecessor after successful repointing, then run tests, advance the final checkpoint if rollover state changed, commit and push.",
+    "Do not re-verify the DeepSeek-native path or the repaired Workspace registry without a changed input, a failed check or a specific contradiction.",
+    "Decide separately whether to correct the Claude Code PATH override, align the lab-headless projection cache with lab-research, and retire the stale Workspace registrations."
+  ],
+  "open_questions": [
+    "The exact blocked Chinese issue-022 candidate may be retained only if Human PI later supplies its PDF; otherwise the successor replaces it automatically under the bounded acquisition rule.",
+    "Public release remains DRAFT_READY and still requires Human PI license selection before a final licensed build.",
+    "Google Drive remains unauthenticated and R/SPSS runtimes remain unverified until a real trigger requires them.",
+    "Whether the retired settings.yaml keys describe-image and llm-deepseek vision models should be restored under the clean profiles; no current visual workload requires them.",
+    "Whether Human PI wants the Claude Code PATH override corrected, since it silently removes System32 and the npm bin directory from every Claude Code shell session on this machine.",
+    "Whether the DSH workspace registry entry should be repointed from the compatibility junction to the canonical repository path.",
+    "Whether the five stale Workspace registrations should be retired, relocated to their new Desktop ministry paths, or left as historical placeholders."
+  ],
+  "parent": "20260929T192518-e5f7077f0a82",
+  "priority": "P3",
+  "status": "in_progress"
+}

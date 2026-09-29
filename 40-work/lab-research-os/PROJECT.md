@@ -3,7 +3,8 @@ Project ID: lab-research-os
 Owner: Human PI; architecture owner: Astra; continuity owned by this project, not a harness.
 
 Continuity maintenance is background work: material verified changes are compressed into a Foundation checkpoint, which atomically refreshes `CHECKPOINT.md` and the generated current-state mirror in `SOL-AGENT.md`. Routine mirror synchronization stays silent, uses no extra scientific reasoning pass, and does not turn transient activity logs into project truth.
-Canonical root: `D:/20_代码项目/赛博课题组/40-work/lab-research-os`, within the existing ai-web-briefing-hub repository. The former `D:/项目仓库/赛博课题组` path was migrated on 2026-09-28 and is not a valid working root.
+Conversation lifecycle is governed by `protocols/CONTEXT-LIFECYCLE.md`: when marginal context value no longer justifies cached-context cost or reliability risk, checkpoint first, verify file-based recovery, create one compact successor, repoint the existing schedule and archive the old conversation.
+Canonical root: `D:/项目仓库/赛博课题组/40-work/lab-research-os`, within the existing ai-web-briefing-hub repository. On 2026-09-29 the repository returned to the Human PI-designated project store. `D:/20_代码项目/赛博课题组` is now a directory junction to this canonical root for compatibility only; it is not a second copy or an independent Source of Truth.
 
 Purpose: make the existing digital research infrastructure recoverable and able to hand off work safely. This directory is a coordination/memory layer, not a replacement harness or a new fleet of permanent agents.
 
