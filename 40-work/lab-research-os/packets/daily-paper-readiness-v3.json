@@ -1,0 +1,45 @@
+{
+  "task_id": "daily-paper-readiness-v3",
+  "project_id": "lab-research-os",
+  "project_root": "D:/20_代码项目/赛博课题组/40-work/lab-research-os",
+  "expected_checkpoint": "20260929T112730-2f53d2723c4d",
+  "owner": "Codex root agent under direct Human PI authorization",
+  "objective": "Record and verify the authorized Daily Paper published-path repair, prevent recurrence in project contracts, close the bounded note-073 Event pilot and update Research Readiness Integration v3 without deploying new schedules.",
+  "allowed_read_roots": [
+    "D:/20_代码项目/赛博课题组/40-work/lab-research-os"
+  ],
+  "write_paths": [
+    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/artifacts/daily-paper",
+    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/decisions",
+    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/packets",
+    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/protocols/RESEARCH-AUTOMATION.md",
+    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/CHECKPOINT.md",
+    "D:/20_代码项目/赛博课题组/40-work/lab-research-os/SOL-AGENT.md"
+  ],
+  "excluded_scope": [
+    "No new weekly, Event, milestone or state automation",
+    "No bulk rename of the remaining historical archive",
+    "No AT11 execution, DSH upgrade or public-release scaffold work",
+    "No change to credentials, remote configuration or scientific conclusions"
+  ],
+  "input_evidence_ids": [
+    "checkpoint:20260929T112730-2f53d2723c4d",
+    "daily-paper:event-pilot-073",
+    "verification:published-path-direct-open-failure",
+    "human-pi:repair-and-continue-upgrade"
+  ],
+  "acceptance_criteria": [
+    "Issue-021 over-budget supervisor paths open directly from their final locations and render without visible defects",
+    "Future Daily Paper contract and live heartbeat enforce short filenames and portable paths",
+    "The validator exposes and passes the portable-path gate on issue 021",
+    "Research Readiness Integration Report v3 preserves trigger, evidence and resource boundaries",
+    "Foundation checkpoint and generated SOL-AGENT mirror advance together"
+  ],
+  "verification_route": "Deterministic JSON and contract checks; direct Microsoft Word open from final paths; Poppler page rasterization and complete visual inspection; scoped repository tests; no subagent or Astra route.",
+  "budget": {
+    "max_files": 50,
+    "max_depth": 6,
+    "max_model_calls": 0
+  },
+  "resume_action": "If interrupted, retain both repaired final paths and reload checkpoint 20260929T112730-2f53d2723c4d; continue at validation and checkpoint writeback without repeating source or page review."
+}

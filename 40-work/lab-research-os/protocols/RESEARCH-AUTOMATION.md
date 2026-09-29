@@ -31,6 +31,8 @@ Minimum record: source identifier/URL, full-text access status, exact artifact p
 
 For Daily Paper notes, source visuals are evidence-bearing artifacts rather than decoration. Use only a visual from the same lawful full text, identify its figure/table number and page, and state the inference boundary. An agent-drawn method/research flowchart must cite the source sections/pages and contain no invented step, parameter, arrow or result. Missing full text blocks the note; a genuine no-suitable-visual exception must record what was inspected.
 
+Published-path usability is part of document verification. Keep complete English titles inside notes and the master index rather than supervisor filenames. New generated filenames must be at most 140 characters and complete absolute paths at most 240 characters, and a final DOCX must be opened or rendered from its published path rather than only from a staged copy.
+
 Promotion remains:
 
 `Discovery → Extraction → Evidence → Verification → Candidate Knowledge → Validated Knowledge`
