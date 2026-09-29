@@ -29,6 +29,8 @@ Daily discovery writes evidence-ready records but does not promote knowledge. Ke
 
 Minimum record: source identifier/URL, full-text access status, exact artifact pointer, statement label, verification state, observed trigger, requested/actual model class when available, and unresolved uncertainty. A report points to evidence; it is not evidence itself.
 
+For Daily Paper notes, source visuals are evidence-bearing artifacts rather than decoration. Use only a visual from the same lawful full text, identify its figure/table number and page, and state the inference boundary. An agent-drawn method/research flowchart must cite the source sections/pages and contain no invented step, parameter, arrow or result. Missing full text blocks the note; a genuine no-suitable-visual exception must record what was inspected.
+
 Promotion remains:
 
 `Discovery → Extraction → Evidence → Verification → Candidate Knowledge → Validated Knowledge`

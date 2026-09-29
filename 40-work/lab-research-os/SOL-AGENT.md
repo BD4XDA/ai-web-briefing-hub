@@ -84,6 +84,8 @@ Sol must not:
 
 For the approved Daily Paper production/shadow pilot, Sol is Scientific Director/QA, not the default discovery or file-handling worker. Review selected full-text scientific meaning, evidence–claim and inference boundaries, material contradictions, novelty sanity and final scientific quality. Do not re-run unchanged readiness work for the daily report. Use Astra only when a research-gap, novelty, hypothesis or manuscript architecture decision remains structurally unresolved. See `protocols/RESEARCH-AUTOMATION.md` and `artifacts/daily-paper/WORKLOAD-CLASSIFICATION.md`.
 
+For every newly created Daily Paper note, Sol's scientific QA includes the evidence-bearing visual contract: confirm the inserted source visual belongs to the same paper and supports the stated interpretation, and confirm every workflow node/arrow is traceable to reported methods, evidence, model or reasoning. Visual presence alone is not scientific verification; no missing full text, cross-paper image substitution or invented workflow step may pass.
+
 ## 5. Evidence and review contract
 
 Every Sol conclusion should identify:
@@ -125,8 +127,8 @@ Include the checkpoint ID and relative evidence paths. Do not duplicate large ra
 <!-- FOUNDATION-SOL-CHECKPOINT:START -->
 ## Latest Foundation checkpoint for Sol
 
-Checkpoint ID: 20260929T000830-e6268772584d
-Priority: P3 · Status: complete
+Checkpoint ID: 20260929T112730-2f53d2723c4d
+Priority: P3 · Status: in_progress
 Canonical committed pointer: `checkpoints/LATEST.json`. This generated mirror is required for Sol resume, but `tools/foundation.py show` remains authoritative if IDs differ.
 
 ### Current Verified State
@@ -134,65 +136,61 @@ Canonical committed pointer: `checkpoints/LATEST.json`. This generated mirror is
 - The canonical repository root remains D:/20_代码项目/赛博课题组 and the Lab Research OS root remains its 40-work/lab-research-os directory.
 - Current GPT routing remains centralized in config/model-routing.json: Luna low, Sol medium and Astra medium by default, with bounded high/xhigh escalation; DeepSeek remains unchanged and externally managed.
 - Installed DSH 0.1.1-rc.2 remains structurally compatible but not live end-to-end qualified, and AT11 remains PACKET_READY and unexecuted.
-- The existing Daily Paper Work conversation and its single 08:00 Asia/Shanghai heartbeat are preserved; no duplicate automation was created.
-- The archive master index reaches issue 021 dated 2026-09-26; this verifies archive presence, not the scientific validity of every historical note.
-- The private Daily Paper Skill survived the D-drive migration, but its Codex junction and authoritative path profile were stale; both are now repaired and the Skill entry is readable.
-- The heartbeat prompt now binds resume-first behavior, explicit cost routing, evidence labels, natural infrastructure observations and the ten-section Human PI Daily Research Brief to the existing workflow. This configuration has not yet been qualified by a post-update live run.
-- The 73-note historical layout/image/flowchart repair remains PARTIAL and PAUSED at preserved quota-failed continuation artifacts; six notes were reported without complete full text.
-- Weekly, event, milestone and state-triggered Research Readiness workloads are classified but not deployed.
-- The unrelated public-release scaffold remains an uncommitted PARTIAL task; its four discovered tests currently have two passes and two missing-seed errors and were not repaired in this work.
+- The existing Daily Paper conversation and its single 08:00 Asia/Shanghai heartbeat remain active; no duplicate automation exists.
+- The private Skill path is readable at the migrated corpus root, and the heartbeat prompt now carries the standing future-note visual contract.
+- Every future personal and supervisor note is now contractually required to contain a same-paper source-visual section or a bounded exception, plus an evidence-traceable method/research workflow diagram.
+- The private validator compiles with an opt-in --require-visuals gate; existing historical issues are not failed by default.
+- A real Event-triggered pilot is currently active in the Daily Paper conversation: it resumed note 073 from preserved image/method evidence and is not opening a new literature issue.
+- The future visual contract is IMPLEMENTED BUT UNVERIFIED by a completed new issue.
+- The unrelated public-release scaffold remains an uncommitted PARTIAL task and AT09 remains untouched.
 
 ### Completed
 
-- Recovered the latest Daily Paper conversation turns, the existing automation, the private Skill contract, the current archive/index and the Lab Research OS canonical checkpoint.
-- Separated the interrupted historical document repair from the daily schedule and recorded its minimum continuation point without restarting it.
-- Repaired current local Skill and archive locators after the D-drive migration while preserving the old junction as a recoverable stale entry.
-- Updated the existing automation only; retained the 08:00 heartbeat and target conversation.
-- Added the research automation trigger/evidence/resource contract, workload classification, Daily Brief template, recovered state and upgrade report.
-- Kept the unrelated public-release scaffold and AT11 work untouched.
+- Promoted the Human PI image-and-flowchart requirement from a one-time historical repair into the standing private Daily Paper Skill and output contract.
+- Updated the existing heartbeat prompt rather than creating another automation.
+- Added an optional validator gate that checks visual-section labels and embedded drawing counts for new notes while preserving legacy validation behavior.
+- Sent the standing rule to the active Daily Paper conversation; it acknowledged and continued the bounded historical repair.
+- Added Decision 0012 and synchronized the public Lab Research OS protocol, workload classification, state, report and Sol QA role.
 
 ### Decisions
 
-- Use the existing Daily Paper conversation as the first production/shadow workload; do not build a second daily system.
-- Keep Literature Radar and reporting daily; require weekly, event, milestone or state triggers for other readiness work.
-- Use local/cheap workers for mechanical work, Luna for discovery, Sol for scientific interpretation/QA and Astra only for architecture or unresolved structural conflicts.
-- Require explicit model class and reasoning effort for every delegate; never inherit the parent highest effort.
-- Treat discovery records and reports as evidence candidates, not automatically validated knowledge.
+- Future personal and supervisor Daily Paper notes require evidence-bearing same-paper visuals and source-traceable method/research workflow diagrams.
+- A missing full text blocks a formal note; another paper's image or an invented workflow step is never an acceptable substitute.
+- Reviews, models and non-experimental papers use their reported evidence/reasoning or model workflow rather than a fictional experiment.
+- The visual validator remains opt-in for new issues so historical issues are not retroactively declared invalid.
+- Visual presence is only a structural check; scientific correctness still requires source inspection and Sol QA.
 
 ### Open Questions
 
-- A real post-update heartbeat must establish whether routing, evidence-ready output, Daily Brief compression and quota behavior work as configured.
-- Human PI approval is required before deploying the proposed weekly evidence/novelty synthesis or any additional automation.
-- The six historical notes without complete full text need either lawful source recovery or an explicit decision to leave source-image insertion unavailable.
-- Human PI must still choose a license before a standalone public release; any DSH upgrade qualification remains a separate authorization.
+- A complete future Daily Paper issue must demonstrate the --require-visuals gate, rendered legibility and scientific source matching before the visual contract is live-qualified.
+- Six historical notes reportedly lack complete full text and remain blocked for source-image insertion unless lawful full text is recovered.
+- Human PI approval is still required before deploying any proposed weekly synthesis or additional automation, choosing a public-release license or qualifying a DSH upgrade.
 
 ### Known Risks
 
-- The heartbeat automation record exposes prompt, schedule and target thread but no persistent model/effort pin; actual parent-route control remains unknown.
-- The existing three-full-paper workflow is intrinsically substantial; prompt routing should reduce waste but cannot be claimed effective until observed in a real run.
-- The Daily Paper conversation retains a historical working-directory label from the pre-migration root; all active prompt and Skill locators therefore use explicit current roots.
-- Private research paths, papers and personal profile must remain outside the public repository.
-- Static DSH compatibility does not prove provider authentication, model identity, UI health or live execution, and the current public repository still contains machine-specific historical context.
+- DOCX drawing counts and section labels do not prove that a visual came from the correct paper or that a flowchart is scientifically faithful; source comparison and visual QA remain required.
+- The active 073 repair pilot may still encounter the account quota or document-rendering limitations and must preserve its minimum continuation point if interrupted.
+- The heartbeat record does not expose persistent parent-model pinning; explicit delegate routing reduces but does not eliminate this uncertainty.
+- Private research paths, full texts, images and personal profile remain local and must not enter the public repository.
+- The local repository is ahead of origin because GitHub pushes encountered a TLS handshake failure; remote publication is not current.
 
 ### In Progress
 
+- Daily Paper Event pilot: note 073 personal/supervisor visual augmentation is proceeding from the preserved 071-073 evidence range; no other notes are being opened concurrently.
 
 ### Next Actions
 
-- Observe the next naturally scheduled heartbeat; record actual routes, output pointers, quota behavior and the first upgraded Daily Brief without creating a synthetic run.
-- Resume the historical 73-note repair only after a new direct Human PI continuation request; continue from existing range artifacts and close one bounded unit at a time.
-- Do not deploy weekly/event/milestone/state schedules until Human PI approves a specific proposal.
-- Keep the public-release scaffold as a separate paused task and exclude it from this integration commit.
-- Continue using config/model-routing.json for new GPT assignments; do not automatically execute AT11, upgrade DSH or publish a release.
+- Let the bounded 073 pilot complete or safely checkpoint; capture its actual routing, source matching, render QA, budget behavior and Daily Brief.
+- On the next genuinely new issue, run validate_issue.py with --require-visuals and perform source/flowchart scientific review before claiming live qualification.
+- Keep the six source-incomplete historical notes blocked rather than manufacturing visuals.
+- Retry the two local commits to origin when TLS connectivity is restored; do not change credentials or remote configuration as a workaround.
+- Do not automatically deploy weekly/event/milestone/state schedules, execute AT11, upgrade DSH or continue the public-release scaffold.
 
 ### Evidence References
 
-- ../../00-inbox/2026-09-29-daily-paper-research-readiness.md
-- ../../10-briefs/2026-09-29-daily-paper-research-readiness.md
-- ../../50-decisions/2026-09-29-daily-paper-integration.md
-- decisions/0011-daily-paper-production-shadow-pilot.md
+- ../../50-decisions/2026-09-29-daily-note-visual-contract.md
+- decisions/0012-daily-note-visual-contract.md
 - protocols/RESEARCH-AUTOMATION.md
-- templates/HUMAN-PI-DAILY-RESEARCH-BRIEF.md
 - artifacts/daily-paper/CURRENT-STATE.md
 - artifacts/daily-paper/WORKLOAD-CLASSIFICATION.md
 - artifacts/daily-paper/RESEARCH-AUTOMATION-UPGRADE-REPORT.md

@@ -6,7 +6,7 @@ The existing Daily Paper conversation, private Skill, 21-issue archive and one 0
 
 ## 2. Daily retained
 
-Literature discovery, deduplication, relevance screening, lawful full-text acquisition, selected-paper interpretation, existing three-paper delivery contract, and one compressed Human PI Daily Research Brief. The brief is daily even when no research workload runs.
+Literature discovery, deduplication, relevance screening, lawful full-text acquisition, selected-paper interpretation, existing three-paper delivery contract, evidence-bearing original-paper visuals, method/research flowcharts, and one compressed Human PI Daily Research Brief. The brief is daily even when no research workload runs.
 
 ## 3. Weekly proposed
 
@@ -40,6 +40,7 @@ Router choice, resume/checkpoint fidelity, semantic handoff loss, evidence trace
 
 - Persistent heartbeat-level model/effort pinning: UNKNOWN.
 - Evidence-ready output and Daily Brief under the upgraded prompt: configured, not live-verified.
+- Future-note visual contract: implemented in the private Skill/prompt/validator, but not live-verified by a complete new issue.
 - Canonical research-state/readiness record: NOT READY.
 - Data/QAQC, Figure Blueprint, Claim–Evidence Ledger and Manuscript Skeleton: NOT READY until their real triggers occur.
 - Historical six notes without complete full text: BLOCKED for source-image insertion unless lawful full text is obtained.

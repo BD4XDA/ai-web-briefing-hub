@@ -27,6 +27,7 @@ The latest explicit Daily Paper task paused new daily selection and requested hi
 | Weekly/event/milestone/state readiness | PROPOSED, NOT DEPLOYED | Workload classification only |
 | Historical 73-note repair | PARTIAL / PAUSED | Quota-failed parent/children; preserved continuation artifacts |
 | Persistent automation-level model pinning | UNKNOWN | Heartbeat configuration exposes schedule/thread/prompt; no model/effort field was observed |
+| Future-note source visuals and workflow diagrams | IMPLEMENTED BUT UNVERIFIED live | Private Skill, output contract, recurring prompt and opt-in validator updated; no complete new issue has yet passed the visual contract |
 
 ## Minimum continuation points
 

@@ -11,8 +11,12 @@ Observed 2026-09-29.
 - Current model-routing manifest validation passes.
 - Git diff whitespace check passes.
 - The 24 scoped Foundation, contract and model-routing tests pass.
+- The private validator compiles after adding the opt-in `--require-visuals` contract.
+- The active heartbeat prompt contains the future-note source-visual, method/research flowchart and visual-validation requirements.
+- The Daily Paper live pilot acknowledged the current Event workload and resumed one bounded note (073) from preserved evidence instead of opening a new issue.
 
 ## Deliberately not claimed
 
-- No synthetic Daily Paper execution was launched. The upgraded prompt, evidence-ready record, actual model routing, budget behavior and Daily Brief remain live-unverified until the next natural heartbeat.
+- No synthetic issue was manufactured. The current real Event pilot is still in progress, so its final evidence-ready record, actual routing, budget behavior, rendered output and Daily Brief are not yet accepted.
+- No completed future issue has yet passed `--require-visuals`; syntax/configuration success does not prove source-image correctness or workflow fidelity.
 - The repository-wide discovery found 28 tests. Twenty-four scoped current tests passed; two of four unrelated uncommitted public-release tests passed and two errored because the paused scaffold references a missing `release/public-seed/.gitignore`. This is preserved as a separate PARTIAL task and is not repaired by the Daily Paper integration.
