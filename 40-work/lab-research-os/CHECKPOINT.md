@@ -1,5 +1,5 @@
 # Lab Research OS · CHECKPOINT
-Checkpoint ID: 20261002T175321-e27fc5fe3c3d
+Checkpoint ID: 20261002T185908-a2d7c56e64c8
 Priority: P3 · Status: in_progress
 Canonical committed pointer: checkpoints/LATEST.json. If IDs differ, use tools/foundation.py show; do not guess.
 
@@ -7,79 +7,70 @@ Canonical committed pointer: checkpoints/LATEST.json. If IDs differ, use tools/f
 
 - The canonical repository is D:/项目仓库/赛博课题组; D:/20_代码项目/赛博课题组 remains a compatibility junction, not a second Source of Truth.
 - Current project-owned GPT targets are Astra=gpt-6-astra, Sol=gpt-6.1-sol and Luna=gpt-6-luna. DeepSeek routing is unchanged and externally managed.
-- GPT-6.1 Sol supports low, medium, high, xhigh and max but not none or minimal. Project routing uses low for focused work, medium for everyday judgment and high for consequential independent review; xhigh requires representative benefit and max additionally requires Human PI authorization plus evidence that xhigh is insufficient.
-- Astra is reserved for highest-stakes cross-system or L3 exceptions, unresolved conflicts after bounded Sol/high review, or representative evidence of a material quality advantage.
-- The Daily Paper rollover is complete in Codex: the active successor is 01a0ecd4-1374-7df2-ad32-672e28bddac6, the predecessor 019fb61c-c37f-7012-a760-2dcc8ce0aa4b is archived rather than deleted, and active automation-2 is the single 08:00 Asia/Shanghai trigger targeting the successor.
-- The successor recovered issue 022 without recomputation: two SCI acquisitions remain accepted, one Chinese candidate remains blocked, and the smallest scientific continuation is to replace that candidate under Luna/low and the three-attempt cap.
-- The 2026-10-01 scheduled turn reached the successor under gpt-6.1-sol/medium rather than gpt-6-luna/low. The parent-route gate failed closed before paper work, so schedule delivery is LIVE while persistent automation-level model pinning remains PARTIAL.
-- The recurring prompt includes bounded retries, passive token/cost telemetry, the Luna/low parent gate, evidence-ready outputs, visual requirements and marginal-value context rollover. Its dated pre-migration backup remains outside Git beside the private contract.
-- The GPT-6.1 Sol official-source freshness check on 2026-10-02 stopped after three failed direct-page opens; current official search results and the prior direct capture remain consistent, and no project-specific performance claim is inferred.
-- Commit 2d82956 containing the GPT-6.1 Sol migration and Daily Paper rollover closure is pushed to origin/main.
+- The existing Codex automation-2 remains the single 08:00 Asia/Shanghai Daily Paper trigger and now targets compact successor 01a0fc40-dd4c-7652-a971-5475aca1f4cc. Both earlier Daily Paper conversations 019fb61c-c37f-7012-a760-2dcc8ce0aa4b and 01a0ecd4-1374-7df2-ad32-672e28bddac6 are archived rather than deleted.
+- Daily Paper issue 022 is VERIFIED COMPLETE: three lawful full-text originals, three personal DOCX/PDF pairs, three supervisor DOCX notes and one Human PI Daily Research Brief DOCX/PDF are present. The deterministic visual and portable-path validator passed with zero errors and zero warnings.
+- The replacement Chinese paper is Chen Ting et al. (2022), DOI 10.15928/j.1674-3075.202109070312, obtained from the journal site. It is a declared freshwater method-value exception, not marine evidence; salinity, sulfate/sulfide, ionic strength, hydrodynamics and benthos limit transfer.
+- The 2026-10-02 TIME continuation ran under directly observed gpt-6-luna/low. No subagent, Astra, Sol/high, xhigh or max route was used. The first preflight stopped because the worker could not see its own route; local session turn_context then directly confirmed Luna/low and the same workload resumed from the exact continuation point.
+- The completed continuation reported 12,533,537 turn tokens, including 11,982,336 cached input tokens, 52,568 output tokens and 16,122 reasoning-output tokens. The thread cumulative total reached 19,668,737 tokens. This is decisive evidence that marginal context cost now exceeds the value of retaining the full Daily Paper conversation history.
+- Proactive rollover is complete: the compact successor resolved checkpoint 20261002T185443-bebb0c725d03 on its second readiness attempt after one transport disconnect, accurately reported issue 022 CLOSED and performed no research; automation-2 was repointed and the long conversation archived.
+- The historical 73-note visual repair remains PARTIAL/PAUSED and was not resumed. Issue 022 evidence remains Discovery/Extraction/Evidence and was not promoted to validated knowledge.
 - Public release remains DRAFT_READY with license_not_selected as the blocking Human PI decision. AT11 remains packet-ready and no scientific AT11 executor or reviewer has run.
-- The untracked artifacts/at09 directory is preserved outside this change set.
+- The untracked artifacts/at09 directory remains outside this work set and must not be staged.
 
 ## Completed
 
-- Migrated active Sol configuration, stable instructions, current AT11 future packet and tests from gpt-6-sol to gpt-6.1-sol while preserving historical model identifiers.
-- Documented cost-effective effort boundaries and prohibited silent fallback to GPT-6 Sol or GPT 5.6.
-- Verified the Daily Paper successor's file-based resume, repointed the existing Codex automation, and archived the predecessor without creating a duplicate task.
-- Restored the private recurring prompt after detecting an incomplete prompt replacement and verified the required retry, telemetry, parent-gate and context-lifecycle clauses are present.
-- Observed the first scheduled successor turn fail closed on a model-route mismatch without repeating paper acquisition or scientific work.
-- Validated model routing, the capability registry, the AT11 packet, the public-release draft state and all 37 unit tests before final writeback.
-- Committed and pushed the migration, rollover, routing-gate evidence and canonical checkpoint to the public GitHub repository as 2d82956.
+- Preserved and reused the two accepted issue-022 SCI originals and completed notes without reacquisition, rewrite, rerender or repeat QC.
+- Replaced the blocked Chinese candidate under Luna/low with a deduplicated journal-hosted full text after marine alternatives were duplicates or outside criteria.
+- Created the Chinese personal and supervisor notes with same-paper original figure interpretation, an original-text-based methods workflow and explicit freshwater-to-marine inference boundaries.
+- Completed the issue-022 Human PI Daily Research Brief, evidence-ready private run record, corpus index update and shared run-level cost telemetry.
+- Inspected the new Chinese note and brief renderings, repaired one workflow-label line break without changing scientific content, and passed the final visual/portable-path validator with zero errors and warnings.
+- Corrected the first route-gate diagnosis using direct session turn_context evidence and preserved the superseded record as historical evidence rather than deleting it.
+- Completed a checkpoint-first file-only conversation rollover, preserved the single automation, and archived the 19.67M-token predecessor after the new successor passed readiness.
 
 ## Decisions
 
-- Use GPT-6.1 Sol as the default project judgment route, but do not translate OpenAI's general performance description into an unmeasured scientific-quality claim.
-- Keep high-volume Daily Paper discovery on Luna/low; a scheduled turn with a different parent route stops rather than silently consuming a more expensive model.
-- Treat Codex automation-2 as live and singular. Earlier negative DSH and Windows schedule evidence remains valid only for those stores and is superseded as a global absence claim.
-- Do not recreate the Daily Paper schedule or unarchive the predecessor. Archive preserves history; the successor and project-owned checkpoint carry current execution state.
-- Apply the shared maximum of three attempts to equivalent acquisition or access routes; only a recorded, finite exception for a major, irreplaceable scientific item may extend it.
-- Use marginal context value versus cached-context cost and reliability risk as the rollover trigger; never wait for the context window to approach exhaustion.
+- Issue 022 is closed as the first verified complete post-contract Daily Paper issue; this verifies the visual/path contract once but does not prove repeated-cycle reliability.
+- The Erhai wetland paper is admitted only as a freshwater method-value exception. Its reported phosphorus patterns cannot be represented as marine, estuarine or tidal-flat evidence.
+- Direct Codex turn_context is sufficient runtime evidence for model and effort when a worker cannot introspect them; requested route alone is not treated as actual-runtime proof.
+- Conversation rollover is triggered by marginal context value versus cost and reliability, not by window exhaustion. The 11.98M cached-input continuation makes another Daily Paper rollover mandatory before the next cycle.
+- Rollover must preserve project-owned state, verify a compact successor, repoint the existing automation and archive rather than delete the current conversation; this contract was exercised successfully for issue 022 closure.
 
 ## Open Questions
 
-- The Codex heartbeat contract currently has no independent model field, so a durable scheduler-level Luna/low pin remains unavailable; the fail-closed parent gate is the safe current behavior.
-- The exact blocked Chinese issue-022 candidate may be retained only if Human PI supplies its PDF; otherwise the successor replaces it under the bounded acquisition rule.
+- Codex heartbeat metadata still has no independent model field, so future scheduled turns retain the fail-closed Luna/low gate and must use direct turn_context evidence when available.
 - Public release requires Human PI license selection before a final licensed build.
 - Google Drive is unauthenticated and R/SPSS runtimes remain unverified until a real trigger requires them.
 - Claude Code PATH repair still needs confirmation in a newly restarted Claude Code session.
 
 ## Known Risks
 
-- A future heartbeat may again inherit a route above Luna/low. The gate prevents cost leakage but can hold the daily workload until a correctly routed turn is available.
-- The private recurring prompt lives outside Git; its dated backup and direct content checks remain its rollback and verification mechanism.
-- Conversation history can retain unique evidence if writeback is delayed, so checkpoint-first rollover remains mandatory.
-- Official model guidance is not a substitute for representative project evaluations when considering xhigh, max or Astra escalation.
-- The untracked artifacts/at09 directory belongs to another work stream and must not be staged by broad Git commands.
+- Reactivating archived Daily Paper conversation 01a0ecd4-1374-7df2-ad32-672e28bddac6 as the default execution surface would repeat multi-million-token cached-context costs and increase instruction-retrieval risk.
+- A successor that imports full conversation history instead of the bounded checkpoint would reproduce the same cost defect.
+- Freshwater operational phosphorus fractions, correlations and RDA are not mineral identification, process causality or sediment-water flux evidence.
+- The private paper corpus and recurring prompt live outside Git; repository commits must contain state pointers and contracts only, never private full texts or notes.
+- The untracked artifacts/at09 directory belongs to another work stream and must not be included by broad Git staging.
 
 ## In Progress
 
-- Keep issue 022 held until a Luna/low Daily Paper turn can replace the blocked Chinese candidate without repeating completed SCI work.
 - Confirm the Claude Code PATH repair after a genuinely restarted Claude Code session.
 
 ## Next Actions
 
-- Daily Paper: on the next correctly routed Luna/low turn, replace the blocked issue-022 Chinese candidate under the three-attempt cap, reuse both accepted SCI files, then continue visuals, notes, brief, validation and index.
-- If the next scheduled turn is not Luna/low, preserve the same fail-closed hold and report the mismatch without research work or model escalation.
-- Select a public-release license only through a separate Human PI decision; do not publish private research data or credentials.
-- Do not re-verify stable DSH or workspace repairs without a changed input, a failed check or a concrete contradiction.
+- Next Daily Paper TIME run in successor 01a0fc40-dd4c-7652-a971-5475aca1f4cc starts a new deduplicated daily issue under Luna/low from the master index. Do not reopen issue 022 or the historical 73-note EVENT without a changed input or direct Human PI request.
+- Do not rerun stable issue-022 validation without a changed artifact or concrete defect signal.
 
 ## Evidence References
 
-- decisions/0017-gpt61-sol-and-daily-paper-rollover.md
-- artifacts/GPT61-SOL-MIGRATION-2026-09-30.md
-- config/model-routing.json
-- protocols/MODEL-ROUTING.md
 - artifacts/daily-paper/CURRENT-STATE.md
-- artifacts/daily-paper/SUCCESSOR-BOOTSTRAP-2026-09-30.md
-- artifacts/daily-paper/routing-gate-state-2026-10-01.json
-- D:/10_学业科研/论文_沉积物磷/90_智能体工作区/04_Lab_Research_OS/contracts/2026-09-29_每日论文_recurring_prompt.md
-- packets/at11-first-supervised-research.json
-- tests/test_model_routing.py
+- artifacts/daily-paper/WORKLOAD-CLASSIFICATION.md
+- D:/10_学业科研/论文_沉积物磷/90_智能体工作区/04_Lab_Research_OS/运行记录/2026/2026-10/2026-10-02.md
+- D:/10_学业科研/论文_沉积物磷/00_总索引/总索引.md
+- D:/10_学业科研/论文_沉积物磷/01_我的阅读资料/2026/2026-09/2026-09-29_第022期
+- D:/10_学业科研/论文_沉积物磷/02_导师版读书笔记/2026/2026-09/2026-09-29_第022期
+- C:/Users/ASUS/.codex/sessions/2026/09/29/rollout-2026-09-29T19-01-56-01a0ecd4-1374-7df2-ad32-672e28bddac6.jsonl
+- protocols/CONTEXT-LIFECYCLE.md
+- protocols/RESOURCE-GOVERNANCE.md
+- protocols/COST-TELEMETRY.md
 - ../../60-handoffs/CURRENT.md
-- https://developers.openai.com/api/docs/models/gpt-6.1-sol
-- https://developers.openai.com/api/docs/guides/reasoning
-- https://developers.openai.com/api/docs/guides/model-selection
 - CHECKPOINT.md
 - SOL-AGENT.md

@@ -76,3 +76,13 @@ At Foundation checkpoint `20260929T203829-b113799fa300`, the Daily Paper success
 <!-- GPT61-SOL-ROLLOVER-CLOSURE-20260930 -->
 Human PI authorized GPT-6.1 Sol adoption and continuation of the interrupted work. Active Sol routing now targets `gpt-6.1-sol`: low for focused work, medium for everyday judgment and high for consequential independent review; xhigh/max are evaluation/PI gated, while Astra is reserved for highest-stakes cross-system or L3 exceptions. DeepSeek remains unchanged. The Codex app directly showed the existing active `automation-2`, so the earlier DSH/Windows search was too narrow to prove global absence. The verified fresh `每日论文` successor now owns that single heartbeat; the predecessor is archived, not deleted. Decision: [0017](../40-work/lab-research-os/decisions/0017-gpt61-sol-and-daily-paper-rollover.md). Evidence: [GPT61 migration](../40-work/lab-research-os/artifacts/GPT61-SOL-MIGRATION-2026-09-30.md). Read scoped LATEST through Foundation for the current checkpoint.
 <!-- /GPT61-SOL-ROLLOVER-CLOSURE-20260930 -->
+
+
+## 2026-10-02 · 每日论文笔记交付
+Human PI直接要求的第022期两篇SCI读书笔记已完成；整期仍PARTIAL。当前最小续接与状态以40-work/lab-research-os/CHECKPOINT.md及artifacts/daily-paper/CURRENT-STATE.md为准；不维护第二套科研档案。
+
+
+## 2026-10-02 · 每日论文第022期完成
+Human PI已要求补齐中文论文并形成读书笔记。第022期三篇论文的个人DOCX/PDF、导师DOCX和个人Daily Research Brief DOCX/PDF现已完成；新视觉与便携路径门禁通过。详细目录、论文列表和证据记录位于D盘总索引及2026-10-02运行日志。Lab OS状态见`40-work/lab-research-os/artifacts/daily-paper/CURRENT-STATE.md`与最新Foundation checkpoint。历史73篇修复仍PARTIAL/PAUSED，须待Human PI直接续接。
+
+第022期完成后，原执行对话出现1198万cached-input token的高成本，已按context lifecycle完成第二次rollover。现有`automation-2`原位指向新successor `01a0fc40-dd4c-7652-a971-5475aca1f4cc`；高成本对话`01a0ecd4-1374-7df2-ad32-672e28bddac6`已归档，未删除、未新建第二个automation。

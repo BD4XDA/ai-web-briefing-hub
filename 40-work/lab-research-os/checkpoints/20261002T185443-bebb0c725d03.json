@@ -1,0 +1,72 @@
+{
+  "completed": [
+    "Preserved and reused the two accepted issue-022 SCI originals and completed notes without reacquisition, rewrite, rerender or repeat QC.",
+    "Replaced the blocked Chinese candidate under Luna/low with a deduplicated journal-hosted full text after marine alternatives were duplicates or outside criteria.",
+    "Created the Chinese personal and supervisor notes with same-paper original figure interpretation, an original-text-based methods workflow and explicit freshwater-to-marine inference boundaries.",
+    "Completed the issue-022 Human PI Daily Research Brief, evidence-ready private run record, corpus index update and shared run-level cost telemetry.",
+    "Inspected the new Chinese note and brief renderings, repaired one workflow-label line break without changing scientific content, and passed the final visual/portable-path validator with zero errors and warnings.",
+    "Corrected the first route-gate diagnosis using direct session turn_context evidence and preserved the superseded record as historical evidence rather than deleting it."
+  ],
+  "created_at": "2026-10-02T18:54:43+0800",
+  "current_verified_state": [
+    "The canonical repository is D:/项目仓库/赛博课题组; D:/20_代码项目/赛博课题组 remains a compatibility junction, not a second Source of Truth.",
+    "Current project-owned GPT targets are Astra=gpt-6-astra, Sol=gpt-6.1-sol and Luna=gpt-6-luna. DeepSeek routing is unchanged and externally managed.",
+    "The existing Codex automation-2 remains the single 08:00 Asia/Shanghai Daily Paper trigger. The original predecessor 019fb61c-c37f-7012-a760-2dcc8ce0aa4b is archived; current active successor 01a0ecd4-1374-7df2-ad32-672e28bddac6 completed issue 022.",
+    "Daily Paper issue 022 is VERIFIED COMPLETE: three lawful full-text originals, three personal DOCX/PDF pairs, three supervisor DOCX notes and one Human PI Daily Research Brief DOCX/PDF are present. The deterministic visual and portable-path validator passed with zero errors and zero warnings.",
+    "The replacement Chinese paper is Chen Ting et al. (2022), DOI 10.15928/j.1674-3075.202109070312, obtained from the journal site. It is a declared freshwater method-value exception, not marine evidence; salinity, sulfate/sulfide, ionic strength, hydrodynamics and benthos limit transfer.",
+    "The 2026-10-02 TIME continuation ran under directly observed gpt-6-luna/low. No subagent, Astra, Sol/high, xhigh or max route was used. The first preflight stopped because the worker could not see its own route; local session turn_context then directly confirmed Luna/low and the same workload resumed from the exact continuation point.",
+    "The completed continuation reported 12,533,537 turn tokens, including 11,982,336 cached input tokens, 52,568 output tokens and 16,122 reasoning-output tokens. The thread cumulative total reached 19,668,737 tokens. This is decisive evidence that marginal context cost now exceeds the value of retaining the full Daily Paper conversation history.",
+    "The current Daily Paper conversation therefore meets the proactive rollover trigger. A compact file-only successor must be verified, automation-2 repointed, and the current long conversation archived rather than deleted before the next daily cycle.",
+    "The historical 73-note visual repair remains PARTIAL/PAUSED and was not resumed. Issue 022 evidence remains Discovery/Extraction/Evidence and was not promoted to validated knowledge.",
+    "Public release remains DRAFT_READY with license_not_selected as the blocking Human PI decision. AT11 remains packet-ready and no scientific AT11 executor or reviewer has run.",
+    "The untracked artifacts/at09 directory remains outside this work set and must not be staged."
+  ],
+  "decisions": [
+    "Issue 022 is closed as the first verified complete post-contract Daily Paper issue; this verifies the visual/path contract once but does not prove repeated-cycle reliability.",
+    "The Erhai wetland paper is admitted only as a freshwater method-value exception. Its reported phosphorus patterns cannot be represented as marine, estuarine or tidal-flat evidence.",
+    "Direct Codex turn_context is sufficient runtime evidence for model and effort when a worker cannot introspect them; requested route alone is not treated as actual-runtime proof.",
+    "Conversation rollover is triggered by marginal context value versus cost and reliability, not by window exhaustion. The 11.98M cached-input continuation makes another Daily Paper rollover mandatory before the next cycle.",
+    "Rollover must preserve project-owned state, verify a compact successor, repoint the existing automation and archive rather than delete the current conversation."
+  ],
+  "evidence_references": [
+    "artifacts/daily-paper/CURRENT-STATE.md",
+    "artifacts/daily-paper/WORKLOAD-CLASSIFICATION.md",
+    "D:/10_学业科研/论文_沉积物磷/90_智能体工作区/04_Lab_Research_OS/运行记录/2026/2026-10/2026-10-02.md",
+    "D:/10_学业科研/论文_沉积物磷/00_总索引/总索引.md",
+    "D:/10_学业科研/论文_沉积物磷/01_我的阅读资料/2026/2026-09/2026-09-29_第022期",
+    "D:/10_学业科研/论文_沉积物磷/02_导师版读书笔记/2026/2026-09/2026-09-29_第022期",
+    "C:/Users/ASUS/.codex/sessions/2026/09/29/rollout-2026-09-29T19-01-56-01a0ecd4-1374-7df2-ad32-672e28bddac6.jsonl",
+    "protocols/CONTEXT-LIFECYCLE.md",
+    "protocols/RESOURCE-GOVERNANCE.md",
+    "protocols/COST-TELEMETRY.md",
+    "../../60-handoffs/CURRENT.md",
+    "CHECKPOINT.md",
+    "SOL-AGENT.md"
+  ],
+  "in_progress": [
+    "Perform checkpoint-first proactive rollover of Daily Paper conversation 01a0ecd4-1374-7df2-ad32-672e28bddac6 before the next daily cycle.",
+    "Confirm the Claude Code PATH repair after a genuinely restarted Claude Code session."
+  ],
+  "known_risks": [
+    "Keeping the current Daily Paper conversation as the default execution surface would repeat multi-million-token cached-context costs and increase instruction-retrieval risk.",
+    "A successor that imports full conversation history instead of the bounded checkpoint would reproduce the same cost defect.",
+    "Freshwater operational phosphorus fractions, correlations and RDA are not mineral identification, process causality or sediment-water flux evidence.",
+    "The private paper corpus and recurring prompt live outside Git; repository commits must contain state pointers and contracts only, never private full texts or notes.",
+    "The untracked artifacts/at09 directory belongs to another work stream and must not be included by broad Git staging."
+  ],
+  "next_actions": [
+    "Create one compact Daily Paper successor that reads this checkpoint, the private master index and the latest run record, then returns a no-research readiness acknowledgement naming issue 022 CLOSED and the next daily action.",
+    "After readiness succeeds, repoint existing automation-2 to the new successor and archive conversation 01a0ecd4-1374-7df2-ad32-672e28bddac6; do not create another automation.",
+    "Next Daily Paper TIME run starts a new deduplicated daily issue under Luna/low from the master index. Do not reopen issue 022 or the historical 73-note EVENT without a changed input or direct Human PI request.",
+    "Do not rerun stable issue-022 validation without a changed artifact or concrete defect signal."
+  ],
+  "open_questions": [
+    "Codex heartbeat metadata still has no independent model field, so future scheduled turns retain the fail-closed Luna/low gate and must use direct turn_context evidence when available.",
+    "Public release requires Human PI license selection before a final licensed build.",
+    "Google Drive is unauthenticated and R/SPSS runtimes remain unverified until a real trigger requires them.",
+    "Claude Code PATH repair still needs confirmation in a newly restarted Claude Code session."
+  ],
+  "parent": "20261002T180752-a7692c1e8d88",
+  "priority": "P3",
+  "status": "in_progress"
+}

@@ -58,3 +58,20 @@ The latest explicit Daily Paper task paused new daily selection and requested hi
 2. Next upgraded run: start from the issue-022 continuation point or replace the blocked Chinese candidate; keep Luna/low, a fresh short context and the three-attempt cap. Do not repeat the two SCI downloads or the failed Chinese access paths.
 3. Historical repair: resume note 072 from preserved evidence only when explicitly continued; finish one bounded unit before opening another review loop.
 4. Historical path portability: 34 supervisor files remain over the new budget after the two issue-021 repairs. Treat bulk migration as a separately approved Event with a reversible rename map and reference update.
+
+
+## 2026-10-02 · Human PI直接要求两篇已有SCI读书笔记
+两篇原文复用；个人DOCX/PDF与导师DOCX完成，各7页，28渲染页已检查；笔记图文/路径检查PASS。022仍PARTIAL，缺中文核心和期次简报。最小续接仅中文合法全文及其笔记、简报和整期验证；不得重复已有两篇QC。73篇历史修复继续PARTIAL/PAUSED。详见私有当日运行记录及canonical checkpoint。
+
+
+## VERIFIED UPDATE 2026-10-02 — issue 022 completed under Luna/low
+
+The existing issue-022 TIME workflow resumed after the first route gate had stopped. The effective continuation route was verified as `gpt-6-luna/low`. The blocked Chinese candidate was replaced without revisiting the two accepted SCI papers. Issue 022 now contains three legal full texts, three personal DOCX/PDF pairs, three supervisor DOCX files, and a ten-section personal Human PI Daily Research Brief DOCX/PDF. The Chinese-core selection is a declared freshwater method-value exception; results are explicitly bounded to Erhai Lake and not treated as marine evidence. `validate_issue.py --require-visuals --require-portable-paths` passed with 3/3/3 note counts, one brief pair, no errors or warnings. New note and brief pages were visually reviewed against the original paper and their renderings. The detailed evidence and limitations are in the private 2026-10-02 corpus run log and master index.
+
+This is one verified complete post-contract issue for visual/path acceptance; it is not evidence for universal repeatability or for unrelated workflow readiness. The historical 73-note repair remains `PARTIAL/PAUSED`. The private evidence record remains Discovery/Extraction/Evidence and was not promoted to validated knowledge. The primary run telemetry plus one token-free correction entry are in the shared local ledger.
+
+Next daily turn: resume from the master index and latest run log, reuse issue 022 as closed, and run only the current Literature Radar / daily workflow under Luna/low. Do not resume the historical repair without a new direct Human PI request.
+
+## VERIFIED ROLLOVER 2026-10-02
+
+The issue-022 continuation consumed 12,533,537 turn tokens, including 11,982,336 cached input tokens; the conversation cumulative total reached 19,668,737. That direct evidence triggered proactive rollover under the marginal-context-value rule. Compact successor `01a0fc40-dd4c-7652-a971-5475aca1f4cc` resolved checkpoint `20261002T185443-bebb0c725d03`, reported issue 022 CLOSED and performed no research. One initial readiness attempt ended in a transport disconnect; the second succeeded within the shared three-attempt budget. Existing `automation-2` now targets the compact successor, and long conversation `01a0ecd4-1374-7df2-ad32-672e28bddac6` is archived rather than deleted. No duplicate automation was created.
