@@ -1,9 +1,10 @@
 {
   "$schema": "../schemas/model-routing.schema.json",
   "schema_version": 1,
-  "policy_version": "2026-09-27",
-  "reviewed_at": "2026-09-27",
+  "policy_version": "2026-09-30-gpt61-sol",
+  "reviewed_at": "2026-09-30",
   "sources": [
+    "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
     "https://developers.openai.com/api/docs/guides/latest-model",
     "https://developers.openai.com/api/docs/guides/model-selection",
     "https://developers.openai.com/api/docs/guides/reasoning",
@@ -44,26 +45,28 @@
     },
     {
       "role": "sol",
-      "model": "gpt-6-sol",
+      "model": "gpt-6.1-sol",
       "default_effort": "medium",
-      "allowed_efforts": ["low", "medium", "high", "xhigh"],
+      "allowed_efforts": ["low", "medium", "high", "xhigh", "max"],
       "tasks": [
         "everyday coding, research and evidence synthesis",
         "scientific and visual quality assurance",
         "fact checking, document review and bounded implementation",
-        "independent verification of consequential claims"
+        "independent verification of consequential claims",
+        "complex coding, computer use and professional workflows below the Astra exception boundary"
       ],
       "effort_rules": {
         "low": "Focused writing, editing, fact checking or straightforward application work.",
         "medium": "Default for research, coding and workflows requiring judgment and completeness.",
         "high": "Independent scientific or visual review, deep verification, complex debugging or consequential acceptance.",
-        "xhigh": "Only when representative evaluations show a clear benefit, or the Human PI explicitly authorizes the added cost and latency."
+        "xhigh": "Only when a representative evaluation shows a measurable gain for deep analysis, careful review or unresolved architecture.",
+        "max": "Exceptional only: Human PI authorization plus representative evidence that xhigh is insufficient for a consequential decision."
       },
       "escalate_to": "astra",
       "escalate_when": [
-        "architecture or policy ownership is required",
-        "multiple systems present unresolved authority or evidence conflicts",
-        "the decision is L3, irreversible or materially expands scope"
+        "an L3, irreversible or scope-expanding decision requires the project's architecture owner",
+        "multiple systems retain unresolved authority or evidence conflicts after a bounded Sol/high review",
+        "representative evaluation shows Astra materially improves the consequential outcome"
       ]
     },
     {
@@ -72,8 +75,8 @@
       "default_effort": "medium",
       "allowed_efforts": ["low", "medium", "high", "xhigh"],
       "tasks": [
-        "ambiguous cross-system architecture",
-        "complex planning and exception adjudication",
+        "highest-stakes ambiguous cross-system architecture",
+        "L3 planning and exception adjudication after lower routes are insufficient",
         "broad-context integration and consequential L3 preparation",
         "exacting deliverables when lower routes are insufficient"
       ],

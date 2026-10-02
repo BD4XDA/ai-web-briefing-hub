@@ -45,6 +45,9 @@ def validate(value):
 
     if "none" in route_by_role.get("astra", {}).get("allowed_efforts", []):
         raise ValueError("Astra cannot use none reasoning effort")
+    sol = route_by_role.get("sol", {})
+    if sol.get("model") == "gpt-6.1-sol" and "none" in sol.get("allowed_efforts", []):
+        raise ValueError("GPT-6.1 Sol cannot use none reasoning effort")
     if value["runtime_policy"]["deepseek_policy"] != "external_unchanged":
         raise ValueError("DeepSeek policy must remain external_unchanged in this manifest")
     return value

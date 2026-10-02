@@ -36,6 +36,16 @@ class ModelRoutingTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             model_routing.validate(bad)
 
+    def test_gpt61_sol_target_and_effort_floor(self):
+        sol = next(route for route in self.value["routes"] if route["role"] == "sol")
+        self.assertEqual(sol["model"], "gpt-6.1-sol")
+        self.assertNotIn("none", sol["allowed_efforts"])
+        bad = copy.deepcopy(self.value)
+        next(route for route in bad["routes"] if route["role"] == "sol")["allowed_efforts"].append("none")
+        next(route for route in bad["routes"] if route["role"] == "sol")["effort_rules"]["none"] = "invalid"
+        with self.assertRaisesRegex(ValueError, "cannot use none"):
+            model_routing.validate(bad)
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

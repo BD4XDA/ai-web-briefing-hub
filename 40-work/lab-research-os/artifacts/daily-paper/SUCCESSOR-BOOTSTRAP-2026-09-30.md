@@ -1,10 +1,18 @@
 # Daily Paper 继任会话 bootstrap（context rollover）
 
-状态：READY_FOR_HUMAN_PI_CREATION · 生成于 2026-09-30（承接 Foundation checkpoint `20260929T201634-0d642f05e654` 之后的滚动工作）
+状态：COMPLETED_IN_CODEX · 生成于 2026-09-30，已由 Codex successor 完成就绪确认并接管现有 heartbeat
 
 ## 使用方式
 
-在 DSH Web GUI 的实验室 Workspace（规范根 `D:/项目仓库/赛博课题组`）新建一个会话，模型固定为 `Luna / low`，把下面“Bootstrap 提示词”整段作为第一条消息粘贴。不要沿用旧的长会话。
+本段保留为可审计的 bootstrap 模板。实际继任会话已在 Codex 项目 `D:/项目仓库/赛博课题组` 中建立，模型固定为 `Luna / low`；不要再次创建。
+
+**最短一行（推荐）**——新建会话后只粘这一行：
+
+```text
+读 D:\项目仓库\赛博课题组\40-work\lab-research-os\artifacts\daily-paper\SUCCESSOR-BOOTSTRAP-2026-09-30.md，严格执行其中“Bootstrap 提示词”一节，只输出它要求的四行。
+```
+
+也可以直接把下面“Bootstrap 提示词”整段作为第一条消息粘贴。不要沿用旧的长会话。
 
 ## Bootstrap 提示词（整段复制）
 
@@ -46,7 +54,9 @@
   (b) 否则按三次封顶规则直接更换中文核心候选，并把新候选的合法全文落到同一目录。
 - `WILL_NOT_REPEAT` 应包含：两篇 SCI 的检索与下载、中文候选的网页全文阅读、第022期已完成的去重与元数据核对。
 
-## 未决事项（继任会话不要自行处理）
+## Rollover 结果
 
-- 08:00 heartbeat 的宿主任务需要重指到本继任会话；在 Human PI 确认之前，不要新建第二套定时任务。
+- Codex automation `automation-2` 原本已存在；此前只检查 DSH/Windows 调度面导致“任务不存在”的结论范围过宽。
+- 该唯一 heartbeat 已改指经过文件恢复验证的 successor，会话标题恢复为 `每日论文`；旧会话已归档但未删除。
+- 不得在 DSH Web 或其他调度器中重建第二条任务。
 - 历史 73 篇笔记配图/流程图修复仍为 PARTIAL/PAUSED，只有 Human PI 明确要求才续接。

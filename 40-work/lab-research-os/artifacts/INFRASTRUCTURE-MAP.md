@@ -29,7 +29,7 @@
 |---|---|---|---|
 | DeepSeek Flash（DSH） | DSH `0.1.1-rc.2`；普通文本、工具、子代理、重启恢复路径已存在 | `dsh-smoke.json` SHA-256 `E2D4F2FC1DDF040BAB52DF9100EC247D594464949B80F06964388A0DEA34CFEB`；`dsh-restart-resume.json` SHA-256 `49C3FDE38D65D3284D6C50D5B3A1441CA5EF7CBE730D6EAB271D9C6B15B946E6`，均记录 passed | 文本与恢复证据可继承；不能把历史 smoke 当作当前 web 服务在线 |
 | DeepSeek Pro（DSH） | Pro 文本通道存在 | checkpoint 明确有文本调用证据 | 只按 text-only 能力使用；不要把 legacy `sol-auto` 的图像宣传当作可用视觉 QA |
-| Codex Sol | 新任务目标 `gpt-6-sol`；历史模板曾记录 5.6 | `codex-sol-smoke.json` 被 checkpoint 列为既有历史证据 | 迁移决策不等于当前 live 或 GPT-6 资格验证；任务启动时记录请求与实际模型身份 |
+| Codex Sol | 新任务目标 `gpt-6.1-sol`；历史模板曾记录 5.6 与 GPT-6 Sol | OpenAI 官方模型页、迁移指南与本机 Codex 可用模型目录 | 默认 medium；low 用于轻量工作，high 用于重要独立复核；xhigh/max 有门槛，任务启动时仍记录请求与实际模型身份 |
 | Claude Flash | Claude Code `2.1.258` | safe-mode Flash 文本调用通过 | 当前可用依据是 Flash 文本；Fable/Opus/Sonnet/Haiku 别名实际映射到 Flash，不能当作异构模型 |
 | DSH web/router | 现有 `dsh-sol-luna-router` 与 web profile | router 既有测试为 `70/72` 通过，doctor `17/17`；证据索引含 `router-existing-tests.json` | 不能据 70/72 或 doctor 17/17 宣称端到端通过；3080 当前 `NO_LISTENER` |
 | Exa MCP | Sol 联网模板声明依赖 Exa | MCP catalog/团队恢复文件记录曾恢复可用 | Exa retry 只能视为临时恢复；持久启动顺序修复尚未部署 |

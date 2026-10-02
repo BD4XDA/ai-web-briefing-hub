@@ -1,11 +1,33 @@
 # Daily Paper integration · recovered state
 
-Observed 2026-09-29.
+Observed through 2026-09-30.
+
+## CORRECTION 2026-09-30 — Codex heartbeat is live and rollover is complete
+
+The 2026-09-29 investigation searched DSH Schedule storage, the legacy task-board ledger and Windows Task Scheduler and found no task there. That result was accurate for those subsystems but was incorrectly generalized to the Codex app. Fresh direct Codex evidence resolves the conflict:
+
+- Codex automation `automation-2` is ACTIVE at 08:00 Asia/Shanghai and is the single `每日沉积物磷论文整理` heartbeat;
+- its prompt uses the canonical `D:\项目仓库\赛博课题组` root and includes bounded retries, passive cost telemetry and context-lifecycle rules;
+- the fresh `每日论文` successor resolved checkpoint `20260929T190136-77fa33d54c35`, accurately reported issue 022 as PARTIAL and named replacement of the blocked Chinese candidate without rerunning research;
+- the existing automation now targets that successor, and the predecessor conversation is archived rather than deleted.
+
+Consequence: no manual DSH task creation is needed and no second automation may be created. Codex `automation-2` is the current trigger; DSH's empty schedule is not evidence against it.
+
+## OBSERVATION 2026-10-01 — trigger delivery works; persistent model pinning remains partial
+
+The first observed scheduled turn reached the successor, but its effective parent route was `gpt-6.1-sol/medium` rather than the required `gpt-6-luna/low`. The recurring prompt's parent-route gate failed closed before literature discovery, download, extraction or scientific recomputation. Issue 022 and its two accepted SCI files therefore remain unchanged.
+
+This separates two claims that must not be conflated:
+
+- schedule delivery and successor targeting are **LIVE**;
+- automation-level persistent Luna/low pinning is **PARTIAL**, because the current Codex heartbeat contract exposes no independent model field.
+
+Until the scheduler can guarantee the requested route, a mismatched turn must stop and report the hold; it must not silently spend Sol/Astra capacity or create a replacement automation. The smallest scientific continuation remains replacement of the blocked Chinese candidate under Luna/low and the shared three-attempt cap.
 
 ## Existing workflow
 
-- The existing Work conversation is titled `每日论文` and is already attached to the same saved project as Lab Research OS.
-- One active heartbeat (`每日沉积物磷论文整理`) targets that conversation at 08:00 Asia/Shanghai. No second automation is required.
+- The active Codex conversation is titled `每日论文` and is attached to the same saved project as Lab Research OS; the predecessor is archived as historical reference.
+- One active Codex heartbeat (`每日沉积物磷论文整理`) targets that conversation at 08:00 Asia/Shanghai. No second automation is required.
 - The private Skill and archive implement one Chinese core plus two SCI full-text papers, optional supervisor-paper add-on, personal/supervisor notes, legal-access rules, deduplication, rendering QA and index maintenance.
 - The current master index reaches issue 021 dated 2026-09-26. This establishes archive existence, not scientific validation of every historical note.
 - A directly authorized 2026-09-29 production trial opened issue 022 but stopped at `PARTIAL`: two lawful SCI PDFs were retained, the Chinese-core full text was readable online, and the original Chinese PDF remained blocked by connection closure, HTTP 429 and a publisher safety challenge. No formal note or index entry was fabricated.
@@ -19,7 +41,7 @@ The latest explicit Daily Paper task paused new daily selection and requested hi
 | Capability | Status | Basis |
 |---|---|---|
 | Existing archive and issue workflow | IMPLEMENTED & OBSERVED | Master index and issue 021 folders |
-| Existing heartbeat schedule | IMPLEMENTED & LIVE configuration | Active automation record; last scheduled turn failed on quota |
+| Existing heartbeat schedule | IMPLEMENTED & LIVE configuration | Codex automation-2 is ACTIVE, points to the verified successor and uses the current canonical root |
 | Private Skill after root migration | IMPLEMENTED & VERIFIED locally | New target exists and system Skill junction is readable after repair |
 | Daily Paper → Lab OS prompt binding | PARTIAL LIVE EVIDENCE | Event pilot and issue-022 TIME trial followed resume/evidence boundaries; a complete upgraded issue remains unverified |
 | Cost-aware delegation | DEFECT OBSERVED, POLICY REPAIRED | Issue 022 used no Astra/subagent but consumed 20.87M reported tokens in Luna/medium; three-attempt stop, passive telemetry and Luna/low parent gate are now live rules |

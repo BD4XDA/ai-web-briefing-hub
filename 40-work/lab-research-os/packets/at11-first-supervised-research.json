@@ -32,12 +32,12 @@
   ],
   "acceptance_criteria": [
     "Use only the exact read-only S1 original bound by Decision 0007; missing/unreadable/conflicting identity holds the run",
-    "Distinct Research/Evidence executor and gpt-6-sol scientific QA reviewer at reasoning effort high have suitable actual capability and traceable session/model/effort/harness identity before start; no GPT 5.6 fallback",
+    "Distinct Research/Evidence executor and gpt-6.1-sol scientific QA reviewer at reasoning effort high have suitable actual capability and traceable session/model/effort/harness identity before start; no GPT 5.6 or GPT-6 Sol fallback",
     "Four-row card within 600 Chinese words, every claim has precise original page/section support or explicit not-reported label",
     "Review covers identity, fidelity and limitations; no unresolved consequential anomaly; Human PI explicitly accepts only internal draft use",
     "Astra records claim/evidence/classification/consequence/authority/disposition; no result accepted through model PASS or checkpoint alone"
   ],
-  "verification_route": "Future only: Research/Evidence executor -> independent gpt-6-sol scientific QA review at reasoning effort high -> Human PI acceptance -> Astra disposition. One executor call and one reviewer call, no retries or GPT 5.6 fallback; missing suitability, runtime identity or evidence means HELD. See artifacts/at11/C-REVIEW-ACCEPTANCE-PLAN.md.",
+  "verification_route": "Future only: Research/Evidence executor -> independent gpt-6.1-sol scientific QA review at reasoning effort high -> Human PI acceptance -> Astra disposition. One executor call and one reviewer call, no retries or GPT 5.6 or GPT-6 Sol fallback; missing suitability, runtime identity or evidence means HELD. See artifacts/at11/C-REVIEW-ACCEPTANCE-PLAN.md.",
   "budget": {
     "max_files": 8,
     "max_depth": 4,
