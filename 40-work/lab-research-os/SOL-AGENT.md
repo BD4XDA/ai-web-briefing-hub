@@ -131,7 +131,7 @@ Include the checkpoint ID and relative evidence paths. Do not duplicate large ra
 <!-- FOUNDATION-SOL-CHECKPOINT:START -->
 ## Latest Foundation checkpoint for Sol
 
-Checkpoint ID: 20261002T175225-8e995f9eb6e6
+Checkpoint ID: 20261002T175321-e27fc5fe3c3d
 Priority: P3 · Status: in_progress
 Canonical committed pointer: `checkpoints/LATEST.json`. This generated mirror is required for Sol resume, but `tools/foundation.py show` remains authoritative if IDs differ.
 
@@ -146,6 +146,7 @@ Canonical committed pointer: `checkpoints/LATEST.json`. This generated mirror is
 - The 2026-10-01 scheduled turn reached the successor under gpt-6.1-sol/medium rather than gpt-6-luna/low. The parent-route gate failed closed before paper work, so schedule delivery is LIVE while persistent automation-level model pinning remains PARTIAL.
 - The recurring prompt includes bounded retries, passive token/cost telemetry, the Luna/low parent gate, evidence-ready outputs, visual requirements and marginal-value context rollover. Its dated pre-migration backup remains outside Git beside the private contract.
 - The GPT-6.1 Sol official-source freshness check on 2026-10-02 stopped after three failed direct-page opens; current official search results and the prior direct capture remain consistent, and no project-specific performance claim is inferred.
+- Commit 2d82956 containing the GPT-6.1 Sol migration and Daily Paper rollover closure is pushed to origin/main.
 - Public release remains DRAFT_READY with license_not_selected as the blocking Human PI decision. AT11 remains packet-ready and no scientific AT11 executor or reviewer has run.
 - The untracked artifacts/at09 directory is preserved outside this change set.
 
@@ -157,6 +158,7 @@ Canonical committed pointer: `checkpoints/LATEST.json`. This generated mirror is
 - Restored the private recurring prompt after detecting an incomplete prompt replacement and verified the required retry, telemetry, parent-gate and context-lifecycle clauses are present.
 - Observed the first scheduled successor turn fail closed on a model-route mismatch without repeating paper acquisition or scientific work.
 - Validated model routing, the capability registry, the AT11 packet, the public-release draft state and all 37 unit tests before final writeback.
+- Committed and pushed the migration, rollover, routing-gate evidence and canonical checkpoint to the public GitHub repository as 2d82956.
 
 ### Decisions
 
@@ -185,7 +187,6 @@ Canonical committed pointer: `checkpoints/LATEST.json`. This generated mirror is
 
 ### In Progress
 
-- Commit and push the GPT-6.1 Sol migration, Daily Paper rollover closure, 2026-10-01 routing-gate evidence and this checkpoint while excluding artifacts/at09.
 - Keep issue 022 held until a Luna/low Daily Paper turn can replace the blocked Chinese candidate without repeating completed SCI work.
 - Confirm the Claude Code PATH repair after a genuinely restarted Claude Code session.
 

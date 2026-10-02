@@ -1,6 +1,14 @@
 {
-  "priority": "P3",
-  "status": "in_progress",
+  "completed": [
+    "Migrated active Sol configuration, stable instructions, current AT11 future packet and tests from gpt-6-sol to gpt-6.1-sol while preserving historical model identifiers.",
+    "Documented cost-effective effort boundaries and prohibited silent fallback to GPT-6 Sol or GPT 5.6.",
+    "Verified the Daily Paper successor's file-based resume, repointed the existing Codex automation, and archived the predecessor without creating a duplicate task.",
+    "Restored the private recurring prompt after detecting an incomplete prompt replacement and verified the required retry, telemetry, parent-gate and context-lifecycle clauses are present.",
+    "Observed the first scheduled successor turn fail closed on a model-route mismatch without repeating paper acquisition or scientific work.",
+    "Validated model routing, the capability registry, the AT11 packet, the public-release draft state and all 37 unit tests before final writeback.",
+    "Committed and pushed the migration, rollover, routing-gate evidence and canonical checkpoint to the public GitHub repository as 2d82956."
+  ],
+  "created_at": "2026-10-02T17:53:21+0800",
   "current_verified_state": [
     "The canonical repository is D:/项目仓库/赛博课题组; D:/20_代码项目/赛博课题组 remains a compatibility junction, not a second Source of Truth.",
     "Current project-owned GPT targets are Astra=gpt-6-astra, Sol=gpt-6.1-sol and Luna=gpt-6-luna. DeepSeek routing is unchanged and externally managed.",
@@ -15,15 +23,6 @@
     "Public release remains DRAFT_READY with license_not_selected as the blocking Human PI decision. AT11 remains packet-ready and no scientific AT11 executor or reviewer has run.",
     "The untracked artifacts/at09 directory is preserved outside this change set."
   ],
-  "completed": [
-    "Migrated active Sol configuration, stable instructions, current AT11 future packet and tests from gpt-6-sol to gpt-6.1-sol while preserving historical model identifiers.",
-    "Documented cost-effective effort boundaries and prohibited silent fallback to GPT-6 Sol or GPT 5.6.",
-    "Verified the Daily Paper successor's file-based resume, repointed the existing Codex automation, and archived the predecessor without creating a duplicate task.",
-    "Restored the private recurring prompt after detecting an incomplete prompt replacement and verified the required retry, telemetry, parent-gate and context-lifecycle clauses are present.",
-    "Observed the first scheduled successor turn fail closed on a model-route mismatch without repeating paper acquisition or scientific work.",
-    "Validated model routing, the capability registry, the AT11 packet, the public-release draft state and all 37 unit tests before final writeback.",
-    "Committed and pushed the migration, rollover, routing-gate evidence and canonical checkpoint to the public GitHub repository as 2d82956."
-  ],
   "decisions": [
     "Use GPT-6.1 Sol as the default project judgment route, but do not translate OpenAI's general performance description into an unmeasured scientific-quality claim.",
     "Keep high-volume Daily Paper discovery on Luna/low; a scheduled turn with a different parent route stops rather than silently consuming a more expensive model.",
@@ -31,30 +30,6 @@
     "Do not recreate the Daily Paper schedule or unarchive the predecessor. Archive preserves history; the successor and project-owned checkpoint carry current execution state.",
     "Apply the shared maximum of three attempts to equivalent acquisition or access routes; only a recorded, finite exception for a major, irreplaceable scientific item may extend it.",
     "Use marginal context value versus cached-context cost and reliability risk as the rollover trigger; never wait for the context window to approach exhaustion."
-  ],
-  "open_questions": [
-    "The Codex heartbeat contract currently has no independent model field, so a durable scheduler-level Luna/low pin remains unavailable; the fail-closed parent gate is the safe current behavior.",
-    "The exact blocked Chinese issue-022 candidate may be retained only if Human PI supplies its PDF; otherwise the successor replaces it under the bounded acquisition rule.",
-    "Public release requires Human PI license selection before a final licensed build.",
-    "Google Drive is unauthenticated and R/SPSS runtimes remain unverified until a real trigger requires them.",
-    "Claude Code PATH repair still needs confirmation in a newly restarted Claude Code session."
-  ],
-  "known_risks": [
-    "A future heartbeat may again inherit a route above Luna/low. The gate prevents cost leakage but can hold the daily workload until a correctly routed turn is available.",
-    "The private recurring prompt lives outside Git; its dated backup and direct content checks remain its rollback and verification mechanism.",
-    "Conversation history can retain unique evidence if writeback is delayed, so checkpoint-first rollover remains mandatory.",
-    "Official model guidance is not a substitute for representative project evaluations when considering xhigh, max or Astra escalation.",
-    "The untracked artifacts/at09 directory belongs to another work stream and must not be staged by broad Git commands."
-  ],
-  "in_progress": [
-    "Keep issue 022 held until a Luna/low Daily Paper turn can replace the blocked Chinese candidate without repeating completed SCI work.",
-    "Confirm the Claude Code PATH repair after a genuinely restarted Claude Code session."
-  ],
-  "next_actions": [
-    "Daily Paper: on the next correctly routed Luna/low turn, replace the blocked issue-022 Chinese candidate under the three-attempt cap, reuse both accepted SCI files, then continue visuals, notes, brief, validation and index.",
-    "If the next scheduled turn is not Luna/low, preserve the same fail-closed hold and report the mismatch without research work or model escalation.",
-    "Select a public-release license only through a separate Human PI decision; do not publish private research data or credentials.",
-    "Do not re-verify stable DSH or workspace repairs without a changed input, a failed check or a concrete contradiction."
   ],
   "evidence_references": [
     "decisions/0017-gpt61-sol-and-daily-paper-rollover.md",
@@ -73,5 +48,32 @@
     "https://developers.openai.com/api/docs/guides/model-selection",
     "CHECKPOINT.md",
     "SOL-AGENT.md"
-  ]
+  ],
+  "in_progress": [
+    "Keep issue 022 held until a Luna/low Daily Paper turn can replace the blocked Chinese candidate without repeating completed SCI work.",
+    "Confirm the Claude Code PATH repair after a genuinely restarted Claude Code session."
+  ],
+  "known_risks": [
+    "A future heartbeat may again inherit a route above Luna/low. The gate prevents cost leakage but can hold the daily workload until a correctly routed turn is available.",
+    "The private recurring prompt lives outside Git; its dated backup and direct content checks remain its rollback and verification mechanism.",
+    "Conversation history can retain unique evidence if writeback is delayed, so checkpoint-first rollover remains mandatory.",
+    "Official model guidance is not a substitute for representative project evaluations when considering xhigh, max or Astra escalation.",
+    "The untracked artifacts/at09 directory belongs to another work stream and must not be staged by broad Git commands."
+  ],
+  "next_actions": [
+    "Daily Paper: on the next correctly routed Luna/low turn, replace the blocked issue-022 Chinese candidate under the three-attempt cap, reuse both accepted SCI files, then continue visuals, notes, brief, validation and index.",
+    "If the next scheduled turn is not Luna/low, preserve the same fail-closed hold and report the mismatch without research work or model escalation.",
+    "Select a public-release license only through a separate Human PI decision; do not publish private research data or credentials.",
+    "Do not re-verify stable DSH or workspace repairs without a changed input, a failed check or a concrete contradiction."
+  ],
+  "open_questions": [
+    "The Codex heartbeat contract currently has no independent model field, so a durable scheduler-level Luna/low pin remains unavailable; the fail-closed parent gate is the safe current behavior.",
+    "The exact blocked Chinese issue-022 candidate may be retained only if Human PI supplies its PDF; otherwise the successor replaces it under the bounded acquisition rule.",
+    "Public release requires Human PI license selection before a final licensed build.",
+    "Google Drive is unauthenticated and R/SPSS runtimes remain unverified until a real trigger requires them.",
+    "Claude Code PATH repair still needs confirmation in a newly restarted Claude Code session."
+  ],
+  "parent": "20261002T175225-8e995f9eb6e6",
+  "priority": "P3",
+  "status": "in_progress"
 }
