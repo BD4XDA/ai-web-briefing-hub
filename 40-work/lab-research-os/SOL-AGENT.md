@@ -131,80 +131,60 @@ Include the checkpoint ID and relative evidence paths. Do not duplicate large ra
 <!-- FOUNDATION-SOL-CHECKPOINT:START -->
 ## Latest Foundation checkpoint for Sol
 
-Checkpoint ID: 20261002T185908-a2d7c56e64c8
+Checkpoint ID: 20261006T143040-edbb14b4d332
 Priority: P3 · Status: in_progress
 Canonical committed pointer: `checkpoints/LATEST.json`. This generated mirror is required for Sol resume, but `tools/foundation.py show` remains authoritative if IDs differ.
 
 ### Current Verified State
 
-- The canonical repository is D:/项目仓库/赛博课题组; D:/20_代码项目/赛博课题组 remains a compatibility junction, not a second Source of Truth.
-- Current project-owned GPT targets are Astra=gpt-6-astra, Sol=gpt-6.1-sol and Luna=gpt-6-luna. DeepSeek routing is unchanged and externally managed.
-- The existing Codex automation-2 remains the single 08:00 Asia/Shanghai Daily Paper trigger and now targets compact successor 01a0fc40-dd4c-7652-a971-5475aca1f4cc. Both earlier Daily Paper conversations 019fb61c-c37f-7012-a760-2dcc8ce0aa4b and 01a0ecd4-1374-7df2-ad32-672e28bddac6 are archived rather than deleted.
-- Daily Paper issue 022 is VERIFIED COMPLETE: three lawful full-text originals, three personal DOCX/PDF pairs, three supervisor DOCX notes and one Human PI Daily Research Brief DOCX/PDF are present. The deterministic visual and portable-path validator passed with zero errors and zero warnings.
-- The replacement Chinese paper is Chen Ting et al. (2022), DOI 10.15928/j.1674-3075.202109070312, obtained from the journal site. It is a declared freshwater method-value exception, not marine evidence; salinity, sulfate/sulfide, ionic strength, hydrodynamics and benthos limit transfer.
-- The 2026-10-02 TIME continuation ran under directly observed gpt-6-luna/low. No subagent, Astra, Sol/high, xhigh or max route was used. The first preflight stopped because the worker could not see its own route; local session turn_context then directly confirmed Luna/low and the same workload resumed from the exact continuation point.
-- The completed continuation reported 12,533,537 turn tokens, including 11,982,336 cached input tokens, 52,568 output tokens and 16,122 reasoning-output tokens. The thread cumulative total reached 19,668,737 tokens. This is decisive evidence that marginal context cost now exceeds the value of retaining the full Daily Paper conversation history.
-- Proactive rollover is complete: the compact successor resolved checkpoint 20261002T185443-bebb0c725d03 on its second readiness attempt after one transport disconnect, accurately reported issue 022 CLOSED and performed no research; automation-2 was repointed and the long conversation archived.
-- The historical 73-note visual repair remains PARTIAL/PAUSED and was not resumed. Issue 022 evidence remains Discovery/Extraction/Evidence and was not promoted to validated knowledge.
-- Public release remains DRAFT_READY with license_not_selected as the blocking Human PI decision. AT11 remains packet-ready and no scientific AT11 executor or reviewer has run.
-- The untracked artifacts/at09 directory remains outside this work set and must not be staged.
+- Daily Paper Issue 022 remains VERIFIED COMPLETE. Issue 023 remains incomplete and has not created human-facing notes or index entries.
+- The 2026-10-06 Issue-023 continuation was fail-closed before research because the current direct turn_context reports gpt-6.1-sol/high instead of required gpt-6-luna/low.
+- The Issue-023 temporary folder already contains a publisher-hosted Chinese-core PDF candidate and a Frontiers OA PDF; the saved CEE file is an HTML response, not an accepted PDF. Preserve all temporary evidence. The 2026-10-03 private run record documents the earlier deduplication, one Maowei 403, and SCI candidate discovery.
+- DSH Desktop 0.2.0-rc.2 now has the optional dsh-boot-animation v0.2.0 cosmetic plugin installed in the desktop profile. The production module imports, the plugin manifest route is live, and three enabled fast-start videos are served. DSH core, model routing, credentials and research workflows were not changed.
 
 ### Completed
 
-- Preserved and reused the two accepted issue-022 SCI originals and completed notes without reacquisition, rewrite, rerender or repeat QC.
-- Replaced the blocked Chinese candidate under Luna/low with a deduplicated journal-hosted full text after marine alternatives were duplicates or outside criteria.
-- Created the Chinese personal and supervisor notes with same-paper original figure interpretation, an original-text-based methods workflow and explicit freshwater-to-marine inference boundaries.
-- Completed the issue-022 Human PI Daily Research Brief, evidence-ready private run record, corpus index update and shared run-level cost telemetry.
-- Inspected the new Chinese note and brief renderings, repaired one workflow-label line break without changing scientific content, and passed the final visual/portable-path validator with zero errors and warnings.
-- Corrected the first route-gate diagnosis using direct session turn_context evidence and preserved the superseded record as historical evidence rather than deleting it.
-- Completed a checkpoint-first file-only conversation rollover, preserved the single automation, and archived the 19.67M-token predecessor after the new successor passed readiness.
+- Verified the actual current Daily Paper turn route from its turn_context and stopped before literature work.
+- Appended the Daily Paper route-mismatch observation and continuation point to the 2026-10-06 private run record and shared cost ledger.
+- Reviewed, pinned, installed and proportionally verified dsh-boot-animation v0.2.0 for the DSH Desktop profile, preserving an automatic rollback backup and uninstall path.
 
 ### Decisions
 
-- Issue 022 is closed as the first verified complete post-contract Daily Paper issue; this verifies the visual/path contract once but does not prove repeated-cycle reliability.
-- The Erhai wetland paper is admitted only as a freshwater method-value exception. Its reported phosphorus patterns cannot be represented as marine, estuarine or tidal-flat evidence.
-- Direct Codex turn_context is sufficient runtime evidence for model and effort when a worker cannot introspect them; requested route alone is not treated as actual-runtime proof.
-- Conversation rollover is triggered by marginal context value versus cost and reliability, not by window exhaustion. The 11.98M cached-input continuation makes another Daily Paper rollover mandatory before the next cycle.
-- Rollover must preserve project-owned state, verify a compact successor, repoint the existing automation and archive rather than delete the current conversation; this contract was exercised successfully for issue 022 closure.
+- Do not continue Daily Paper research or writing in a parent turn whose actual route is not Luna/low.
+- Resume Issue 023 from saved temporary evidence when a new directly observed Luna/low parent turn is available; do not revisit the Maowei 403, prior deduplication, or accepted old-issue QC.
+- Keep the historical 73-note EVENT PARTIAL/PAUSED and untouched.
+- Treat dsh-boot-animation as a pinned, reversible cosmetic extension rather than a Lab Research OS capability; do not use it to justify a DSH core upgrade or add it to weekly core-capability maintenance.
 
 ### Open Questions
 
-- Codex heartbeat metadata still has no independent model field, so future scheduled turns retain the fail-closed Luna/low gate and must use direct turn_context evidence when available.
-- Public release requires Human PI license selection before a final licensed build.
-- Google Drive is unauthenticated and R/SPSS runtimes remain unverified until a real trigger requires them.
-- Claude Code PATH repair still needs confirmation in a newly restarted Claude Code session.
+- Whether the CEE institutional-repository PDF transfer has completed successfully and can be verified from the already requested attempt.
+- After Luna/low routing is restored, whether the saved candidates satisfy full-text, classification, relevance, and final selection checks.
+- The Human PI may visually confirm the preferred animation appearance and adjust sound, entry mode, hints, fade duration and asset pool in DSH Settings.
 
 ### Known Risks
 
-- Reactivating archived Daily Paper conversation 01a0ecd4-1374-7df2-ad32-672e28bddac6 as the default execution surface would repeat multi-million-token cached-context costs and increase instruction-retrieval risk.
-- A successor that imports full conversation history instead of the bounded checkpoint would reproduce the same cost defect.
-- Freshwater operational phosphorus fractions, correlations and RDA are not mineral identification, process causality or sediment-water flux evidence.
-- The private paper corpus and recurring prompt live outside Git; repository commits must contain state pointers and contracts only, never private full texts or notes.
-- The untracked artifacts/at09 directory belongs to another work stream and must not be included by broad Git staging.
+- The current daily parent route is misconfigured or misrouted for this workload; using it for research would violate the model/effort ceiling.
+- Do not treat the short HTML saved as cee.pdf as full text or overwrite other candidate evidence.
+- dsh-boot-animation is third-party UI code pinned to a plugin contract tested against DSH Desktop 0.2.0-rc.2; recheck compatibility before any Desktop version change. Two developer-fixture tests require an unpublished/development-only cosmokit dependency and were not used as production acceptance evidence.
 
 ### In Progress
 
-- Confirm the Claude Code PATH repair after a genuinely restarted Claude Code session.
+- Issue 023 paused at route gate. Existing candidate assets and prior 2026-10-03 evidence are preserved.
 
 ### Next Actions
 
-- Next Daily Paper TIME run in successor 01a0fc40-dd4c-7652-a971-5475aca1f4cc starts a new deduplicated daily issue under Luna/low from the master index. Do not reopen issue 022 or the historical 73-note EVENT without a changed input or direct Human PI request.
-- Do not rerun stable issue-022 validation without a changed artifact or concrete defect signal.
+- On the next eligible Daily Paper continuation, verify the new current turn_context is gpt-6-luna/low, then resume Issue 023 from the existing temporary folder and private log without broad rediscovery.
+- For the installed boot animation, use the DSH Settings card for optional visual preferences; before updating DSH Desktop or the plugin, repeat a compatibility review and preserve the current rollback path.
 
 ### Evidence References
 
-- artifacts/daily-paper/CURRENT-STATE.md
-- artifacts/daily-paper/WORKLOAD-CLASSIFICATION.md
-- D:/10_学业科研/论文_沉积物磷/90_智能体工作区/04_Lab_Research_OS/运行记录/2026/2026-10/2026-10-02.md
-- D:/10_学业科研/论文_沉积物磷/00_总索引/总索引.md
-- D:/10_学业科研/论文_沉积物磷/01_我的阅读资料/2026/2026-09/2026-09-29_第022期
-- D:/10_学业科研/论文_沉积物磷/02_导师版读书笔记/2026/2026-09/2026-09-29_第022期
-- C:/Users/ASUS/.codex/sessions/2026/09/29/rollout-2026-09-29T19-01-56-01a0ecd4-1374-7df2-ad32-672e28bddac6.jsonl
-- protocols/CONTEXT-LIFECYCLE.md
+- artifacts/DSH-BOOT-ANIMATION-INSTALL-2026-10-06.md
+- ../../50-decisions/2026-10-06-dsh-boot-animation.md
+- D:/10_学业科研/论文_沉积物磷/90_智能体工作区/04_Lab_Research_OS/运行记录/2026/2026-10/2026-10-03.md
+- D:/10_学业科研/论文_沉积物磷/90_智能体工作区/04_Lab_Research_OS/运行记录/2026/2026-10/2026-10-06.md
+- D:/10_学业科研/论文_沉积物磷/90_智能体工作区/02_临时文件/2026-10-03_第023期
+- protocols/CAPABILITY-GOVERNANCE.md
 - protocols/RESOURCE-GOVERNANCE.md
-- protocols/COST-TELEMETRY.md
 - ../../60-handoffs/CURRENT.md
-- CHECKPOINT.md
-- SOL-AGENT.md
 
 <!-- FOUNDATION-SOL-CHECKPOINT:END -->

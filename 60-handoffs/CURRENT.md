@@ -86,3 +86,7 @@ Human PI直接要求的第022期两篇SCI读书笔记已完成；整期仍PARTIA
 Human PI已要求补齐中文论文并形成读书笔记。第022期三篇论文的个人DOCX/PDF、导师DOCX和个人Daily Research Brief DOCX/PDF现已完成；新视觉与便携路径门禁通过。详细目录、论文列表和证据记录位于D盘总索引及2026-10-02运行日志。Lab OS状态见`40-work/lab-research-os/artifacts/daily-paper/CURRENT-STATE.md`与最新Foundation checkpoint。历史73篇修复仍PARTIAL/PAUSED，须待Human PI直接续接。
 
 第022期完成后，原执行对话出现1198万cached-input token的高成本，已按context lifecycle完成第二次rollover。现有`automation-2`原位指向新successor `01a0fc40-dd4c-7652-a971-5475aca1f4cc`；高成本对话`01a0ecd4-1374-7df2-ad32-672e28bddac6`已归档，未删除、未新建第二个automation。
+
+## 2026-10-06 · DSH Desktop 启动画面
+
+Human PI 指定的 `lxj5820/dsh-boot-animation` 已按上游 `v0.2.0` 安装至 DSH Desktop `desktop` profile。当前 Desktop `0.2.0-rc.2` 与插件合同匹配；插件模块、设置逻辑和本地视频清单路由已验证，三段素材均已启用且为 fast-start。安装前 profile patch 备份与卸载路径均已保留。该项目是可选外观扩展，不纳入科研 capability registry，不改变 DSH core、模型路由或科研流程。证据与回滚说明见 [安装记录](../40-work/lab-research-os/artifacts/DSH-BOOT-ANIMATION-INSTALL-2026-10-06.md) 和 [决策](../50-decisions/2026-10-06-dsh-boot-animation.md)。
