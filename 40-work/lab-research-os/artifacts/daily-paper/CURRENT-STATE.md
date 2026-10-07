@@ -93,3 +93,9 @@ Fresh successor `01a114e8-2997-7f50-b227-3d9cb3fa3778` (`每日论文｜Issue 02
 Human PI confirmed that school-library and partner-database access is authorized for this private research workflow. Open access is therefore no longer an eligibility requirement. The private Skill and existing `automation-2` now accept publisher subscriptions, school-library/campus access, institutional VPN/proxy, institution-partner knowledge bases, document delivery and Human PI-provided local originals, with the fastest reliable complete-full-text route preferred.
 
 Operational boundaries remain: reuse an already authenticated user browser session and request login only when expired; never store or expose credentials or defeat technical access controls; keep subscription-only originals in the private research archive and out of the public GitHub repository. Abstract-only reading remains insufficient. The shared three-attempt cap and cost/value rule are unchanged.
+
+## DISCOVERY ROUTING UPDATE 2026-10-07 — broad search, independent verification
+
+Daily Paper candidate discovery is no longer tied to publisher websites. The private Skill and `automation-2` may search scholarly metadata and discovery services, institutional/subject repositories, author pages and school-authorized Chinese knowledge bases in parallel, then obtain full text through the fastest qualified route. Sci-Hub and unauthorized shadow-library/mirror downloads are not part of the route.
+
+Discovery and verification are separate: DOI/Crossref plus journal/publisher or trusted bibliographic metadata establish publication identity; dated official/authoritative sources establish journal category and partition. An accepted manuscript or preprint must be labeled as such and bound to the published DOI; its actual pages and figure identifiers are used for note provenance. The three-attempt cap still applies across equivalent routes.

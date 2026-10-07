@@ -1,0 +1,47 @@
+{
+  "completed": [
+    "Added broad discovery routing to the private Skill and live Daily Paper automation while retaining authorized full-text acquisition routes.",
+    "Separated candidate discovery from publication, journal-quality and file-version verification.",
+    "Added accessed-version provenance requirements to the output contract and public decision record."
+  ],
+  "created_at": "2026-10-07T14:05:20+0800",
+  "current_verified_state": [
+    "Daily Paper Issues 022 and 023 remain VERIFIED COMPLETE; Issue 024 has not started.",
+    "The active private Skill, saved recurring prompt and automation-2 now use a broad candidate-discovery layer rather than repeatedly querying one publisher endpoint.",
+    "Candidate discovery may use scholarly metadata/search services, institutional and subject repositories, author pages, school-authorized Chinese knowledge bases and local indexes; Sci-Hub and unauthorized shadow-library or mirror downloads are excluded.",
+    "Publication identity, DOI and journal quality are verified independently from the download host; accepted manuscripts and preprints require explicit version labeling and binding to the published DOI."
+  ],
+  "decisions": [
+    "Do not spend the retry budget repeatedly on one blocked publisher endpoint when a qualified repository, institutional, author, document-delivery or local-copy route exists.",
+    "Do not use Sci-Hub or unauthorized shadow libraries/mirrors. This restriction does not require publisher-site-only discovery.",
+    "Verify DOI/publication metadata and journal quality independently; label non-version-of-record files and use their actual page/figure identifiers for provenance."
+  ],
+  "evidence_references": [
+    "../../50-decisions/2026-10-07-broad-literature-discovery-and-version-verification.md",
+    "../../50-decisions/2026-10-07-institutional-fulltext-access.md",
+    "artifacts/daily-paper/CURRENT-STATE.md",
+    "../../60-handoffs/CURRENT.md",
+    "D:/10_学业科研/论文_沉积物磷/70_Codex技能包/sediment-phosphorus-daily-private/SKILL.md",
+    "D:/10_学业科研/论文_沉积物磷/70_Codex技能包/sediment-phosphorus-daily-private/references/output-contract.md",
+    "D:/10_学业科研/论文_沉积物磷/90_智能体工作区/04_Lab_Research_OS/contracts/2026-09-29_每日论文_recurring_prompt.md",
+    "Codex automation automation-2"
+  ],
+  "in_progress": [
+    "Issue 024 awaits the existing daily trigger or a direct Human PI request."
+  ],
+  "known_risks": [
+    "Discovery aggregators can contain stale, duplicate or prepublication records; they are candidate sources, not final authority.",
+    "Accepted-manuscript or preprint pagination and figures may differ from the publisher version, so provenance must name the accessed version."
+  ],
+  "next_actions": [
+    "For Issue 024, search broad discovery services and the institutional access layer in parallel, then verify publication identity and journal quality before selection.",
+    "Use the fastest qualified complete-full-text route, keep the shared three-attempt cap and do not escalate model reasoning to compensate for access failure.",
+    "Record coarse access channel, full-text completeness and version status in the private run log."
+  ],
+  "open_questions": [
+    "No access session is currently required; a future Issue-024 candidate may require Human PI to refresh a school-library login."
+  ],
+  "parent": "20261007T140214-72c0d13de5dd",
+  "priority": "P3",
+  "status": "in_progress"
+}

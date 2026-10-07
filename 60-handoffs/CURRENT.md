@@ -102,3 +102,5 @@ Human PI 指定的 `lxj5820/dsh-boot-animation` 已按上游 `v0.2.0` 安装至 
 ## 2026-10-07 · 每日论文机构全文通道
 
 Human PI确认学校图书馆、校园网/机构VPN或代理、出版社订阅、学校合作知识库、文献传递及已有本地原文均可用于私有科研工作流。每日论文不再以OA为入选前提，优先最快的完整原文通道；自动任务与私有Skill已同步更新。账号凭据与会话材料不得记录或输出，受订阅许可约束的原文不得提交到公开GitHub，摘要仍不能代替全文精读，三次失败上限与效费比规则不变。决策见[2026-10-07-institutional-fulltext-access](../50-decisions/2026-10-07-institutional-fulltext-access.md)。
+
+发现层已进一步扩展到Crossref、OpenAlex、Unpaywall、CORE、PubMed/PMC、Europe PMC、Semantic Scholar、Google Scholar、机构/作者/学科仓储及学校授权中文知识库，避免反复死磕官网。Sci-Hub与未授权影子镜像不进入自动下载路径。候选的正式发表身份、DOI和期刊质量须独立核验；作者接受稿或预印本必须标记版本并绑定正式DOI。决策见[2026-10-07-broad-literature-discovery-and-version-verification](../50-decisions/2026-10-07-broad-literature-discovery-and-version-verification.md)。

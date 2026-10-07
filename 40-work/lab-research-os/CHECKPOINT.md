@@ -1,48 +1,49 @@
 # Lab Research OS · CHECKPOINT
-Checkpoint ID: 20261007T140214-72c0d13de5dd
+Checkpoint ID: 20261007T140520-4198d9ba9501
 Priority: P3 · Status: in_progress
 Canonical committed pointer: checkpoints/LATEST.json. If IDs differ, use tools/foundation.py show; do not guess.
 
 ## Current Verified State
 
 - Daily Paper Issues 022 and 023 remain VERIFIED COMPLETE; Issue 024 has not started.
-- Human PI confirmed that school-library and partner-database access is authorized for the private Daily Paper workflow. Open access is no longer an eligibility requirement.
-- The active private Skill, saved recurring prompt and existing automation-2 now accept school/institutional subscription, campus or institutional VPN/proxy, publisher subscription, partner knowledge-base, document-delivery and Human PI-provided local full text, with the fastest reliable complete-original route preferred.
-- Automation-2 remains ACTIVE at 08:00 Asia/Shanghai and still targets fresh successor 01a114e8-2997-7f50-b227-3d9cb3fa3778.
+- The active private Skill, saved recurring prompt and automation-2 now use a broad candidate-discovery layer rather than repeatedly querying one publisher endpoint.
+- Candidate discovery may use scholarly metadata/search services, institutional and subject repositories, author pages, school-authorized Chinese knowledge bases and local indexes; Sci-Hub and unauthorized shadow-library or mirror downloads are excluded.
+- Publication identity, DOI and journal quality are verified independently from the download host; accepted manuscripts and preprints require explicit version labeling and binding to the published DOI.
 
 ## Completed
 
-- Superseded the private workflow's open-access-only restriction without changing the three-paper scientific selection contract.
-- Updated the private Skill, output contract, saved recurring prompt and live automation prompt consistently.
-- Recorded the access-channel decision in the public project without including credentials, session data or subscription-only paper files.
+- Added broad discovery routing to the private Skill and live Daily Paper automation while retaining authorized full-text acquisition routes.
+- Separated candidate discovery from publication, journal-quality and file-version verification.
+- Added accessed-version provenance requirements to the output contract and public decision record.
 
 ## Decisions
 
-- Use authorized institutional full-text channels when they are faster; do not reject an otherwise suitable paper merely because it is not openly accessible.
-- Record only the coarse access-channel category and full-text completeness; never record credentials, cookies, tokens or other authentication material.
-- Keep subscription-only originals in the private D-drive research archive and out of the public GitHub repository. Abstract-only reading remains insufficient, and the shared three-attempt/cost-value rules remain unchanged.
+- Do not spend the retry budget repeatedly on one blocked publisher endpoint when a qualified repository, institutional, author, document-delivery or local-copy route exists.
+- Do not use Sci-Hub or unauthorized shadow libraries/mirrors. This restriction does not require publisher-site-only discovery.
+- Verify DOI/publication metadata and journal quality independently; label non-version-of-record files and use their actual page/figure identifiers for provenance.
 
 ## Open Questions
 
-- A future run may require Human PI to refresh an expired institutional browser login; no login is currently requested.
+- No access session is currently required; a future Issue-024 candidate may require Human PI to refresh a school-library login.
 
 ## Known Risks
 
-- Institutional access availability can vary by session or database; an access failure must not trigger credential capture, technical-control circumvention or unlimited retries.
-- Original PDFs obtained under subscription must not be staged into the public repository.
+- Discovery aggregators can contain stale, duplicate or prepublication records; they are candidate sources, not final authority.
+- Accepted-manuscript or preprint pagination and figures may differ from the publisher version, so provenance must name the accessed version.
 
 ## In Progress
 
-- Issue 024 awaits the next existing daily trigger or a direct Human PI request under the updated access rule.
+- Issue 024 awaits the existing daily trigger or a direct Human PI request.
 
 ## Next Actions
 
-- At the next Daily Paper run, prefer the fastest complete-original route among local, institutional, publisher, partner-database, document-delivery and open sources.
-- If the authenticated institutional session is expired, ask Human PI to log in once; do not request or store credentials.
-- Continue the one-pass Luna/low route gate, passive cost telemetry and shared three-attempt cap.
+- For Issue 024, search broad discovery services and the institutional access layer in parallel, then verify publication identity and journal quality before selection.
+- Use the fastest qualified complete-full-text route, keep the shared three-attempt cap and do not escalate model reasoning to compensate for access failure.
+- Record coarse access channel, full-text completeness and version status in the private run log.
 
 ## Evidence References
 
+- ../../50-decisions/2026-10-07-broad-literature-discovery-and-version-verification.md
 - ../../50-decisions/2026-10-07-institutional-fulltext-access.md
 - artifacts/daily-paper/CURRENT-STATE.md
 - ../../60-handoffs/CURRENT.md
