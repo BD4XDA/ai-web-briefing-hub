@@ -1,52 +1,52 @@
 # Lab Research OS · CHECKPOINT
-Checkpoint ID: 20261007T135053-b8a2dfc81db6
+Checkpoint ID: 20261007T140214-72c0d13de5dd
 Priority: P3 · Status: in_progress
 Canonical committed pointer: checkpoints/LATEST.json. If IDs differ, use tools/foundation.py show; do not guess.
 
 ## Current Verified State
 
-- Daily Paper Issues 022 and 023 are VERIFIED COMPLETE; Issue 024 has not started.
-- Fresh successor 01a114e8-2997-7f50-b227-3d9cb3fa3778 completed file-only recovery under gpt-6-luna/low and accurately identified the checkpoint, closed issues, paused historical repair and exact next action without starting research or changing files.
-- Existing heartbeat automation-2 remains ACTIVE at 08:00 Asia/Shanghai and now targets the fresh successor. High-cost predecessor 01a0fc40-dd4c-7652-a971-5475aca1f4cc is archived, not deleted; no duplicate automation exists.
-- Historical 73-note repair remains PARTIAL/PAUSED.
+- Daily Paper Issues 022 and 023 remain VERIFIED COMPLETE; Issue 024 has not started.
+- Human PI confirmed that school-library and partner-database access is authorized for the private Daily Paper workflow. Open access is no longer an eligibility requirement.
+- The active private Skill, saved recurring prompt and existing automation-2 now accept school/institutional subscription, campus or institutional VPN/proxy, publisher subscription, partner knowledge-base, document-delivery and Human PI-provided local full text, with the fastest reliable complete-original route preferred.
+- Automation-2 remains ACTIVE at 08:00 Asia/Shanghai and still targets fresh successor 01a114e8-2997-7f50-b227-3d9cb3fa3778.
 
 ## Completed
 
-- Triggered proactive conversation rollover from direct 17.51M-token target-turn evidence and the marginal-context-value rule.
-- Verified the successor can resume solely from project-owned state before changing the heartbeat target.
-- Repointed the existing heartbeat in place and archived the predecessor without deleting historical evidence.
+- Superseded the private workflow's open-access-only restriction without changing the three-paper scientific selection contract.
+- Updated the private Skill, output contract, saved recurring prompt and live automation prompt consistently.
+- Recorded the access-channel decision in the public project without including credentials, session data or subscription-only paper files.
 
 ## Decisions
 
-- Use successor 01a114e8-2997-7f50-b227-3d9cb3fa3778 as the Daily Paper conversation for Issue 024 onward.
-- Do not create a second Daily Paper automation; automation-2 remains the single trigger.
-- Do not unarchive or preload the predecessor for ordinary runs; retrieve it only when unique historical detail is necessary.
+- Use authorized institutional full-text channels when they are faster; do not reject an otherwise suitable paper merely because it is not openly accessible.
+- Record only the coarse access-channel category and full-text completeness; never record credentials, cookies, tokens or other authentication material.
+- Keep subscription-only originals in the private D-drive research archive and out of the public GitHub repository. Abstract-only reading remains insufficient, and the shared three-attempt/cost-value rules remain unchanged.
 
 ## Open Questions
 
-- Automation-level persistent model pinning remains PARTIAL; each run must retain the one-pass parent-route gate.
+- A future run may require Human PI to refresh an expired institutional browser login; no login is currently requested.
 
 ## Known Risks
 
-- A future heartbeat can still arrive under a mismatched parent route because the automation contract does not independently expose a model field; fail closed rather than escalate.
-- Rollover reduces cached-context cost but does not prove future issue cost until Issue 024 is observed.
+- Institutional access availability can vary by session or database; an access failure must not trigger credential capture, technical-control circumvention or unlimited retries.
+- Original PDFs obtained under subscription must not be staged into the public repository.
 
 ## In Progress
 
-- Issue 024 awaits the next existing daily trigger or a direct Human PI request.
+- Issue 024 awaits the next existing daily trigger or a direct Human PI request under the updated access rule.
 
 ## Next Actions
 
-- At the next trigger, the successor must restore this checkpoint and artifacts/daily-paper/CURRENT-STATE.md, verify Luna/low once, and then begin only Issue 024.
-- Continue passive run-level cost telemetry and apply the shared three-attempt access cap.
-- Keep historical repair paused unless directly resumed by Human PI.
+- At the next Daily Paper run, prefer the fastest complete-original route among local, institutional, publisher, partner-database, document-delivery and open sources.
+- If the authenticated institutional session is expired, ask Human PI to log in once; do not request or store credentials.
+- Continue the one-pass Luna/low route gate, passive cost telemetry and shared three-attempt cap.
 
 ## Evidence References
 
+- ../../50-decisions/2026-10-07-institutional-fulltext-access.md
 - artifacts/daily-paper/CURRENT-STATE.md
 - ../../60-handoffs/CURRENT.md
-- protocols/CONTEXT-LIFECYCLE.md
-- protocols/COST-TELEMETRY.md
-- checkpoints/20261007T134817-28a68e940a67.json
-- Codex thread 01a114e8-2997-7f50-b227-3d9cb3fa3778
+- D:/10_学业科研/论文_沉积物磷/70_Codex技能包/sediment-phosphorus-daily-private/SKILL.md
+- D:/10_学业科研/论文_沉积物磷/70_Codex技能包/sediment-phosphorus-daily-private/references/output-contract.md
+- D:/10_学业科研/论文_沉积物磷/90_智能体工作区/04_Lab_Research_OS/contracts/2026-09-29_每日论文_recurring_prompt.md
 - Codex automation automation-2

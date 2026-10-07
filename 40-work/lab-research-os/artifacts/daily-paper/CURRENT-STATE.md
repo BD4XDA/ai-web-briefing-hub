@@ -87,3 +87,9 @@ The final target-turn usage report was 17,514,298 tokens: 17,437,859 input, 17,1
 ## VERIFIED ROLLOVER 2026-10-07
 
 Fresh successor `01a114e8-2997-7f50-b227-3d9cb3fa3778` (`每日论文｜Issue 024 起点`) completed a file-only recovery under `gpt-6-luna/low`. Without research or file changes it correctly identified checkpoint `20261007T134817-28a68e940a67`, Issues 022–023 as complete, Issue 024 as not started, the historical 73-note repair as `PARTIAL/PAUSED`, and no need to repeat Issue 023. Existing heartbeat `automation-2` remains ACTIVE at 08:00 Asia/Shanghai and was repointed in place to this successor. The high-cost predecessor `01a0fc40-dd4c-7652-a971-5475aca1f4cc` was archived, not deleted. No duplicate automation was created.
+
+## ACCESS POLICY UPDATE 2026-10-07 — institutional full text is in scope
+
+Human PI confirmed that school-library and partner-database access is authorized for this private research workflow. Open access is therefore no longer an eligibility requirement. The private Skill and existing `automation-2` now accept publisher subscriptions, school-library/campus access, institutional VPN/proxy, institution-partner knowledge bases, document delivery and Human PI-provided local originals, with the fastest reliable complete-full-text route preferred.
+
+Operational boundaries remain: reuse an already authenticated user browser session and request login only when expired; never store or expose credentials or defeat technical access controls; keep subscription-only originals in the private research archive and out of the public GitHub repository. Abstract-only reading remains insufficient. The shared three-attempt cap and cost/value rule are unchanged.

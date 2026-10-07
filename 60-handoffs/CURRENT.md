@@ -98,3 +98,7 @@ Human PI 指定的 `lxj5820/dsh-boot-animation` 已按上游 `v0.2.0` 安装至 
 该目标回合最终报告17,514,298 token，其中17,113,216为cached input。科研产物有效，但上下文效费比不合格；下一期必须从项目状态在新短上下文中恢复，不得把已完成的第023期长对话作为默认历史。详细状态见[Daily Paper current state](../40-work/lab-research-os/artifacts/daily-paper/CURRENT-STATE.md)与最新Foundation checkpoint。历史73篇修复仍为PARTIAL/PAUSED。
 
 2026-10-07已完成主动rollover：新会话`01a114e8-2997-7f50-b227-3d9cb3fa3778`仅凭项目文件准确恢复，现有`automation-2`仍为ACTIVE并原位改指向新会话；旧高成本会话`01a0fc40-dd4c-7652-a971-5475aca1f4cc`已归档而未删除。第024期尚未开始，不得重复第023期。
+
+## 2026-10-07 · 每日论文机构全文通道
+
+Human PI确认学校图书馆、校园网/机构VPN或代理、出版社订阅、学校合作知识库、文献传递及已有本地原文均可用于私有科研工作流。每日论文不再以OA为入选前提，优先最快的完整原文通道；自动任务与私有Skill已同步更新。账号凭据与会话材料不得记录或输出，受订阅许可约束的原文不得提交到公开GitHub，摘要仍不能代替全文精读，三次失败上限与效费比规则不变。决策见[2026-10-07-institutional-fulltext-access](../50-decisions/2026-10-07-institutional-fulltext-access.md)。
