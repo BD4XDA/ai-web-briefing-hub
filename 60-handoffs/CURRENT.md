@@ -90,3 +90,11 @@ Human PI已要求补齐中文论文并形成读书笔记。第022期三篇论文
 ## 2026-10-06 · DSH Desktop 启动画面
 
 Human PI 指定的 `lxj5820/dsh-boot-animation` 已按上游 `v0.2.0` 安装至 DSH Desktop `desktop` profile。当前 Desktop `0.2.0-rc.2` 与插件合同匹配；插件模块、设置逻辑和本地视频清单路由已验证，三段素材均已启用且为 fast-start。安装前 profile patch 备份与卸载路径均已保留。该项目是可选外观扩展，不纳入科研 capability registry，不改变 DSH core、模型路由或科研流程。证据与回滚说明见 [安装记录](../40-work/lab-research-os/artifacts/DSH-BOOT-ANIMATION-INSTALL-2026-10-06.md) 和 [决策](../50-decisions/2026-10-06-dsh-boot-animation.md)。
+
+## 2026-10-06 · 每日论文第023期完成
+
+第023期已从保存的合法开放全文续接并完成：1篇中文核心、2篇SCI，个人版DOCX/PDF、导师版DOCX、原文PDF、总索引和Human PI Daily Research Brief均已交付。最终视觉与便携路径门禁为0 error / 0 warning；Chemical Geology裁图和化学式缺字已修复后重新验证。实际目标路由经会话证据确认为`gpt-6-luna/low`，未使用Astra、子代理或高推理模型。
+
+该目标回合最终报告17,514,298 token，其中17,113,216为cached input。科研产物有效，但上下文效费比不合格；下一期必须从项目状态在新短上下文中恢复，不得把已完成的第023期长对话作为默认历史。详细状态见[Daily Paper current state](../40-work/lab-research-os/artifacts/daily-paper/CURRENT-STATE.md)与最新Foundation checkpoint。历史73篇修复仍为PARTIAL/PAUSED。
+
+2026-10-07已完成主动rollover：新会话`01a114e8-2997-7f50-b227-3d9cb3fa3778`仅凭项目文件准确恢复，现有`automation-2`仍为ACTIVE并原位改指向新会话；旧高成本会话`01a0fc40-dd4c-7652-a971-5475aca1f4cc`已归档而未删除。第024期尚未开始，不得重复第023期。

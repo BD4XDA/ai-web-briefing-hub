@@ -1,56 +1,52 @@
 # Lab Research OS · CHECKPOINT
-Checkpoint ID: 20261006T143040-edbb14b4d332
+Checkpoint ID: 20261007T135053-b8a2dfc81db6
 Priority: P3 · Status: in_progress
 Canonical committed pointer: checkpoints/LATEST.json. If IDs differ, use tools/foundation.py show; do not guess.
 
 ## Current Verified State
 
-- Daily Paper Issue 022 remains VERIFIED COMPLETE. Issue 023 remains incomplete and has not created human-facing notes or index entries.
-- The 2026-10-06 Issue-023 continuation was fail-closed before research because the current direct turn_context reports gpt-6.1-sol/high instead of required gpt-6-luna/low.
-- The Issue-023 temporary folder already contains a publisher-hosted Chinese-core PDF candidate and a Frontiers OA PDF; the saved CEE file is an HTML response, not an accepted PDF. Preserve all temporary evidence. The 2026-10-03 private run record documents the earlier deduplication, one Maowei 403, and SCI candidate discovery.
-- DSH Desktop 0.2.0-rc.2 now has the optional dsh-boot-animation v0.2.0 cosmetic plugin installed in the desktop profile. The production module imports, the plugin manifest route is live, and three enabled fast-start videos are served. DSH core, model routing, credentials and research workflows were not changed.
+- Daily Paper Issues 022 and 023 are VERIFIED COMPLETE; Issue 024 has not started.
+- Fresh successor 01a114e8-2997-7f50-b227-3d9cb3fa3778 completed file-only recovery under gpt-6-luna/low and accurately identified the checkpoint, closed issues, paused historical repair and exact next action without starting research or changing files.
+- Existing heartbeat automation-2 remains ACTIVE at 08:00 Asia/Shanghai and now targets the fresh successor. High-cost predecessor 01a0fc40-dd4c-7652-a971-5475aca1f4cc is archived, not deleted; no duplicate automation exists.
+- Historical 73-note repair remains PARTIAL/PAUSED.
 
 ## Completed
 
-- Verified the actual current Daily Paper turn route from its turn_context and stopped before literature work.
-- Appended the Daily Paper route-mismatch observation and continuation point to the 2026-10-06 private run record and shared cost ledger.
-- Reviewed, pinned, installed and proportionally verified dsh-boot-animation v0.2.0 for the DSH Desktop profile, preserving an automatic rollback backup and uninstall path.
+- Triggered proactive conversation rollover from direct 17.51M-token target-turn evidence and the marginal-context-value rule.
+- Verified the successor can resume solely from project-owned state before changing the heartbeat target.
+- Repointed the existing heartbeat in place and archived the predecessor without deleting historical evidence.
 
 ## Decisions
 
-- Do not continue Daily Paper research or writing in a parent turn whose actual route is not Luna/low.
-- Resume Issue 023 from saved temporary evidence when a new directly observed Luna/low parent turn is available; do not revisit the Maowei 403, prior deduplication, or accepted old-issue QC.
-- Keep the historical 73-note EVENT PARTIAL/PAUSED and untouched.
-- Treat dsh-boot-animation as a pinned, reversible cosmetic extension rather than a Lab Research OS capability; do not use it to justify a DSH core upgrade or add it to weekly core-capability maintenance.
+- Use successor 01a114e8-2997-7f50-b227-3d9cb3fa3778 as the Daily Paper conversation for Issue 024 onward.
+- Do not create a second Daily Paper automation; automation-2 remains the single trigger.
+- Do not unarchive or preload the predecessor for ordinary runs; retrieve it only when unique historical detail is necessary.
 
 ## Open Questions
 
-- Whether the CEE institutional-repository PDF transfer has completed successfully and can be verified from the already requested attempt.
-- After Luna/low routing is restored, whether the saved candidates satisfy full-text, classification, relevance, and final selection checks.
-- The Human PI may visually confirm the preferred animation appearance and adjust sound, entry mode, hints, fade duration and asset pool in DSH Settings.
+- Automation-level persistent model pinning remains PARTIAL; each run must retain the one-pass parent-route gate.
 
 ## Known Risks
 
-- The current daily parent route is misconfigured or misrouted for this workload; using it for research would violate the model/effort ceiling.
-- Do not treat the short HTML saved as cee.pdf as full text or overwrite other candidate evidence.
-- dsh-boot-animation is third-party UI code pinned to a plugin contract tested against DSH Desktop 0.2.0-rc.2; recheck compatibility before any Desktop version change. Two developer-fixture tests require an unpublished/development-only cosmokit dependency and were not used as production acceptance evidence.
+- A future heartbeat can still arrive under a mismatched parent route because the automation contract does not independently expose a model field; fail closed rather than escalate.
+- Rollover reduces cached-context cost but does not prove future issue cost until Issue 024 is observed.
 
 ## In Progress
 
-- Issue 023 paused at route gate. Existing candidate assets and prior 2026-10-03 evidence are preserved.
+- Issue 024 awaits the next existing daily trigger or a direct Human PI request.
 
 ## Next Actions
 
-- On the next eligible Daily Paper continuation, verify the new current turn_context is gpt-6-luna/low, then resume Issue 023 from the existing temporary folder and private log without broad rediscovery.
-- For the installed boot animation, use the DSH Settings card for optional visual preferences; before updating DSH Desktop or the plugin, repeat a compatibility review and preserve the current rollback path.
+- At the next trigger, the successor must restore this checkpoint and artifacts/daily-paper/CURRENT-STATE.md, verify Luna/low once, and then begin only Issue 024.
+- Continue passive run-level cost telemetry and apply the shared three-attempt access cap.
+- Keep historical repair paused unless directly resumed by Human PI.
 
 ## Evidence References
 
-- artifacts/DSH-BOOT-ANIMATION-INSTALL-2026-10-06.md
-- ../../50-decisions/2026-10-06-dsh-boot-animation.md
-- D:/10_学业科研/论文_沉积物磷/90_智能体工作区/04_Lab_Research_OS/运行记录/2026/2026-10/2026-10-03.md
-- D:/10_学业科研/论文_沉积物磷/90_智能体工作区/04_Lab_Research_OS/运行记录/2026/2026-10/2026-10-06.md
-- D:/10_学业科研/论文_沉积物磷/90_智能体工作区/02_临时文件/2026-10-03_第023期
-- protocols/CAPABILITY-GOVERNANCE.md
-- protocols/RESOURCE-GOVERNANCE.md
+- artifacts/daily-paper/CURRENT-STATE.md
 - ../../60-handoffs/CURRENT.md
+- protocols/CONTEXT-LIFECYCLE.md
+- protocols/COST-TELEMETRY.md
+- checkpoints/20261007T134817-28a68e940a67.json
+- Codex thread 01a114e8-2997-7f50-b227-3d9cb3fa3778
+- Codex automation automation-2

@@ -43,19 +43,19 @@ The latest explicit Daily Paper task paused new daily selection and requested hi
 | Existing archive and issue workflow | IMPLEMENTED & OBSERVED | Master index and issue 021 folders |
 | Existing heartbeat schedule | IMPLEMENTED & LIVE configuration | Codex automation-2 is ACTIVE, points to the verified successor and uses the current canonical root |
 | Private Skill after root migration | IMPLEMENTED & VERIFIED locally | New target exists and system Skill junction is readable after repair |
-| Daily Paper → Lab OS prompt binding | PARTIAL LIVE EVIDENCE | Event pilot and issue-022 TIME trial followed resume/evidence boundaries; a complete upgraded issue remains unverified |
-| Cost-aware delegation | DEFECT OBSERVED, POLICY REPAIRED | Issue 022 used no Astra/subagent but consumed 20.87M reported tokens in Luna/medium; three-attempt stop, passive telemetry and Luna/low parent gate are now live rules |
-| Evidence-ready daily records | PARTIAL LIVE | Issue 022 preserved DOI/source/status/claim labels and an exact continuation point; formal issue evidence remains incomplete |
-| Human PI Daily Research Brief | VERIFIED FOR EVENT AND PARTIAL TIME RUNS | Ten-section briefs reflect actual work; complete new-issue behavior remains unverified |
+| Daily Paper → Lab OS prompt binding | IMPLEMENTED & VERIFIED FOR TWO ISSUES | Issues 022 and 023 completed from project-owned state with evidence boundaries, daily briefs and required validators; this does not prove universal repeatability |
+| Cost-aware delegation | PARTIAL; CONTEXT-COST DEFECT OBSERVED | Issue 023 used Luna/low and no Astra/subagent/high reasoning, but the completed target turn still reached 17.51M reported tokens, 17.11M cached input; the next cycle requires a fresh short context |
+| Evidence-ready daily records | IMPLEMENTED & VERIFIED FOR ISSUES 022–023 | Legal originals, DOI/source metadata, labeled inference boundaries, notes, briefs, index entries and run logs are present and validated |
+| Human PI Daily Research Brief | IMPLEMENTED & VERIFIED FOR COMPLETE TIME RUNS | Issues 022 and 023 each produced the ten-section personal DOCX/PDF brief from actual work without daily recomputation |
 | Weekly/event/milestone/state readiness | PROPOSED, NOT DEPLOYED | Workload classification only |
 | Historical 73-note repair | PARTIAL | Note 073 complete; note 072 is next; six notes remain full-text blocked |
 | Persistent automation-level model pinning | PARTIAL | A Luna/low turn was applied and the heartbeat now fails closed on a non-Luna/low parent; heartbeat metadata still has no independent model field |
-| Future-note source visuals, workflows and portable paths | IMPLEMENTED BUT UNVERIFIED live | Private Skill, output contract, recurring prompt and opt-in validators updated; no complete new issue has yet passed both gates |
+| Future-note source visuals, workflows and portable paths | IMPLEMENTED & VERIFIED FOR ISSUES 022–023 | Both completed post-contract issues passed `--require-visuals --require-portable-paths`; Issue 023 passed after final crop and glyph repairs |
 
 ## Minimum continuation points
 
-1. Next heartbeat: restore the latest user instruction and incomplete repair state before deciding whether a new issue may start; always generate the brief from actual work only.
-2. Next upgraded run: start from the issue-022 continuation point or replace the blocked Chinese candidate; keep Luna/low, a fresh short context and the three-attempt cap. Do not repeat the two SCI downloads or the failed Chinese access paths.
+1. Next heartbeat: treat Issues 022 and 023 as closed and begin Issue 024 only from the master index, current project state and the latest run log. Use Luna/low, a fresh short context and the shared three-attempt cap.
+2. Do not carry the completed Issue-023 conversation forward as default context. Its final target-turn report was 17,514,298 tokens, including 17,113,216 cached input; marginal context value is now below its cost.
 3. Historical repair: resume note 072 from preserved evidence only when explicitly continued; finish one bounded unit before opening another review loop.
 4. Historical path portability: 34 supervisor files remain over the new budget after the two issue-021 repairs. Treat bulk migration as a separately approved Event with a reversible rename map and reference update.
 
@@ -75,3 +75,15 @@ Next daily turn: resume from the master index and latest run log, reuse issue 02
 ## VERIFIED ROLLOVER 2026-10-02
 
 The issue-022 continuation consumed 12,533,537 turn tokens, including 11,982,336 cached input tokens; the conversation cumulative total reached 19,668,737. That direct evidence triggered proactive rollover under the marginal-context-value rule. Compact successor `01a0fc40-dd4c-7652-a971-5475aca1f4cc` resolved checkpoint `20261002T185443-bebb0c725d03`, reported issue 022 CLOSED and performed no research. One initial readiness attempt ended in a transport disconnect; the second succeeded within the shared three-attempt budget. Existing `automation-2` now targets the compact successor, and long conversation `01a0ecd4-1374-7df2-ad32-672e28bddac6` is archived rather than deleted. No duplicate automation was created.
+
+## VERIFIED UPDATE 2026-10-06 — issue 023 completed; fresh-context gate required
+
+Issue 023 resumed from preserved open-access full texts and completed under the directly verified target route `gpt-6-luna/low`; no Astra, subagent or high-reasoning scientific model was used. The issue contains one Chinese core paper and two SCI papers, three lawful source PDFs, three personal DOCX/PDF pairs, three supervisor DOCX notes and one Human PI Daily Research Brief DOCX/PDF. The master index and append-only run log were updated. A clipped Chemical Geology source crop and missing chemical-formula glyphs in agent-drawn material were repaired, all affected files were re-exported, and `validate_issue.py --require-visuals --require-portable-paths` passed with zero errors and zero warnings.
+
+Scientific boundaries remain explicit: the Haiyang Xuebao paper reports total P2O5 rather than operational P fractions; the Chemical Geology study is an early-Proterozoic model rather than a modern coastal observation; the Frontiers study represents one spring cruise. These outputs remain Discovery/Extraction/Evidence and were not promoted automatically to validated long-term knowledge.
+
+The final target-turn usage report was 17,514,298 tokens: 17,437,859 input, 17,113,216 cached input, 76,439 output and 27,151 reasoning output. This is an unacceptable context-efficiency profile despite correct low-cost model routing. Before Issue 024, continue from project-owned state in a fresh short context; do not replay the completed conversation. The historical 73-note repair remains `PARTIAL/PAUSED`.
+
+## VERIFIED ROLLOVER 2026-10-07
+
+Fresh successor `01a114e8-2997-7f50-b227-3d9cb3fa3778` (`每日论文｜Issue 024 起点`) completed a file-only recovery under `gpt-6-luna/low`. Without research or file changes it correctly identified checkpoint `20261007T134817-28a68e940a67`, Issues 022–023 as complete, Issue 024 as not started, the historical 73-note repair as `PARTIAL/PAUSED`, and no need to repeat Issue 023. Existing heartbeat `automation-2` remains ACTIVE at 08:00 Asia/Shanghai and was repointed in place to this successor. The high-cost predecessor `01a0fc40-dd4c-7652-a971-5475aca1f4cc` was archived, not deleted. No duplicate automation was created.
