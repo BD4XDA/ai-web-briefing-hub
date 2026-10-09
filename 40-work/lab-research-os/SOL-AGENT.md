@@ -131,57 +131,65 @@ Include the checkpoint ID and relative evidence paths. Do not duplicate large ra
 <!-- FOUNDATION-SOL-CHECKPOINT:START -->
 ## Latest Foundation checkpoint for Sol
 
-Checkpoint ID: 20261007T140520-4198d9ba9501
+Checkpoint ID: 20261010T075702-ea5655d7b238
 Priority: P3 · Status: in_progress
 Canonical committed pointer: `checkpoints/LATEST.json`. This generated mirror is required for Sol resume, but `tools/foundation.py show` remains authoritative if IDs differ.
 
 ### Current Verified State
 
-- Daily Paper Issues 022 and 023 remain VERIFIED COMPLETE; Issue 024 has not started.
-- The active private Skill, saved recurring prompt and automation-2 now use a broad candidate-discovery layer rather than repeatedly querying one publisher endpoint.
-- Candidate discovery may use scholarly metadata/search services, institutional and subject repositories, author pages, school-authorized Chinese knowledge bases and local indexes; Sci-Hub and unauthorized shadow-library or mirror downloads are excluded.
-- Publication identity, DOI and journal quality are verified independently from the download host; accepted manuscripts and preprints require explicit version labeling and binding to the published DOI.
+- Daily Paper Issues 022 and 023 remain VERIFIED COMPLETE; Issue 024 has not started, and the broad discovery/full-text/version-verification rules remain active.
+- DSH Desktop 0.2.0-rc.2 now starts normally; no host crash log newer than the repaired 2026-10-08 failures was present on 2026-10-10.
+- The desktop profile pins @linxin666/dsh-remote-web-ui 0.4.5, which targets DSH >=0.2.0-rc.2 and uses webServer + typertGateway + connection rather than the removed legacy apiProxy service.
+- The remote host listens on 0.0.0.0:19387; its LAN posture probe reports 10.190.28.65:19387 not exposed, an unpaired /remote API request returns 403, and direct LAN /api access returns 401.
+- The plugin reports LAN available and preserves four existing paired-device records with zero devices online at verification time; no device records were revoked automatically.
 
 ### Completed
 
-- Added broad discovery routing to the private Skill and live Daily Paper automation while retaining authorized full-text acquisition routes.
-- Separated candidate discovery from publication, journal-quality and file-version verification.
-- Added accessed-version provenance requirements to the output contract and public decision record.
+- Disabled the incompatible voice plugin entry that caused the first Desktop startup crash while preserving dated profile backups.
+- Replaced remote-web-ui 0.2.9 and the obsolete direct dsh-host-apiproxy dependency with remote-web-ui 0.4.5.
+- Installed the declared cloudflared 0.7.3 optional tunnel binary, kept autoTunnel disabled, and configured the plugin-managed LAN bind block with the Web compression defaults.
+- Verified live Desktop startup, listener state, pairing status route, LAN posture, unpaired-channel denial and direct-API denial without computing unnecessary hashes.
+- Recorded the repair decision, rollback path, bounded firewall failure and run-level cost telemetry.
 
 ### Decisions
 
-- Do not spend the retry budget repeatedly on one blocked publisher endpoint when a qualified repository, institutional, author, document-delivery or local-copy route exists.
-- Do not use Sci-Hub or unauthorized shadow libraries/mirrors. This restriction does not require publisher-site-only discovery.
-- Verify DOI/publication metadata and journal quality independently; label non-version-of-record files and use their actual page/figure identifiers for provenance.
+- Do not mix the removed legacy apiProxy service into Desktop 0.2.0-rc.2; use a remote-control plugin release whose declared cohort matches the installed Desktop.
+- Default to paired LAN access on 0.0.0.0:19387 without trusting LAN hosts for direct /api access; keep the public tunnel off until explicitly needed.
+- If a firewall rule is added, scope it to TCP 19387 on Private/Domain profiles rather than opening the port on all Public networks.
+- Treat phone scan/control as unverified until a real phone completes the pairing round trip; Configured and host-live are not end-to-end qualification.
 
 ### Open Questions
 
-- No access session is currently required; a future Issue-024 candidate may require Human PI to refresh a school-library login.
+- Human PI must accept an administrator firewall change if the phone cannot reach 10.190.28.65:19387 on the same private Wi-Fi.
+- A real phone scan and control round trip is still required to promote the remote-control capability to end-to-end VERIFIED.
 
 ### Known Risks
 
-- Discovery aggregators can contain stale, duplicate or prepublication records; they are candidate sources, not final authority.
-- Accepted-manuscript or preprint pagination and figures may differ from the publisher version, so provenance must name the accessed version.
+- Windows Defender Firewall currently has no remote-web-ui (auto) inbound rule; the status endpoint reports firewall ok false even though the local LAN-address probe reaches the listener from the same machine.
+- The three-attempt limit for the firewall permission failure class was reached; further automated retries are stopped until administrator authorization changes.
+- The optional public tunnel passes traffic through third-party infrastructure and therefore remains installed but disabled by default.
+- Existing paired-device records are full-control credentials after pairing; Human PI should revoke unfamiliar devices in the plugin panel.
 
 ### In Progress
 
-- Issue 024 awaits the existing daily trigger or a direct Human PI request.
+- Daily Paper Issue 024 awaits the existing daily trigger or a direct Human PI request.
+- DSH phone control awaits only the administrator firewall rule if required and one Human PI phone scan/control test.
 
 ### Next Actions
 
-- For Issue 024, search broad discovery services and the institutional access layer in parallel, then verify publication identity and journal quality before selection.
-- Use the fastest qualified complete-full-text route, keep the shared three-attempt cap and do not escalate model reasoning to compensate for access failure.
-- Record coarse access channel, full-text completeness and version status in the private run log.
+- If the phone cannot connect on the same private Wi-Fi, run the exact Private/Domain TCP 19387 netsh rule from the repair artifact in an elevated terminal.
+- Open the phone icon beside DSH Desktop settings, refresh the QR code, scan it on the phone and verify one chat/control round trip; then record E2E PASS or the smallest observed defect.
+- Do not enable autoTunnel merely to fill a test; enable it only when off-LAN access is actually needed and recheck the exposure posture afterward.
+- For Daily Paper Issue 024, resume from the existing project state and broad-discovery contracts without repeating Issues 022 or 023.
 
 ### Evidence References
 
-- ../../50-decisions/2026-10-07-broad-literature-discovery-and-version-verification.md
-- ../../50-decisions/2026-10-07-institutional-fulltext-access.md
-- artifacts/daily-paper/CURRENT-STATE.md
+- artifacts/DSH-DESKTOP-REMOTE-CONTROL-REPAIR-2026-10-10.md
+- ../../50-decisions/2026-10-10-dsh-desktop-remote-control-repair.md
 - ../../60-handoffs/CURRENT.md
-- D:/10_学业科研/论文_沉积物磷/70_Codex技能包/sediment-phosphorus-daily-private/SKILL.md
-- D:/10_学业科研/论文_沉积物磷/70_Codex技能包/sediment-phosphorus-daily-private/references/output-contract.md
-- D:/10_学业科研/论文_沉积物磷/90_智能体工作区/04_Lab_Research_OS/contracts/2026-09-29_每日论文_recurring_prompt.md
-- Codex automation automation-2
+- artifacts/telemetry/run-cost.jsonl
+- C:/Users/ASUS/.dsh/profiles/desktop/package.json
+- C:/Users/ASUS/.dsh/profiles/desktop/cordis.patch.yml
+- C:/Users/ASUS/AppData/Roaming/@deepseek-ai/dsh-desktop/logs
 
 <!-- FOUNDATION-SOL-CHECKPOINT:END -->
